@@ -1,0 +1,14 @@
+# Burgundian - English Truce
+alliance = {
+	first = BUR
+	second = ENG
+	start_date = 1435.9.21
+	end_date = 1444.1.2
+}
+# Burgundian - French Truce
+alliance = {
+	first = BUR
+	second = FRA
+	start_date = 1435.9.21
+	end_date = 1444.1.2
+}

@@ -1,0 +1,31 @@
+####For province modifiers from idea groups####
+
+
+#Updates Humanist dev cost when converting state religion
+humanist_dev_cost_state_conversion_effect = {
+	
+	every_owned_province = {
+		limit = {
+			NOT = {
+				has_province_modifier = humanist_construction_cost_province_modifier
+			}
+			owner = { has_idea = indirect_rule_new }
+			has_owner_religion = no
+		}
+		hidden_effect = {
+			add_province_modifier = {
+				name = "humanist_construction_cost_province_modifier"
+				duration = -1
+			}
+		}
+	}
+	
+	every_owned_province = {			
+		limit = {
+			has_province_modifier = humanist_construction_cost_province_modifier
+			has_owner_religion = yes
+		}
+		remove_province_modifier = humanist_construction_cost_province_modifier
+	}
+}
+

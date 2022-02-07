@@ -1,0 +1,72 @@
+country_decisions = {
+
+	kongo_nation = {
+		major = yes
+		potential = {
+			normal_or_historical_nations = yes
+			NOT = { has_country_flag = formed_kongo_flag }
+			OR = {
+				ai = no
+				is_playing_custom_nation = no
+			}
+			
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = KON }
+			culture_group = kongo_group
+			
+			is_colonial_nation = no
+			OR = {
+				is_former_colonial_nation = no
+				AND = {
+					is_former_colonial_nation = yes
+					ai = no
+				}
+			}
+		}
+		provinces_to_highlight = {
+			OR = {
+				province_id = 1170 #Mpemba
+				province_id = 1171 #Ndongo
+				province_id = 1166 #Loango
+				province_id = 4080 #Soyo
+				province_id = 4085 #Yaka
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			is_free_or_tributary_trigger = yes
+			is_nomad = no
+			is_at_war = no
+			NOT = { exists = KON }
+			owns_core_province = 1170 #Mpemba
+			owns_core_province = 1171 #Ndongo
+			owns_core_province = 1166 #Loango
+			owns_core_province = 4080 #Soyo
+			owns_core_province = 4085 #Yaka
+		
+		}
+		effect = {
+			add_country_modifier = {
+				name = "centralization_modifier"
+				duration = 7300
+			}
+			add_prestige = 25
+			set_country_flag = formed_kongo_flag
+			change_tag = KON
+			if = {
+				limit = { has_custom_ideas = no }
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}	
+			
+	}
+		
+}
+	
+
+
+

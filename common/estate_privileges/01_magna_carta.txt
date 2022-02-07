@@ -1,0 +1,31 @@
+estate_nobles_magna_carta = {
+	icon = privilege_grant_autonomy
+	max_absolutism = -20
+	loyalty = 0.05
+	influence = 0.25
+	is_valid = {
+		OR = {
+			has_estate_privilege = estate_nobles_magna_carta
+			has_reform = english_monarchy
+		}
+		government = monarchy
+	}
+	can_select = {
+	}
+	on_granted = {
+	}
+	penalties = {
+	}
+	can_revoke = {
+		absolutism = 30
+		NOT = { has_parliament = yes}
+	}
+	benefits = {
+		legitimacy = 0.5
+		global_unrest = -1
+	}
+	ai_will_do = {
+		factor = 5
+		
+	}
+}

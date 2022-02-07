@@ -1,0 +1,87 @@
+# Event removing most recent HRE reform
+
+namespace = hre_name_only_event
+normal_or_historical_nations = yes
+
+
+country_event = {
+	id = hre_name_only_event.1
+	title = "hre_name_only_event.EVTNAME1"
+	desc = "hre_name_only_event.EVTDESC1"
+	picture = SEJM_eventPicture
+	
+	is_triggered_only = yes
+	
+	
+	option = { # Lose HRE Reform
+		name = "hre_name_only_event.1.a"
+		if = {
+			limit = {
+				hre_reform_passed = emperor_reichsreform
+			}
+			revoke_reform = emperor_reichsreform
+			add_prestige = 1
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 2
+			}
+			emperor = {
+				revoke_reform = emperor_reichsregiment
+			}
+			add_prestige = 2
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 3
+			}
+			emperor = {
+				revoke_reform = emperor_reichsstabilitaet
+			}
+			add_prestige = 3
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 4
+			}
+			emperor = {
+				revoke_reform = emperor_gemeinerpfennig
+			}
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 5
+			}
+			emperor = {
+				revoke_reform = emperor_perpetual_diet
+			}
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 6
+			}
+			emperor = {
+				revoke_reform = emperor_landsknechtswesen
+			}
+		}
+		else_if = {
+			limit = {
+				hre_reform_level = 7
+			}
+			emperor = {
+				revoke_reform = emperor_landfriede
+			}
+		}
+		
+	}
+	
+	option = { # Lose HRE Reform
+		name = "hre_name_only_event.2.a"
+		HAB = {
+			add_prestige = 1
+			revoke_reform = "emperor_reichsreform"
+			revoke_reform = reichsreform
+		}
+	}
+}
+

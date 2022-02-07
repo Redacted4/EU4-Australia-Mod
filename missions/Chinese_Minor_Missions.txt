@@ -1,0 +1,567 @@
+chinese_minor_conquest_missions = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CSH
+			tag = CYI
+			tag = YAN
+			tag = YUE
+			tag = CHC
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	prepare_for_unification = {
+		icon = mission_assemble_an_army
+		required_missions = {  }
+		provinces_to_highlight = {
+		}
+		trigger = {
+			is_year = 1445
+			army_size_percentage = 1
+			manpower_percentage = 0.6
+			num_of_generals = 1
+		}
+		effect = {
+			china_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	unify_north_china = {
+		icon = mission_great_wall
+		required_missions = { prepare_for_unification }
+		provinces_to_highlight = {
+			region = north_china_region
+		}
+		trigger = {
+			north_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+		}
+		effect = {
+			add_prestige = 25
+			add_adm_power = 150
+
+		}
+	}
+	unite_china = {
+		icon = mission_unite_home_region
+		required_missions = { unify_south_china unify_north_china unify_xinan }
+		
+		provinces_to_highlight = {
+			region = north_china_region
+			region = south_china_region
+			region = xinan_region
+
+			NOT = { owned_by = ROOT }
+		}
+		
+		
+		trigger = {
+			china_superregion= {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+		}
+
+		effect = {
+			add_mil_power = 100
+			add_adm_power = 100
+			add_dip_power = 100
+			add_prestige = 25
+			add_country_modifier = {
+				name = unifier_of_china
+				duration = -1
+			}
+			manchuria_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			if = {
+				limit = {
+					exists = KOR
+				}
+				add_casus_belli = {
+					target = KOR
+					type = cb_vassalize_mission
+				}
+			}
+			else = {
+				korea_region = {
+					limit = {
+						NOT = { is_core = ROOT }
+						NOT = { is_permanent_claim = ROOT }
+					}
+					add_permanent_claim = ROOT
+				}
+			}
+			tibet_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	
+	
+	pacify_manchuria = {
+		icon = mission_manchu_warrior
+		required_missions = { unite_china }
+		
+		provinces_to_highlight = {
+			region = manchuria_region
+			NOT = { owned_by = ROOT }
+			NOT = { area = sakhalin_area }
+		}
+		
+		trigger = {
+			manchuria_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+					unrest = 1
+					area = sakhalin_area
+				}
+				dip_power = 200
+			}
+			
+			
+		}
+
+		effect = {
+			mongolia_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_dip_power = -200
+			custom_tooltip = manchu_culture_tt
+
+			every_province = {
+				limit = {
+					culture = manchu
+				}
+				change_culture = manchu_new
+			}
+			every_country = {
+				limit = {
+					primary_culture = manchu
+				}
+				change_primary_culture = manchu_new
+				set_ruler_culture = manchu_new
+				if = {
+					limit = {
+						has_heir = yes
+					}
+					set_heir_culture = manchu_new
+				}
+				if = {
+					limit = {
+						has_consort = yes
+						consort_culture = manchu
+					}
+					set_consort_culture = manchu_new
+				}
+			}
+		}
+	}
+	
+	end_the_hordes = {
+		icon = mission_non-western_cavalry_raid
+		required_missions = { pacify_manchuria }
+		
+		provinces_to_highlight = {
+			region = mongolia_region
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			mongolia_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+			
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					culture_group = altaic
+					region = mongolia_region
+				}
+				add_devastation = 50
+			}
+			add_treasury = 1000
+			add_adm_power = 100
+			add_mil_power = 100
+			add_dip_power = 100
+			shanshan_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+			kashgaria_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tarim_basin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			
+		}
+	}
+	
+	establish_xinjiang = {
+		icon = mission_steppe_warriors
+		required_missions = { end_the_hordes }
+		
+		provinces_to_highlight = {
+			area = shanshan_area
+			area = kashgaria_area
+			area = tarim_basin_area
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			shanshan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kashgaria_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			tarim_basin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+
+			}
+			
+			
+		}
+
+		effect = {
+			every_owned_province = {
+				limit = {
+					culture = uyghur
+				}
+				add_province_modifier = {
+					name = happy_culture_exchange
+					duration = 3650
+				}
+				add_devastation	= 50
+			}
+		}
+	}
+}
+	
+
+chinese_minor_conquest_missions_2 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CSH
+			tag = CYI
+			tag = YAN
+			tag = YUE
+			tag = CHC
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	unify_south_china = {
+		position = 2
+		icon = mission_invade_island
+		required_missions = { prepare_for_unification }
+		provinces_to_highlight = {
+			region = south_china_region
+		}
+		trigger = {
+			south_china_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+		}
+		effect = {
+			add_prestige = 25
+			add_adm_power = 150
+
+		}
+	}
+	
+	control_the_dalai_lama = {
+		position = 4
+		icon = mission_buddhist_monk_praying
+		required_missions = { unite_china }
+		
+		provinces_to_highlight = {
+			region = tibet_region
+			NOT = { owned_by = ROOT }
+		}
+		
+		trigger = {
+			tibet_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+					unrest = 1
+				}
+			}			
+		}
+
+		effect = {
+			if = {
+				limit = {
+					has_harmonized_with = vajrayana
+				}
+				add_dip_power = 100
+			}
+			else = {
+				add_harmonized_religion	= vajrayana
+			}
+			if = {
+				limit = {
+					accepted_culture = tibetan
+				}
+				add_dip_power = 100
+			}
+			else = {
+				add_accepted_culture = tibetan
+			}
+		}
+	}
+	
+}
+
+chinese_minor_conquest_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CSH
+			tag = CYI
+			tag = YAN
+			tag = YUE
+			tag = CHC
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	
+	unify_xinan = {
+		position = 2
+		icon = avoid_fragmentation
+		required_missions = { prepare_for_unification }
+		provinces_to_highlight = {
+			region = xinan_region
+		}
+		trigger = {
+			xinan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+		}
+		effect = {
+			add_prestige = 25
+			add_adm_power = 150
+
+		}
+	}
+	
+	subjugate_korea = {
+		position = 4
+		icon = mission_kowtow
+		required_missions = { unite_china }
+		provinces_to_highlight = {
+			region = korea_region
+		}
+		trigger = {
+			korea_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+		}
+		effect = {
+			japan_region = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_claim = ROOT
+			}
+			add_country_modifier = {
+				name = preparing_invasion_fleet
+				duration = 9125
+			}
+
+		}
+	}
+	
+	no_more_shoguns = {
+		position = 5
+		icon = mission_japanese_fort
+		required_missions = { subjugate_korea }
+		provinces_to_highlight = {
+			region = japan_region
+		}
+		trigger = {
+			japan_region = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+				NOT = {
+					is_empty = yes
+				}
+			}
+			
+		}
+		effect = {
+			add_prestige = 100
+			add_country_modifier = {
+				name = integrating_samurais
+				duration = -1
+			}
+
+		}
+	}
+	
+}
+
+chinese_minor_misc_missions = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		OR = {
+			tag = CSH
+			tag = CYI
+			tag = YAN
+			tag = YUE
+			tag = CHC
+		}
+		NOT = { map_setup = map_setup_random }
+	}
+	become_emperor_of_china = {
+		icon = mission_monarch_in_throne_room
+		required_missions = { }
+
+		trigger = {
+			OR = {
+				is_emperor_of_china = yes
+				AND = {
+					government_rank = 3
+					owns = 667
+					owns = 1821
+					owns = 1816
+				}
+			}
+		}
+		effect = {
+			if = {
+				limit = {
+					is_emperor_of_china = yes
+				}
+				add_mandate = 20
+
+			}
+			else = {
+				add_mil_power = 100
+				add_adm_power = 100
+				add_dip_power = 100
+				add_prestige = 25
+			}
+
+		}
+	}
+	
+	
+	support_printing_press = {
+		icon = found_the_vatican_library
+		required_missions = { }
+
+		trigger = {
+			is_institution_enabled = printing_press
+			any_owned_province = {
+				trade_goods = paper
+				development = 25
+				is_prosperous = yes
+			}
+			treasury = 500
+
+		}
+		effect = {
+			if = {
+				limit = {
+					has_institution = printing_press
+				}
+				change_innovativeness = 10
+
+			}
+			else = {
+				capital_scope = {
+					add_institution_embracement = {
+						which = printing_press
+						value = 100
+					}
+				}
+				add_treasury = -500	
+			}
+
+		}
+	}
+	
+	
+	
+}
+

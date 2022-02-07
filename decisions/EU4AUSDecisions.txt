@@ -1,0 +1,269 @@
+#Brand New Decisons for Mod
+
+country_decisions = {
+	
+	#Free Colonist for 30 years
+	
+	new_colonial_charter = {
+
+		potential = {
+			NOT = {
+				has_country_modifier = colonial_charter
+			}
+		}
+
+		allow = {
+			has_institution = new_world_i
+			OR = {
+				north_america = { has_discovered = PREV }
+				south_america = { has_discovered = PREV }
+				new_world = { has_discovered = PREV }
+			}
+			NOT = { 
+				has_idea_group = expansion_ideas
+				has_idea_group = exploration_ideas
+			}
+			num_of_ports = 8
+			treasury = 500
+
+		}
+
+		effect = {
+			add_treasury = -500
+			add_country_modifier = {
+				name = "colonial_charter"
+				duration = 9125
+			}	
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	holy_orders_allowed_by_pope =  {
+	
+		potential = {
+			#NOT = {
+				has_country_modifier = holy_orders_allowed_pap
+			#}
+			religion = catholic
+		}
+		
+		allow = {
+			OR = {
+				PAP = { has_opinion = { who = root value = 150 } }
+				NOT = { exists = PAP }
+			}
+			 papal_influence = 150
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "holy_orders_allowed_pap"
+				duration = -1
+			}
+			add_papal_influence = -150
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	reform_angevin_empire =  {
+	
+		potential = {
+			tag = ENG
+			NOT = { has_country_flag = reform_angevin_flag }
+			OR = {
+				ROOT = { has_country_flag = eng_had_end_of_hundred_years_war } 
+				start_date = 1444.11.12
+			}
+		}
+		major = yes
+		provinces_to_highlight = {
+			OR = {
+				area = normandy_area
+				area = picardy_area
+				area = ile_de_france_area
+				area = pyrenees_area
+				area = brittany_area
+
+			}
+			OR = {
+				NOT = { owned_by = ROOT }
+				NOT = { is_core = ROOT }
+			}
+		}
+		allow = {
+			normandy_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			picardy_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			ile_de_france_area = { 
+				type = all
+				owned_by = ROOT 
+			}
+			OR = {
+				pyrenees_area = { 
+					type = all
+					owned_by = ROOT 
+				}
+				brittany_area = { 
+					type = all
+					owned_by = ROOT 
+				}
+			}
+		}
+		
+		effect = {
+			set_country_flag = reform_angevin_flag
+			add_prestige = 25
+			if = {
+				limit = {
+					has_custom_ideas = no
+					OR = {
+						ai = no
+						AND = {
+							ai = yes
+							has_idea_group = default_ideas
+						}
+					}
+				}
+				country_event = { id = ideagroups.1 } #Swap Ideas
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	adopt_imperial_chinese_ideas =  {
+	
+		potential = {
+			NOT = { tag = MNG } #Ming
+			NOT = { tag = QNG }	#Qing
+			NOT = { tag = MCH }	#Manchu
+			NOT = { tag = YUA } #Yuan	
+			NOT = { tag = MGE } #Mongol Empire
+			NOT = { tag = PAP }
+			NOT = { tag = HLR }
+			NOT = { tag = ROM }
+			has_idea_group = chinese_ideas #Generic Chinese Ideas
+			has_custom_ideas = no
+		}
+		
+		allow = {
+			is_emperor_of_china = yes
+		}
+		
+		effect = {
+			country_event = { id = ideagroups.1 } #Swap Ideas
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	remove_mandate_of_heaven =  {
+	
+		potential = {
+			is_emperor_of_china = yes
+			ai = no
+		}
+		
+		allow = {
+			NOT = { imperial_mandate = 1 }
+			is_emperor_of_china = yes
+			is_at_war = no
+			ai = no
+		}
+		
+		effect = {
+			dismantle_empire_of_china = yes
+			add_country_modifier = {
+				name = "lost_mandate_of_heaven"
+				duration = 7300
+			}
+			add_prestige = -100
+			add_legitimacy = -100
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	free_scorched_earth =  {
+	
+		potential = {
+			is_at_war = yes
+			
+		}
+		
+		allow = {
+			ai = no
+		}
+		
+		effect = {
+			every_owned_province = {
+				limit = {
+					fort_level = 1
+					controlled_by = ROOT
+					NOT = { has_province_modifier = scorched_earth }
+				}
+				add_province_modifier = {
+					name = scorched_earth
+					duration = 1825
+				}
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	pope_papal_blessings = {
+	
+		potential = {
+			#tag = PAP
+		}
+		
+		allow = {
+			#is_papal_controller = yes
+		}
+		
+		effect = {
+			export_to_variable = {
+				which = papCardinalsActive
+				value = trigger_value:num_of_cardinals	
+			}
+			country_event = { 
+				id = new_events.5 #Pope Blesses Himself
+			}
+
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	
+	}
+	
+	
+}
+	

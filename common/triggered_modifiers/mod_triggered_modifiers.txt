@@ -1,0 +1,38 @@
+free_march_slot = {
+	potential = {
+		is_free_or_tributary_trigger = yes
+		
+	}
+
+	trigger = {
+		any_subject_country = {
+			march_of = ROOT
+		}
+	}
+
+	diplomatic_upkeep = 1
+}
+
+prussia_in_name = {
+	potential = {
+		OR = {
+			has_reform = prussian_monarchy
+			has_reform = prussian_republic_reform
+		}
+		is_playing_custom_nation = no
+	}
+	
+	trigger = {
+		OR = {
+			has_reform = prussian_monarchy
+			has_reform = prussian_republic_reform
+		}
+		NOT = { 41 = { owned_by = ROOT } }
+		
+	}
+	
+	monarch_military_power = -1
+	prestige = -2
+
+}
+

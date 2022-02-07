@@ -1,0 +1,34 @@
+# 2986 - Cagliari
+
+latent_trade_goods = {
+	coal
+}
+
+owner = ARA
+controller = ARA
+culture = sardinian 
+religion = catholic 
+hre = no 
+base_tax = 3
+base_production = 3
+trade_goods = gold
+base_manpower = 1
+capital = "Cagliari" 
+is_city = yes # Estimated 
+add_core = SAR
+add_core = ARA
+
+
+
+discovered_by = western
+discovered_by = eastern
+discovered_by = muslim
+discovered_by = ottoman
+
+
+1444.11.11 = {
+	owner = SAR
+	controller = SAR
+	add_core = SAR
+	remove_core = ARA
+}

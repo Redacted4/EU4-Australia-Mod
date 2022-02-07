@@ -1,0 +1,5 @@
+﻿l_english:
+ cb_hundred_years_war:0 "Hundred Years War"
+ cb_hundred_years_war_desc:0 "Fight for the French Throne!"
+ HYW_wargoal:0 "HYW WARGOAL"
+ HYW_WAR_NAME:0 "$ORDER$$FIRST$-$SECOND$ War for the Control of France"

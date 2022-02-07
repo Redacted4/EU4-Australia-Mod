@@ -1,0 +1,38 @@
+country_decisions = {
+	
+	#Denmark joins HRE
+	exile_east_asia = {
+		major = yes
+		potential = {
+			tag = MNG
+		}
+		allow = {
+			tag = MNG
+		}
+		is_triggered_only = yes
+		effect = {
+			every_province = {
+				limit = {
+					OR = {
+						area = gansu_area
+						area = west_gansu_area
+						area = shaanxi_area
+						area = shanxi_area
+						area = north_henan_area
+					}
+				}
+				add_core = CSH
+				cede_province = CSH
+				change_controller = CSH
+			}
+		}
+		
+		ai_will_do = {
+			factor = 0
+		}
+	}
+	
+	
+	
+
+}
