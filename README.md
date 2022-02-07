@@ -33,6 +33,19 @@ After the above process, your changes can be added to the mainline mod, assuming
 
 Have fun modding. I suggest you discuss changes you'd like to make to the main mod beforehand, if you want to be sure your changes are included!
 
+# Local modding
+1. Open the EU4 Launcher
+2. Go to "all installed mods" on the sidebar
+3. Click on "upload mod"
+4. Click on "create mod"
+5. Name, version, tag and assign a path to the mod (eg. EU4AU, 0.01, mod/EU4AU, balance)
+6. Create the mod
+7. Open the mod folder path. It will probably look like this:
+"C:\Users\\[username]\Documents\Paradox Interactive\Europa Universalis IV\mod\EU4AU"
+8. Clone the git repositary to the created folder 
+9. Move the files inside the "EU4-Australia-Mod" folder up a level, so the file structure is:
+\mod\EU4AU\\[mod files], NOT \mod\EU4AU\EU4-Australia-Mod\\[modfiles]
+10. The mod should now be available in the launcher!
 
-
+Make changes to these files and they will be reflected in the mod on EU4 relaunch
 
