@@ -31,8 +31,6 @@ Create a branch, which you can add your changes to, and set it to track the GitH
 
 After the above process, your changes can be added to the mainline mod, assuming everyone else likes them :D
 
-
-GU
 Have fun modding. I suggest you discuss changes you'd like to make to the main mod beforehand, if you want to be sure your changes are included!
 
 
