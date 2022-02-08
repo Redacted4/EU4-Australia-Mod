@@ -7,13 +7,13 @@ hab_holy_roman_ambitions = {
 		tag = HAB
 	}
 	has_country_shield = yes
-	
+
 	secure_the_imperial_crown = {
 		icon = mission_alliances
 		required_missions = {  } #None
-		
+
 		completed_by = 1526.8.30
-		
+
 		provinces_to_highlight = {
 			OR = {
 				AND = {
@@ -102,9 +102,9 @@ hab_holy_roman_ambitions = {
 	subjugate_bohemia = {
 		icon = mission_empire
 		required_missions = { secure_the_imperial_crown }
-		
+
 		completed_by = 1526.8.30
-		
+
 		ai_weight = {
 			factor = 3
 			modifier = {
@@ -119,7 +119,7 @@ hab_holy_roman_ambitions = {
 		ai_priority = {
 			factor = 2
 		}
-		
+
 		provinces_to_highlight = {
 			OR = {
 				province_id = 266
@@ -145,7 +145,7 @@ hab_holy_roman_ambitions = {
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
-		
+
 		trigger = {
 			owns_or_non_sovereign_subject_of = 266
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
@@ -214,7 +214,7 @@ hab_holy_roman_ambitions = {
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-				
+
 			}
 			red_ruthenia_area = {
 				limit = {
@@ -355,8 +355,8 @@ hab_protect_the_balkans = {
 		tag = HAB
 	}
 	has_country_shield = yes
-	
-	
+
+
 	subjugate_hungary = { #Decline of Hungary
 		icon = mission_eastern_european_city
 		required_missions = {  } #None
@@ -436,7 +436,7 @@ hab_protect_the_balkans = {
 		ai_priority = {
 			factor = 2
 		}
-		
+
 		provinces_to_highlight = {
 			OR = {
 				area = slovakia_area
@@ -494,18 +494,21 @@ hab_protect_the_balkans = {
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT
+				remove_claim = ROOT
 			}
-			transdanubia_area = { 
+			transdanubia_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT
+				remove_claim = ROOT
 			}
 			alfold_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 				}
 				add_core = ROOT
+				remove_claim = ROOT
 			}
 			add_country_modifier = {
 				name = "royal_hungary"
@@ -518,7 +521,7 @@ hab_protect_the_balkans = {
 		required_missions = { austrian_hungary }
 		position = 6
 		completed_by = 1526.8.30
-		
+
 		ai_weight = {
 			factor = 1
 			modifier = {
@@ -662,19 +665,19 @@ hab_italian_ambitions = {
 	slot = 3
 	generic = no
 	ai = yes
-	
+
 	potential = {
 		tag = HAB
 		NOT = { map_setup = map_setup_random }
 	}
-	
+
 	has_country_shield = yes
-	
+
 	austrian_italian_ambition = {
 		icon = mission_italian_condottiere
 		position = 7
 		completed_by = 1797.10.17
-		
+
 		ai_weight = {
 			factor = 3
 			modifier = {
@@ -694,7 +697,7 @@ hab_italian_ambitions = {
 		ai_priority = {
 			factor = 5
 		}
-		
+
 		required_missions = { austrian_croatia }
 		provinces_to_highlight = {
 			area = venetia_area
