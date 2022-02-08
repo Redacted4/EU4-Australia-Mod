@@ -77,8 +77,16 @@ country_decisions = {
 					limit = { is_revolutionary = no }
 					add_government_reform = ottoman_government
 				}
+
 			}
 			remove_non_electors_emperors_from_empire_effect = yes
+			if = {
+				limit = {
+					NOT = { technology_group = ottoman }
+				}
+				change_technology_group = ottoman
+				change_unit_type = ottoman
+			}
 			if = {
 				limit = {
 					NOT = { government_rank = 2 }
@@ -108,5 +116,5 @@ country_decisions = {
 		}
 		ai_importance = 400
 	}
-	
+
 }
