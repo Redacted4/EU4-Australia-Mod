@@ -43,8 +43,9 @@ Have fun modding. I suggest you discuss changes you'd like to make to the main m
 7. Open the mod folder path. It will probably look like this:
 "C:\Users\\[username]\Documents\Paradox Interactive\Europa Universalis IV\mod\EU4AU"
 8. Clone the git repositary to the created folder 
-9. Move the files inside the "EU4-Australia-Mod" folder up a level, so the file structure is:
-\mod\EU4AU\\[mod files], NOT \mod\EU4AU\EU4-Australia-Mod\\[modfiles]
+9. Overwriting the existing mod descriptor file with the one included in the mod,
+move the files inside the "EU4-Australia-Mod" folder up a level, so the file structure is:  
+\mod\EU4AU\\[mod files], **NOT** \mod\EU4AU\EU4-Australia-Mod\\[modfiles]
 10. The mod should now be available in the launcher!
 
 Make changes to these files and they will be reflected in the mod on EU4 relaunch
