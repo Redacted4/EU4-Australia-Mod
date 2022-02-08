@@ -3,12 +3,12 @@ fleet_in_being =
 	can_select = {
 		is_primitive = no
 	}
-	
+
 	country_modifier = {
 		naval_maintenance_modifier = -0.15
 		naval_forcelimit_modifier = 0.15
 	}
-	
+
 	button_gfx = 1
 }
 
@@ -17,12 +17,12 @@ free_oarsmen =
 	can_select = {
 		is_primitive = no
 	}
-	
+
 	country_modifier = {
 		galley_power = 0.1
 		naval_morale = 0.05
 	}
-	
+
 	button_gfx = 2
 }
 
@@ -31,12 +31,12 @@ merchant_navy =
 	can_select = {
 		is_primitive = no
 	}
-	
+
 	country_modifier = {
 		global_ship_trade_power = 0.33
 		global_sailors_modifier = 0.15
 	}
-	
+
 	button_gfx = 3
 }
 
@@ -45,12 +45,12 @@ ship_boarding =
 	can_select = {
 		is_primitive = no
 	}
-	
+
 	country_modifier = {
 		capture_ship_chance = 0.33
 		privateer_efficiency = 0.33
 	}
-	
+
 	button_gfx = 4
 }
 
@@ -61,7 +61,7 @@ wooden_wall =
 		OR = {
 			culture_group = british
 			culture_group = newdutch
-			has_idea_group = maritime_ideas
+			#has_idea_group = maritime_ideas
 		}
 	}
 
@@ -103,8 +103,9 @@ portuguese_marines =
 
 	country_modifier = {
 		siege_blockade_progress = 1
-		global_naval_barrage_cost = -0.4
-		allowed_marine_fraction = 0.10
+		#global_naval_barrage_cost = -0.4
+		allowed_marine_fraction = 0.25
+		global_sailors_modifier = 0.25
 	}
 
 	button_gfx = 7
