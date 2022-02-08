@@ -1,6 +1,6 @@
 ﻿l_english:
  ##Edited National Ideas
- 
+
  galley_arsenal:0 "Arsenal des galères"
  galley_arsenal_desc:0 "Originally constructed under the rule of Louis XIV, the Arsenal des galères had facilities to rival even Venice and helped cement France as a major European naval power."
  relazioni:0 "Relazioni"
@@ -25,7 +25,7 @@
  mauritian_reforms_desc:0 "Under the watchful eye of Maurice of Orange, we have reformed the Dutch army from a ragtag bunch of freedom fighters into one of the most expertly drilled armies on the continent, capable of fending off any superpower intent on subjugating the lowlands."
 
  ## New Idea Sets
- 
+
  #Kalmar Ideas
  SCA_ideas:0 "Scandinavian Ideas"
  SCA_ideas_start:0 "Scandinavian Traditions"
@@ -44,7 +44,7 @@
  sca_seamen_desc:0 "We have centuries of experiance amongst the seas. From the discovery of Vinland to reaving coasts from England all the way to Iberia, we have never been afraid to sail past the horizon."
  sca_two_seas:0 "Control of the North and Baltic Seas"
  sca_two_seas_desc:0 "By controlling a stretch of coastline covering significant portions of both the North and Baltic seas, we are able to direct a significant amount of maritime trade."
- 
+
  #Corsican Ideas
  COR_ideas:0 "Corsican Ideas"
  COR_ideas_start:0 "Corsican Traditions"
@@ -63,7 +63,7 @@
  cor_galley_designs_desc:0 "Galleys are an incredibly important part of navies in the Mediterranean. They are fast, agile and deadly. By standardizing the designs for galleys we can produce them faster, cheaper and better."
  cor_diplomacy:0 "Ally of the French"
  cor_diplomacy_desc:0 "Historically, Corsica has often been allied to the French. The French are one of the most powerful European nations, so focusing on maintaining good relations with them would be a wise thing to do."
- 
+
  #Sardinian Ideas
  SAR_ideas:0 "Sardinian Ideas"
  SAR_ideas_start:0 "Sardinian Traditions"
@@ -82,7 +82,7 @@
  sar_university_desc:0 "Founded in 1607, the University of Cagliari was the first university on Sardinia, founded among the lines of old Spanish universities. It was shortly followed by the University of Sassari."
  sar_spanish_towers:0 "Spanish Towers"
  sar_spanish_towers_desc:0 "In the late 15th Century, the Spanish built a series of watchtowers along the Sardinian coast to protect the island against Ottoman incursions. This provided the island with a great deal of defense."
- 
+
  #Sicilian Ideas
  SIC_ideas:0 "Sicilian Ideas"
  SIC_ideas_start:0 "Sicilian Traditions"
@@ -101,7 +101,7 @@
  sic_faith_in_history_desc:0 "Our history is filled with attempted invasions of Sicily, both successful and unsuccessful.  Sicilians always persevere though and our armies stand at the ready for the next attempt."
  sic_silk_exports:0 "Silk Exports"
  sic_silk_exports_desc:0 "In the 17th Century, Sicily's silk exports exceeded its grain exports. By encouraging silk production we can profit!"
- 
+
  #Galicia-Volynian Ideas
  VOL_ideas:0 "Halych-Volynian Ideas"
  VOL_ideas_start:0 "Halych-Volynian Traditions"
@@ -120,7 +120,7 @@
  vol_chronicle_desc:0 "The Halych-Volhynian Chronicle recounts the legacy of Roman the Great and his descendants. Every ruler, whether or not they truly are legitimate, can claim descent from him."
  vol_reforms:0 "Reformation of the Principalities"
  vol_reforms_desc:0 "The Principalities of Halych-Volhynia must remain united to stand against the great nations of the west. To that end, the vassals of the Halych-Volhynian's have been granted more freedom of control under the Rex Russia."
- 
+
  #Egyptian Ideas
  EGY_ideas:0 "Egyptian Ideas"
  EGY_ideas_start:0 "Egyptian Traditions"
@@ -139,7 +139,7 @@
  egy_mamluks_legacy_desc:0 "Though they are no longer in control of the country's administration, we are still more than happy to fill the ranks of our armies with elite slave soldiers."
  egy_centre_of_learning:0 "Build a New Library of Alexandria"
  egy_centre_of_learning_desc:0 "By building a new library in Alexandria, we can collect all the knowledge this world has to offer."
- 
+
  #Dauphine Ideas
  DAU_ideas:0 "Dauphine Ideas"
  DAU_ideas_start:0 "Dauphine Traditions"
@@ -158,7 +158,7 @@
  dau_palace_desc:0 "Francois de Bonne, duc de Lesdiguieres was a great servent to our people.  Leading our armies against the Savoyard invaders and reconstructing the region he has brought a new zeal to our military from his Palace in Vizille."
  dau_tiles:0 "Day Of The Tiles"
  dau_tiles_desc:0 "A day that will live on in both revere and infamy throughout France.  The day of the tiles forced the French royal guard from our walls and allowed our parliament to remain.  It is through such actions our people defend our freedom and autonomy."
- 
+
  #Luxembourg Ideas
  lux_prestige:0 "The Emperors from Luxembourg"
  lux_prestige_desc:0 "Throughout the years the noble line of Luxembourg has produced many Holy Roman Emperors and our sons continue to be both candidates and sought after advisors for the crown."
@@ -174,7 +174,7 @@
  lux_trade_desc:0 "In 1136 Henry IV the Blind became Count of Luxembourg. He was moved by stories of poverty and starvation in the towns that had sprung up around Luxembourg Castle and set out to create work for the peasants by establishing large farms on land he owned. This made him well liked by his subjects and incredibly rich."
  lux_men:0 "Henry King of the Romans"
  lux_men_desc:0 "Count Henry VI of Luxembourg was crowned Holy Roman Emperor in 1312 and personally led an army into Italy to re-establish imperial authority. The Iron Crown was placed on his head in 1310 and he sought to confirm his newfound Italian throne, leading troops through Florence to the walls of Rome."
- 
+
  #Picard Ideas
  PIC_ideas:0 "Picardy Ideas"
  PIC_ideas_start:0 "Picardy Traditions"
@@ -193,7 +193,7 @@
  pic_picardy_wine_desc:0 "While not a celebrated as the Champaign region to Picardie’s south, the wine grown here is is some of the worlds best & the locals know it."
  pic_temple_of_reason:0 "Temple of Reason"
  pic_temple_of_reason_desc:0 "Picardy has always been a bell weather region for France & when the shoots of revolution began here it was no exception, during this time the great basilica was converted by devotees to the cult of reason into the temple of reason."
- 
+
  #Tirolian Ideas
  TIR_ideas:0 "Tyrolian Ideas"
  TIR_ideas_start:0 "Tyrolian Traditions"
@@ -212,7 +212,7 @@
  tir_convertion_desc:0 "After gaining our independence from Austria in 1444 we have always wanted to distance ourselves in anyway we can and 1517 has finaly given us that chance we shall convert and forever challenge our old overlord"
  tir_become_the_mountians:0 "Become the Mountians"
  tir_become_the_mountians_desc:0 "With our previous wars we have learned to love our mountain forts but we cannot bring them with us, so instead we shall just become the mountains"
- 
+
  #Angevin Ideas
  ANG_ideas:0 "Angevin Ideas"
  ANG_ideas_start:0 "Angevin Traditions"
@@ -231,7 +231,7 @@
  full_control_of_ec_desc:0 "Through securing absolute control over the English Channel we have achieved a stranglehold on trade in the region."
  ang_protect_achilles_heel:0 "Protect Our Achilles Heel"
  ang_protect_achilles_heel_desc:0 "With our Kingdom split in two by the Channel, we must maintain a sufficiently strong navy lest we lose grip on our continental possessions."
- 
+
  #Old Danish Ideas
  DAN_ideas:0 "Danish Ideas"
  DAN_ideas_start:0 "Danish Traditions"
@@ -250,7 +250,7 @@
  dan_c_hat_desc:0 "'If the hat on my head knew what i was thinking, I would pull it off and throw it away.'"
  dan_baltic_hegemony:0 "Baltic Hegemony"
  dan_baltic_hegemony_desc:0 "Having acquired ports throughout the Baltic the Danish devised a system of naval theatres to ensure that fleet strength in any area could match any potential threat. Because of this the Danes were able to rapidly respond to seaborne threats to any of its possessions."
- 
+
  #Lombardy Ideas
  LOM_ideas:0 "Lombard Ideas"
  LOM_ideas_start:0 "Lombard Traditions"
@@ -269,7 +269,7 @@
  lom_alps_desc:0 "Italy is threatended from many sides by hostile powers. Thankfully the Italian Alps provide a natural barrier to invasion. We must supplement these natural barriers with our own fortifications to ensure complete control of the fontier."
  lom_iron_crown:0 "The Iron Crown of Lombardy"
  lom_iron_crown_desc:0 "The recently rediscovered Iron Crown of Lombardy has added greater legitimacy to our rulers. Some say it is an act of God. Whether divine or not the discovery will certainly increase the prestiege of our state, and adds greater connections between our nation and its past."
- 
+
  #Latin Empire Ideas
  LTN_ideas:0 "Latin Ideas"
  LTN_ideas_start:0 "Latin Traditions"
@@ -288,7 +288,7 @@
  ltn_claims_desc:0 "By securing strategic marriages with claimants to the now defunct Byzantine Empire, we can strengthen our claim over these lands considerably."
  ltn_continue_crusade:0 "Continue the Crusade"
  ltn_continue_crusade_desc:0 "With Greece firmly back under our control, it is time to make amends for the mistakes of the past and continue our glorious Crusade to liberate the Holy Land from the dreaded Turk and Saracen."
- 
+
  #Illyrian Ideas
  YUG_ideas:0 "Illyrian Ideas"
  YUG_ideas_start:0 "Illyrian Traditions"
@@ -307,7 +307,7 @@
  yug_legions_desc:0 "Like our namesake Roman province, we must organise our army into legions to ensure the efficient aqquisition of able bodied men for our ever expanding armies."
  yug_hadjuks:0 "Recruit Hadjuks"
  yug_hadjuks_desc:0 "Once forced into banditry in a valiant effort to repel foriegn occupiers, these experienced and hardened men have exactly the sort of freedom loving spirit our army requires."
- 
+
  #Arabian Empire Ideas
  ARB_ideas:0 "Arabian Caliphate Ideas"
  ARB_ideas_start:0 "Arabian Traditions"
@@ -326,9 +326,9 @@
  arb_protector_of_islam_desc:0 "We have united much of the Muslim world under our banner."
  arb_new_caliphate:0 "A new Caliphate"
  arb_new_caliphate_desc:0 "We have grown powerful enough to proclaim the title of Caliph and our state as the successor to the Abbassid Caliphate. God is Great!"
- 
+
  #Malayan Ideas
- 
+
  MSA_ideas:0 "Malayan Ideas"
  MSA_ideas_start:0 "Malayan Traditions"
  MSA_ideas_bonus:0 "Malayan Ambition"
@@ -346,9 +346,9 @@
  msa_6_desc:0 "Our seas are full of countless chokepoints ripe for exploitation by our enemies if we do not maintain a sizeable enough naval presence."
  msa_7:0 "Seafaring Traditions"
  msa_7_desc:0 "Our Archipelago is home to thousands of islands and countless miles of coastline. To say we are at home in the oceans is an understatement."
- 
+
  #Chinese Empire Ideas
- 
+
  chinese_emperor_ideas:0 "Imperial Chinese Ideas"
  chinese_emperor_ideas_start:0 "Chinese Traditions"
  chinese_emperor_ideas_bonus:0 "Chinese Ambition"
@@ -366,10 +366,10 @@
  chi_middle_kingdom_desc:0 "Zhongguo, the Middle Kingdom, is more than a name, it's reflecting the extraordinary reputation of our civilisation, as long as we are seen as the Middle Kingdom, foreigners will respect us and listen to what we have to say."
  chi_hongyipao:0 "Hongyipao"
  chi_hongyipao_desc:0 "Originally sourced from the Red Barbarians, these new cannons have been reverse engineered and improved upon immensely. Their new allow construction makes them both lightweight and durable and gives our artillery an edge over any potential adverseries."
- 
- 
+
+
  #Idea Groups
- 
+
  #Infrastructure Ideas
  infrastructure_ideas:0 "Infrastructure Ideas"
  infrastructure_ideas_bonus:0 "Full Infrastructure Ideas"
@@ -387,7 +387,7 @@
  infra_trade_power_desc:0 "Our superior infrastructure attracts many foreign merchants who are keen to take advantage of the increased capacity of our roads."
  infra_embargo:0 "Highway Patrols"
  infra_embargo_desc:0 "Through heavy patrolling of our roads we can ensure travellers are safe from bandits and other ruffians and that illicit goods do not pass through our lands."
- 
+
  #Imperialist Ideas
  naval_ideas:0 "Imperialist Ideas"
  naval_ideas_bonus: "Full Imperialist Ideas"
@@ -401,10 +401,10 @@
  divide_and_conquer_desc:0 "By promoting division between our potential targets of expansion, we both significantly weaken them while simultaneously increase the demand of our well disciplined soldiers to intervene.  \n§YUnlocks a unique local mercenary company: Viceroyal Army§!\nWhich has the following modifiers:\nInfantry Combat Ability: §G+10%§!\nMercenary Cost: §G-25%§!\n§YHiring Mercenaries No Longer Affects Army Professionalism§!\n With the idea itself granting:"
  promote_military_castes:0 "Promote Military Castes"
  promote_military_castes_desc:0 "By promoting local militarists in our colonies, we will have a better supply of skilled and loyal troops for our overseas garrisons."
- 
+
  #Updated Idea Tooltips
  guerrilla_warfare_idea:0 "Guerrilla Warfare"
- guerrilla_warfare_idea_desc:0 "Desc"
+ guerrilla_warfare_idea_desc:0 "By training local patriots in the art of guerilla warfare, we shall become an ulcer on the heel of our enemies.\n§YAll owned forts permanently gain the §RScorched Earth§! modifer§!\nWith the idea itself granting: "
  marcher_lords_new:0 "Marcher Lords"
  marcher_lords_new_desc:0 "By granting considerable autonomy to vassals in border regions, these 'Marcher Lords' will be able to raise large military armies to support us in our wars. \n§YEach vassal/march now gives the following bonuses:§! \nAt 100 Dev: Force Limit: §G+10§!\nAt 200 Dev: Merchants: §G+1§!\nAt 300 Dev: Diplomatic Relations: §G+1§!\n§YWith the idea itself granting:§!"
  bill_of_rights_new:0 "Bill of Rights"
