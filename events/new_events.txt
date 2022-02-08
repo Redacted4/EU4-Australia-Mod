@@ -13,9 +13,9 @@ country_event = {
 	desc = new_events.1.d
 	picture = TRADEGOODS_eventPicture
 	fire_only_once = yes
-	
+
 	major = yes
-	
+
 	trigger = {
 		NOT = { has_global_flag = sugar_capital_happened }
 		any_owned_province = {
@@ -66,9 +66,9 @@ country_event = {
 		NOT = { has_country_modifier = cautious_banking_sector }
 	}
 
-	option = {		
+	option = {
 	name = new_events.2.a
-		add_country_modifier = { 
+		add_country_modifier = {
 			name = cautious_banking_sector
 			duration = 18250
 		}
@@ -84,44 +84,44 @@ country_event = {
 	title = "shattered_hre.t"
 	desc = "shattered_hre.d"
 	picture = TRADEGOODS_eventPicture
-	
+
 	fire_only_once = yes
 	major = yes
 	hidden = yes
-	
+
 	trigger = {
 		start_date = 1444.11.12
 	}
-	
+
 	option = {
 		name = shattered_hre.a
 		dismantle_hre = yes
 	}
 }
-	
+
 
 #Startup Event
 #+1 Stab at Start of game
 #Transports for England
 #Redistributes Electorships to players
-	
+
 country_event = {
 
 	id = new_events.4
 	title = "new_events_4.t"
 	desc = "new_events_4.d"
 	picture = TRADEGOODS_eventPicture
-	
+
 	fire_only_once = yes
-	
+
 	is_triggered_only = yes
-	
+
 	hidden = yes
-	
+
 	trigger = {
 		owns = 1
 	}
-	
+
 	immediate = {
 		every_country = {
 			add_yearly_manpower = 3
@@ -158,7 +158,7 @@ country_event = {
 			}
 			elector = yes
 		}
-		####Grants spare elector slots to AI 
+		####Grants spare elector slots to AI
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
@@ -199,42 +199,10 @@ country_event = {
 				elector = yes
 			}
 		}
-		
+
 	}
-	
+
 	option = {
 		name = free_stab_event
 	}
 }
-
-country_event = {
-
-	id = new_events.5
-	title = "new_events_5.t"
-	desc = "new_events_5.d"
-	picture = TRADEGOODS_eventPicture
-	
-
-	is_triggered_only = yes
-	
-	immediate = {
-	
-	}
-	
-	option = {
-		name = "PAP_levy_church_tax"
-		trigger = {
-			check_variable = {
-				which = papCardinalsActive
-				which = papBlessingsActive
-			}
-		}
-		add_dip_power = 20
-	}
-	
-	option = {
-		name = "PAP_no_blessing_option"
-		add_dip_power = 20
-	}
-}
-
