@@ -114,15 +114,15 @@ plutocracy_ideas = {
 
 horde_gov_ideas = {
 	category = MIL
-	
+
 	bonus = {
 		cavalry_power = 0.25
 	}
-	
+
 	trigger = {
 		has_reform = steppe_horde
 	}
-	
+
 	horse_lords_new = {
 		cavalry_cost = -0.33
 	}
@@ -138,13 +138,13 @@ horde_gov_ideas = {
 	horde_loyalty = {
 		global_unrest = -1
 	}
-	watchers_of_the_silk_road = {	
+	watchers_of_the_silk_road = {
 		caravan_power = 0.20
 	}
 	a_magnanimous_empire = {
 		num_accepted_cultures = 2
 	}
-	
+
 	ai_will_do = {
 		factor = 20
 	}
@@ -152,14 +152,14 @@ horde_gov_ideas = {
 
 theocracy_gov_ideas = {
 	category = MIL
-	
+
 	bonus = {
 		global_heretic_missionary_strength = 0.01
 		church_loyalty_modifier = 0.1
 		brahmins_hindu_loyalty_modifier = 0.1
 		brahmins_muslim_loyalty_modifier = 0.1
 	}
-	
+
 	trigger = {
 		government = theocracy
 	}
@@ -308,7 +308,7 @@ religious_ideas = {
 		prestige = 1
 	}
 	inquisition = {
-		global_tax_modifier = 0.1
+		global_tax_modifier = 0.2
 	}
 	deus_vult = {
 		cb_on_religious_enemies = yes
@@ -334,7 +334,7 @@ spy_ideas = {
 	state_propaganda = {
 		ae_impact = -0.2
 	}
-	
+
 	efficient_spies = {
 		spy_offence = 0.5
 		advisor_cost = -0.10
@@ -342,7 +342,7 @@ spy_ideas = {
 
 	agent_training_new = {
 		diplomats = 1
-		
+
 	}
 
 	guerrilla_warfare_idea = {
@@ -373,7 +373,7 @@ spy_ideas = {
 infrastructure_ideas = {
 	category = DIP
 	bonus = {
-		global_trade_goods_size_modifier = 0.1			 
+		global_trade_goods_size_modifier = 0.1
 	}
 
 	infra_production = {
@@ -423,7 +423,7 @@ offensive_ideas = {
 	glorious_arms = {
 		prestige_from_land = 1.0
 	}
-	
+
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.1
 	}
@@ -463,7 +463,7 @@ defensive_ideas = {
 	}
 	defensive_mentality = {
 		garrison_size = 0.25
-		own_coast_naval_combat_bonus = 1.0	
+		own_coast_naval_combat_bonus = 1.0
 	}
 	supply_trains = {
 		reinforce_speed = 0.33
@@ -532,7 +532,7 @@ economic_ideas = {
 	}
 
 	bureaucracy = {
-		global_tax_modifier = 0.20
+		global_tax_modifier = 0.10
 	}
 	organised_construction = {
 		build_cost = -0.1
@@ -861,7 +861,7 @@ quantity_ideas = {
 		global_supply_limit_modifier = 0.33
 	}
 	garrison_conscription = {
-		fort_maintenance_modifier = -0.20	
+		fort_maintenance_modifier = -0.20
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.1
@@ -1012,7 +1012,7 @@ humanist_ideas = {
 		tolerance_heathen = 3
 		tolerance_heretic = 3
 	}
-	
+
 	indirect_rule_new = {
 		years_of_nationalism = -10
 	}
@@ -1046,11 +1046,11 @@ influence_ideas = {
 	tribute_system = {
 		vassal_income = 0.25
 	}
-	
+
 	additional_loyalist_recruitment = {
 		reduced_liberty_desire = 15
 	}
-	
+
 	integrated_elites = {
 		diplomatic_annexation_cost = -0.25
 	}
