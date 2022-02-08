@@ -1,9 +1,9 @@
 #Brand New Decisons for Mod
 
 country_decisions = {
-	
+
 	#Free Colonist for 30 years
-	
+
 	new_colonial_charter = {
 
 		potential = {
@@ -19,7 +19,7 @@ country_decisions = {
 				south_america = { has_discovered = PREV }
 				new_world = { has_discovered = PREV }
 			}
-			NOT = { 
+			NOT = {
 				has_idea_group = expansion_ideas
 				has_idea_group = exploration_ideas
 			}
@@ -33,23 +33,23 @@ country_decisions = {
 			add_country_modifier = {
 				name = "colonial_charter"
 				duration = 9125
-			}	
+			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
 	}
-	
+
 	holy_orders_allowed_by_pope =  {
-	
+
 		potential = {
 			#NOT = {
 				has_country_modifier = holy_orders_allowed_pap
 			#}
 			religion = catholic
 		}
-		
+
 		allow = {
 			OR = {
 				PAP = { has_opinion = { who = root value = 150 } }
@@ -57,7 +57,7 @@ country_decisions = {
 			}
 			 papal_influence = 150
 		}
-		
+
 		effect = {
 			add_country_modifier = {
 				name = "holy_orders_allowed_pap"
@@ -65,20 +65,20 @@ country_decisions = {
 			}
 			add_papal_influence = -150
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-	
+
 	}
-	
+
 	reform_angevin_empire =  {
-	
+
 		potential = {
 			tag = ENG
 			NOT = { has_country_flag = reform_angevin_flag }
 			OR = {
-				ROOT = { has_country_flag = eng_had_end_of_hundred_years_war } 
+				ROOT = { has_country_flag = eng_had_end_of_hundred_years_war }
 				start_date = 1444.11.12
 			}
 		}
@@ -98,30 +98,30 @@ country_decisions = {
 			}
 		}
 		allow = {
-			normandy_area = { 
+			normandy_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
-			picardy_area = { 
+			picardy_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
-			ile_de_france_area = { 
+			ile_de_france_area = {
 				type = all
-				owned_by = ROOT 
+				owned_by = ROOT
 			}
 			OR = {
-				pyrenees_area = { 
+				pyrenees_area = {
 					type = all
-					owned_by = ROOT 
+					owned_by = ROOT
 				}
-				brittany_area = { 
+				brittany_area = {
 					type = all
-					owned_by = ROOT 
+					owned_by = ROOT
 				}
 			}
 		}
-		
+
 		effect = {
 			set_country_flag = reform_angevin_flag
 			add_prestige = 25
@@ -139,20 +139,20 @@ country_decisions = {
 				country_event = { id = ideagroups.1 } #Swap Ideas
 			}
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-	
+
 	}
-	
+
 	adopt_imperial_chinese_ideas =  {
-	
+
 		potential = {
 			NOT = { tag = MNG } #Ming
 			NOT = { tag = QNG }	#Qing
 			NOT = { tag = MCH }	#Manchu
-			NOT = { tag = YUA } #Yuan	
+			NOT = { tag = YUA } #Yuan
 			NOT = { tag = MGE } #Mongol Empire
 			NOT = { tag = PAP }
 			NOT = { tag = HLR }
@@ -160,35 +160,35 @@ country_decisions = {
 			has_idea_group = chinese_ideas #Generic Chinese Ideas
 			has_custom_ideas = no
 		}
-		
+
 		allow = {
 			is_emperor_of_china = yes
 		}
-		
+
 		effect = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
 		}
-		
+
 		ai_will_do = {
 			factor = 0
 		}
-	
+
 	}
-	
+
 	remove_mandate_of_heaven =  {
-	
+
 		potential = {
 			is_emperor_of_china = yes
 			ai = no
 		}
-		
+
 		allow = {
 			NOT = { imperial_mandate = 1 }
 			is_emperor_of_china = yes
 			is_at_war = no
 			ai = no
 		}
-		
+
 		effect = {
 			dismantle_empire_of_china = yes
 			add_country_modifier = {
@@ -198,72 +198,14 @@ country_decisions = {
 			add_prestige = -100
 			add_legitimacy = -100
 		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	
-	}
-	
-	free_scorched_earth =  {
-	
-		potential = {
-			is_at_war = yes
-			
-		}
-		
-		allow = {
-			ai = no
-		}
-		
-		effect = {
-			every_owned_province = {
-				limit = {
-					fort_level = 1
-					controlled_by = ROOT
-					NOT = { has_province_modifier = scorched_earth }
-				}
-				add_province_modifier = {
-					name = scorched_earth
-					duration = 1825
-				}
-			}
 
-		}
-		
 		ai_will_do = {
 			factor = 0
 		}
-	
-	}
-	
-	pope_papal_blessings = {
-	
-		potential = {
-			#tag = PAP
-		}
-		
-		allow = {
-			#is_papal_controller = yes
-		}
-		
-		effect = {
-			export_to_variable = {
-				which = papCardinalsActive
-				value = trigger_value:num_of_cardinals	
-			}
-			country_event = { 
-				id = new_events.5 #Pope Blesses Himself
-			}
 
-		}
-		
-		ai_will_do = {
-			factor = 0
-		}
-	
 	}
-	
-	
+
+
+
+
 }
-	
