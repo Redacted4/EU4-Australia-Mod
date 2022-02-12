@@ -26,7 +26,7 @@ groups = {
 	}
 	eastern = {
 		start_level = 3
-		start_cost_modifier = 0.20
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -43,7 +43,7 @@ groups = {
 	}
 	ottoman = {
 		start_level = 3
-		start_cost_modifier = 0.25
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -60,7 +60,7 @@ groups = {
 	}
 	muslim = {
 		start_level = 3
-		start_cost_modifier = 0.40
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -77,7 +77,7 @@ groups = {
 	}
 	indian = {
 		start_level = 3
-		start_cost_modifier = 0.5
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -94,7 +94,7 @@ groups = {
 	}
 	east_african = {
 		start_level = 3
-		start_cost_modifier = 0.5
+		start_cost_modifier = 0
 		nation_designer_unit_type = sub_saharan
 		nation_designer_cost = {
 			trigger = {
@@ -112,7 +112,7 @@ groups = {
 	}
 	central_african = {
 		start_level = 3
-		start_cost_modifier = 0.65
+		start_cost_modifier = 0
 		nation_designer_unit_type = sub_saharan
 		nation_designer_cost = {
 			trigger = {
@@ -130,7 +130,7 @@ groups = {
 	}
 	chinese = {
 		start_level = 3
-		start_cost_modifier = 0.6
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
@@ -147,7 +147,7 @@ groups = {
 	}
 	nomad_group = {
 		start_level = 3
-		start_cost_modifier = 0.75
+		start_cost_modifier = 0
 		nation_designer_trigger = {
 			has_reform = steppe_horde
 		}
@@ -167,7 +167,7 @@ groups = {
 	}
 	sub_saharan = { #West African
 		start_level = 3
-		start_cost_modifier = 0.6
+		start_cost_modifier = 0
 		nation_designer_cost = {
 			trigger = {
 				capital_scope = {
