@@ -19,80 +19,138 @@ country_event = {
 		}
 	}
 		
-	# Play Shun	
-	option = {
-		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
-		}
 	
-		name = "shatter_ming.1.a"
-		switch_tag = CSH
-		CSH = {country_event = { id = shatter_ming.4 days = 1}}
 
-
-	}
-
-	# Play Yi
+	# Colonize China
 	option = {
 		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
+			every_province = {
+				limit = {
+					is_core = CSH
+				}
+				cede_province = CSH
+			}
+			every_province = {
+				limit = {
+					is_core = CYI
+				}
+				cede_province = CYI
+			}
+			every_province = {
+				limit = {
+					is_core = WUU
+				}
+				cede_province = WUU
+			}
+			every_province = {
+				limit = {
+					is_core = CXI
+				}
+				cede_province = CXI
+			}
+			every_province = {
+				limit = {
+					is_core = CMI
+				}
+				cede_province = CMI
+			}
+			every_province = {
+				limit = {
+					is_core = MIN
+				}
+				cede_province = MIN
+			}
+			every_province = {
+				limit = {
+					is_core = YUE
+				}
+				cede_province = YUE
+			}
+			every_province = {
+				limit = {
+					is_core = SHU
+				}
+				cede_province = SHU
+			}
+			every_province = {
+				limit = {
+					is_core = NNG
+				}
+				cede_province = NNG
+			}
+			every_province = {
+				limit = {
+					is_core = CHC
+				}
+				cede_province = CHC
+			}
+			every_province = {
+				limit = {
+					is_core = TNG
+				}
+				cede_province = TNG
+			}
+			every_province = {
+				limit = {
+					is_core = QIC
+				}
+				cede_province = QIC
+			}
+			every_province = {
+				limit = {
+					is_core = YAN
+				}
+				cede_province = YAN
+			}
+			every_province = {
+				limit = {
+					is_core = JIN
+				}
+				cede_province = JIN
+			}
+			every_province = {
+				limit = {
+					is_core = LNG
+				}
+				cede_province = LNG
+			}
+			every_province = {
+				limit = {
+					is_core = QIN
+				}
+				cede_province = QIN
+			}
+			every_province = {
+				limit = {
+					is_core = HUA
+				}
+				cede_province = HUA
+			}
+			every_province = {
+				limit = {
+					is_core = LIO
+				}
+				cede_province = LIO
+			}
+			every_province = {
+				limit = {
+					is_core = CGS
+				}
+				cede_province = CGS
+			}
+			every_province = {
+				limit = {
+					is_core = CDL
+				}
+				cede_province = CDL
+			}
+			every_province = {
+				limit = {
+					is_core = KHA
+				}
+				cede_province = KHA
+			}
 		}
-		name = "shatter_ming.1.b"
-		switch_tag = CYI
-		CYI = {country_event = { id = shatter_ming.4 days = 1}}
-
-	}
-
-	# Play Yue
-	option = {
-		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
-		}
-
-		name = "shatter_ming.1.c"
-		switch_tag = YUE
-		YUE = {country_event = { id = shatter_ming.4 days = 1}}
-
-	}
-
-	# Play Yan
-	option = {
-		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
-		}
-
-		name = "shatter_ming.1.d"
-		switch_tag = YAN
-		YAN = {country_event = { id = shatter_ming.4 days = 1}}
-
-
-	}
-
-	# Play Chu
-	option = {
-		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
-		}
-	
-		name = "shatter_ming.1.e"
-		switch_tag = CHC
-		CHC = {country_event = { id = shatter_ming.4 days = 1}}
-
-
-	}
-
-	# Stay Ming
-	option = {
-		hidden_effect = {
-			country_event = { id = shatter_ming.2}
-			country_event = { id = shatter_ming.3}
-		}
-		country_event = {id = shatter_ming.4}
 		name = "shatter_ming.1.f"
 	}
 }
