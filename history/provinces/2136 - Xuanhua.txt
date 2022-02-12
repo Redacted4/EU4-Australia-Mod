@@ -1,8 +1,8 @@
 # 2136 - Xuanhua
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = jin
 religion = confucianism
 capital = "Xuanhua"
@@ -21,7 +21,7 @@ discovered_by = nomad_group
 1444.11.11 = {
 	remove_core = MNG
 	remove_core = YAN
-	owner = JIN
-	controller = JIN
+	#owner = JIN
+	#controller = JIN
 	add_core = JIN
 }

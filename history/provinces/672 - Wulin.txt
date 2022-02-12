@@ -1,8 +1,8 @@
 #672 - Chenzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = xiang
 religion = confucianism
 capital = "Wulin"
@@ -23,7 +23,7 @@ center_of_trade = 1
 	remove_core = SHU
 	remove_core = MNG
 	remove_core = CXI
-	owner = CHC
-	controller = CHC
+	#owner = CHC
+	#controller = CHC
 	add_core = CHC
 }

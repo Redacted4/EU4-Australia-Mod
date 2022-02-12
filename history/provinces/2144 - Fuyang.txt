@@ -1,8 +1,8 @@
 # 2144 - Fuyang
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = zhongyuan
 religion = confucianism
 capital = "Fuyang"
@@ -21,7 +21,7 @@ discovered_by = nomad_group
 1444.11.11 = {
 	remove_core = MNG
 	remove_core = QIC
-	owner = LNG
-	controller = LNG
+	#owner = LNG
+	#controller = LNG
 	add_core = LNG
 }

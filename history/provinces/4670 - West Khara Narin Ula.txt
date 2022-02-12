@@ -1,6 +1,6 @@
 
-owner = KHA
-controller = KHA
+#owner = KHA
+#controller = KHA
 add_core = KHA 
 culture = mongol
 religion = vajrayana
@@ -19,7 +19,7 @@ discovered_by = nomad_group
 	remove_core = MNG
 	remove_core = OIR
 	remove_core = CSH
-	owner = KHA
-	controller = KHA
+	#owner = KHA
+	#controller = KHA
 	add_core = KHA
 }

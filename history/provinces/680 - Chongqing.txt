@@ -1,8 +1,8 @@
 #680 - Chongqing
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = sichuanese
 religion = confucianism
 capital = "Chongqing"
@@ -22,7 +22,7 @@ center_of_trade = 1
 1444.11.11 = {
 	remove_core = SHU
 	remove_core = MNG
-	owner = CXI
-	controller = CXI
+	#owner = CXI
+	#controller = CXI
 	add_core = CXI
 }

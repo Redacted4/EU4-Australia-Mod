@@ -1,8 +1,8 @@
 #668 - Macau
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = cantonese
 religion = confucianism
 capital = "Macau"
@@ -23,7 +23,7 @@ center_of_trade = 1
 
 1444.11.11 = {
 	remove_core = MNG
-	owner = YUE
-	controller = YUE
+	#owner = YUE
+	#controller = YUE
 	add_core = YUE
 }

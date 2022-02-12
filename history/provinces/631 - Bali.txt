@@ -1,7 +1,7 @@
 #631 - Bali
 
-owner = MAJ
-controller = MAJ
+#owner = MAJ
+#controller = MAJ
 add_core = MAJ
 culture = javanese
 religion = hinduism
@@ -24,8 +24,8 @@ discovered_by = ottoman
 1405.1.1 = { discovered_by = MNG }
 
 1444.11.11 = {
-	owner = BLI
-	controller = BLI
+	#owner = BLI
+	#controller = BLI
 	add_core = BLI
 	remove_core = MAJ
 }

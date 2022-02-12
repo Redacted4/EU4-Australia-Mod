@@ -1,8 +1,8 @@
 #670 - Ganzhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = hakka
 religion = confucianism
 capital = "Ganzhou"
@@ -25,7 +25,7 @@ discovered_by = nomad_group
 	remove_core = NNG
 	remove_core = CHC
 	remove_core = CMI
-	owner = HUA
-	controller = HUA
+	#owner = HUA
+	#controller = HUA
 	add_core = HUA
 }

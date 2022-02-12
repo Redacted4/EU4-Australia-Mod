@@ -1,8 +1,8 @@
 # 2113 - Gaizhou
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = shandong_culture
 religion = confucianism
 capital = "Gaizhou"
@@ -20,8 +20,8 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = MNG
-	owner = LIO
-	controller = LIO
+	#owner = LIO
+	#controller = LIO
 	add_core = LIO
 }
 

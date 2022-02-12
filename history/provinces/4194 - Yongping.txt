@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = chihan
 religion = confucianism
 capital = "Yongping"
@@ -22,7 +22,7 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = MNG
-	owner = YAN
-	controller = YAN
+	#owner = YAN
+	#controller = YAN
 	add_core = YAN
 }

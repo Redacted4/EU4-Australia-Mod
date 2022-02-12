@@ -1,7 +1,7 @@
 #2391 - Thalang
 
-owner = LIG
-controller = LIG
+#owner = LIG
+#controller = LIG
 culture = malayan
 religion = sunni
 capital = "Thalang"

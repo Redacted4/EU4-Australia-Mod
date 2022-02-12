@@ -1,8 +1,8 @@
 # 2161 - Limchow
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = cantonese
 religion = confucianism
 capital = "Limchow"
@@ -18,7 +18,7 @@ discovered_by = indian
 1444.11.11 = {
 	remove_core = MNG
 	remove_core = YUE
-	owner = CGS
-	controller = CGS
+	#owner = CGS
+	#controller = CGS
 	add_core = CGS
 }

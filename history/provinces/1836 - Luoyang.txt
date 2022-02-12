@@ -4,9 +4,9 @@ latent_trade_goods = {
 	coal
 }
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = zhongyuan
 religion = confucianism
 capital = "Luoyang"
@@ -26,7 +26,7 @@ add_province_triggered_modifier = mahayana_louyang
 1444.11.11 = {
 	remove_core = MNG
 	remove_core = LNG
-	owner = TNG
-	controller = TNG
+	#owner = TNG
+	#controller = TNG
 	add_core = TNG
 }

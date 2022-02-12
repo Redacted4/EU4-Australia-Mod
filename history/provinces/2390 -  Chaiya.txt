@@ -1,7 +1,7 @@
 #2390 - Chaiya
 
-owner = LIG
-controller = LIG
+#owner = LIG
+#controller = LIG
 culture = central_thai
 religion = buddhism
 capital = "Chaiya"

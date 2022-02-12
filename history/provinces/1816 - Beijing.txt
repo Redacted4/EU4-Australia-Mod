@@ -1,8 +1,8 @@
 #1816 - Beijing
 
-owner = MNG
-controller = MNG
-add_core = MNG
+#owner = MNG
+#controller = MNG
+#add_core = MNG
 culture = chihan
 religion = confucianism
 capital = "Beijing"
@@ -22,7 +22,7 @@ center_of_trade = 2
 
 1444.11.11 = {
 	remove_core = MNG
-	owner = YAN
-	controller = YAN
+	#owner = YAN
+	#controller = YAN
 	add_core = YAN
 }
