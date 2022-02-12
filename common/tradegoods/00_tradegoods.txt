@@ -1009,6 +1009,10 @@ chinaware = {
 			NOT = { region = japan_region }
 		}
 		modifier = {
+			factor = 2.5
+			region = south_china_region
+		}
+		modifier = {
 			factor = 0
 			NOT = { development_discounting_tribal = 8 }
 		}
@@ -1632,6 +1636,10 @@ livestock = {
 		modifier = {
 			factor = 1.5
 			has_terrain = steppe
+		}
+		modifier = {
+			factor = 0.5
+			superregion = china_superregion
 		}
 		modifier = {
 			factor = 1.5
