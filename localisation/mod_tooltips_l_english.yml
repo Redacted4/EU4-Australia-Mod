@@ -26,6 +26,7 @@
  secure_the_imperial_crown_new.tooltip:0 " are voting for us as the next Emperor"
  AE_BELOW_25:0 "You cannot guarantee an AI nation that has more than 25 Agressive Expansion opinion towards you."
  RELATIONS_BELOW_100:0 "Opinion must be at least 100 to guarantee players."
+ colonial_expansion_limit_tooltip:0 "You can't colonize in East Asia until it has been activated by players"
  
  
  

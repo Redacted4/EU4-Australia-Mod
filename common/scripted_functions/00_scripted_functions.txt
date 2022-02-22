@@ -157,9 +157,31 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	condition = {
+		tooltip = "colonial_expansion_limit_tooltip"
+		potential = {
+               FROM = { num_of_colonists = 1 }
+           }
+		allow = {
+			ROOT = {
+				NOT = { superregion = china_superregion }
+			}
+		}
+	}
 }
 
 can_colonize_province_siberian_frontier = {
+	condition = {
+		tooltip = "colonial_expansion_limit_tooltip"
+		potential = {
+               FROM = { tag = RUS }
+           }
+		allow = {
+			ROOT = {
+				NOT = { province = 4266 }
+			}
+		}
+	}
 }
 
 can_add_seat_in_parliament = {
