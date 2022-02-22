@@ -3,7 +3,8 @@ add_government_reform = autocracy_reform
 technology_group = chinese
 religion = confucianism
 primary_culture = xibei
-capital = 699 # Lanzhou
+capital = 699 # Lanzhou 
+#capital = 689 # Fengyuan Old Capital
 
 1627.1.1 = {
 	monarch = {
