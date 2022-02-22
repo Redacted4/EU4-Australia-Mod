@@ -1,7 +1,7 @@
 #726 - Liaodong
 
-#owner = MNG
-#controller = MNG
+##owner = MNG
+##controller = MNG
 #add_core = MNG
 culture = manchu
 religion = confucianism
@@ -21,8 +21,8 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = MNG
-	#owner = LIO
-	#controller = LIO
+	##owner = LIO
+	##controller = LIO
 	add_core = LIO
 }
 
