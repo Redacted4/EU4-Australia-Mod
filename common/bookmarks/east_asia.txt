@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "EAST_ASIA_SLOTS"
+	desc = "EAST_ASIA_SLOTS_DESC"
+	date = 1444.11.11
+	
+	center = 685
+	default = no
+
+	country = CSH
+	country = MNG
+	country = ASK
+	country = KHA
+	country = MJZ
+	country = KOR
+
+}

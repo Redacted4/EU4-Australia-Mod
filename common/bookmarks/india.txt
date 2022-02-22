@@ -1,0 +1,17 @@
+bookmark =
+{
+	name = "INDIA_SLOTS"
+	desc = "INDIA_SLOTS_DESC"
+	date = 1444.11.11
+	
+	center = 2092
+	default = no
+
+	country = VIJ
+	country = BNG
+	country = JNP
+	country = SRH 
+	country = ORI 
+	country = GUJ
+
+}

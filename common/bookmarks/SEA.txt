@@ -1,0 +1,10 @@
+bookmark =
+{
+	name = "SEA_SLOTS"
+	desc = "SEA_SLOTS_DESC"
+	date = 1444.11.11
+	
+	center = 4804
+	default = no
+
+}
