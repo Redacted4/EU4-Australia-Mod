@@ -144,12 +144,189 @@ country_event = {
 				}
 				cede_province = CDL
 			}
+			
+			#Steppes
+			every_province = {
+				limit = {
+					is_core = CHG
+				}
+				cede_province = CHG
+			}
+			every_province = {
+				limit = {
+					is_core = OIR
+				}
+				cede_province = OIR
+			}
 			every_province = {
 				limit = {
 					is_core = KHA
 				}
 				cede_province = KHA
 			}
+			every_province = {
+				limit = {
+					is_core = MJZ
+				}
+				cede_province = MJZ
+			}
+			every_province = {
+				limit = {
+					is_core = MHX
+				}
+				cede_province = MHX
+			}
+			every_province = {
+				limit = {
+					is_core = KAS
+				}
+				cede_province = KAS
+			}
+			every_province = {
+				limit = {
+					is_core = KRC
+				}
+				cede_province = KRC
+			}
+			every_province = {
+				limit = {
+					is_core = MYR
+				}
+				cede_province = MYR
+			}
+			every_province = {
+				limit = {
+					is_core = EJZ
+				}
+				cede_province = EJZ
+			}
+			every_province = {
+				limit = {
+					is_core = NVK
+				}
+				cede_province = NVK
+			}
+			every_province = {
+				limit = {
+					is_core = SOL
+				}
+				cede_province = SOL
+			}
+			every_province = {
+				limit = {
+					is_core = NHX
+				}
+				cede_province = NHX
+			}
+			every_province = {
+				limit = {
+					is_core = HMI
+				}
+				cede_province = HMI
+			}
+			#China and Korea
+			every_province = {
+				limit = {
+					is_core = KOR
+				}
+				cede_province = KOR
+			}
+			every_province = {
+				limit = {
+					is_core = ASK
+				}
+				cede_province = ASK
+			}
+			every_province = {
+				limit = {
+					is_core = DTE
+				}
+				cede_province = DTE
+			}
+			every_province = {
+				limit = {
+					is_core = UES
+				}
+				cede_province = UES
+			}
+			every_province = {
+				limit = {
+					is_core = SMZ
+				}
+				cede_province = SMZ
+			}
+			every_province = {
+				limit = {
+					is_core = HSK
+				}
+				cede_province = HSK
+			}
+			every_province = {
+				limit = {
+					is_core = ODA
+				}
+				cede_province = ODA
+			}
+			every_province = {
+				limit = {
+					is_core = OUC
+				}
+				cede_province = OUC
+			}
+			every_province = {
+				limit = {
+					is_core = AIN
+				}
+				cede_province = AIN
+			}
+			
+			}
+			#Tibet
+			every_province = {
+				limit = {
+					is_core = SYG
+				}
+				cede_province = SYG
+			}
+			every_province = {
+				limit = {
+					is_core = LWA
+				}
+				cede_province = LWA
+			}
+			every_province = {
+				limit = {
+					is_core = UTS
+				}
+				cede_province = UTS
+			}
+			every_province = {
+				limit = {
+					is_core = KAM
+				}
+				cede_province = KAM
+			}
+			every_province = {
+				limit = {
+					is_core = GUG
+				}
+				cede_province = GUG
+			}
+			every_province = {
+				limit = {
+					is_core = PHA
+				}
+				cede_province = PHA
+			}
+			every_province = {
+				limit = {
+					is_core = LDK
+				}
+				cede_province = LDK
+			}
+
+
+			
 		}
 		name = "shatter_ming.1.f"
 	}

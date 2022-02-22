@@ -1,31 +1,331 @@
 country_decisions = {
 	
-	#Denmark joins HRE
+	#Fill out East Asia
 	exile_east_asia = {
 		major = yes
 		potential = {
-			tag = MNG
+			OR = {
+				tag = MNG
+				tag = MJZ
+				tag = ASK
+				tag = CSH
+				tag = KHA
+				tag = KOR
+			}
 		}
 		allow = {
 			tag = MNG
 		}
 		is_triggered_only = yes
 		effect = {
-			every_province = {
-				limit = {
-					OR = {
-						area = gansu_area
-						area = west_gansu_area
-						area = shaanxi_area
-						area = shanxi_area
-						area = north_henan_area
+				every_province = {
+					limit = {
+						is_core = CSH
 					}
+					cede_province = CSH
 				}
-				add_core = CSH
-				cede_province = CSH
-				change_controller = CSH
+				every_province = {
+					limit = {
+						is_core = CYI
+					}
+					cede_province = CYI
+				}
+				every_province = {
+					limit = {
+						is_core = WUU
+					}
+					cede_province = WUU
+				}
+				every_province = {
+					limit = {
+						is_core = CXI
+					}
+					cede_province = CXI
+				}
+				every_province = {
+					limit = {
+						is_core = CMI
+					}
+					cede_province = CMI
+				}
+				every_province = {
+					limit = {
+						is_core = MIN
+					}
+					cede_province = MIN
+				}
+				every_province = {
+					limit = {
+						is_core = YUE
+					}
+					cede_province = YUE
+				}
+				every_province = {
+					limit = {
+						is_core = SHU
+					}
+					cede_province = SHU
+				}
+				every_province = {
+					limit = {
+						is_core = NNG
+					}
+					cede_province = NNG
+				}
+				every_province = {
+					limit = {
+						is_core = CHC
+					}
+					cede_province = CHC
+				}
+				every_province = {
+					limit = {
+						is_core = TNG
+					}
+					cede_province = TNG
+				}
+				every_province = {
+					limit = {
+						is_core = QIC
+					}
+					cede_province = QIC
+				}
+				every_province = {
+					limit = {
+						is_core = YAN
+					}
+					cede_province = YAN
+				}
+				every_province = {
+					limit = {
+						is_core = JIN
+					}
+					cede_province = JIN
+				}
+				every_province = {
+					limit = {
+						is_core = LNG
+					}
+					cede_province = LNG
+				}
+				every_province = {
+					limit = {
+						is_core = QIN
+					}
+					cede_province = QIN
+				}
+				every_province = {
+					limit = {
+						is_core = HUA
+					}
+					cede_province = HUA
+				}
+				every_province = {
+					limit = {
+						is_core = LIO
+					}
+					cede_province = LIO
+				}
+				every_province = {
+					limit = {
+						is_core = CGS
+					}
+					cede_province = CGS
+				}
+				every_province = {
+					limit = {
+						is_core = CDL
+					}
+					cede_province = CDL
+				}
+				
+				#Steppes
+				every_province = {
+					limit = {
+						is_core = CHG
+					}
+					cede_province = CHG
+				}
+				every_province = {
+					limit = {
+						is_core = OIR
+					}
+					cede_province = OIR
+				}
+				every_province = {
+					limit = {
+						is_core = KHA
+					}
+					cede_province = KHA
+				}
+				every_province = {
+					limit = {
+						is_core = MJZ
+					}
+					cede_province = MJZ
+				}
+				every_province = {
+					limit = {
+						is_core = MHX
+					}
+					cede_province = MHX
+				}
+				every_province = {
+					limit = {
+						is_core = KAS
+					}
+					cede_province = KAS
+				}
+				every_province = {
+					limit = {
+						is_core = KRC
+					}
+					cede_province = KRC
+				}
+				every_province = {
+					limit = {
+						is_core = MYR
+					}
+					cede_province = MYR
+				}
+				every_province = {
+					limit = {
+						is_core = EJZ
+					}
+					cede_province = EJZ
+				}
+				every_province = {
+					limit = {
+						is_core = NVK
+					}
+					cede_province = NVK
+				}
+				every_province = {
+					limit = {
+						is_core = SOL
+					}
+					cede_province = SOL
+				}
+				every_province = {
+					limit = {
+						is_core = NHX
+					}
+					cede_province = NHX
+				}
+				every_province = {
+					limit = {
+						is_core = HMI
+					}
+					cede_province = HMI
+				}
+				#China and Korea
+				every_province = {
+					limit = {
+						is_core = KOR
+					}
+					cede_province = KOR
+				}
+				every_province = {
+					limit = {
+						AND = {
+							is_core = ASK
+							NOT = { province = 1020 }
+						}
+					}
+					cede_province = ASK
+				}
+				every_province = {
+					limit = {
+						is_core = DTE
+					}
+					cede_province = DTE
+				}
+				every_province = {
+					limit = {
+						is_core = UES
+					}
+					cede_province = UES
+				}
+				every_province = {
+					limit = {
+						is_core = SMZ
+					}
+					cede_province = SMZ
+				}
+				every_province = {
+					limit = {
+						is_core = HSK
+					}
+					cede_province = HSK
+				}
+				every_province = {
+					limit = {
+						is_core = ODA
+					}
+					cede_province = ODA
+				}
+				every_province = {
+					limit = {
+						is_core = OUC
+					}
+					cede_province = OUC
+				}
+				every_province = {
+					limit = {
+						is_core = AIN
+					}
+					cede_province = AIN
+				}
+				
+				
+				#Tibet
+				every_province = {
+					limit = {
+						is_core = SYG
+					}
+					cede_province = SYG
+				}
+				every_province = {
+					limit = {
+						is_core = LWA
+					}
+					cede_province = LWA
+				}
+				every_province = {
+					limit = {
+						is_core = UTS
+					}
+					cede_province = UTS
+				}
+				every_province = {
+					limit = {
+						is_core = KAM
+					}
+					cede_province = KAM
+				}
+				every_province = {
+					limit = {
+						is_core = GUG
+					}
+					cede_province = GUG
+				}
+				every_province = {
+					limit = {
+						is_core = PHA
+					}
+					cede_province = PHA
+				}
+				every_province = {
+					limit = {
+						is_core = LDK
+					}
+					cede_province = LDK
+				}
+
+
+			
 			}
-		}
+		
 		
 		ai_will_do = {
 			factor = 0
