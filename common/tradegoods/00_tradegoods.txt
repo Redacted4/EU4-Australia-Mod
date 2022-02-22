@@ -261,11 +261,11 @@ cloth = {
 		}
 		modifier = {
 			factor = 0
-			NOT = { development_discounting_tribal = 18 }
+			NOT = { development_discounting_tribal = 12 }
 		}
 		modifier = {
-			factor = 2.0
-			development_discounting_tribal = 22
+			factor = 5.0
+			development_discounting_tribal = 15
 		}
 	}
 }
@@ -1009,8 +1009,11 @@ chinaware = {
 			NOT = { region = japan_region }
 		}
 		modifier = {
-			factor = 2.5
-			region = south_china_region
+			factor = 1.5
+			OR = {
+				region = south_china_region
+				region = north_china_region
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1453,7 +1456,7 @@ silk = {
 			FROM = { NOT = { religion_group = eastern } }
 		}
 		modifier = {
-			factor = 1.5
+			factor = 10.0
 			normal_or_historical_nations = no
 			OR = {
 				region = south_china_region
@@ -1638,7 +1641,7 @@ livestock = {
 			has_terrain = steppe
 		}
 		modifier = {
-			factor = 0.5
+			factor = 0.25
 			superregion = china_superregion
 		}
 		modifier = {
