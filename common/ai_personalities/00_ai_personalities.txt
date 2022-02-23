@@ -1,3 +1,5 @@
+# Removed Reference to Diplomatic Ideas
+
 # New personalities cannot be added to this file
 # Do not change existing personality names!
 
@@ -128,10 +130,10 @@ ai_diplomat = {
 			factor = 1.1
 			spy_ideas = 1
 		}
-		modifier = {
-			factor = 1.1
-			diplomatic_ideas = 1
-		}	
+		#modifier = {
+		#	factor = 1.1
+		#	diplomatic_ideas = 1
+		#}	
 		modifier = {
 			factor = 1.1
 			innovativeness_ideas = 1
@@ -167,11 +169,11 @@ ai_diplomat = {
 			tag = PAP
 		}		
 		modifier = {
-			factor = 5
+			factor = 1.5
 			tag = MNG
 		}
 		modifier = {
-			factor = 10
+			factor = 1.5
 			tag = KOR
 		}
 		modifier = {
@@ -311,11 +313,11 @@ ai_militarist = {
 			tag = PAP
 		}		
 		modifier = {
-			factor = 0.5
+			factor = 0.75
 			tag = MNG
 		}
 		modifier = {
-			factor = 0.1
+			factor = 0.75
 			tag = KOR
 		}	
 		modifier = {
@@ -405,6 +407,10 @@ ai_colonialist = {
 		modifier = {
 			factor = 2
 			tag = SPA
+		}
+		modifier = {
+			factor = 0.5
+			tag = FRA
 		}
 	}
 	icon = 5

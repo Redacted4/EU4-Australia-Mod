@@ -267,7 +267,7 @@ colonial_governor = {
 	monarch_power = DIP
 	
 	# Bonus
-	global_tariffs = 0.10
+	global_colonial_growth = 20
 	
 	skill_scaled_modifier = { meritocracy = 0.25 }
 
@@ -344,6 +344,13 @@ army_reformer = {
 
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 10
+			owner = { 
+				is_at_war = yes 
+				NOT = { advisor = army_reformer }
+			}
+		}
 	}
 	
 	ai_will_do = {
@@ -380,6 +387,13 @@ commandant = {
 
 	chance = {
 		factor = 1
+		modifier = {
+			factor = 10
+			owner = { 
+				is_at_war = yes 
+				NOT = { advisor = commandant }
+			}
+		}
 	}
 	
 	ai_will_do = {

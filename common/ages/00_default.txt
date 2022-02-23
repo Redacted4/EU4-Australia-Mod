@@ -152,7 +152,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
-				cav_to_inf_ratio = 0.2
+				cavalry_cost = -0.15
 			}
 			ai_will_do = {
 				factor = 10
@@ -182,7 +182,7 @@ age_of_discovery = {
 		
 		ab_ottoman_siege_ability = {
 			allow = {
-				tag = TUR
+				primary_culture = turkish
 			}
 			modifier = {
 				siege_ability = 0.33
@@ -394,7 +394,7 @@ age_of_reformation = {
 	
 		ab_spain_tercio = {
 			allow = {
-				tag = SPA
+				culture_group = iberian
 			}
 			modifier = {
 				shock_damage_received = -0.3
@@ -403,9 +403,13 @@ age_of_reformation = {
 				factor = 100
 			}
 		}
-		ab_mughal_artillery = {
+		ab_gunpowder_empires = {
 			allow = {
-				tag = MUG
+				AND = {
+					religion_group = muslim
+					government_rank = 3
+					NOT = { tag = TUR }
+				}
 			}
 			modifier = {
 				artillery_cost = -0.5
@@ -430,12 +434,12 @@ age_of_reformation = {
 			}
 		}
 		
-		ab_persia_reinforce = {
+		ab_italian_condo = {
 			allow = {
-				tag = PER
+				culture_group = latin
 			}
 			modifier = {
-				reinforce_cost_modifier = -0.3
+				merc_maintenance_modifier = -0.5
 			}
 			ai_will_do = {
 				factor = 100
@@ -582,7 +586,10 @@ age_of_absolutism = {
 	
 		ab_france_fire_damage = {
 			allow = {
-				tag = FRA
+				AND = {
+					culture_group = french
+					absolutism = 20
+				}
 			}
 			modifier = {
 				fire_damage = 0.2
@@ -591,12 +598,12 @@ age_of_absolutism = {
 				factor = 100
 			}
 		}
-		ab_dutch_anti_corruption = {
+		ab_dutch_morale = {
 			allow = {
 				tag = NED
 			}
 			modifier = {
-				yearly_corruption = -0.2
+				naval_morale = 0.2
 			}
 			ai_will_do = {
 				factor = 100
@@ -782,7 +789,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				fire_damage_received = -0.2
+				fire_damage_received = -0.1
 			}
 			ai_will_do = {
 				factor = 100
