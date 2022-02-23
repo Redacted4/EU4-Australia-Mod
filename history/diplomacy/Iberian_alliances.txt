@@ -18,7 +18,7 @@ union = {
 union = {
 	first = CAS
 	second = ARA
-	start_date = 1444.11.11
+	start_date = 1479.9.4
 	end_date = 1516.1.23
 }
 
@@ -31,12 +31,12 @@ union = {
 }
 
 # Aragon and Sicily, Alfons V/Alfonso I
-#union = {
-#	first = ARA
-#	second = NAP
-#	start_date = 1442.3.3
-#	end_date = 1444.11.12
-#}
+union = {
+	first = ARA
+	second = NAP
+	start_date = 1442.3.3
+	end_date = 1458.6.27
+}
 
 # Aragon and Austria (League of Venice)
 alliance = {

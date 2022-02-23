@@ -251,136 +251,48 @@ invite_to_trade_league = {
 	}
 }
 
-takeondebt = {
+tributary_state_action = {
 	condition = {
-		tooltip = STOP_EXPLOITING
 		potential = {
-		}
-		allow = {
-			ROOT = {
-				NOT = { num_of_loans = 1 }
-			}
-		}
-	}
-}
-
-infiltrate_administration = {
-	condition = {
-		tooltip = DIP_TECH_NOT_30
-		potential = {
+			ai = yes
 		}
 		allow = {
 			OR = {
-				dip_tech = 30
-				has_idea = agent_training_new
-			}
-		}
-	}
-}
-
-stealmap = {
-	condition = {
-		tooltip = DIP_TECH_NOT_6
-		potential = {
-		}
-		allow = {
-			OR = {
-				dip_tech = 6
-				has_idea = agent_training_new
-			}
-		}
-	}
-}
-
-
-sow_discontent = {
-	condition = {
-		tooltip = DIP_TECH_NOT_18
-		potential = {
-		}
-		allow = {
-			OR = {
-				dip_tech = 18
-				has_idea = agent_training_new
-			}
-		}
-	}
-}
-
-sabotage_reputation = {
-	condition = {
-		tooltip = DIP_TECH_NOT_21
-		potential = {
-		}
-		allow = {
-			OR = {
-				dip_tech = 21
-				has_idea = agent_training_new
-			}
-		}
-	}
-}
-
-
-
-agitate_for_liberty = {
-	condition = {
-		tooltip = DIP_TECH_NOT_27
-		potential = {
-		}
-		allow = {
-			OR = {
-				dip_tech = 27
-				has_idea = agent_training_new
-			}
-		}
-	}
-}
-
-guaranteeaction = {
-	condition = {
-		tooltip = AE_BELOW_25
-		potential = {
-		}
-		allow = {
-			if = {
-				limit = {
-					FROM = { ai = yes }
+				NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					ROOT = { capital_scope = { superregion = china_superregion } }
+					NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
 				}
-				NOT = {
-					FROM = {
-						has_opinion_modifier = {
-							who = root
-							modifier = aggressive_expansion
-						}
-						NOT = {
-							has_opinion_modifier = {
-								who = root
-								modifier = aggressive_expansion
-								value = -25
-							}
-						}
-					}
+			}
+			OR = {
+				NOT = { ROOT = { capital_scope = { region = japan_region } } }
+				AND = {
+					ROOT = { capital_scope = { region = japan_region } }
+					NOT = { FROM = { capital_scope = { region = japan_region } } }
 				}
 			}
 		}
 	}
+}
+ask_for_tributary_state_action = {
 	condition = {
-		tooltip = RELATIONS_BELOW_100
 		potential = {
+			ai = yes
 		}
 		allow = {
-			if = {
-				limit = {
-					FROM = { ai = no }
+			OR = {
+				NOT = { FROM = { capital_scope = { superregion = china_superregion } } }
+				AND = {
+					FROM = { capital_scope = { superregion = china_superregion } }
+					NOT = { ROOT = { capital_scope = { superregion = china_superregion } } }
 				}
-				FROM = {
-					has_opinion = {
-						who = ROOT
-						value = 100
-					}
+			}
+			OR = {
+				NOT = { FROM = { capital_scope = { region = japan_region } } }
+				AND = {
+					FROM = { capital_scope = { region = japan_region } }
+					NOT = { ROOT = { capital_scope = { region = japan_region } } }
 				}
-				
 			}
 		}
 	}

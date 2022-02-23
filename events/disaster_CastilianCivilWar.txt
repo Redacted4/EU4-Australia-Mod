@@ -10,7 +10,7 @@ namespace = castilian_civil_war
 country_event = {
 	id = castilian_civil_war.1
 	title = "castilian_civil_war.1.t"
-	desc = "castilian_civil_war_mod.1.d"
+	desc = "castilian_civil_war.1.d"
 	picture = CIVIL_WAR_eventPicture
 
 	is_triggered_only = yes
@@ -21,6 +21,7 @@ country_event = {
 	
 	immediate = {
 		set_country_flag = had_cas_civil_war
+		add_stability = -2
 		hidden_effect = {
 			random_owned_province = {
 				limit = {
@@ -74,8 +75,8 @@ country_event = {
 		}
 	}
 	
-	option = {		# Support Joanna la Beltraneja Portuguese Candidate
-		name = "castilian_civil_war_mod.1.a"
+	option = {		# Support Portuguese Candidate (heir)
+		name = "castilian_civil_war.1.a"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -87,16 +88,7 @@ country_event = {
 		set_country_flag = civil_war_in_castile
 		set_country_flag = cas_portugal_candidate
 		custom_tooltip = "castilian_civil_war.1.a.tt"
-		define_ruler = {
-			name = "Joanna la Beltraneja"
-			dynasty = ROOT
-			culture = castillian
-			adm = 1
-			mil = 1
-			age = 17
-			female = yes
-		}
-		add_stability = -2
+		add_legitimacy = -20
 		random_owned_province = {
 			limit = {
 				has_province_flag = cas_civil_war_start
@@ -104,8 +96,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				friend = ARA
-				leader = "Isabella de Trastamara"
-				size = 3
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -133,8 +124,8 @@ country_event = {
 			country_event = { id = castilian_civil_war.3 days = 10 }
 		}
 	}
-	option = {		# Support Isabella de Trastamara Aragonese Candidate
-		name = "castilian_civil_war_mod.1.b"
+	option = {		# Support Aragonese Candidate
+		name = "castilian_civil_war.1.b"
 		ai_chance = {
 			factor = 1
 			modifier = {
@@ -146,16 +137,12 @@ country_event = {
 		custom_tooltip = "castilian_civil_war.1.b.tt"
 		set_country_flag = cas_aragon_candidate
 		set_country_flag = civil_war_in_castile
-		define_ruler = {
-			name = "Isabella"
-			dynasty = ROOT
-			culture = castillian
-			adm = 1
-			dip = 1
-			age = 23
-			female = yes
+		if = {
+			limit = { has_government_attribute = heir }
+			define_heir = {
+				dynasty = ROOT
+			}
 		}
-		add_stability = -2
 		random_owned_province = {
 			limit = {
 				has_province_flag = cas_civil_war_start
@@ -163,7 +150,7 @@ country_event = {
 			spawn_rebels = {
 				type = pretender_rebels
 				friend = POR
-				size = 3
+				size = 1
 				win = yes
 			}
 			clr_province_flag = cas_civil_war_start
@@ -177,7 +164,6 @@ country_event = {
 			}
 			spawn_rebels = {
 				friend = POR
-				leader = "Joanna de Trastamara"
 				type = pretender_rebels
 				size = 1
 				win = yes

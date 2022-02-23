@@ -10,7 +10,6 @@ hre = no
 base_tax = 3 
 base_production = 3
 base_manpower = 2
-estate = estate_nobles
 is_city = yes
 add_core = MAM
 
@@ -23,10 +22,4 @@ discovered_by = indian
 discovered_by = east_african
 
 
-1444.11.12 = {
-	remove_core = MAM
-	owner = KOJ		
-	controller = KOJ
-	add_core = KOJ
-	religion = catholic
-}
+1517.1.1 = { owner = TUR controller = TUR add_core = TUR } # Conquered by the Ottomans

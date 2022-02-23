@@ -2212,7 +2212,12 @@ country_event = {
 				controlled_by = THIS
 				is_capital = no
 				OR = {
-					
+					AND = {
+						is_claim = ROOT
+						any_neighbor_province = {
+							owned_by = root
+						}
+					}
 					is_core = ROOT
 				}
 			}

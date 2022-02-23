@@ -1,5 +1,3 @@
-#Changed legitimacy requirement to 50
-
 country_decisions = {
 
 	spanish_nation = {
@@ -201,7 +199,7 @@ country_decisions = {
 			is_free_or_tributary_trigger = yes
 			is_nomad = no
 			is_at_war = no
-			legitimacy = 50
+			legitimacy = 100
 			iberia_region = {
 				type = all
 				NOT = { owner = { religion_group = muslim } }

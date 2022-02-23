@@ -23,6 +23,7 @@ country_event = {
 			AND = {
 				tag = CAS
 				NOT = { war_with = ARA }
+				is_subject = no
 				ARA = {
 					exists = yes
 					ai = yes
@@ -31,12 +32,14 @@ country_event = {
 					is_neighbor_of = ROOT
 					NOT = { is_in_war = { attacker_leader = ARA } }
 					NOT = { is_in_war = { defender_leader = ARA } }
+					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 				}
 				num_of_cities = 25
 			}
 			AND = {
 				tag = ARA
 				NOT = { war_with = CAS }
+				is_subject = no
 				ai = no
 				CAS = {
 					exists = yes
@@ -46,6 +49,7 @@ country_event = {
 					is_neighbor_of = ROOT
 					NOT = { is_in_war = { attacker_leader = CAS } }
 					NOT = { is_in_war = { defender_leader = CAS } }
+					NOT = { is_in_war = { casus_belli = cb_independence_war } }
 				}
 				num_of_cities = 16
 			}
@@ -102,12 +106,6 @@ country_event = {
 		if = {
 			limit = { tag = CAS }
 			create_union = ARA
-			if = {
-				limit = {
-					NAV = { junior_union_with = ARA }
-				}
-				ARA = {inherit = NAV }
-			}
 			add_opinion = {
 				who = ARA
 				modifier = spa_iberian_wedding
@@ -364,7 +362,7 @@ country_event = {
 		add_years_of_income = -0.25
 		set_global_flag = columbus_happened
 		define_explorer = {
-			name = "Cristóbal Colón"
+			name = "NAME_CRISTOBAL_COLON"
 			fire = 2
 			shock = 2
 			manuever = 6
@@ -1764,6 +1762,15 @@ country_event = {
 			}
 		}
 		add_prestige = 10
+		if = {
+			limit = {
+				has_dlc = "Leviathan"
+			}
+			add_country_modifier = {
+				name = "alhambra_working_force"
+				duration = 3650
+			}
+		}
 	}
 }
 

@@ -702,6 +702,10 @@ gold = {
 				}
 			}
 		}
+		modifier = {
+			factor = 100
+			province_id = 856
+		}
 	}
 }
 
@@ -1065,9 +1069,11 @@ spices = {
 		}
 		modifier = {
 			factor = 1.25
-			region = malaya_region
-			region = indonesia_region
-			region = moluccas_region
+			OR = {
+				region = malaya_region
+				region = indonesia_region
+				region = moluccas_region
+			}
 		}
 		modifier = {
 			factor = 0
@@ -1917,7 +1923,10 @@ coal = {
 	rnw_latent_chance = 7 # Kind of on average how many provinces we want to spawn with it
 	
 	trigger = {
-		owner = { innovativeness = 50 }
+		OR = {
+			development_discounting_tribal = 20
+			owner = { innovativeness = 20 }
+		}
 		provincial_institution_progress = {
 			which = enlightenment
 			value = 100

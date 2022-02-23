@@ -1,10 +1,6 @@
 counts_feud = {
 	potential = {
-		OR = {
-			tag = DAN
-			tag = SCA
-		}
-		
+		tag = DAN
 		government = monarchy
 		normal_or_historical_nations = yes
 		is_free_or_tributary_trigger = yes

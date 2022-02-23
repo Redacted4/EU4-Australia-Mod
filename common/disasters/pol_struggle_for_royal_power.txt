@@ -11,7 +11,6 @@ pol_struggle_for_royal_power_disaster = {
 		current_age = age_of_absolutism
 		has_reform = elective_monarchy
 		has_regency = no
-		absolutism = 5
 	}
 	
 	can_stop = {

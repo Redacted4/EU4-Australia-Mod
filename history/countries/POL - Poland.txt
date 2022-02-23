@@ -8,32 +8,18 @@ historical_rival = TEU
 capital = 262 # Krakow
 add_accepted_culture = ruthenian
 
-national_focus = MIL
+national_focus = ADM
 
 1444.10.1 = {
 	set_estate_privilege = estate_nobles_golden_liberty
 }
 
-
 1444.11.11 = {
 	monarch = {
-		adm = 2
-		mil = 2
-		dip = 2
+		adm = 0
+		mil = 0
+		dip = 0
 		regent = yes
-	}
-}
-
-1444.1.1 = {
-	leader = {
-		name = "Piotr Dunin"
-		type = general
-
-		fire = 2
-		shock = 3
-		manuever = 3
-		siege = 1
-		death_date = 1484.1.1
 	}
 }
 
@@ -81,12 +67,24 @@ national_focus = MIL
 	add_heir_personality = silver_tongue_personality
 }
 
+1461.1.1 = {
+	leader = {
+		name = "Piotr Dunin"
+		type = general
 
+		fire = 2
+		shock = 3
+		manuever = 3
+		siege = 1
+		death_date = 1484.1.1
+	}
+}
 
 1465.1.1 = {
 	leader = {
 		name = "Feliks Paniewski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 2
@@ -99,7 +97,8 @@ national_focus = MIL
 1475.1.1 = {
 	leader = {
 		name = "Dobieslaw Kurozwecki"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 2
@@ -235,7 +234,8 @@ national_focus = MIL
 1521.1.1 = {
 	leader = {
 		name = "Jan Tarnowski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 4
 		manuever = 4
@@ -303,7 +303,8 @@ national_focus = MIL
 1560.1.1 = {
 	leader = {
 		name = "Sebastian Lubomirski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 3
 		manuever = 3
@@ -315,7 +316,8 @@ national_focus = MIL
 1565.1.1 = {
 	leader = {
 		name = "Andrzej Kurbski"
-		type = general
+		type = general
+
 		fire = 2
 		shock = 1
 		manuever = 3

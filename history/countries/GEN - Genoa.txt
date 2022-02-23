@@ -8,7 +8,6 @@ add_accepted_culture = greek
 religion = catholic
 technology_group = western
 capital = 101	# Genova
-historical_rival = VEN 
 fixed_capital = 101 # Cannot move capital away from this province & no power cost to move to it
 
 1394.1.1 = {

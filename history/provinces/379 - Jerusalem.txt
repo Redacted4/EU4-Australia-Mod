@@ -21,15 +21,12 @@ discovered_by = nomad_group
 discovered_by = indian
 discovered_by = east_african
 
-fort_15th = yes
-
 add_province_triggered_modifier = jerusalem_held
+add_province_triggered_modifier = promised_land_modifier
 
-
-1444.11.12 = {
-	remove_core = MAM
-	add_core = KOJ
-	controller = KOJ
-	owner = KOJ
-	religion = catholic
-}
+1517.1.1 = {
+	owner = TUR
+	controller = TUR
+	add_core = TUR
+} # Part of the Ottoman empire
+1750.1.1 = { add_core = SYR }

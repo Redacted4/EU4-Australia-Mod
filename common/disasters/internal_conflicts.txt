@@ -58,6 +58,7 @@ internal_conflicts = {
 	
 
 	modifier = {
+		stability_cost_modifier = 0.5
 		global_trade_goods_size_modifier = -0.33
 	}	
 	

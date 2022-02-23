@@ -237,12 +237,7 @@ country_event = {
 	}
 	
 	trigger = {
-		####Can only fire when a player controls the Curia
-		ROOT = {
-			is_papal_controller = yes
-		}
-		####
-		#tag = PAP
+		tag = PAP
 		
 		OR = {
 			POR = { has_country_modifier = the_societas_jesu }
@@ -279,16 +274,10 @@ country_event = {
 	option = {
 		name = "flavor_pap.EVTOPTA7"
 		add_prestige = 10
-		if = {
-			limit = {
-				tag = PAP
-			}
-			add_years_of_income = -0.5
-		}
+		add_years_of_income = -0.5
 		if = {
 			limit = {
 				corruption = 0.01
-				tag = PAP
 			}
 			add_corruption = -1
 		}

@@ -2,18 +2,18 @@
 
 graphical_culture = westerngfx
 
-color = { 234 217 110 }
-
-revolutionary_colors = { 10  0  5 } #Sicilian Separatist Flag
+color = { 154  153  157 }
+revolutionary_colors = { 15  6  16 } #Parthenopean Republic
 
 historical_idea_groups = {
-	innovativeness_ideas
-	religious_ideas
-	spy_ideas
-	offensive_ideas
-	defensive_ideas
+	maritime_ideas
 	trade_ideas
 	economic_ideas
+	defensive_ideas
+	diplomatic_ideas
+	spy_ideas
+	religious_ideas
+	administrative_ideas
 }
 
 historical_units = {

@@ -82,7 +82,7 @@ GER_ideas = {
 	}
 }
 
-#ENG_ideas = {
+ENG_ideas = {
 	start = {
 		infantry_power = 0.10 # agincourt
 		global_unrest = -1 # magna carta, parliament
@@ -112,7 +112,7 @@ GER_ideas = {
 	}
 	eng_red_coats = {
 		fire_damage = 0.1
-		allowed_marine_fraction = 0.05
+		allowed_marine_fraction = 0.25
 	}
 	sick_and_hurt_board = {
 		sailors_recovery_speed = 0.10
@@ -123,7 +123,7 @@ GER_ideas = {
 	}
 }
 
-#GBR_ideas = {
+GBR_ideas = {
 	start = {
 		naval_morale = 0.20
 		heavy_ship_power = 0.15
@@ -160,11 +160,11 @@ GER_ideas = {
 	britanna_rules_the_waves = {
 		leader_naval_manuever = 1
 		blockade_efficiency = 0.33
-		allowed_marine_fraction = 0.10
+		allowed_marine_fraction = 0.50
 	}
 }
 
-#SWE_ideas = {
+SWE_ideas = {
 	start = {
 		infantry_power = 0.2
 		merc_maintenance_modifier = -0.15
@@ -246,7 +246,7 @@ MOS_ideas = {
 }
 
 
-#RUS_ideas = {
+RUS_ideas = {
 	start = {
 		core_creation = -0.10
 		global_manpower_modifier = 0.33
@@ -289,7 +289,7 @@ MOS_ideas = {
 	}
 }
 
-#SPA_ideas = {
+SPA_ideas = {
 	start = {
 		land_morale = 0.15
 		artillery_fire = 1
@@ -330,10 +330,10 @@ MOS_ideas = {
 	}
 }
 
-#CAS_ideas = {
+CAS_ideas = {
 	start = {
 		land_morale = 0.15
-		allowed_marine_fraction = 0.05
+		allowed_marine_fraction = 0.25
 	}
 	bonus = {
 		global_colonial_growth = 25
@@ -368,7 +368,7 @@ MOS_ideas = {
 	}
 }
 
-#NED_ideas = {
+NED_ideas = {
 	start = {
 		global_sailors_modifier = 0.25
 		naval_forcelimit_modifier = 0.50
@@ -398,7 +398,7 @@ MOS_ideas = {
 	}
 	instructie_voor_de_admiraliteiten = {
 		leader_naval_fire = 2
-		allowed_marine_fraction = 0.05
+		allowed_marine_fraction = 0.25
 	}
 	embrace_humanism = {
 		tolerance_heretic = 3
@@ -412,7 +412,7 @@ MOS_ideas = {
 }
 
 
-#DAN_ideas = {
+DAN_ideas = {
 	start = {
 		ship_durability = 0.05
 		global_tax_modifier = 0.10
@@ -453,7 +453,7 @@ MOS_ideas = {
 }
 
 
-#FRA_ideas = {
+FRA_ideas = {
 	start = {
 		diplomatic_reputation = 1
 		global_manpower_modifier = 0.20
@@ -494,7 +494,7 @@ MOS_ideas = {
 }
 
 
-#TUR_ideas = {
+TUR_ideas = {
 	start = {
 		discipline = 0.05
 		tolerance_heathen = 3
@@ -930,7 +930,7 @@ VRN_ideas = {
 	}
 }
 
-#VEN_ideas = {
+VEN_ideas = {
 	start = {
 		global_sailors_modifier = 0.20
 		global_trade_power = 0.1
@@ -973,7 +973,7 @@ VRN_ideas = {
 }
 
 
-#PRU_ideas = {
+PRU_ideas = {
 	start = {
 		army_tradition = 0.5
 		ae_impact = -0.10
@@ -1014,7 +1014,7 @@ VRN_ideas = {
 	}
 }
 
-#BRA_ideas = {
+BRA_ideas = {
 	start = {
 		fabricate_claims_cost= -0.2
 		build_cost = -0.15
@@ -1054,10 +1054,10 @@ VRN_ideas = {
 	}
 }
 
-#POR_ideas = {
+POR_ideas = {
 	start = {
 		range = 0.25
-		trade_efficiency = 0.15
+		infantry_power = 0.1
 	}
 	
 	bonus = {
@@ -1070,7 +1070,7 @@ VRN_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		sunk_ship_morale_hit_recieved = -0.33
+		naval_morale = 0.1
 		disengagement_chance = 0.05
 	}
 	afonsine_ordinances = {
@@ -1083,7 +1083,7 @@ VRN_ideas = {
 		global_colonial_growth = 15
 	}
 	the_bandeirantes = {
-		merchants = 1
+		trade_efficiency = 0.15
 	}
 	royal_absolutism = {
 		build_cost = -0.15
@@ -1091,12 +1091,12 @@ VRN_ideas = {
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
-		artillery_power = 0.1
+		artillery_fire = 1
 	}
 }
 
 
-#POL_ideas = {
+POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
 		num_accepted_cultures = 1
@@ -1141,7 +1141,7 @@ VRN_ideas = {
 }
 
 
-#HAB_ideas = {
+HAB_ideas = {
 	start = {
 		land_morale = 0.10
 		improve_relation_modifier = 0.3
@@ -1508,7 +1508,7 @@ MAM_ideas = {
 }
 
 
-#NAP_ideas = {
+NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
 		trade_efficiency = 0.1 #One of the main trade port of the mediterrenean for much of the timeframe
@@ -1547,7 +1547,7 @@ MAM_ideas = {
 	}
 }
 
-#SIC_ideas = {
+SIC_ideas = {
 	start = {
 		land_morale = 0.1
 		global_manpower_modifier = 0.2
@@ -1988,7 +1988,7 @@ OMA_ideas = {
 }
 
 
-#KOR_ideas = {
+KOR_ideas = {
 	start = {
 		global_own_trade_power = 0.25
 		build_cost = -0.1
@@ -2004,7 +2004,7 @@ OMA_ideas = {
 	free = yes
 	
 	hanguel_alphabet = {
-		technology_cost = -0.05
+		technology_cost = -0.1
 	}
 	grand_code = {
 		stability_cost_modifier = -0.10
@@ -2028,7 +2028,7 @@ OMA_ideas = {
 }
 
 
-#BOH_ideas = {
+BOH_ideas = {
 	start = {
 		imperial_authority = 0.10
 		advisor_cost = -0.1
@@ -2068,7 +2068,7 @@ OMA_ideas = {
 }
 
 
-#ITA_ideas = {
+ITA_ideas = {
 	start = {
 		global_trade_power = 0.20
 		improve_relation_modifier = 0.50
@@ -2361,7 +2361,7 @@ ETH_ideas = {
 }
 
 
-#SAV_ideas = {
+SAV_ideas = {
 	start = {
 		diplomatic_upkeep = 1
 		improve_relation_modifier = 0.25
@@ -2731,7 +2731,7 @@ AVA_ideas = {
 }
 
 
-#GRA_ideas = {
+GRA_ideas = {
 	start = {
 		global_tax_modifier = 0.15
 		religious_unity = 0.25
@@ -2771,7 +2771,7 @@ AVA_ideas = {
 }
 
 
-#PAP_ideas = {
+PAP_ideas = {
 	start = {
 		diplomatic_reputation = 1
 		religious_unity = 0.25
@@ -3134,7 +3134,7 @@ TUS_ideas = {
 USA_ideas = {
 	start = {
 		merchants = 1
-		allowed_marine_fraction = 0.1
+		allowed_marine_fraction = 0.5
 	}
 	
 	bonus = {
@@ -6130,7 +6130,7 @@ CIR_ideas = {
 LXA_ideas = {
 	start = {
 		tolerance_own = 2
-		cavalry_cost = -0.1
+		cav_to_inf_ratio = 0.1
 	}
 	
 	bonus = {
@@ -6793,7 +6793,7 @@ CND_ideas = {
 	}
 }
 
-#BRZ_ideas = {
+BRZ_ideas = {
 	start = {
 		hostile_attrition = 1
 		envoy_travel_time = -0.25
@@ -8328,6 +8328,8 @@ ROM_ideas = {
 	start = {
 		discipline = 0.05
 		legitimacy = 1
+		devotion = 1
+		republican_tradition = 0.3
 	}
 	
 	bonus = {
@@ -8340,7 +8342,7 @@ ROM_ideas = {
 	free = yes
 	
 	pax_romana = {
-		global_unrest = -1
+		global_unrest = -2
 	}
 	legacy_of_rome = {
 		diplomatic_reputation = 2
@@ -8357,9 +8359,11 @@ ROM_ideas = {
 	}
 	imperial_bureaucracy = {
 		global_tax_modifier = 0.1
+		administrative_efficiency = 0.05
 	}
 	imperium_sine_fine = {
-		core_creation = -0.20
+		core_creation = -0.25
+		years_of_nationalism = -5
 	}
 }
 
@@ -11162,7 +11166,7 @@ FRN_ideas = {
 	}
 }
 
-#KOL_ideas = {
+KOL_ideas = {
 	start = {
 		global_manpower_modifier = 0.15
 		missionaries = 1
@@ -13326,7 +13330,7 @@ DLH_ideas = {
 	}
 }
 
-#BHA_ideas = {
+BHA_ideas = {
 	start = {
 		stability_cost_modifier = -0.1
 		state_maintenance_modifier = -0.15
@@ -13883,7 +13887,7 @@ SYN_ideas = {
 	}
 }
 
-#MOR_ideas = {
+MOR_ideas = {
 	start = {
 		may_perform_slave_raid = yes
 		naval_forcelimit_modifier = 0.25
@@ -13921,7 +13925,7 @@ SYN_ideas = {
 	}
 }
 
-#TUN_ideas = {
+TUN_ideas = {
 	start = {
 		may_perform_slave_raid = yes
 		galley_power = 0.2		
@@ -14020,7 +14024,7 @@ AUS_ideas = {
 	}
 	AUS_sandpaper_and_cheating = {
 		infantry_power = 0.1
-		allowed_marine_fraction = 0.1
+		allowed_marine_fraction = 0.5
 	}
 	AUS_royal_navy = {
 		global_ship_cost = -0.1
@@ -14419,7 +14423,7 @@ OIR_ideas = {
 }
 
 
-#KHA_ideas = {
+KHA_ideas = {
 	start = {
 		global_manpower_modifier = 0.25
 		years_of_nationalism = -5

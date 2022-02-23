@@ -3,7 +3,7 @@ guarantee = {
 	first = VEN
 	second = ALB
 	start_date = 1444.1.1
-	end_date = 1444.11.12
+	end_date = 1468.1.1
 }
 
 #Trebizond guaranteed by Georgia
@@ -11,7 +11,7 @@ guarantee = {
 	first = GEO
 	second = TRE
 	start_date = 1398.1.1
-	end_date = 1444.11.12
+	end_date = 1461.1.1
 }
 
 # Serbia and the Ottomans
@@ -116,7 +116,7 @@ vassal = {
 	first = BYZ
 	second = ATH
 	start_date = 1444.6.1
-	end_date = 1444.11.12
+	end_date = 1453.5.29
 }
 
 # Athens, a Morean vassal
@@ -257,12 +257,11 @@ vassal = {
 }
 
 # Ottoman vassal
-dependency = {
-	subject_type = "tributary_state"
+guarantee = {
 	first = TUR
 	second = RAG
 	start_date = 1444.1.1
-	end_date = 1444.11.12
+	end_date = 1528.1.1
 }
 
 vassal = {

@@ -1,11 +1,11 @@
 #######################################
 # Timurid Empire
 #######################################
-technology_group = nomad_group
+technology_group = muslim
 primary_culture = uzbehk
 religion = sunni
-government = tribal
-add_government_reform = steppe_horde
+government = monarchy
+add_government_reform = iqta
 capital = 454 # Samarkand
 religious_school = hanafi_school
 

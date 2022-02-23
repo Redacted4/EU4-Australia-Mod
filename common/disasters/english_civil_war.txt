@@ -25,13 +25,13 @@ english_civil_war = {
 	can_start = {
 		current_age = age_of_absolutism
 		has_any_disaster = no
-		NOT = {
-			estate_loyalty = {
-				estate = estate_nobles
-				 loyalty = 50
+		OR = {
+			NOT = { stability = 1 }
+			AND = {
+				current_size_of_parliament = 20
+				NOT = { stability = 2 }
 			}
 		}
-		absolutism = 5
 	}
 	
 	can_stop = {
@@ -39,10 +39,6 @@ english_civil_war = {
 			has_any_disaster = yes
 			stability = 3
 			NOT = { has_reform = english_monarchy }
-		}
-		estate_loyalty = {
-				estate = estate_nobles
-				 loyalty = 50
 		}
 	}
 	
@@ -66,24 +62,6 @@ english_civil_war = {
 		modifier = {
 			factor = 1
 			war_exhaustion = 5
-		} 
-		modifier = {
-			factor = 1
-			NOT = {
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 50
-				}
-			}
-		} 
-		modifier = {
-			factor = 2
-			NOT = {
-				estate_loyalty = {
-					estate = estate_nobles
-					loyalty = 30
-				}
-			}
 		} 
 	}
 	

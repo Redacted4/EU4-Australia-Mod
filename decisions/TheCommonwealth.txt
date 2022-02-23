@@ -65,6 +65,10 @@ country_decisions = {
 				limit = { NOT = { accepted_culture = lithuanian } }
 				add_accepted_culture = lithuanian
 			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -194,6 +198,10 @@ country_decisions = {
 				limit = { NOT = { accepted_culture = polish } }
 				add_accepted_culture = polish
 			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
+			}
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = { NOT = { government_rank = 2 } }
@@ -253,10 +261,6 @@ country_decisions = {
 			}
 			set_country_flag = formed_plc_flag
 			add_prestige = 25
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 		}
 		ai_will_do = {
 			factor = 1
@@ -348,6 +352,10 @@ country_decisions = {
 				}
 				add_accepted_culture = lithuanian
 			}
+			add_country_modifier = {
+				name = plc_polish_lithuanian_union
+				duration = -1
+			}
 			if = {
 				limit = {
 					poland_region = {
@@ -402,10 +410,6 @@ country_decisions = {
 			}
 			set_country_flag = formed_plc_flag
 			add_prestige = 25
-			if = {
-				limit = { has_custom_ideas = no }
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
 		}
 		ai_will_do = {
 			factor = 1

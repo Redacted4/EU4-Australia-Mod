@@ -23,7 +23,6 @@ eng_british_conquest = {
 			army_size_percentage = 1
 			manpower_percentage = 0.6
 			num_of_generals = 1
-			NOT = { war_with = FRA }
 		}
 		
 		effect = {
@@ -323,7 +322,7 @@ eng_french_conquest = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 			champagne_area = {
 				limit = {
@@ -404,7 +403,17 @@ eng_french_conquest = {
 		}
 		
 		effect = {
-			
+			if = {
+				limit = {
+					FRA = {
+						is_subject = NO
+					}
+				}
+				add_casus_belli = {
+					target = FRA
+					type = cb_hundred_years_union
+				}
+			}
 			if = {
 				limit = {
 					has_dlc = "Rule Britannia"
@@ -453,6 +462,16 @@ eng_french_conquest = {
 		}
 		
 		effect = {
+			if = {
+				limit = {
+					has_heir = yes
+					has_ruler_flag = henry_vi_lancaster
+					NOT = { has_country_flag = rb_gave_up_maine }
+				}
+				change_adm = 1
+				change_dip = 1
+				change_mil = 1
+			}
 			add_prestige = 25
 			add_country_modifier = {
 				name = "eng_french_recovery"

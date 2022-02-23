@@ -1,4 +1,3 @@
-
 tags={
 	"Balance"
 	"Fixes"
@@ -8,4 +7,4 @@ tags={
 }
 name="Test Mod"
 supported_version="1.32.*.*"
-path="C:/Users/jim/Documents/Paradox Interactive/Europa Universalis IV/mod/mod"
+path="C:/Users/Jordan/Documents/Paradox Interactive/Europa Universalis IV/mod/EU4AusMP"

@@ -24,6 +24,7 @@ change_estate_land_share = {
 	monarch = {
 		name = "Abu-Sa'id Uthman III"
 		dynasty = "Marinid"
+		birth_date = 1383.1.1
 		adm = 1
 		dip = 2
 		mil = 3
@@ -54,7 +55,7 @@ change_estate_land_share = {
 		mil = 1
 	}
 	capital = 343 # Fez
-	#set_estate_privilege = estate_nobles_strong_duchies
+	set_estate_privilege = estate_nobles_strong_duchies
 }
 
 1465.1.1 = {

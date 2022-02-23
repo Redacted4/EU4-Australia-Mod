@@ -1,7 +1,7 @@
 #115 - Pisa
 
-owner = LAN
-controller = LAN
+owner = PIS
+controller = PIS
 culture = tuscan
 religion = catholic
 hre = yes
@@ -20,9 +20,34 @@ discovered_by = ottoman
 extra_cost = 8
 center_of_trade = 1
 
-1444.11.12 = {
-	owner = PIS
-	controller = PIS
-	add_core = PIS
+1405.1.1 = { unrest = 0 owner = LAN revolt = { type = nationalist_rebels size = 1 } controller = REB }
+1406.10.9 = { revolt = {} controller = LAN }
+1494.1.1 = { controller = PIS owner = PIS } # Pisan Republic
+1495.1.1 = { hre = no }
+1509.1.1 = { controller = LAN owner = LAN } # Annexed back
+1527.1.1 = { controller = SPA } # War of the League of Cognac
+1529.8.3 = { controller = LAN } # Treaty of Cambrai
+1569.8.1 = {
+	owner = TUS
+	controller = TUS
+	add_core = TUS
 	remove_core = LAN
 }
+1801.2.9 = {
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+} # The Treaty of Lunéville
+1801.3.21 = {	owner = ETR
+	controller = ETR
+	add_core = ETR
+} # The Kingdom of Etruria
+1807.12.10 = {
+	owner = FRA
+	controller = FRA
+	remove_core = ETR
+} # Etruria is annexed to France
+1814.4.11 = {	owner = TUS
+	controller = TUS
+	remove_core = FRA
+} # Napoleon abdicates and Tuscany is restored

@@ -57,7 +57,6 @@ country_event = {
 			name = "Elizabeth"
 			dynasty = "Tudor"
 			culture = english
-			  
 			adm = 6
 			dip = 6
 			mil = 5
@@ -141,7 +140,6 @@ country_event = {
 		define_ruler = {
 			name = "Yekaterina"
 			dynasty = "Romanov"
-			  
 			adm = 6
 			dip = 6
 			mil = 5
@@ -224,7 +222,6 @@ country_event = {
 				name = "Kösem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
-			   
 				adm = 5
 				dip = 4
 				mil = 5
@@ -260,7 +257,6 @@ country_event = {
 				name = "Kösem Sultan"
 				dynasty = "Osmanoglu"
 				culture = ruthenian
-			   
 				adm = 5
 				dip = 4
 				mil = 5
@@ -336,7 +332,6 @@ country_event = {
 			name = "Maria Theresia"
 			dynasty = "von Habsburg"
 			culture = austrian
-			  
 			adm = 5
 			dip = 5
 			mil = 4
@@ -469,7 +464,6 @@ country_event = {
 			dynasty = "Vasa"
 			female = yes
 			culture = swedish
-			  
 			adm = 2
 			dip = 3
 			mil = 3
@@ -724,7 +718,79 @@ country_event = {
 	}
 }
 
+# Isabella of Castile (1451-1504)
+country_event = {
+	id = women_history_events.11
+	title = women_history_events.11.t
+	desc = women_history_events.11.d
+	picture = wihgfx_FEMALE_RULER_eventPicture
+	
+	fire_only_once = yes
 
+	trigger = {
+		OR = {
+			tag = SPA
+			AND = {
+				NOT = {
+					exists = SPA
+				}
+				tag = CAS
+			}
+		}
+		is_year = 1450
+		NOT = {
+			is_year = 1504
+		}
+		has_regency = no
+		has_government_attribute = heir
+		is_lesser_in_union = no
+		government = monarchy
+		NOT = {
+			has_disaster = castilian_civil_war
+		}
+	}
+	
+	mean_time_to_happen = {
+		months = 200
+	}
+	
+	option = {
+		name = women_history_events.11.a
+		add_meritocracy_effect = yes
+		define_heir = {
+			name = "Isabel"
+			dynasty = "de Trastámara"
+			culture = castillian
+			claim = 95
+			adm = 5
+			dip = 6
+			mil = 3
+			age = 23
+			female = yes
+		}
+		if = {
+			limit = {
+				has_dlc = "Rights of Man" 
+			}
+			hidden_effect = { add_heir_personality_ancestor = { key = expansionist } }	
+		}
+	}
+	option = {
+		name = women_history_events.11.b
+		add_adm_power = 100
+		add_dip_power = 100
+		add_mil_power = 100
+		add_meritocracy_effect = yes
+		define_advisor = {
+			female = yes
+			type = statesman
+			discount = yes
+			skill = 2
+			culture = castillian
+			name = "Isabel de Trastámara"
+		}
+	}
+}
 
 # Sophie Germain (1776 - 1831)
 country_event = {
@@ -876,7 +942,6 @@ country_event = {
 			name = "Catherine"
 			dynasty = "de' Medici"
 			culture = tuscan
-			  
 			adm = 4
 			dip = 2
 			mil = 3
@@ -950,7 +1015,6 @@ country_event = {
 		define_ruler = {
 			name = "Amalie Elisabeth"
 			culture = hessian
-			  
 			adm = 4
 			dip = 3
 			mil = 2
@@ -1174,7 +1238,6 @@ country_event = {
 	option = {
 		name = women_history_events.18.a
 		define_ruler = {
-			  
 			name = "Jeanne"
 			dynasty = "d'Albret"
 			culture = basque
@@ -1267,7 +1330,6 @@ country_event = {
 	option = {
 		name = women_history_events.19.a
 		define_ruler = {
-			  
 			name = "Nzinga Mbandi"
 			dynasty = "Ngola"
 			culture = kongolese
@@ -1348,7 +1410,6 @@ country_event = {
 	option = {
 		name = women_history_events.20.a
 		define_ruler = {
-			  
 			name = "Tarabai"
 			culture = marathi
 			dynasty = "Mohite"
@@ -1517,7 +1578,6 @@ country_event = {
 			adm = 3
 			dip = 4
 			mil = 5
-			  
 			culture = irish
 		}
 		if = {
@@ -1817,7 +1877,6 @@ country_event = {
 			name = "Margaret"
 			dynasty = "d'Anjou"
 			culture = cosmopolitan_french
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -1967,7 +2026,6 @@ country_event = {
 	option = {
 		name = women_history_events.29.a
 		define_ruler = { #Change to Queen
-			  
 			name = "Ayse Hafsa Sultan"
 			dynasty = "Osmanoglu"
 			culture = crimean
@@ -2050,7 +2108,6 @@ country_event = {
 			name = "Roshanara Begum"
 			dynasty = "Timurid"
 			culture = kanauji
-			  
 			adm = 3
 			dip = 2
 			mil = 4
@@ -2212,7 +2269,6 @@ country_event = {
 			name = "Abbakka"
 			dynasty = "Chowta"
 			culture = kannada
-			  
 			adm = 3
 			dip = 3
 			mil = 4
@@ -2341,7 +2397,6 @@ country_event = {
 			name = "Pari Khan Khanum"
 			dynasty = "Safavid"
 			culture = persian
-			  
 			adm = 3
 			dip = 3
 			mil = 4
@@ -2478,7 +2533,6 @@ country_event = {
 		define_ruler = {
 			name = "Amina"
 			dynasty = "Zazzau"
-			  
 			culture = hausa
 			dip = 4
 			adm = 5
@@ -2536,9 +2590,14 @@ country_event = {
 			is_year = 1510
 		}
 		is_female = no
-		has_regency = yes
+		OR = {
+			AND = {
+				has_regency = yes
+				government = monarchy
+			}
+			government = tribal
+		}
 		is_lesser_in_union = no
-		government = monarchy
 		NOT = {
 			has_global_flag = wih_mandukhaikhatun_flag
 		}
@@ -2573,7 +2632,6 @@ country_event = {
 		define_ruler = {
 			name = "Mandukhai Khatun"
 			dynasty = "Borjigin"
-			  
 			dip = 4
 			adm = 5
 			mil = 6
@@ -2641,13 +2699,28 @@ country_event = {
 	option = {
 		name = women_history_events.38.a
 		add_meritocracy_effect = yes
-		define_advisor = {
-			female = yes
-			type = philosopher
-			discount = yes
-			culture = vietnamese
-			skill = 2
-			name = "Ho Xuan Huong"
+		if = {
+			limit = {
+				primary_culture = vietnamese_new
+			}
+			define_advisor = {
+				female = yes
+				type = philosopher
+				discount = yes
+				culture = vietnamese_new
+				skill = 2
+				name = "Ho Xuan Huong"
+			}
+		}
+		else = {
+			define_advisor = {
+				female = yes
+				type = philosopher
+				discount = yes
+				culture = vietnamese
+				skill = 2
+				name = "Ho Xuan Huong"
+			}
 		}
 	}
 	option = {
@@ -2701,7 +2774,6 @@ country_event = {
 			name = "Inion Dubh"
 			dynasty = "Dhomhnaill"
 			culture = irish
-			  
 			dip = 4
 			adm = 5
 			mil = 4
@@ -2774,7 +2846,6 @@ country_event = {
 			name = "Durgavati"
 			dynasty = "Garha-Mandli"
 			culture = gondi
-			  
 			ADM = 3
 			DIP = 4
 			MIL = 5
@@ -3185,6 +3256,10 @@ country_event = {
 		OR = {
 			tag = QNG
 			tag = MNG
+			AND = {
+				has_reform = celestial_empire
+				culture_group = east_asian
+			}
 		}
 		is_year = 1613
 		NOT = {
@@ -3228,7 +3303,6 @@ country_event = {
 		define_ruler = {
 			name = "Xiaozhuang"
 			dynasty = "Aisin Gioro"
-			  
 			culture = chihan
 			adm = 4
 			dip = 4
@@ -3560,7 +3634,6 @@ country_event = {
 		define_ruler = {
 			name = "Ilona"
 			dynasty = "Zrinyi"
-			  
 			culture = croatian
 			adm = 3
 			dip = 4
@@ -3607,6 +3680,10 @@ country_event = {
 		OR = {
 			tag = QNG
 			tag = MNG
+			AND = {
+				has_reform = celestial_empire
+				culture_group = east_asian
+			}
 		}
 		is_year = 1768
 		NOT = {
@@ -4149,7 +4226,6 @@ country_event = {
 			name = "Mary"
 			dynasty = "von Habsburg"
 			culture = hungarian
-			  
 			adm = 4
 			dip = 5
 			mil = 3
@@ -4223,7 +4299,6 @@ country_event = {
 			name = "Margaret"
 			dynasty = "von Habsburg"
 			culture = austrian
-			  
 			adm = 4
 			dip = 3
 			mil = 3
@@ -4304,7 +4379,6 @@ country_event = {
 			name = "Isabella Clara Eugenia"
 			dynasty = "von Habsburg"
 			culture = castillian
-			  
 			adm = 4
 			dip = 3
 			mil = 3
@@ -4388,7 +4462,6 @@ country_event = {
 			name = "Urszula"
 			dynasty = "Meyerin"
 			culture = bavarian
-			  
 			adm = 3
 			dip = 4
 			mil = 2
@@ -4472,7 +4545,6 @@ country_event = {
 			name = "Elzbieta Helena"
 			dynasty = "Sieniawska"
 			culture = polish
-			  
 			adm = 3
 			dip = 4
 			mil = 2
@@ -4564,7 +4636,6 @@ country_event = {
 			name = "Marie Louise"
 			dynasty = "Gonzaga"
 			culture = burgundian
-			  
 			adm = 4
 			dip = 3
 			mil = 2
@@ -4644,7 +4715,6 @@ country_event = {
 			name = "Maria Carolina"
 			dynasty = "von Habsburg"
 			culture = austrian
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -5004,7 +5074,6 @@ country_event = {
 			name = "Tun Fatimah"
 			dynasty = "Srivijaya"
 			culture = malayan
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -5080,7 +5149,6 @@ country_event = {
 			name = "Khayr al-Nisa Begum"
 			dynasty = "Safavid" #Marashi
 			culture = mazandarani
-			  
 			adm = 5
 			dip = 4
 			mil = 2
@@ -5156,7 +5224,6 @@ country_event = {
 			name = "Sophia"
 			dynasty = "Romanov"
 			culture = russian
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -5346,7 +5413,6 @@ country_event = {
 		define_ruler = {
 			name = "Ratu Hijau"
 			dynasty = "Inland"
-			  
 			culture = malayan
 			adm = 4
 			dip = 3
@@ -5386,7 +5452,6 @@ country_event = {
 			name = "Ratu Biru"
 			dynasty = "Inland"
 			culture = malayan
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -5426,7 +5491,6 @@ country_event = {
 			name = "Ratu Ingu"
 			dynasty = "Inland"
 			culture = malayan
-			  
 			adm = 3
 			dip = 3
 			mil = 4
@@ -5505,7 +5569,6 @@ country_event = {
 		define_ruler = {
 			name = "Rani Mangammal"
 			dynasty = "Nayak"
-			  
 			culture = tamil
 			adm = 4
 			dip = 3
@@ -5710,7 +5773,6 @@ country_event = {
 			name = "Nur Jahan"
 			dynasty = "Timurid"
 			culture = afghani
-			  
 			adm = 3
 			dip = 4
 			mil = 4
@@ -6037,7 +6099,6 @@ country_event = {
 			name = "Ahilyabai"
 			dynasty = "Holkar"
 			culture = marathi
-			  
 			ADM = 6
 			DIP = 4
 			MIL = 2
@@ -6227,7 +6288,6 @@ country_event = {
 		define_ruler = {
 			name = "Mentewab"
 			dynasty = "Solomonid"
-			  
 			culture = amhara
 			adm = 3
 			dip = 4
@@ -6419,7 +6479,6 @@ country_event = {
 			name = "Elizaveta"
 			dynasty = "Romanov"
 			culture = russian
-			  
 			adm = 3
 			dip = 4
 			mil = 3
@@ -6511,7 +6570,6 @@ country_event = {
 			name = "Anna"
 			dynasty = Romanov
 			culture = russian
-			  
 			adm = 3
 			dip = 3
 			mil = 2
@@ -6599,7 +6657,6 @@ country_event = {
 			define_ruler = {
 				name = "Nurbanu Sultan"
 				dynasty = "Osmanoglu"
-			   
 				culture = greek
 				religion = sunni
 				adm = 4
@@ -6667,13 +6724,28 @@ country_event = {
 	option = {
 		name = women_history_events.98.a
 		add_meritocracy_effect = yes
-		define_advisor = {
-			name = "Heo Nanseolheon"
-			discount = yes
-			culture = korean
-			type = artist
-			skill = 2
-			female = yes
+		if = {
+			limit = {
+				primary_culture = korean_new
+			}
+			define_advisor = {
+				name = "Heo Nanseolheon"
+				discount = yes
+				culture = korean_new
+				type = artist
+				skill = 2
+				female = yes
+			}
+		}
+		else = {
+			define_advisor = {
+				name = "Heo Nanseolheon"
+				discount = yes
+				culture = korean
+				type = artist
+				skill = 2
+				female = yes
+			}
 		}
 	}
 	option = {

@@ -17,17 +17,26 @@ emp_gen_missions_general = {
 		icon = purely_for_commerce
 		required_missions = { }
 		trigger = {
-			# ally with two countries with capitals in Italy
-			custom_trigger_tooltip = {
-				tooltip = emp_lan_italian_league_tt
-				calc_true_if = {
-					all_ally = {
-						capital_scope = {
-							region = italy_region
-						}
+			if = {
+				limit = {
+					OR = {
+						has_reform = merchants_reform
+						has_reform = venice_merchants_reform
 					}
-					amount = 2
+					has_dlc = "Mare Nostrum"
 				}
+				is_trade_league_leader = yes
+
+				calc_true_if = {
+					desc = emp_gen_trade_league_tooltip
+					amount = 6
+					all_country = {
+						is_in_trade_league_with = ROOT
+					}
+				}
+			}
+			else = {
+				num_of_allies = 4
 			}
 		}
 		effect = {

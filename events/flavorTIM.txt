@@ -23,21 +23,13 @@ country_event = {
 		has_ruler = "Shah Rukh"
 	}
 
-	is_triggered_only = yes
-	
-	immediate = {
-		hidden_effect = {
-			remove_ruler_personality = immortal_personality
-			add_ruler_personality = architectural_visionary_personality
-		}
+	mean_time_to_happen = {
+		months = 1
 	}
 	
 	option = { 
 		name = "flavor_tim.0.a" #
 		custom_tooltip = flavor_tim.0.a.tt
-		
-		remove_ruler_personality = immortal_personality
-		add_ruler_personality = architectural_visionary_personality
 		
 		hidden_effect = {
 			every_country = {

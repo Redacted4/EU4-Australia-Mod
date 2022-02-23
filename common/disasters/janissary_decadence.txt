@@ -16,11 +16,11 @@ janissary_decadence = {
 					janissary_percentage = 0.15
 					num_of_janissaries = 20
 				}
-				janissary_percentage = 0.3
+				janissary_percentage = 0.2
 				else = {
 					custom_trigger_tooltip = {
-						tooltip = thirty_percent_janissaries
-						janissary_percentage = 0.3
+						tooltip = twenty_percent_janissaries
+						janissary_percentage = 0.2
 					}
 				}
 			}

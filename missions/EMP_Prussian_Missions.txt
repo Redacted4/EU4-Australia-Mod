@@ -37,14 +37,14 @@ emp_bra_pru_1 = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 			hinter_pommern_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
 				}
-				add_core = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}

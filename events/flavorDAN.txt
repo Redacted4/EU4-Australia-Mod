@@ -117,16 +117,15 @@ country_event = {
 	fire_only_once = yes
 	
 	trigger = {
-		NOT = { has_country_flag = dan_constitution }
 		tag = DAN
 		exists = SWE
 		SWE = {	is_subject_of = DAN }
-		is_year = 1470
+		is_year = 1450
 		NOT = { is_year = 1550 }		
 	}
 	
 	mean_time_to_happen = {
-		months = 60
+		months = 500
 	}
 	
 	option = {
@@ -135,12 +134,7 @@ country_event = {
 		add_adm_power = 100
 		add_dip_power = 100
 		add_mil_power = 100
-		add_country_modifier = {
-			name = kalmar_constitution
-			duration = -1
-		}
-		custom_tooltip = "flavor_dan.3287.tt"
-		
+		add_historical_rival = SWE
 		SWE = {
 			add_historical_rival = DAN
 			add_opinion = {
@@ -148,7 +142,6 @@ country_event = {
 				modifier = opinion_enforced_scandinavian_constitution
 			}
 		}
-		add_historical_rival = SWE
 	}
 	option = {
 		name = "flavor_dan.EVTOPTB3287"
@@ -1382,7 +1375,7 @@ country_event = {
 			factor = 75
 		}
 		add_years_of_income = 0.1
-		define_heir = { #Stats will be random.
+		define_heir = {
 			name = "Christian"
 			adm = 4
 			dip = 3

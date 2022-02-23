@@ -1009,6 +1009,7 @@ incorruptible_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = { ruler_has_personality = embezzler_personality }
+			NOT = { has_ruler_modifier = borgia_pope }
 			ADM = 3
 		}
 	
@@ -1707,7 +1708,7 @@ strict_personality = {
 	wants_avoid_loans = yes
 	wants_ecumenical_council = yes
 	
-	discipline = 0.025
+	discipline = 0.05
 
 	nation_designer_cost = 5
 } #1 easier event
@@ -2424,6 +2425,7 @@ sinner_personality = {
 		OR = {
 			religion_group = christian
 			religion_group = muslim
+			religion_group = jewish_group
 		}
 	}
 	

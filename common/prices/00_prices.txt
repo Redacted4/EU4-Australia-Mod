@@ -140,5 +140,5 @@ cloves = {
 }
 
 unknown = {
-	base_price = 1
+	base_price = 0
 }

@@ -3,19 +3,19 @@
 graphical_culture = easterngfx
 
 color = { 176  81  111 }
-
 revolutionary_colors = { 5  0  5 }
 
 historical_score = 1500
 
 historical_idea_groups = {
-	innovativeness_ideas
-	religious_ideas
-	spy_ideas
-	offensive_ideas
-	defensive_ideas
+	diplomatic_ideas
+	humanist_ideas	
 	trade_ideas
-	economic_ideas
+	offensive_ideas
+	administrative_ideas
+	defensive_ideas
+	aristocracy_ideas	
+	quality_ideas
 }
 
 historical_units = {
@@ -44,7 +44,6 @@ monarch_names = {
 	"Aleksander #0" = 20
 	"Henryk #0" = 20
 	"Jan #0" = 20
-	"Jan #0 Kazimierz" = 20
 	"Jan #0 Kazimierz" = 20
 	"Michal #0" = 20
 	"Stefan #0" = 20

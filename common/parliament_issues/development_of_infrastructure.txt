@@ -15,7 +15,7 @@ development_of_infrastructure = {
 	}
 	
 	chance = {
-		factor = 10
+		factor = 1
 		modifier = {
 			factor = 2
 			has_idea_group = economic_ideas

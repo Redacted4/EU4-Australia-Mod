@@ -23,19 +23,19 @@ discovered_by = north_american
 }
 1534.1.1 = { discovered_by = FRA } # Jacques Cartier	
 1620.1.1 = {
-	#owner = FRA
-	#controller = FRA
-	#add_core = FRA
-	#is_city = yes
+	owner = FRA
+	controller = FRA
+	add_core = FRA
+	is_city = yes
 	culture = cosmopolitan_french
 	religion = catholic
 	trade_goods = fish
 } # French fishermen dominate the southern coast and northern peninsula
-1645.1.1 = { #add_core = FRA }
+1645.1.1 = { add_core = FRA }
 1713.4.11 = {
-	#owner = GBR
-	#controller = GBR
-	#add_core = GBR
+	owner = GBR
+	controller = GBR
+	add_core = GBR
 	culture = english
 	religion = protestant
 	remove_core = FRA

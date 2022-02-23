@@ -372,7 +372,7 @@ flanders_area = { #3
 }
 
 frisia_area = { #5
-	99 100  4381 4382
+	99 100 1931 4381 4382
 }
 
 brabant_area = { #3
@@ -1033,7 +1033,7 @@ braunschweig_area = { #4
 }
    
 weser_area = { #4
-	54 55 1874 4771 1931
+	54 55 1874 4771
 }
 
 holstein_area = { #3

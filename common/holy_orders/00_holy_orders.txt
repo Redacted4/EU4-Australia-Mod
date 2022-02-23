@@ -1,11 +1,7 @@
 jesuit_order = {
     icon = GFX_holy_order_jesuits
     trigger = {
-        OR =  {
-			culture_group = iberian
-			tag = PAP 
-			has_country_modifier = holy_orders_allowed_pap
-		}
+        culture_group = iberian
         religion = catholic
     }
     cost = 50
@@ -32,11 +28,7 @@ jesuit_order = {
 dominican_order = {
     icon = GFX_holy_order_dominicans
     trigger = {
-        OR =  {
-			culture_group = iberian
-			tag = PAP 
-			has_country_modifier = holy_orders_allowed_pap
-		}
+        culture_group = iberian
         religion = catholic
     }
     cost = 50
@@ -78,11 +70,7 @@ dominican_order = {
 franciscan_order = {
     icon = GFX_holy_order_franciscans
     trigger = {
-        OR =  {
-			culture_group = iberian
-			tag = PAP 
-			has_country_modifier = holy_orders_allowed_pap
-		}
+        culture_group = iberian
         religion = catholic
     }
     cost = 50

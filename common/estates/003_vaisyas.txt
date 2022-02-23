@@ -7,9 +7,9 @@ estate_vaisyas = {
 		has_dlc = "Dharma"
 		technology_group = indian
 		religion = hinduism
-		
+		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = pirate_republic_reform }
-	
+		NOT = { has_reform = veche_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { has_reform = cossacks_reform }
@@ -27,13 +27,13 @@ estate_vaisyas = {
 	# These scale with loyalty & power
 	country_modifier_happy = {
 		advisor_cost = -0.1
-		production_efficiency = 0.2
+		production_efficiency = 0.33
 	}
 	country_modifier_neutral = {
-		production_efficiency = 0.2
+		production_efficiency = 0.33
 	}	
 	country_modifier_angry = {
-		production_efficiency = -0.2
+		production_efficiency = -0.33
 		global_unrest = 2
 	}
 	land_ownership_modifier = {
@@ -172,7 +172,7 @@ estate_vaisyas = {
 		estate_vaisyas_monopoly_of_dyes
 		estate_vaisyas_monopoly_of_glass
 		estate_vaisyas_monopoly_of_paper
-		estate_vaisyas_khmer_irrigation						 
+		estate_vaisyas_khmer_irrigation
 	}
 
 	agendas = {

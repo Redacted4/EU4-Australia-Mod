@@ -80,7 +80,7 @@ change_estate_land_share = {
 	}
 	clear_scripted_personalities = yes
 	add_ruler_personality = scholar_personality
-	add_ruler_personality = immortal_personality
+	add_ruler_personality = architectural_visionary_personality
 	add_ruler_personality = benevolent_personality
 	queen = {
 		name = "Goharshad"
@@ -99,51 +99,6 @@ change_estate_land_share = {
 }
 
 1444.6.1 = { #Serious illness of Shahrukh. Goharshad makes Firuzshah (governor of Balkh) swear bayqat to Ala al-Dawla
-	heir = {
-		name = "Ala al-Dawla Abd Allah"
-		dynasty = "Timurid"
-		birth_date = 1417.1.1
-		death_date = 1457.7.19
-		adm = 3
-		dip = 3
-		mil = 2
-	}
-}
-
-1444.11.12 = {
-	monarch = {
-		name = "Shah Rukh"
-		birth_date = 1377.8.20
-		dynasty = "Timurid"
-		adm = 4
-		dip = 3
-		mil = 5
-		culture = uzbehk
-		religion = sunni
-		leader = {
-			name = "Shah Rukh"
-			type = general
-			fire = 2
-			shock = 4
-			manuever = 3
-			siege = 1
-		}
-	}
-	clear_scripted_personalities = yes
-	add_ruler_personality = scholar_personality
-	add_ruler_personality = architectural_visionary_personality
-	add_ruler_personality = benevolent_personality
-	queen = {
-		name = "Goharshad"
-		birth_date = 1370.1.1
-		death_date = 1457.7.19
-		dynasty = "Tarkhan"
-		culture = persian
-		adm = 4
-		dip = 5
-		mil = 3
-	}
-	add_piety = -0.4
 	heir = {
 		name = "Ala al-Dawla Abd Allah"
 		dynasty = "Timurid"

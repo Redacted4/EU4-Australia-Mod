@@ -41,8 +41,8 @@ client_ideas = {
 
 colonial_ideas = {
 	start = {
-		global_missionary_strength = 0.02
-		tolerance_heretic = 3
+		development_cost = -0.1
+		no_religion_penalty = yes
 	}
 	
 	bonus = {
@@ -131,15 +131,17 @@ pirate_ideas = {
 	}
 	trigger = {
 		OR = {
-			has_reform = pirate_republic_reform
+			AND = {
+				has_reform = pirate_republic_reform
+				NOT = { culture_group = maghrebi }
+				NOT = { tag = TET }
+				NOT = { tag = SLE }
+			}
 			tag = NSS
 			tag = PRY
 			tag = TOR
 			tag = LIB
 		}
-		NOT = { culture_group = maghrebi }
-		NOT = { tag = TET }
-		NOT = { tag = SLE }
 	}
 	free = yes
 	
@@ -559,9 +561,6 @@ horde_ideas = {
 	}
 	free = yes
 	
-						  
-					   
-  
 	life_of_steppe_warrior = {
 		#land_attrition = -0.20 (effect taken in OIR_ideas)
 	}
@@ -938,7 +937,6 @@ latin_ideas = {
 		merc_maintenance_modifier = -0.15
 	}
 	italian_aristocracy = {
-							
 		global_spy_defence = 0.2
  	}
 	tracee_italienne = {
@@ -1137,7 +1135,6 @@ sumatran_ideas = {
 	
 	trigger = {
 		primary_culture = sumatran
-						 
 	}
 	free = yes
 
@@ -1389,7 +1386,10 @@ TIB_ideas = {
 		OR = {
 			tag = TIB
 			AND = {
-				primary_culture = tibetan
+				OR = {
+					primary_culture = tibetan
+					primary_culture = tibetan_new
+				}
 				religion = vajrayana 
 			}
 		}
@@ -1660,56 +1660,6 @@ ruthenian_ideas = {
 	birth_of_russian_orthodoxy = {
 		tolerance_own = 1
 	}
- 
-
-						   
-		  
-				   
-						
-  
- 
-		  
-			  
-  
- 
-			
-		
-			
-			
-			
-   
-  
- 
-									
- 
-					  
-				   
-  
- 
-				   
-							
-  
- 
-				
-						   
-  
- 
-				   
-							  
-  
- 
-					
-						  
-  
-
-					 
-										 
-  
- 
-				  
-								
-  
- 
 }
 
 guajiro_ideas = {
@@ -1805,7 +1755,6 @@ chinese_ideas = {
 			culture_group = east_asian #Chinese
 			tag = CGS #Changsheng
 		}
-									 
 	}
 	free = yes
 	
@@ -2009,10 +1958,6 @@ sulawesi_ideas = {
 	
 	trigger = {
 		primary_culture = sulawesi
-			
-			
-			
-   
 	}
 	free = yes
 	
@@ -2248,9 +2193,6 @@ french_culture_ideas = {
 	}
 	free = yes
 	
-							
-					
-  
 	french_men_of_trade = {
 		global_own_trade_power = 0.10
 	}
@@ -2824,6 +2766,7 @@ plains_native_ideas = {
 			primary_culture = kiowa
 			primary_culture = shoshone
 		}
+		NOT = { primary_culture = caddo }
 	}
 	free = yes
 	
@@ -2848,7 +2791,7 @@ plains_native_ideas = {
 		prestige = 0.5
 	}
 	horse_riders = {
-		cavalry_power = 0.2
+		cav_to_inf_ratio = 0.10
 		envoy_travel_time = -0.2
 		movement_speed = 0.10
 	}
@@ -3301,7 +3244,7 @@ central_algonquian_federation_ideas = {
 		global_manpower_modifier = 0.2
 	}
 	calg_teaching_scrolls = {
-		idea_cost = 0.1
+		idea_cost = -0.1
 	}
 	calg_seven_fires_prophecy = {
 		technology_cost = -0.1
@@ -3398,5 +3341,46 @@ generic_federation_ideas = {
 	}
 	fed_sunrise_invasion = {
 		global_colonial_growth = 30
+	}
+}
+
+horn_of_african_ideas = {
+	start = {
+		stability_cost_modifier = -0.1
+		global_tax_modifier = 0.1
+	}
+	
+	bonus = {
+		prestige = 1
+	}
+	
+	trigger = {
+		culture_group = cushitic
+		NOT = { primary_culture = somali }
+		NOT = { primary_culture = tigray }
+		NOT = { tag = ETH }
+	}
+	free = yes
+	
+	horn_of_african_aksumite_legacy = {
+		global_unrest = -1
+	}
+	horn_of_african_punt_legend = {
+		trade_range_modifier = 0.2
+	}
+	horn_of_african_highland_cultivation = {
+		development_cost = -0.05
+	}
+	horn_of_african_oromon_warriors = {
+		infantry_power = 0.1
+	}
+	horn_of_african_religious_melting_pot = {
+		tolerance_heathen = 1
+	}
+	horn_of_african_cushitic_language = {
+		improve_relation_modifier = 0.15
+	}
+	horn_of_african_religious_defensive_nature = {
+		defensiveness = 0.2
 	}
 }

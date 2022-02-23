@@ -1,4 +1,7 @@
 From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
+333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
+4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
+366;4565;sea;1471;-1;-1;-1;-1;Canaries
 6;12;sea;1258;3008;1633;3000;1630;Skåne-Sjaelland
 12;14;sea;1258;2980;1631;2975;1631;Sjaelland-Fyn
 14;4142;sea;1258;2965;1635;2963;1641;Fyn-Aarhus
@@ -33,7 +36,7 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 972;973;sea;1558;-1;-1;-1;-1;Nootka-Squamish
 972;974;sea;1558;-1;-1;-1;-1;Nootka-Kwakiutl
 2569;982;sea;1491;1847;1650;1849;1652;Acadia-Unamakik
-4891;983;sea;1491;1824;1654;1825;1658;Acadia-Epekwitk
+4891;983;sea;1491;1824;1654;1825;1658;Piktuk-Epagoitgnag
 997;981;sea;1493;1935;1781;1939;1773;Chisedek-Taqamkuk
 1050;4658;sea;1379;5014;1562;5017;1564;Deren-Nanghaer
 1215;387;sea;1330;3482;849;3484;853;Tajura-Mocha
@@ -94,9 +97,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 1751;226;sea;1293;-1;-1;-1;-1;Ceuta-Gibraltar
 4353;4352;sea;1397;-1;-1;-1;-1;Leyte-Cebu
 4351;4352;sea;1397;-1;-1;-1;-1;Buglas-Cebu
-333;4559;sea;1300;-1;-1;-1;-1;Majorca-Minorca
-4560;333;sea;1295;-1;-1;-1;-1;Ibiza-Majorca
-366;4565;sea;1471;-1;-1;-1;-1;Canaries
 4699;4698;sea;1312;-1;-1;-1;-1;Arta-Cephalonia
 4745;47;sea;1257;3013;1607;3012;1606;Rügen-Stralsund
 2994;48;sea;1257;-1;-1;-1;-1;Wolgast-Kolberg
@@ -108,7 +108,5 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 4937;1242;sea;1431;-1;-1;-1;-1;Lau-Viti Levu
 1242;4938;sea;1431;-1;-1;-1;-1;Vitu Levu-Vanua Levu
 1087;4869;sea;1414;-1;-1;-1;-1;Wurundjeri-Peerapper
-631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan		
-235;87;sea;1271;-1;-1;-1;-1;Kent-Calais				
-341;4736;sea;1271;-1;-1;-1;-1;Tunis-Trapani						
+631;627;sea;1354;-1;-1;-1;-1;Bali-Blambangan
 -1;-1;;-1;-1;-1;-1;-1;-1;
