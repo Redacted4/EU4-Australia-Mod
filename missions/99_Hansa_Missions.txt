@@ -37,7 +37,12 @@ hansa_sound_toll = {
 					}
 				}
 				12 = {
-					NOT = { has_province_modifier = sound_toll }
+					owner = {
+						NOT = {
+							controls = 6
+							controls = 12
+						}
+					}
 				}
 			}
 		}

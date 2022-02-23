@@ -7,7 +7,6 @@ tur_conquerors_of_the_near_east = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	has_country_shield = yes
 	
@@ -33,19 +32,10 @@ tur_conquerors_of_the_near_east = {
 						province_id = 145
 						province_id = 146
 						province_id = 1773
-						province_id = 4701
-						province_id = 4699
-						province_id = 4698
 					}
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		ai_priority = {
-			factor = 1000
-		}
-		ai_weight = {
-			factor = 1000
 		}
 	}
 	conquer_southern_greece = {
@@ -57,9 +47,6 @@ tur_conquerors_of_the_near_east = {
 				province_id = 145
 				province_id = 146
 				province_id = 1773
-				province_id = 4701
-				province_id = 4699
-				province_id = 4698
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -67,9 +54,6 @@ tur_conquerors_of_the_near_east = {
 			owns = 145
 			owns = 146
 			owns = 1773
-			owns = 4701
-			owns = 4699
-			owns = 4698
 		}
 		completed_by = 1460.1.1
 		effect = {
@@ -77,31 +61,26 @@ tur_conquerors_of_the_near_east = {
 				name = "ottoman_naval_expansion"
 				duration = 5475
 			}
+			add_permanent_claim = 141
+			add_permanent_claim = 3000
+			add_permanent_claim = 4176
 			rascia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
-				add_permanent_claim = ROOT
-			}
-			serbia_area = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			albania_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
-			every_province = {
+			aegean_archipelago_area = {
 				limit = {
-					area = aegean_archipelago_area
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 					NOT = { province_id = 320 }
 				}
@@ -124,28 +103,19 @@ tur_conquerors_of_the_near_east = {
 		provinces_to_highlight = {
 			OR = {
 				area = rascia_area
-				area = serbia_area
-			}
-			ROOT = {
-				NOT = {
-					num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-						value = 8 #all but those owned by Hungary and Venice
-						OR = {
-							area = rascia_area
-							area = serbia_area
-						}
-					}
-				}
+				province_id = 141
+				province_id = 3000
+				province_id = 4176
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		trigger = {
-			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
-				value = 8
-				OR = {
-					area = rascia_area
-					area = serbia_area
-				}
+			owns_or_non_sovereign_subject_of = 141
+			owns_or_non_sovereign_subject_of = 3000
+			owns_or_non_sovereign_subject_of = 4176
+			rascia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
@@ -155,14 +125,14 @@ tur_conquerors_of_the_near_east = {
 			}
 			bosnia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			wallachia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -192,14 +162,14 @@ tur_conquerors_of_the_near_east = {
 		effect = {
 			alfold_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			east_adriatic_coast_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
@@ -207,7 +177,7 @@ tur_conquerors_of_the_near_east = {
 		}
 	}
 	conquer_hungary = {
-		icon = mission_eastern_european_city
+		icon = mission_unite_home_region
 		required_missions = { conquer_bosnia }
 		ai_weight = {
 			factor = 2
@@ -233,21 +203,21 @@ tur_conquerors_of_the_near_east = {
 			}
 			austria_proper_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			transdanubia_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
 			}
 			croatia_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
@@ -265,13 +235,12 @@ tur_eastern_balkans = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
 	
 	vassalize_wallachia = {
-		icon = mission_impaled_soldies
+		icon = mission_cannons_firing
 		position = 6
 		
 		ai_weight = {
@@ -295,14 +264,14 @@ tur_eastern_balkans = {
 		effect = {
 			transylvania_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			southern_transylvania_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -310,7 +279,7 @@ tur_eastern_balkans = {
 		}
 	}
 	vassalize_transylvania = {
-		icon = mission_eastern_european_city
+		icon = mission_alliances
 		required_missions = { vassalize_wallachia }
 		ai_weight = {
 			factor = 3
@@ -343,7 +312,7 @@ tur_eastern_balkans = {
 			}
 			slovakia_area = {
 				limit = {
-					NOT = { is_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_claim = ROOT
@@ -361,7 +330,6 @@ tur_conquest_of_middle_east = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -379,7 +347,7 @@ tur_conquest_of_middle_east = {
 		effect = {
 			karaman_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -393,42 +361,42 @@ tur_conquest_of_middle_east = {
 			}
 			kastamonu_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			rum_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			germiyan_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			ankara_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			aydin_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			hudavendigar_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -436,7 +404,7 @@ tur_conquest_of_middle_east = {
 		}
 	}
 	consolidate_asia_minor = {
-		icon = mission_ottoman_harem
+		icon = mission_non-western_cavalry_raid
 		required_missions = { army_reforms_of_mehemed_II }
 		position = 3
 		completed_by = 1469.1.1
@@ -499,35 +467,25 @@ tur_conquest_of_middle_east = {
 			}
 			north_kurdistan_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			erzurum_area = {
+				limit = {
+					NOT = { owned_by = ROOT	}
+					NOT = { is_core = ROOT	}
+					NOT = { province_id = 330 }
 				}
 				add_permanent_claim = ROOT
 			}
 			dulkadir_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
-			}
-			2305 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			331 = {
-				if = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
 			}
 		}
 	}
@@ -546,9 +504,8 @@ tur_conquest_of_middle_east = {
 		provinces_to_highlight = {
 			OR = {
 				area = north_kurdistan_area
+				area = erzurum_area
 				area = dulkadir_area
-				province_id = 2305
-				province_id = 331
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
@@ -557,35 +514,33 @@ tur_conquest_of_middle_east = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			dulkadir_area = {
+			erzurum_area = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			2305 = {
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			331 = {
+			dulkadir_area = {
+				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
 		}
 		effect = {
 			aleppo_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			syria_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			palestine_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -593,7 +548,7 @@ tur_conquest_of_middle_east = {
 			330 = {
 				if = {
 					limit = {
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT	}
 					}
 					add_permanent_claim = ROOT
@@ -601,14 +556,14 @@ tur_conquest_of_middle_east = {
 			}
 			iraq_arabi_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			al_jazira_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -616,7 +571,7 @@ tur_conquest_of_middle_east = {
 		}
 	}
 	conquer_mesopotamia = {
-		icon = mission_persian_soldiers
+		icon = mission_non-western_cavalry_raid
 		required_missions = { safeguard_eastern_anatolia }
 		completed_by = 1536.1.1
 		provinces_to_highlight = {
@@ -639,14 +594,14 @@ tur_conquest_of_middle_east = {
 		effect = {
 			bahrain_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			basra_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -654,7 +609,7 @@ tur_conquest_of_middle_east = {
 		}
 	}
 	conquer_haasa = {
-		icon = mission_bedouins
+		icon = mission_invade_island
 		required_missions = { conquer_mesopotamia }
 		completed_by = 1549.1.1
 		provinces_to_highlight = {
@@ -706,7 +661,6 @@ tur_black_sea = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -728,7 +682,7 @@ tur_black_sea = {
 			285 = {
 				if = {
 					limit = {
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT	}
 					}
 					add_permanent_claim = ROOT
@@ -769,7 +723,6 @@ tur_eastern_mediterrenean_missions = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -814,49 +767,49 @@ tur_eastern_mediterrenean_missions = {
 			}
 			delta_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			bahari_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			said_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			vostani_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			al_wahat_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			gulf_of_arabia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			cyrenaica_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -864,7 +817,7 @@ tur_eastern_mediterrenean_missions = {
 		}
 	}
 	conquer_egypt = {
-		icon = mission_egyptian_mamluk_soldier
+		icon = mission_empire
 		required_missions = { conquer_levant }
 		position = 6
 		completed_by = 1517.1.1
@@ -927,21 +880,21 @@ tur_eastern_mediterrenean_missions = {
 			#Hejaz:
 			mecca_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			tabuk_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			medina_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -950,7 +903,7 @@ tur_eastern_mediterrenean_missions = {
 			if = {
 				limit = {
 					320 = {
-						NOT = { is_permanent_claim = ROOT }
+						NOT = { owned_by = ROOT }
 						NOT = { is_core = ROOT }
 					}
 				}
@@ -961,14 +914,14 @@ tur_eastern_mediterrenean_missions = {
 			#Tripolitania
 			tripolitania_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			djerba_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -976,7 +929,7 @@ tur_eastern_mediterrenean_missions = {
 		}
 	}
 	defeat_the_knights = { #Conquer Rhodes
-		icon = mission_teutonic_knights
+		icon = mission_conquer_50_development
 		required_missions = { conquer_egypt }
 		completed_by = 1522.12.21
 		provinces_to_highlight = {
@@ -1025,7 +978,6 @@ tur_conquer_western_mediterrenean = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -1055,14 +1007,14 @@ tur_conquer_western_mediterrenean = {
 		effect = {
 			tunisia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			kabylia_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -1093,7 +1045,7 @@ tur_conquer_western_mediterrenean = {
 		effect = {
 			algiers_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
@@ -1103,7 +1055,7 @@ tur_conquer_western_mediterrenean = {
 	}
 	
 	subjugate_algiers = { #Conquer Algiers
-		icon = mission_ottoman_harem
+		icon = mission_sea_battles
 		required_missions = { conquer_tunisia }
 		completed_by = 1534.8.16
 		provinces_to_highlight = {
@@ -1132,7 +1084,6 @@ tur_indian_ocean = {
 			tag = TUR
 			tag = RUM
 		}
-		NOT = { map_setup = map_setup_random }
 	}
 	
 	has_country_shield = yes
@@ -1167,14 +1118,14 @@ tur_indian_ocean = {
 		effect = {
 			tihama_al_yemen_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
 			}
 			yemen_area = {
 				limit = {
-					NOT = { is_permanent_claim = ROOT	}
+					NOT = { owned_by = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT

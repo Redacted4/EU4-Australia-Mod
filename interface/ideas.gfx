@@ -14,8 +14,15 @@ spriteTypes = {
 		effectFile = "gfx/FX/buttonstate.lua"
 	}
 	spriteType = {
-		name = "GFX_idea_influence_ideas"
+		name = "GFX_idea_infrastructure_ideas"
 		texturefile = "gfx//interface//ideas//idea_influence_ideas.dds"
+		noOfFrames = 1
+		
+		effectFile = "gfx/FX/buttonstate.lua"
+	}
+	spriteType = {
+		name = "GFX_idea_influence_ideas"
+		texturefile = "gfx//interface//ideas//idea_diplomatic_ideas.dds"
 		noOfFrames = 1
 		
 		effectFile = "gfx/FX/buttonstate.lua"

@@ -3,7 +3,7 @@ vassal = {
 	first = SCO
 	second = LOI
 	start_date = 1444.1.1
-	end_date = 1493.1.1
+	end_date = 1444.11.12
 }
 
 
@@ -76,7 +76,7 @@ alliance = {
 	first = ENG
 	second = POR
 	start_date = 1373.1.1
-	end_date = 1701.9.1
+	end_date = 1444.11.12
 }
 
 # The triple alliance

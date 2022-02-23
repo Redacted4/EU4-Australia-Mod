@@ -24,6 +24,7 @@ bur_conquest = {
 						liberty_desire = 1
 					}
 				}
+				num_of_subjects = 1
 			}
 		}
 		

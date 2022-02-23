@@ -31,12 +31,6 @@ emp_france_missions_1 = {
 		effect = {
 			add_dip_power = 100
 		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
-		}
 	}
 	emp_fra_brest = {
 		icon = brest_dockyards
@@ -94,22 +88,16 @@ emp_france_missions_1 = {
 			}
 		}
 		trigger = {
-			OR = {
-				custom_trigger_tooltip = {
-					tooltip = fra_auld_alliance_tt
-					any_country = {
-						NOT = { tag = ENG }
-						NOT = { tag = GBR }
-						capital_scope = {
-							region = british_isles_region
-						}
-						has_opinion = { who = ROOT value = 100 }
-						total_development = 70
+			custom_trigger_tooltip = {
+				tooltip = fra_auld_alliance_tt
+				any_country = {
+					NOT = { tag = ENG }
+					NOT = { tag = GBR }
+					capital_scope = {
+						region = british_isles_region
 					}
-				}
-				british_isles_region = {
-					country_or_non_sovereign_subject_holds = ROOT
-					type = all
+					has_opinion = { who = ROOT value = 100 }
+					total_development = 70
 				}
 			}
 		}
@@ -472,12 +460,6 @@ emp_france_missions_2 = {
 				add_prestige = 15
 			}
 		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
-		}
 	}
 	
 	emp_fra_end_hyw = {
@@ -527,7 +509,7 @@ emp_france_missions_2 = {
 					NOT = { has_country_flag = had_end_of_HYW_france }
 				}
 				set_global_flag = hyw_mission_resolution
-				country_event = { id = flavor_fra.9104 }
+				
 			}		
 			champagne_area = {
 				limit = {
@@ -614,12 +596,6 @@ emp_france_missions_2 = {
 				}
 			}
 		}
-		ai_priority = {
-			factor = 1000
-		}
-		ai_weight = {
-			factor = 1000
-		}
 	}
 	emp_fra_recover_calais = {
 		icon = mission_galleys_in_port
@@ -664,12 +640,6 @@ emp_france_missions_2 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		ai_priority = {
-			factor = 1000
-		}
-		ai_weight = {
-			factor = 1000
 		}
 	}
 	emp_fra_conquer_milan = {
@@ -1108,12 +1078,6 @@ emp_france_missions_3 = {
 				add_permanent_claim = ROOT
 			}
 		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
-		}
 	}
 	emp_fra_conquer_provence = {
 		icon = mission_cannons_firing
@@ -1156,12 +1120,6 @@ emp_france_missions_3 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
 		}
 	}
 	emp_fra_toulon_dockyard = {
@@ -1524,12 +1482,6 @@ emp_france_missions_4 = {
 				add_permanent_claim = ROOT
 			}
 		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
-		}
 	}
 	emp_fra_subjugate_lorraine = {
 		icon = mission_build_up_to_force_limit
@@ -1554,12 +1506,6 @@ emp_france_missions_4 = {
 				}
 				add_permanent_claim = ROOT
 			}
-		}
-		ai_priority = {
-			factor = 100
-		}
-		ai_weight = {
-			factor = 100
 		}
 	}
 	emp_fra_annex_alsace = {
@@ -1801,17 +1747,6 @@ emp_france_missions_5 = {
 			}
 			add_reform_progress_medium_effect = yes
 		}
-		ai_priority = {
-			factor = 100
-			modifier = {
-				factor = 0
-				OR = {
-					NOT = { mission_completed = emp_fra_reconquer_gascony }
-					NOT = { mission_completed = emp_fra_reconquer_normandy }
-					NOT = { mission_completed = emp_fra_subjugate_brittany }
-				}
-			}
-		}
 	}
 	emp_fra_wars_of_religion = {
 		icon = wars_of_religion
@@ -1850,7 +1785,7 @@ emp_france_missions_5 = {
 			}
 			monthly_adm = 10
 			NOT = {
-				average_home_autonomy = 15
+				average_autonomy = 15
 			}
 			crown_land_share = 70
 		}
@@ -1879,7 +1814,6 @@ emp_france_missions_5 = {
 			adm_tech = 16
 			monthly_income = 100
 			crown_land_share = 80
-			owns_core_province = 183
 		}
 		effect = {
 			add_prestige = 33
