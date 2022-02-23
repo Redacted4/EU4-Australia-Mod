@@ -64,3 +64,6 @@ NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 60				--from 40
 NDefines.NMilitary.DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.8	--from 0.4
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40						--from 25
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12			--from 60
+
+--Non-painful national focus
+NDefines.NCountry.NAT_FOCUS_YEARS = 0
