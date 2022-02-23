@@ -1096,7 +1096,7 @@ VRN_ideas = {
 }
 
 
-POL_ideas = {
+#POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
 		num_accepted_cultures = 1
@@ -1508,7 +1508,7 @@ MAM_ideas = {
 }
 
 
-NAP_ideas = {
+#NAP_ideas = {
 	start = {
 		global_institution_spread = 0.1 #University of Naples, Angevine Heritage, Academies, centre of Neapolitan renaissance.
 		trade_efficiency = 0.1 #One of the main trade port of the mediterrenean for much of the timeframe
@@ -1547,7 +1547,7 @@ NAP_ideas = {
 	}
 }
 
-SIC_ideas = {
+#SIC_ideas = {
 	start = {
 		land_morale = 0.1
 		global_manpower_modifier = 0.2
