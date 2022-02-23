@@ -56,7 +56,7 @@ adult_baptism_aspect = {
 holy_sacraments_aspect = {
 	cost = 100
 	modifier = { 
-		discipline = 0.025
+		infantry_power = 0.1
 	}
 	ai_will_do = {
 		factor = 12
@@ -146,7 +146,7 @@ heretics_deported_aspect = {
 parish_registers_aspect = {
 	cost = 100
 	modifier = {
-		manpower_recovery_speed = 0.1
+		manpower_recovery_speed = 0.15
 	}
 	ai_will_do = {
 		factor = 10
