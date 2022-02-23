@@ -1,5 +1,5 @@
 fervor_trade = {
-	cost = 5
+	cost = 3
 	effect = {
 		global_trade_power = 0.1
 		trade_efficiency = 0.1
@@ -31,10 +31,10 @@ fervor_trade = {
 }
 
 fervor_war = {
-	cost = 5
+	cost = 3
 	effect = {
-		land_morale = 0.1
-		naval_morale = 0.1
+		land_morale = 0.15
+		naval_morale = 0.15
 	}
 	ai_will_do = {
 		factor = 1
@@ -50,10 +50,10 @@ fervor_war = {
 }
 
 fervor_stability = {
-	cost = 5
+	cost = 3
 	effect = {
-		global_unrest = -2
-		diplomatic_reputation = 1
+		development_cost = -0.05
+		global_trade_goods_size_modifier = 0.1
 	}
 	ai_will_do = {
 		factor = 1

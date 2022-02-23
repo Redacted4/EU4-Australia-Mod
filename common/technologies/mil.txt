@@ -109,6 +109,7 @@ technology = {
 
 	land_morale = 	0.5
 	military_tactics 	= 	0.25
+	enable = great_bombard
 }
 
 technology = {

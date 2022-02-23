@@ -2152,13 +2152,11 @@ estate_nobles_levies = {
 		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
 	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.33
+		global_trade_goods_size_modifier = -0.1
+		global_manpower_modifier = 0.50
 	}
 	penalties = {
-	}
-	mechanics = {
-		exempt_from_seize_land
+
 	}
 	ai_will_do = {
 		factor = 5
@@ -2230,7 +2228,7 @@ estate_nobles_advisors = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -2402,7 +2400,7 @@ estate_church_independent_inquisition = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.25
+		adm_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -2659,6 +2657,30 @@ estate_church_clerical_ministers = {
 	}
 }
 
+estate_church_mysticism_privilege = {
+	icon = privilege_recruit_minister
+	max_absolutism = -5
+	influence = 0.10
+	is_valid = {
+		religion_group = muslim
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_church_clerical_ministers }
+	}
+	penalties = {
+	}
+	benefits = {
+		monthly_piety = -0.002
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+
 estate_church_clerical_oversight = {
 	icon = privilege_tolerance_heathen
 	max_absolutism = -10
@@ -2866,7 +2888,7 @@ estate_burghers_commercial_board_of_advice = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		dip_advisor_cost = -0.25
+		dip_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -3453,7 +3475,8 @@ estate_nomadic_tribes_share_of_the_spoils = {
 	max_absolutism = -5
 	loyalty = 0.05
 	penalties = {
-		available_province_loot = -0.1
+		available_province_loot = -0.2
+		development_cost = -0.1
 	}
 	benefits = {
 	}
@@ -3634,7 +3657,7 @@ estate_brahmins_brahmin_leadership = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		adm_advisor_cost = -0.25
+		adm_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -3994,7 +4017,7 @@ estate_maratha_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -4035,8 +4058,8 @@ estate_maratha_levies = {
 		NOT = { religion_group = muslim }
 	}
 	modifier_by_land_ownership = {
-		global_tax_modifier = -0.10
-		global_manpower_modifier = 0.33
+		global_trade_goods_size_modifier = -0.10
+		global_manpower_modifier = 0.50
 	}
 	penalties = {
 	}
@@ -4305,7 +4328,7 @@ estate_rajput_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		mil_advisor_cost = -0.25
+		mil_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9
@@ -4461,7 +4484,7 @@ estate_vaisyas_advisor = {
 		stability_cost_modifier = 0.1
 	}
 	benefits = {
-		dip_advisor_cost = -0.25
+		dip_advisor_cost = -0.15
 	}
 	ai_will_do = {
 		factor = 9

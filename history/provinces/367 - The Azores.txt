@@ -25,3 +25,8 @@ native_hostileness = 0
 	culture = portugese
 	religion = catholic
 }
+1444.11.12 = {
+	owner = 
+	controller = 
+	remove_core = POR
+}

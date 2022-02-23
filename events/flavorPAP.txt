@@ -237,7 +237,12 @@ country_event = {
 	}
 	
 	trigger = {
-		tag = PAP
+		####Can only fire when a player controls the Curia
+		ROOT = {
+			is_papal_controller = yes
+		}
+		####
+		#tag = PAP
 		
 		OR = {
 			POR = { has_country_modifier = the_societas_jesu }

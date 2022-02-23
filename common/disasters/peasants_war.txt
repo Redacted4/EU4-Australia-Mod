@@ -107,7 +107,7 @@ peasant_war = {
 
 	modifier = {
 		global_unrest = 5
-		stability_cost_modifier = 0.50
+		#stability_cost_modifier = 0.50
 	}	
 	
 	

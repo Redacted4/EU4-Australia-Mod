@@ -1,3 +1,7 @@
+#Changed vice_roys to viceroys_new
+
+
+
 # The dawn of a new era
 #country_event = {
 #	id = 1071
@@ -363,7 +367,7 @@ country_event = {
 		}
 		modifier = {
 			factor = 0.9
-			has_idea = vice_roys
+			has_idea = viceroys_new
 		}
 		modifier = {
 			factor = 0.9

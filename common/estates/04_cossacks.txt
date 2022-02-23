@@ -38,14 +38,16 @@ estate_cossacks = {
 	
 	trigger = {	
 		has_dlc = "The Cossacks"
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }	
+
+
 		NOT = { has_reform = pirate_republic_reform }
 		NOT = { has_reform = cossacks_reform }
-		NOT = { has_government_attribute = is_merchant_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { government = native }
 		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
 		is_nomad = no
 		is_colonial_nation = no
 		NOT = { has_reform = celestial_empire }
@@ -64,7 +66,7 @@ estate_cossacks = {
 	country_modifier_happy = {
 		cavalry_cost = -0.2
 		cavalry_power = 0.2
-		cav_to_inf_ratio = 0.10
+		#cav_to_inf_ratio = 0.10
 	}
 	country_modifier_neutral = {
 		cavalry_power = 0.2

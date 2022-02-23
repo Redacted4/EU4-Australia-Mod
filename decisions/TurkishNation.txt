@@ -80,6 +80,13 @@ country_decisions = {
 			remove_non_electors_emperors_from_empire_effect = yes
 			if = {
 				limit = {
+					NOT = { technology_group = ottoman }
+				}
+				change_technology_group = ottoman
+				change_unit_type = ottoman
+			}
+			if = {
+				limit = {
 					NOT = { government_rank = 2 }
 				}
 				set_government_rank = 2

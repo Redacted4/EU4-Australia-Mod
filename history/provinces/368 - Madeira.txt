@@ -31,4 +31,8 @@ native_hostileness = 0
 
 	trade_goods = sugar	
 }
-1497.1.1 = { capital = "Funchal" }
+1444.11.12 = {
+	owner = 
+	controller = 
+	remove_core = POR
+}

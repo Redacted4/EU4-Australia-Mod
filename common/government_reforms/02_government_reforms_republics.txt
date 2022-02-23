@@ -29,7 +29,7 @@ oligarchy_reform = {
 	valid_for_nation_designer = yes
 	nation_designer_cost = 0
 	potential = {
-		NOT = { culture_group = latin }
+		#NOT = { culture_group = latin }
 		NOT = { has_reform = crown_colony_government }
 		NOT = { has_reform = private_enterprise_colony_government }
 		NOT = { has_reform = self_governing_colony_government }
@@ -100,7 +100,6 @@ protectorate_parliament_reform = {
 		has_parliament = yes
 		custom_attributes = {
 			blocked_call_diet = yes
-			disables_nobility = yes
 		}
 	}
 	has_term_election = no

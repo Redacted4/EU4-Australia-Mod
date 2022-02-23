@@ -367,6 +367,17 @@ country_decisions = {
 				tag = TEU
 				government = theocracy
 			}
+			OR = {
+				tag = LIV
+				tag = SAX
+				tag = POM
+				tag = ANH
+				tag = MAG
+				tag = MKL
+				tag = RIG
+				tag = THU
+				tag = DNZ
+			}
 		}
 		provinces_to_highlight = {
 			OR = {

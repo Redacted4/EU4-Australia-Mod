@@ -3,6 +3,9 @@ reichsreform = {
 	potential = {
 		NOT = { has_dlc = "Emperor" }
 	}
+	allow = {
+		owns_or_vassal_of = 400
+	}
 	province = {
 		local_build_cost = -0.05
 		local_development_cost = -0.05

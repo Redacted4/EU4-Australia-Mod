@@ -41,8 +41,8 @@ client_ideas = {
 
 colonial_ideas = {
 	start = {
-		development_cost = -0.1
-		no_religion_penalty = yes
+		global_missionary_strength = 0.02
+		tolerance_heretic = 3
 	}
 	
 	bonus = {
@@ -2791,7 +2791,7 @@ plains_native_ideas = {
 		prestige = 0.5
 	}
 	horse_riders = {
-		cav_to_inf_ratio = 0.10
+		cavalry_power = 0.2
 		envoy_travel_time = -0.2
 		movement_speed = 0.10
 	}

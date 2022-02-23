@@ -27,10 +27,10 @@ discovered_by = ottoman
 	controller = PAP
 	add_core = PAP
 	}
-1670.1.1 = { add_core = FRA } # Louis XIV wants to annex the city-state (Chambres de Réunion)
-1791.9.14 = {
-	owner = FRA
-	controller = FRA
+1444.11.12 = {
+	owner = PRO
+	controller = PRO
+	add_core = PRO
 	remove_core = PAP
-} # Avignon is incorporated into France
-
+	remove_core = AVI
+}

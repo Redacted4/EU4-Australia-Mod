@@ -4,7 +4,7 @@ owner = NOR
 controller = NOR
 add_core = NOR 
 add_core = ICE
-culture = icelandic
+culture = norwegian
 religion = catholic
 hre = no
 base_tax = 1 
@@ -19,6 +19,9 @@ is_city = yes
 
 discovered_by = western
 
-
-1536.1.1 = { religion = protestant owner = DAN controller = DAN add_core = DAN }
-1752.1.1 = { trade_goods = wool } # Wool becomes more important.
+1444.11.12 = {
+	remove_core = NOR
+	owner = ICE
+	controller = ICE
+	add_core = ICE
+}

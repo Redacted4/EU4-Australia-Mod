@@ -17,9 +17,9 @@ the_proper_old_ways = {
 }
 
 eth_mil_aid_from_portugal = {
-	land_morale = 0.05
-	mil_tech_cost_modifier = -0.05
-	global_manpower_modifier = 0.05
+	land_morale = 0.25
+	mil_tech_cost_modifier = -0.25
+	global_manpower_modifier = 0.25
 }
 
 incompetent_fabrication = {
@@ -611,7 +611,7 @@ out_of_date_commerce = {
 }
 
 excellent_administration = {
-	global_tariffs = 0.2
+	global_colonial_growth = 20
 }
 
 corrupt_viceroys = {
@@ -825,15 +825,12 @@ hire_privateers = {
 counter_reformation = {
 	global_heretic_missionary_strength = 0.03
 	papal_influence = 0.5
-	missionaries = 2
-	tolerance_heretic = -2
-	technology_cost = 0.05
-	idea_cost = 0.05
+	missionaries = 1
 	religion = yes
 }
 
 russian_patriarchate = {
-	war_exhaustion_cost = -0.20
+	missionaries = 1
 }
 
 edict_de_nantes = {
@@ -1499,12 +1496,12 @@ rebel_sentiment = {
 
 
 conversion_zeal = {
-	global_heretic_missionary_strength = 0.10
+	global_heretic_missionary_strength = 0.05
 	missionary_maintenance_cost = -0.33
 }
 
 religious_zeal_at_conv = {
-	local_missionary_strength = -1
+	local_missionary_strength = -0.05
 }
 
 
@@ -6785,7 +6782,7 @@ pap_swiss_guard = {
 }
 mil_vatican_library = {
 	mil_tech_cost_modifier = -0.05
-	army_tradition_from_battle = 0.5
+	army_tradition_decay = -0.01
 }
 dip_vatican_library = {
 	dip_tech_cost_modifier = -0.05
@@ -7009,7 +7006,7 @@ spanish_bible_translation = {
 }
 
 spa_new_colonial_reforms = {
-	global_tariffs = 0.1
+	global_colonial_growth = 15
 }
 
 spa_new_colonial_reforms_subject = {

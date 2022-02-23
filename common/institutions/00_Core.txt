@@ -70,6 +70,8 @@ feudalism = {
 					culture_group = scandinavian
 					culture_group = west_slavic
 					culture_group = western_aryan
+					culture_group = tartar
+					culture_group = altaic
 					province_id = 383
 					province_id = 412
 					province_id = 2327
@@ -94,7 +96,6 @@ feudalism = {
 			owner = { technology_group = high_american }
 			owner = {
 				NOT = {
-					government = tribal
 					government = native
 					primary_culture = bedouin_arabic
 					primary_culture = uyghur
@@ -102,7 +103,6 @@ feudalism = {
 					technology_group = mesoamerican
 					technology_group = north_american
 					technology_group = south_american
-					technology_group = sub_saharan
 				}
 			}
 			AND = {
@@ -272,8 +272,7 @@ feudalism = {
 renaissance = {
 
 	bonus = {
-		development_cost = -0.05
-		build_cost = -0.05
+		idea_cost = -0.05
 	}
 
 	trade_company_efficiency = 0.4
@@ -1731,6 +1730,7 @@ manufactories = {
 					trade_goods = grain
 					trade_goods = livestock
 					trade_goods = wine
+					trade_goods = wool
 				}
 				manufactories_origin = {
 					same_continent = PREV

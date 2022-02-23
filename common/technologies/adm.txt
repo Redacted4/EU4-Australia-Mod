@@ -122,7 +122,7 @@ technology = { #Courthouse
 	}
 
 	courthouse = yes
-	governing_capacity = 100
+	governing_capacity = 250
 
 }
 
@@ -179,8 +179,9 @@ technology = { #Early Modern Administration
 	
 	administrative_monarchy	= yes 
 	administrative_republic	= yes
-	governing_capacity = 100
+	governing_capacity = 250
 	state_house = yes
+	administrative_efficiency = 0.1
 }
 
 technology = { #Improved Drainage
@@ -256,7 +257,6 @@ technology = { #University
 	governing_capacity = 250
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
 }
 
 technology = { #National Sovereignty
@@ -352,7 +352,6 @@ technology = { #Measuring the World
 	}
 	
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1
 }
 
 technology = { #Bonds and Tontines
@@ -419,7 +418,6 @@ technology = { #Modern Bureaucracy
 	}
 
 	administrative_efficiency = 0.1
-	development_efficiency = 0.1	
 	governing_capacity = 250
 }
 

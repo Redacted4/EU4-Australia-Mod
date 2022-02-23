@@ -982,6 +982,8 @@ country_event = {
 	desc = "EVTDESC4114"
 	picture = ADVISOR_eventPicture	
 	
+	major = yes
+	
 	trigger = {
 		grand_captain = 3
 		NOT = { has_country_flag = grand_captain }
@@ -1123,6 +1125,8 @@ country_event = {
 	title = "EVTNAME4116"
 	desc = "EVTDESC4116"
 	picture = ADVISOR_eventPicture
+	
+	major = yes
 	
 	trigger = {
 		commandant = 3

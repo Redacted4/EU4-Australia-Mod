@@ -15,9 +15,7 @@ country_decisions = {
 		allow = {
 			is_core = 33
 			is_at_war = no
-			33 = {
-				is_state = yes
-			}
+			absolutism = 20
 		}
 		effect = {
 			33 = {

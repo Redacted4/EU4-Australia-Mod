@@ -11,8 +11,8 @@ estate_church =
 			NOT = { has_estate = estate_brahmins }
 		}
 		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { has_reform = veche_republic }
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = cossacks_reform }
 		NOT = { has_reform = siberian_tribe }
@@ -356,6 +356,7 @@ estate_church =
 		estate_church_flexible_cults
 		estate_church_scholar_connections
 		estate_church_integrated_school
+		estate_church_mysticism_privilege
 	}
 
 	agendas = {

@@ -109,7 +109,7 @@ country_decisions = {
 					has_dlc = "Dharma"
 					is_revolutionary = no
 				}
-				add_government_reform = indian_sultanate_reform
+				#add_government_reform = indian_sultanate_reform
 				add_government_reform = mughal_government
 			}
 			if = {

@@ -46,8 +46,9 @@ christian = {
 			add_country_modifier = {
 				name = "conversion_zeal"
 				duration = 3650
-			}			
-		
+			}
+			humanist_dev_cost_state_conversion_effect = yes
+
 		}
 		
 		heretic = { BOGOMILIST WALDENSIAN FRATICELLI LOLLARD SOCINIAN }
@@ -331,10 +332,12 @@ christian = {
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		aspects = {
-			divorce_consort_aspect
-			gain_consort_aspect
+			sponsor_ship_chaplains_aspect
+			performing_of_battlefield_rites
 			dissolve_monasteries_aspect
 			monopoly_aspect
 			stability_aspect
@@ -363,7 +366,9 @@ christian = {
 		}
 		
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		aspects = {
 			clerical_poverty_aspect
 			bread_and_wine_aspect
@@ -430,6 +435,7 @@ christian = {
 		}
 
 		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
 			change_religion = protestant
 			add_prestige = -100
 			remove_country_modifier = counter_reformation
@@ -531,7 +537,7 @@ christian = {
 		}
 		country = {
 			tolerance_heretic = 2
-			advisor_pool = 1
+			advisor_cost = -0.1
 		}
 		
 		country_as_secondary = {
@@ -548,6 +554,7 @@ christian = {
 		}
 		
 		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
 			change_religion = reformed
 			add_prestige = -100
 			remove_country_modifier = counter_reformation
@@ -663,7 +670,7 @@ christian = {
 			# If no icon has ai_will_do above 1 - <current patriarch authority> , the AI will not enact it. (60% PA = 0.6 -> ai_will_do has to be at least 0.4)
 
 			icon_michael = {
-				discipline = 0.05
+				shock_damage_received = -0.1
 				manpower_recovery_speed = 0.1
 				
 				allow = {
@@ -715,7 +722,7 @@ christian = {
 			}
 
 			icon_pancreator = {
-				development_cost = -0.10
+				development_cost = -0.05
 				build_cost = -0.1
 				
 				allow = {
@@ -796,7 +803,9 @@ christian = {
 		misguided_heretic = yes
 		
 		holy_sites = { 358 1227 2313 1234 419 }
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		blessings = {
 			legitimize_government
 			encourage_warriors_of_the_faith
@@ -893,7 +902,7 @@ muslim = {
 			picture = "GFX_icon_muslim_school_hanafi"
 
 			# religion_sub_modifier = no is possible, will hide icon in religious screen
-			adm_tech_cost_modifier = -0.05
+			core_creation = -0.1
 		}
 		hanbali_school = {
 			potential_invite_scholar = {
@@ -1186,6 +1195,7 @@ muslim = {
 			legitimacy = 1
 			republican_tradition = 0.2
 			devotion = 1
+			max_absolutism = 5
 		}
 		jafari_school = {
 			potential_invite_scholar = {
@@ -1338,8 +1348,8 @@ muslim = {
 		color = { 0 153 0 }
 		icon = 5
 		country = {
-			cav_to_inf_ratio = 0.10
-			heir_chance = 1.0
+			tolerance_own = 1
+			tolerance_heathen = 1
 		}
 		country_as_secondary = {
 			trade_efficiency = 0.1
@@ -1348,7 +1358,9 @@ muslim = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
@@ -1358,7 +1370,7 @@ muslim = {
 		color = { 0 204 0 }
 		icon = 6
 		country = {
-			heir_chance = 1.0
+			global_heretic_missionary_strength = 0.01
 			land_morale = 0.05
 		}
 		country_as_secondary = {
@@ -1368,7 +1380,9 @@ muslim = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { DRUZE HURUFI ZAIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
@@ -1378,7 +1392,7 @@ muslim = {
 		color = { 0 102 0 }
 		icon = 16
 		country = {
-			heir_chance = 1.0
+			naval_morale = 0.1
 			global_trade_goods_size_modifier = 0.1
 		}
 		country_as_secondary = {
@@ -1388,7 +1402,9 @@ muslim = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
 		uses_piety = yes				# Uses piety mechanics
@@ -1400,7 +1416,7 @@ muslim = {
 }
 
 eastern = {
-
+	defender_of_faith = yes
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 58 80 }
 
@@ -1426,6 +1442,7 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		heretic = { ZEN }
@@ -1457,6 +1474,7 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		heretic = { ZEN }
@@ -1488,6 +1506,7 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		harmonized_modifier = harmonized_mahayana
@@ -1508,6 +1527,10 @@ eastern = {
 			adm_tech_cost_modifier = -0.1
 			stability_cost_modifier = -0.1
 		}
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
+
 		heretic = { TAOIST }
 		uses_harmony = yes
 	}
@@ -1526,6 +1549,9 @@ eastern = {
 			discipline = 0.05
 			global_unrest = -1
 		}
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { SHUGENDO }
 		uses_isolationism = yes
 		
@@ -1541,7 +1567,7 @@ dharmic = {
 
 	flags_with_emblem_percentage = 33
 	flag_emblem_index_range = { 61 82 } #Many shared with Eastern
-
+	defender_of_faith = yes
 	hinduism = {
 		color = { 0 204 204 }
 		icon = 8
@@ -1557,7 +1583,10 @@ dharmic = {
 			tolerance_heretic = 1
 			tolerance_heathen = 2
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
+
 		personal_deity = yes
 		
 		on_convert = {
@@ -1568,6 +1597,7 @@ dharmic = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		heretic = { BHAKTI }
@@ -1601,6 +1631,7 @@ dharmic = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 
 		heretic = { MASANDIS }
@@ -2191,7 +2222,7 @@ dharmic = {
 }
 
 pagan = {
-
+	defender_of_faith = yes
 	flags_with_emblem_percentage = 10
 	flag_emblem_index_range = { 83 96 }
 
@@ -2209,7 +2240,9 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { SNAKE_CLAN }
 	}
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
@@ -2223,7 +2256,9 @@ pagan = {
 			tolerance_own = 2
 			loot_amount = 0.25
 		}
-
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		fetishist_cult = yes
 		heretic = { GOAT_SKULL }
 	}
@@ -2241,6 +2276,10 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
+
 
 		ancestors = yes
 		
@@ -2263,7 +2302,9 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = INTI_REFORM_TOOLTIP
@@ -2286,7 +2327,9 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		doom = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
@@ -2310,7 +2353,9 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		religious_reforms = yes
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		
@@ -2323,6 +2368,7 @@ pagan = {
 		country = {
 			land_forcelimit_modifier = 0.10
 			naval_forcelimit_modifier = 0.10
+			may_perform_slave_raid = yes
 		}
 		country_as_secondary = {
 			merc_maintenance_modifier = -0.1
@@ -2331,7 +2377,9 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		personal_deity = yes
 		
 		heretic = { OLD_NORSE }	
@@ -2341,8 +2389,11 @@ pagan = {
 		icon = 27
 		color = { 25 76 217 }
 		country = {
-			cav_to_inf_ratio = 0.25
+			cavalry_flanking = 0.5
 			global_regiment_cost = -0.2
+		}
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
@@ -2354,6 +2405,9 @@ pagan = {
 		country = {
 			shock_damage_received = -0.05
 			diplomatic_reputation = 1
+		}
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
 		}
 		country_as_secondary = {
 			shock_damage = 0.1
@@ -2371,6 +2425,7 @@ pagan = {
 jewish_group = {
 
 	flags_with_emblem_percentage = 33
+	defender_of_faith = yes
 	flag_emblem_index_range = { 106 107 }
 
 	jewish = {
@@ -2387,7 +2442,9 @@ jewish_group = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		uses_judaism_power = yes
 		aspects_name = JEWISH_ASPECTS
 			
@@ -2486,6 +2543,7 @@ jewish_group = {
 
 zoroastrian_group = {
 	flag_emblem_index_range = { 110 110 }
+	defender_of_faith = yes
 	zoroastrian = {
 		icon = 26
 		color = { 127 178 51 }
@@ -2510,7 +2568,9 @@ zoroastrian_group = {
 			blessing_manthras
 			blessing_dakhma
 		}
-		
+		on_convert = {
+			humanist_dev_cost_state_conversion_effect = yes
+		}
 		heretic = { MAZDAKI MANICHEAN }	
 	}
 	

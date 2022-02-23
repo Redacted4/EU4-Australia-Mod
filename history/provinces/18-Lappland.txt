@@ -20,9 +20,11 @@ discovered_by = western
 	controller = SWE 
 	add_core = SWE
 	is_city = yes
-	add_local_autonomy = 70
 	trade_goods = fur
 }
-1607.1.1 = { capital = "Lycksele" }
-1640.1.2 = { culture = swedish }
-1640.1.2 = { religion = protestant }
+1444.11.12 = {
+	remove_core = SWE
+	owner = SMI
+	controller = SMI
+	add_core = SMI
+}

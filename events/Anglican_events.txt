@@ -836,7 +836,10 @@ country_event = {
 		capital_scope = {
 			region = british_isles_region
 		}
-		culture_group = british
+		OR = {
+			tag = GBR
+			primary_culture = english
+		}
 		any_owned_province = {
 			region = british_isles_region
 			can_have_center_of_reformation_trigger = {

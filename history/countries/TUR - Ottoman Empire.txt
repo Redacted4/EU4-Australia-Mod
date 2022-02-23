@@ -26,6 +26,7 @@ change_estate_land_share = {
 	set_estate_privilege = estate_dhimmi_guaranteed_autonomy
 }
 
+
 1439.1.1 = {
 	leader = {
 		name = "Hadim Sehabeddin"
@@ -52,6 +53,14 @@ change_estate_land_share = {
 	add_ruler_personality = conqueror_personality
 	#add_ruler_personality = lawgiver_personality
 	add_piety = -0.2
+}
+
+1444.11.12 = {
+	government_rank = 1
+	remove_government_reform = ottoman_government
+	add_government_reform = autocracy_reform
+	remove_accepted_culture = greek
+	remove_accepted_culture = bulgarian
 }
 
 1446.1.1 = {

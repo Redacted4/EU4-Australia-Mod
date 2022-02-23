@@ -76,7 +76,7 @@ country_decisions = {
 			if = {
 				limit = {
 					is_part_of_hre = yes
-					is_elector = no
+					#is_elector = no
 					is_emperor = no
 				}
 				emperor = {
@@ -92,12 +92,12 @@ country_decisions = {
 			}
 			if = {
 				limit = {
-					NOT = { government_rank = 2 }
+					NOT = { government_rank = 3 }
 				}
 				hidden_effect = {
 					set_in_empire = no
 				}
-				set_government_rank = 2
+				set_government_rank = 3
 			}
 			change_tag = ITA
 			#this is so that a tier 1 reform is always selected, preventing the user from just never selecting one and enjoying loads of absolutism

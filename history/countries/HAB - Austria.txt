@@ -76,6 +76,7 @@ add_accepted_culture = slovene
 	set_country_flag = hab_ladislaus_postumus_heir
 }
 
+1440.1.1 = {leader = {	name = "Ruprecht von Reichenberg"	type = general	fire = 2	shock = 2	manuever = 3	siege = 0	death_date = 1490.1.1 } }
 #1450.1.1 = { decision = court_of_wards_and_liveries }
 
 #Ladislaus is freed.
