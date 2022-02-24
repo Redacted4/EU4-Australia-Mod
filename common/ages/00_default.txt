@@ -150,7 +150,7 @@ age_of_discovery = {
 
 		ab_cavalry_armies = {
 			modifier = {
-				cavalry_cost = -0.15
+				cavalry_flanking = 1
 			}
 			ai_will_do = {
 				factor = 10
@@ -404,9 +404,8 @@ age_of_reformation = {
 		ab_gunpowder_empires = {
 			allow = {
 				AND = {
-					religion_group = muslim
+					technology_group = muslim
 					government_rank = 3
-					NOT = { tag = TUR }
 				}
 			}
 			modifier = {
