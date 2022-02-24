@@ -1468,10 +1468,10 @@ JAP_ideas = {
 }
 
 
-MAM_ideas = {
+#MAM_ideas = {
 	start = {
 		trade_steering = 0.25
-		cavalry_power = 0.10
+		cavalry_power = 0.20
 	}
 	
 	bonus = {
@@ -1667,7 +1667,7 @@ MUG_ideas = {
 	}
 }
 
-TIM_ideas = {
+#TIM_ideas = {
 	start = {
 		diplomatic_upkeep = 1
 		leader_land_shock = 1
@@ -11385,7 +11385,7 @@ TRS_ideas = {
 	}
 }
 
-QOM_ideas = {
+#QOM_ideas = {
 	start = {
 		diplomats = 1
 		production_efficiency = 0.1
