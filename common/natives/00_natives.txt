@@ -3,7 +3,7 @@ natives_american_inuit = {
 	color = { 0 255  255 }
 	icon = 4
 	
-	unit = western_medieval_infantry
+	unit = native_indian_archer
 	
 	provinces = {
 		# North America
@@ -21,7 +21,7 @@ natives_american_na = {
 	color = { 0 255  0 }
 	icon = 1
 	
-	unit = western_medieval_infantry
+	unit = native_indian_archer
 	
 	provinces = {
 		481 #Bermuda
@@ -114,7 +114,7 @@ natives_american_ma = {
 	color = { 255  255  0 }
 	icon = 5
 	
-	unit = western_medieval_infantry
+	unit = native_indian_archer
 	
 	provinces = {
 		# Mesoamerican
@@ -133,7 +133,7 @@ natives_american_sa = {
 	color = { 255  0  0 }
 	icon = 6
 	
-	unit = western_medieval_infantry
+	unit = native_indian_archer
 	
 	provinces = {
 		# The Carribean
@@ -170,7 +170,7 @@ natives_african = {
 	color = { 180  180  80 }
 	icon = 2
 	
-	unit = western_medieval_infantry
+	unit = african_spearmen
 	
 	provinces = {
 		#North Africa
@@ -223,7 +223,7 @@ natives_asian = {
 	color = { 255  255  80 }
 	icon = 3
 	
-	unit = western_medieval_infantry
+	unit = east_asian_spearmen
 	
 	provinces = {
 		# Middle east + central asia
@@ -330,7 +330,7 @@ natives_siberian = {
 	color = { 127  255  255 }
 	icon = 4
 	
-	unit = western_medieval_infantry
+	unit = mongol_bow
 	
 	provinces = {
 		480 1033 1034 1035 1036 1037 1038 1039 1040 1041 1042 1043 1044

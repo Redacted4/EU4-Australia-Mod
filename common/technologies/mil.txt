@@ -100,10 +100,10 @@ technology = {
 technology = {
 	# Tech 4
 	year = 1453
-	
 	expects_institution = {
 		feudalism = 0.5
 	}
+
 	#Pike Square
 	
 
@@ -119,6 +119,7 @@ technology = {
 		feudalism = 0.5
 		renaissance = 0.15
 	}
+	
 	#Standardised Pikes
 	supply_limit 		= 	0.5
 	infantry_shock		= 	0.15
@@ -213,7 +214,8 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-	}   
+	}
+
 	
 	#Pike and Shot
 	infantry_fire		= 	0.25
@@ -225,13 +227,12 @@ technology = {
 
 technology = {
 	# Tech 9
-	
 	year = 1518
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.15
-	}	
+	}
 	
 	#Ditch
 	
@@ -569,6 +570,7 @@ technology = {
 		global_trade = 0.5
 		manufactories = 0.15
 	}
+	
 	#Line Infantry
 	sprite_level = 3
 	military_tactics 	= 	0.25

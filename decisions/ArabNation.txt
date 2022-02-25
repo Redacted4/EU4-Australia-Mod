@@ -73,21 +73,6 @@ country_decisions = {
 				}
 				set_government_rank = 3
 			}
-			if = {
-				limit = {
-					NOT = {
-						government = monarchy
-					}
-				}
-				change_government = monarchy
-			}
-			add_government_reform = feudal_theocracy
-			if = {
-				limit = {
-					has_reform = states_general_reform
-				}
-				remove_government_reform = states_general_reform
-			}
 			mashriq_region = {
 				limit = {
 					NOT = { owned_by = ROOT }
@@ -114,13 +99,6 @@ country_decisions = {
 			add_prestige = 25
 			set_country_flag = formed_arabia_flag
 			change_tag = ARB
-			if = {
-				limit = {
-					has_custom_ideas = no
-				}
-				country_event = { id = ideagroups.1 } #Swap Ideas
-			}
-			swap_non_generic_missions = yes
 		}
 		ai_will_do = {
 			factor = 0

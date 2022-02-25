@@ -10,6 +10,10 @@ theocracy_mechanic = {
 	can_customise_heir = no
 	basic_reform = yes # = invisible/does not take up a slot
 	valid_for_nation_designer = no
+	custom_attributes = {
+		enables_divine_idea_group = yes
+		enables_aristocratic_idea_group = no
+	}
 
 	modifiers = {
 		brahmins_hindu_influence_modifier = 0.1
@@ -915,7 +919,7 @@ all_under_tengri_reform = {
 	}
 	modifiers = {
 		cavalry_power = 0.15
-		#cav_to_inf_ratio = 0.25
+		cav_to_inf_ratio = 0.25
 	}
 	ai = {
 		factor = 3

@@ -1,20 +1,23 @@
-estate_nobles = {
-
+estate_nobles =
+{
 	icon = 2
 
 	# If true, country will get estate
 	trigger = {
-		
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }
+		#NOT = { has_reform = peasants_republic }
+
 		NOT = { has_reform = pirate_republic_reform }
-		
+
 		NOT = { has_reform = cossacks_reform }
 		NOT = { government = native }
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { is_revolutionary_republic_trigger = yes }
 		NOT = { has_reform = revolutionary_empire_reform }
-		#NOT = { has_reform = peasants_republic }
-		NOT = { has_reform = kongsi_federation }								  
+
+		NOT = { has_reform = kongsi_federation }
 		NOT = { has_reform = american_republic }
 		NOT = { has_reform = federal_republic }
 		if = {
@@ -34,22 +37,7 @@ estate_nobles = {
 		}
 		is_nomad = no
 		is_colonial_nation = no
-		#OR = {
-		#	NOT = { has_dlc = "Common Sense" }
-		#	AND = {
-		#		NOT = { has_reform = english_monarchy }
-		#		NOT = { has_reform = parliamentary_reform }
-		#		NOT = { has_reform = theocratic_democracy_reform }
-		#		NOT = { has_reform = regionally_elected_commanders }
-		#		NOT = { has_reform = protectorate_parliament_reform }
-		#	}
-		#}
-		if = {
-			limit = {
-				NOT = { has_dlc = "Dharma" }
-			}
-			has_parliament = no
-		}
+		NOT = { has_government_attribute = disables_nobility }
 		NOT = { has_reform = revolutionary_empire_reform }
 		AND = {
 			NOT = { has_country_flag = ikko_ikki_peasants_flag }
@@ -364,7 +352,7 @@ estate_nobles = {
 			}
 		}
 	}
-custom_name = {
+	custom_name = {
 		desc = estate_alii
 		trigger = {
 			OR = {
@@ -450,7 +438,7 @@ custom_name = {
 		estate_nobles_decentralized_tribe
 		estate_nobles_tribe_unification
 		estate_nobles_tribe_centralization
-		estate_nobles_grant_power_to_the_bashorun   
+		estate_nobles_grant_power_to_the_bashorun
 	}
 
 	agendas = {

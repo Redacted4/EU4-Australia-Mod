@@ -5,7 +5,7 @@ united_cantons_reform = {
 		governing_capacity = -50
 		free_policy = 1
 		mercenary_manpower = 0.5
-		max_absolutism = -30
+		max_absolutism = 10
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -41,6 +41,14 @@ parliamentary_reform = {
 	}
 	
 	trigger = {		
+		if = {
+			limit = { has_dlc = "Common Sense" }
+			OR = {
+				NOT = { has_estate = estate_nobles }
+				crown_stronger_than_estate = { estate = estate_nobles }
+				has_reform = parliamentary_reform
+			}
+		}	
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
@@ -82,6 +90,9 @@ parliamentary_reform = {
 				religion = confucianism
 			}
 		}
+	}
+	post_removed_effect = {
+		give_estate_land_share_init = { estate = estate_nobles }
 	}
 }
 

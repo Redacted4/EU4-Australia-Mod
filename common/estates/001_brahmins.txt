@@ -9,12 +9,13 @@ estate_brahmins = {
 			AND = {
 				technology_group = indian
 				religion_group = muslim
+				NOT = { has_country_flag = gained_dhimmi_estate }
 			}
 			religion = hinduism
 		}
 		NOT = { has_reform = pirate_republic_reform }
-		
-		
+		#NOT = { has_government_attribute = is_merchant_republic }
+		#NOT = { has_reform = veche_republic }		
 		NOT = { has_reform = trading_city }
 		NOT = { has_reform = siberian_tribe }
 		NOT = { has_reform = cossacks_reform }
@@ -150,6 +151,8 @@ estate_brahmins = {
 		estate_brahmins_monopoly_of_incense
 		estate_brahmins_monopoly_of_wool
 		estate_brahmins_statutory_rights
+		estate_brahmins_religious_diplomats
+		estate_brahmins_one_faith_one_culture
 	}
 
 	agendas = {

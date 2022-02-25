@@ -116,7 +116,7 @@ technology = { #Shipyards
 	}
 	
 	dock = yes	
-	#may_steal_maps = yes
+	may_steal_maps = yes
 
 }
 
@@ -366,7 +366,6 @@ technology = { #Naval Professionalization
 technology = { #The Chebeck
 	# Tech 21
 	year = 1674
-	
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -428,7 +427,6 @@ technology = { #Heavy Frigates
 technology = { #The Archipelago Frigate
 	# Tech 24
 	year = 1715
-	
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5

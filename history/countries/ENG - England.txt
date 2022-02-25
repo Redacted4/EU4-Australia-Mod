@@ -9,8 +9,6 @@ religion = catholic
 capital = 236 # London
 
 
-
-
 #1422.8.31 = { #Succession
 
 1429.11.6 = { #Coronation
@@ -31,7 +29,7 @@ capital = 236 # London
 
 1435.1.1 = { leader = {	name = "Richard Plantagenet"	type = general	fire = 2	shock = 4	manuever = 3	siege = 0	death_date = 1460.12.30 } }
 
-1444.4.23 = {
+1445.4.23 = {
 	queen = {
 		country_of_origin = PRO
 		name = "Margaret"
@@ -686,9 +684,9 @@ capital = 236 # London
 		name = "Oliver"
 		dynasty = "Cromwell"
 		birth_date = 1599.4.25
-		adm = 5
-		dip = 5
-		mil = 6
+		adm = 4
+		dip = 4
+		mil = 5
 		leader = { name = "Oliver Cromwell"	type = general	fire = 5	shock = 5	manuever = 4	siege = 1 }
 	}
 	

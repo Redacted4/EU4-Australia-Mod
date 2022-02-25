@@ -1,5 +1,4 @@
 # [range_from, range_to[
-# MJL DOF Courtesy of MJL, Gasior and Monkeyman
 
 defender_of_faith_1 = {
 	level = 1
@@ -7,12 +6,11 @@ defender_of_faith_1 = {
     modifier = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
 		land_morale = 0.05
     }
-	same_faith_modifier = {
-		# Applies also on the DoF
-		missionary_maintenance_cost = -0.1
-	}
 	ai_will_do = {
 		factor = 0.1
 		modifier = {
@@ -59,11 +57,11 @@ defender_of_faith_2 = {
 		missionary_maintenance_cost = -0.15
 		land_morale = 0.05
 		prestige = 0.5
+		war_exhaustion = -0.03
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
     }
-	same_faith_modifier = {
-		# Applies also on the DoF
-		missionary_maintenance_cost = -0.1
-	}
 	ai_will_do = {
 		factor = 0.2
 		modifier = {
@@ -109,7 +107,12 @@ defender_of_faith_3 = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.2
 		land_morale = 0.05
+		naval_morale = 0.05
 		prestige = 1
+		war_exhaustion = -0.03
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
     }
 	ai_will_do = {
 		factor = 0.5
@@ -156,9 +159,13 @@ defender_of_faith_4 = {
 		missionaries = 1
 		missionary_maintenance_cost = -0.2
 		land_morale = 0.05
+		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
-		manpower_in_true_faith_provinces = 0.1
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
+		manpower_in_true_faith_provinces = 0.2
     }
 	ai_will_do = {
 		factor = 1
@@ -204,10 +211,18 @@ defender_of_faith_5 = {
 		missionaries = 2
 		missionary_maintenance_cost = -0.2
 		land_morale = 0.05
+		naval_morale = 0.05
 		prestige = 1
 		war_exhaustion = -0.03
 		manpower_in_true_faith_provinces = 0.2
+		papal_influence = 1
+		church_power_modifier = 0.1
+		monthly_fervor_increase = 1
     }
+	same_faith_modifier = {
+		# Applies also on the DoF
+		missionary_maintenance_cost = -0.2
+	}
 	ai_will_do = {
 		factor = 1.5
 		modifier = {

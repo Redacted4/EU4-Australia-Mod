@@ -118,7 +118,7 @@ country_decisions = {
 					move_capital_effect = yes
 				}
 			}
-			
+
 			change_tag = NED
 			swap_non_generic_missions = yes
 			low_countries_region = {

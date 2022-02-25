@@ -1,4 +1,4 @@
-#Removed Reference to Diplomatic Ideas
+# Removed Reference to Diplomatic Ideas
 
 # New personalities cannot be added to this file
 # Do not change existing personality names!
@@ -286,6 +286,10 @@ ai_militarist = {
 				has_reform = indep_daimyo
 				has_reform = shogunate
 			}
+		}
+		modifier = {
+			factor = 100
+			has_reform = chinese_warlord
 		}
 		modifier = {
 			factor = 2

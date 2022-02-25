@@ -2,7 +2,7 @@ monarch_power = ADM
 
 # applied when a country is ahead of time in this technology
 ahead_of_time = {
-	production_efficiency = 0.1
+	production_efficiency = 0.2
 	yearly_corruption = -0.05
 }
 
@@ -83,7 +83,6 @@ technology = { #National Ideas
 		renaissance = 0.15
 	}
 
-
 	allowed_idea_groups = 1
 	production_efficiency	 =	0.02
 }
@@ -99,7 +98,7 @@ technology = { #Workshop
 	#Workshop
 	farm_estate = yes
 	workshop = yes
-	ramparts = yes		   
+	ramparts = yes
 }
 
 technology = { #Renaissance Thought
@@ -116,12 +115,12 @@ technology = { #Renaissance Thought
 
 technology = { #Courthouse
 	# Tech 8
-
 	year = 1505
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
 	}
+
 	courthouse = yes
 	governing_capacity = 250
 
@@ -257,7 +256,6 @@ technology = { #University
 	university = yes	
 	governing_capacity = 250
 	
-	
 	administrative_efficiency = 0.1
 }
 
@@ -277,7 +275,7 @@ technology = { #National Sovereignty
 
 technology = { #Cathedral
 	# Tech 19
-	year = 1648	
+	year = 1648
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -409,7 +407,6 @@ technology = { #Separation of Powers
 technology = { #Modern Bureaucracy
 	# Tech 27
 	year = 1760
-
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -420,6 +417,7 @@ technology = { #Modern Bureaucracy
 		enlightenment = 0.5
 	}
 
+	administrative_efficiency = 0.1
 	governing_capacity = 250
 }
 
@@ -444,7 +442,6 @@ technology = { #Rotherham Plough
 technology = { #Rights of Man
 	# Tech 29
 	year = 1790
-	
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5

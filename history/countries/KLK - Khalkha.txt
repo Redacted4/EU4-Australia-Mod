@@ -3,7 +3,7 @@ add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = tengri_pagan_reformed
 primary_culture = khalkha
-capital = 2116 #Ih Huree
+capital = 4218
 
 
 1634.1.1 = {

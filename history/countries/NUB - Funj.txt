@@ -4,11 +4,11 @@ primary_culture = nubian
 religion = coptic
 technology_group = east_african
 unit_type = sub_saharan
-capital = 1221	# El Obeid
+capital = 1222	# Sennar
 
 #Sultans of Senar
 
-1444.1.1 = {
+1503.1.1 = {
 	monarch = {
 		name = "'Amâra I Dûnqas"
 		dynasty = "Senar"
@@ -16,7 +16,6 @@ capital = 1221	# El Obeid
 		dip = 4
 		mil = 5
 		leader = {	name = "'Amâra I Dûnqas"       	type = general	fire = 2	shock = 2	manuever = 4	siege = 0}
-		birth_date = 1414.1.1
 	}
 
 }

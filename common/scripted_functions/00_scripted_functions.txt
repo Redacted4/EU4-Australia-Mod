@@ -50,8 +50,6 @@ can_increase_stability = {
 }
 
 # ROOT = province, FROM = country
-
-
 can_add_province_to_hre = {
 	condition = {
 		tooltip = "ONLY_ELIGIBLE_PROVINCES_MAY_JOIN_HRE"
@@ -70,10 +68,13 @@ can_add_province_to_hre = {
 	}
 }
 
+#ROOT = province, FROM = country
 can_remove_province_from_hre = {
 	condition = {
 		potential = {
-			ai = yes
+			owner = {
+				ai = yes
+			}
 		}
 		allow = {
 			owner = {

@@ -1009,6 +1009,7 @@ incorruptible_personality = {
 	ruler_allow = {
 		allow = {
 			NOT = { ruler_has_personality = embezzler_personality }
+			NOT = { has_ruler_modifier = borgia_pope }
 			ADM = 3
 		}
 	
@@ -2424,6 +2425,7 @@ sinner_personality = {
 		OR = {
 			religion_group = christian
 			religion_group = muslim
+			religion_group = jewish_group
 		}
 	}
 	

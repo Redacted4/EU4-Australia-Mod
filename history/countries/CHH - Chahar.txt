@@ -3,7 +3,7 @@ add_government_reform = steppe_horde
 technology_group = nomad_group
 religion = vajrayana
 primary_culture = mongol
-capital = 2115	# Chahar
+capital = 702	# Hohhot
 
 
 1519.1.1 = {	

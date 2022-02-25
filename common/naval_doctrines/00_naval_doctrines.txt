@@ -3,12 +3,12 @@ fleet_in_being =
 	can_select = {
 		is_primitive = no
 	}
-
+	
 	country_modifier = {
 		naval_maintenance_modifier = -0.15
 		naval_forcelimit_modifier = 0.15
 	}
-
+	
 	button_gfx = 1
 }
 
@@ -22,7 +22,7 @@ free_oarsmen =
 		galley_power = 0.1
 		naval_morale = 0.05
 	}
-
+	
 	button_gfx = 2
 }
 
@@ -36,7 +36,7 @@ merchant_navy =
 		global_ship_trade_power = 0.33
 		global_sailors_modifier = 0.15
 	}
-
+	
 	button_gfx = 3
 }
 
@@ -50,7 +50,7 @@ ship_boarding =
 		capture_ship_chance = 0.33
 		privateer_efficiency = 0.33
 	}
-
+	
 	button_gfx = 4
 }
 
@@ -71,6 +71,7 @@ wooden_wall =
 
 	button_gfx = 5
 }
+
 grand_armada =
 {
 	can_select = {
