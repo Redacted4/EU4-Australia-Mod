@@ -28,7 +28,7 @@ NDefines.NMilitary.DAYS_PER_PHASE = 1						-- from 3
 NDefines.NEconomy.BASE_INTERESTS = 4					-- from 4
 NDefines.NMilitary.SLACKEN_MANPOWER_INCREASE = 1		-- from 2
 NDefines.NMilitary.MARINE_SHOCK_DAMAGE_TAKEN = -0.10	-- from +0.10
-NDefines.NEconomy.TRADE_NON_CAPITAL_OFFICE = 0							-- removes penalty for collecting in multiple nodes
+NDefines.NEconomy.TRADE_NON_CAPITAL_OFFICE = 0.25							-- from 0.5
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
 
 -- Turns off tributaries providing monarch points
@@ -67,3 +67,11 @@ NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12			--from 60
 
 --Non-painful national focus
 NDefines.NCountry.NAT_FOCUS_YEARS = 0
+
+--Garrison Changes
+NDefines.NMilitary.GARRISON_SIZE = 3000 -- from 1000
+NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER = 1    -- from 3
+
+--Razing Changes
+NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0 -- from 0.33
+NDefines.NCountry.RAZE_PROVINCE_POWER_PER_DEVELOPMENT = 0 -- from 25
