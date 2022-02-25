@@ -15,34 +15,7 @@ monarchy_mechanic = {
 
 #Feudalism vs Autocracy:
 
-kalmar_union_reform = {
-	icon = "elective_monarchy"
-	allow_normal_conversion = yes
-	legacy_equivalent = despotic_monarchy
-	valid_for_nation_designer = yes
-	potential = {
-		OR = {
-			tag = DAN
-			was_tag = DAN
-			has_reform = kalmar_union_reform
-			have_had_reform = kalmar_union_reform
-		}
-	}
-	nation_designer_cost = 10
-	modifiers = {
-		liberty_desire = 10
-		max_absolutism = -20
-		trade_steering = 0.1
-		caravan_power = 0.1
-		embargo_efficiency = 0.25
-		placed_merchant_power = 10
-	}
-	custom_attributes = {
-		enables_plutocratic_idea_group = yes
-		enables_aristocratic_idea_group = no
-		can_use_trade_post = yes
-	}
-}
+
 
 feudalism_reform = {
 	icon = "castle"
