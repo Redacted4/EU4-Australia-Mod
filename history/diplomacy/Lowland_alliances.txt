@@ -1,17 +1,17 @@
 #Dutch states
-union = {
+vassal = {
 	first = BUR
 	second = FLA
 	start_date = 1444.1.1
 	end_date = 1444.11.12
 }
-union = {
+vassal = {
 	first = BUR
 	second = BRB
 	start_date = 1444.1.1
 	end_date = 1444.11.12
 }
-union = {
+vassal = {
 	first = BUR
 	second = HOL
 	start_date = 1444.1.1
