@@ -70,7 +70,8 @@ NDefines.NCountry.NAT_FOCUS_YEARS = 0
 
 --Garrison Changes
 NDefines.NMilitary.GARRISON_SIZE = 3000 -- from 1000
-NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER = 1    -- from 3
+NDefines.NMilitary.SIEGE_FORCE_NEEDED_MULTIPLIER = 0.35    -- from 3 -- Setting to 1 doesn't work for whatever reason
+NDefines.NMilitary.FORTRESS_COST = 0.1666
 
 --Razing Changes
 NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0 -- from 0.33
