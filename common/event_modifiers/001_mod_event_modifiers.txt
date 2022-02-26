@@ -1,3 +1,6 @@
+phillip_the_good_modifier = {
+	reduced_liberty_desire = 30
+}
 
 pearl_of_the_antilles = {
 	trade_goods_size = 4
@@ -40,6 +43,8 @@ influence_subject_modfier_3 = {
 explo_trade_modifier = {
 	trade_efficiency = 0.05
 }
+
+
 
 #Modifiers for idea provincial modifiers
 

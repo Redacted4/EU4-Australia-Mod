@@ -30,6 +30,7 @@
  prussia_in_name:0 "Prussian Only In Name"
  thirty_percent_janissaries:0 "§Y30%§! or above of the [Root.GetAdjective] Army consists of Janissary Regiments."
  religious_dev_cost:0 "Church Sponsored Development Efforts"
+ phillip_the_good_modifier:0 "Phillip the Good"
  ##Idea Provincial Modifiers:
  infra_dev_province_modifier:0 "Organised Land Clearing"
  religious_tradition_province_modifier:0 "Religious Tradition"
