@@ -294,9 +294,31 @@ march = {
 		modifier = march_subject
 	}
 	modifier_overlord = {
-		modifier = influence_subject_modfier
+		modifier = influence_subject_modfier_1
 		trigger = {
 			total_development = 100
+			any_known_country = {
+				overlord_of = ROOT 
+				has_idea = marcher_lords_new
+			}
+		}
+	}
+	
+	modifier_overlord = {
+		modifier = influence_subject_modfier_2
+		trigger = {
+			total_development = 200
+			any_known_country = {
+				overlord_of = ROOT 
+				has_idea = marcher_lords_new
+			}
+		}
+	}
+	
+	modifier_overlord = {
+		modifier = influence_subject_modfier_3
+		trigger = {
+			total_development = 300
 			any_known_country = {
 				overlord_of = ROOT 
 				has_idea = marcher_lords_new
