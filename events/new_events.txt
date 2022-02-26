@@ -159,6 +159,18 @@ country_event = {
 			}
 			elector = yes
 		}
+		###Independence for Holland if player
+		###And Elector if slot available
+		HOL = {
+			if = {
+				limit = {
+					ai = no
+				}
+				grant_independence = yes
+				elector = yes
+			}
+
+		}
 		####Grants spare elector slots to AI
 		if = {
 			limit = {
@@ -218,6 +230,7 @@ country_event = {
 			}
 			set_country_flag = can_form_prussia_flag
 		}
+		
 
 	}
 
