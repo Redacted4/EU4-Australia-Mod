@@ -406,7 +406,7 @@
  guerrilla_warfare_idea:0 "Guerrilla Warfare"
  guerrilla_warfare_idea_desc:0 "By training local patriots in the art of guerilla warfare, we shall become an ulcer on the heel of our enemies.\n§YAll owned forts permanently gain the §RScorched Earth§! modifer§!\nWith the idea itself granting: "
  marcher_lords_new:0 "Marcher Lords"
- marcher_lords_new_desc:0 "By granting considerable autonomy to vassals in border regions, these 'Marcher Lords' will be able to raise large military armies to support us in our wars. \n§YEach vassal/march now gives the following bonuses:§! \nAt 100 Dev: Force Limit: §G+10§!\nAt 200 Dev: Merchants: §G+1§!\nAt 300 Dev: Diplomatic Relations: §G+1§!\n§YWith the idea itself granting:§!"
+ marcher_lords_new_desc:0 "By granting considerable autonomy to vassals in border regions, these 'Marcher Lords' will be able to raise large military armies to support us in our wars. \n§YEach vassal/march now gives the following bonuses:§! \nAt 100 Dev: Force Limit: §G+5§!\nAt 200 Dev: Merchants: §G+1§!\nAt 300 Dev: Diplomatic Relations: §G+1§!\n§YWith the idea itself granting:§!"
  bill_of_rights_new:0 "Bill of Rights"
  bill_of_rights_new_desc:0 "By granting the citizens certain fundamental rights, we reduce the likelihood of peasant uprising. \nUnlocks a unique local mercenary company: §YThe Republican Guard§!\nWhich has the following modifiers:\nMorale of Armies §G+10%§!\nMercenary Cost §G-25%§!\n§YHiring Mercenaries No Longer Affects Army Professionalism§!\n With the idea itself granting:"
  organised_mercenary_recruitment_new:0 "Mercenary Recruitment"
