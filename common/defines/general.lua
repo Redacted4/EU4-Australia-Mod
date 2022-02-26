@@ -30,6 +30,7 @@ NDefines.NMilitary.SLACKEN_MANPOWER_INCREASE = 1		-- from 2
 NDefines.NMilitary.MARINE_SHOCK_DAMAGE_TAKEN = -0.10	-- from +0.10
 NDefines.NEconomy.TRADE_NON_CAPITAL_OFFICE = 0.25							-- from 0.5
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
+NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
 
 -- Turns off tributaries providing monarch points
 NDefines.NDiplomacy.TRIBUTE_BASE_ADM = 0						-- Tributary State: Part Adm tribute, mulitplied by total development
