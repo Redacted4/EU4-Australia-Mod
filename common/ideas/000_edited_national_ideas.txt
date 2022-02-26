@@ -466,7 +466,7 @@ VEN_ideas = {
 		naval_forcelimit_modifier = 0.25
 		galley_cost = -0.20
 	}
-	printing_industry = {
+	cernida_system = {
 		infantry_power = 0.15
 	}
 	stato_da_mar = {
