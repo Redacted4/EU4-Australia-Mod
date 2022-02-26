@@ -61,7 +61,7 @@ country_decisions = {
 			add_government_reform = prussian_monarchy
 		}
 	}
-
+	#Form as Brandenburg
 	form_kingdom_of_prussia = {
 		major = yes
 		potential = {
@@ -211,7 +211,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+	#Form As Teutons
 	prussian_nation = {
 		major = yes
 		potential = {
@@ -328,7 +328,7 @@ country_decisions = {
 			factor = 1
 		}
 	}
-	
+	#Generic Formation
 	prussian_nation_general = {
 		major = yes
 		potential = {
@@ -363,17 +363,12 @@ country_decisions = {
 				tag = TEU
 				government = theocracy
 			}
-			OR = {
-				tag = LIV
-				tag = SAX
-				tag = POM
-				tag = ANH
-				tag = MAG
-				tag = MKL
-				tag = RIG
-				tag = THU
-				tag = DNZ
+			#Granted in startup event 
+			OR = { 
+				has_country_flag = can_form_prussia_flag
+				tag = DNZ #Danzig doesn't exist day one so won't receive the country flag
 			}
+
 		}
 		provinces_to_highlight = {
 			OR = {

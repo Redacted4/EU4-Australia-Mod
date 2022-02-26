@@ -104,6 +104,7 @@ country_event = {
 #+1 Stab at Start of game
 #Transports for England
 #Redistributes Electorships to players
+#Stop Prussia Cheesing
 
 country_event = {
 
@@ -198,6 +199,24 @@ country_event = {
 			MAI = {
 				elector = yes
 			}
+		}
+		###Gives country flag to all eligible Prussia candidates
+		every_country = {
+			limit = {
+				OR = {
+					tag = LIV
+					tag = SAX
+					tag = STE
+					tag = WOL 
+					tag = MKL 
+					tag = ANH
+					tag = MAG
+					tag = MKL
+					tag = RIG
+					tag = THU
+				}
+			}
+			set_country_flag = can_form_prussia_flag
 		}
 
 	}
