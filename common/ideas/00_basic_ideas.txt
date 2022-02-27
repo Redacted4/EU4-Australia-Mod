@@ -337,6 +337,11 @@ spy_ideas = {
 
 	efficient_spies = {
 		spy_offence = 0.5
+		siege_ability = 0.1
+	}	
+	
+	agent_training_new = {
+		diplomats = 1
 		advisor_cost = -0.10
 	}
 
@@ -359,7 +364,7 @@ spy_ideas = {
 	}
 	audit_checks = {
 		yearly_corruption = -0.25
-		diplomatic_free_policies
+		free_dip_policy = 1
 	}
 
 	ai_will_do = {

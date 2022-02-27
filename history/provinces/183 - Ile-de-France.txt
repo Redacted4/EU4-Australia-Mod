@@ -1,4 +1,4 @@
-# 183 Île-de-France - Principal cities: Paris
+# 183 ï¿½le-de-France - Principal cities: Paris
 
 owner = FRA
 controller = FRA
@@ -16,7 +16,6 @@ discovered_by = eastern
 discovered_by = western
 discovered_by = muslim
 discovered_by = ottoman
-centre_of_trade = 1
 
 1444.11.12 = {
 	owner = PRS

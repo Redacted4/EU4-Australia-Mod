@@ -69,7 +69,6 @@ country_decisions = {
 			capital_scope = {
 				region = italy_region
 			}
-			date = 1444.11.11
 			NOT = { has_country_flag = joined_hre_decision_flag }
 			ai = no
 			NOT = { is_year = 1445 }
@@ -279,6 +278,7 @@ country_decisions = {
 				kingdom_of_burgundy_scripted_trigger = yes
 				kingdom_of_italy_scripted_trigger = yes
 				kingdom_of_germany_scripted_trigger = yes
+			}
 		}
 		
 		ai_will_do = {

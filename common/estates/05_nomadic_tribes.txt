@@ -19,13 +19,13 @@ estate_nomadic_tribes = {
 				has_terrain = steppe
 			}
 			any_owned_province = {
-				has_culture = bedouin_arabic
+				culture = bedouin_arabic
 			}
 			any_owned_province = {
-				has_culture = berber
+				culture = berber
 			}
 			any_owned_province = {
-				has_culture = tuareg
+				culture = tuareg
 			}
 		}
 		OR = {
