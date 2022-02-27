@@ -1,0 +1,20 @@
+namespace = crownland
+
+#   5% Crownland Event
+country_event = {
+	id = crownland_5
+	title = crownland_5.t
+	desc = crownland_5.d
+	picture = TRADEGOODS_eventPicture
+
+    is_triggered_only = yes
+
+    hidden = yes
+
+	immediate = {
+		
+	}
+	option = {
+		name = crownland_5.a
+        take_estate_land_share_massive = { estate = all }
+}
