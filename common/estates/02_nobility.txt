@@ -32,7 +32,7 @@ estate_nobles = {
 			NOT = { has_reform = celestial_empire }
 			has_dlc = "Mandate of Heaven"
 		}
-		is_nomad = no
+		#is_nomad = no
 		is_colonial_nation = no
 		#OR = {
 		#	NOT = { has_dlc = "Common Sense" }
@@ -442,7 +442,6 @@ custom_name = {
 		estate_nobles_monopoly_of_gems
 		estate_nobles_statutory_rights
 		estate_nobles_command_of_the_military
-		estate_nobles_magna_carta
 		estate_nobles_better_integration
 		estate_nobles_cawa_peace_keepers
 		estate_nobles_cawa_offensive_fighters
@@ -450,7 +449,8 @@ custom_name = {
 		estate_nobles_decentralized_tribe
 		estate_nobles_tribe_unification
 		estate_nobles_tribe_centralization
-		estate_nobles_grant_power_to_the_bashorun   
+		estate_nobles_grant_power_to_the_bashorun
+		estate_nobles_bill_of_rights
 	}
 
 	agendas = {
