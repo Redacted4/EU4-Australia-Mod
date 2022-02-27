@@ -821,7 +821,8 @@ veche_republic = {
 	modifiers = {
 		merchants = 1
 		governing_capacity = 50
-		max_absolutism = -50
+		max_absolutism = -10
+		autonomy_change_time = -0.33	
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
