@@ -825,6 +825,7 @@ veche_republic = {
 		merchants = 1
 		governing_capacity = 50
 		max_absolutism = -10
+		autonomy_change_time = -0.33	
 	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 40
@@ -875,7 +876,7 @@ veche_republic = {
 			NOT = { has_dlc = "Res Publica" }
 		}
 		government_abilities = {
-			russian_mechanic
+			#russian_mechanic
 		}
 	}
 	conditional = {
@@ -885,7 +886,7 @@ veche_republic = {
 			NOT = { has_dlc = "Res Publica" }
 		}
 		government_abilities = {
-			russian_mechanic
+			#russian_mechanic
 		}
 		can_form_trade_league = yes
 		trade_city_reform = trading_city
@@ -897,7 +898,7 @@ veche_republic = {
 			has_dlc = "Res Publica"
 		}
 		government_abilities = {
-			russian_mechanic
+			#russian_mechanic
 		}
 		can_use_trade_post = yes
 	}
@@ -908,7 +909,7 @@ veche_republic = {
 			has_dlc = "Res Publica"
 		}
 		government_abilities = {
-			russian_mechanic
+			#russian_mechanic
 		}
 		can_use_trade_post = yes
 		can_form_trade_league = yes
