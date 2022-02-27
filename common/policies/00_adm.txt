@@ -1,5 +1,5 @@
 the_combination_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = aristocracy_ideas
@@ -11,7 +11,7 @@ the_combination_act = {
 	}
 	
 	production_efficiency = 0.20
-
+	cavalry_fire = 0.2
 	ai_will_do = {
 		factor = 1
 		modifier = {
@@ -38,7 +38,7 @@ the_combination_act = {
 }
 
 the_court_of_wards_and_liveries = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = aristocracy_ideas
@@ -49,8 +49,8 @@ the_court_of_wards_and_liveries = {
 		full_idea_group = economic_ideas
 	}
 		
-	global_tax_modifier = 0.10
-	cavalry_cost = -0.10
+	shock_damage = 0.05
+	cavalry_power = 0.10
 		
 	ai_will_do = {
 		factor = 1	
@@ -90,7 +90,7 @@ the_court_of_wards_and_liveries = {
 }
 
 formalized_measures = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 
 	potential = {
@@ -103,8 +103,8 @@ formalized_measures = {
 		full_idea_group = economic_ideas
 	}	
 
-	global_tax_modifier = 0.10
-	republican_tradition = 0.2
+	land_morale = 0.05
+	shock_damage = 0.075
 
 	ai_will_do = {
 		factor = 1
@@ -236,7 +236,7 @@ the_royal_commission_act = {
 
 
 public_welfare_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 
 	potential = {
@@ -249,8 +249,7 @@ public_welfare_act = {
 		full_idea_group = economic_ideas
 	}
 
-	global_unrest = -1
-	stability_cost_modifier = -0.1
+	shock_damage_received = 0.15
 
 	ai_will_do = {
 		factor = 1
@@ -278,7 +277,7 @@ public_welfare_act = {
 }
 
 the_spy_discovery_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 
 	potential = {
@@ -291,8 +290,7 @@ the_spy_discovery_act = {
 		full_idea_group = administrative_ideas
 	}
 
-	yearly_corruption = -0.1
-	global_spy_defence = 0.2
+	land_attrition = -0.4
 
 	ai_will_do = {
 		factor = 0.6 #Keep in mind lower stab cost is probably pretty weak given this costs ADM...
@@ -341,7 +339,7 @@ enforce_religious_law = {
 }
 
 the_tolerance_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = religious_ideas
@@ -353,8 +351,7 @@ the_tolerance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	tolerance_heretic = 2
-	rival_border_fort_maintenance = -0.5
+	land_forcelimit_modifier = 0.2
 
 	ai_will_do = {
 		factor = 1
@@ -382,7 +379,7 @@ the_tolerance_act = {
 }
 
 vassal_taxation_policy = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = offensive_ideas
@@ -395,6 +392,7 @@ vassal_taxation_policy = {
 	}
 
 	vassal_income = 0.5
+	shock_damage = 0.15
 
 	ai_will_do = {
 		factor = 1
@@ -444,7 +442,7 @@ the_pioneer_policy = {
 
 
 land_inheritance_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = administrative_ideas
@@ -456,8 +454,8 @@ land_inheritance_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	global_tax_modifier = 0.1
-	global_manpower_modifier = 0.1
+	mercenary_discipline = 0.05
+	reinforce_speed = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -484,7 +482,7 @@ land_inheritance_act = {
 
 
 the_witchcraft_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = religious_ideas
@@ -496,8 +494,7 @@ the_witchcraft_act = {
 		full_idea_group = aristocracy_ideas
 	}
 	
-	global_unrest = -1
-	global_missionary_strength = 0.01
+	land_morale = 0.10
 
 	ai_will_do = {
 		factor = 1
@@ -543,7 +540,7 @@ the_witchcraft_act = {
 
 
 the_education_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = innovativeness_ideas
@@ -555,8 +552,7 @@ the_education_act = {
 		full_idea_group = plutocracy_ideas
 	}
 
-	prestige = 0.5
-	advisor_cost = -0.1
+	artillery_fire = 0.5
 
 	ai_will_do = {
 		factor = 0.8
@@ -774,7 +770,7 @@ overseas_dominions = {
 }
 
 enlightened_aristocracy = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = humanist_ideas
@@ -788,6 +784,7 @@ enlightened_aristocracy = {
 	
 	production_efficiency = 0.1
 	idea_cost = -0.1
+	cavalry_shock = 0.3
 
 	ai_will_do = {
 		factor = 1
@@ -836,7 +833,7 @@ enlightened_aristocracy = {
 }
 
 the_liberation_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = humanist_ideas
@@ -848,8 +845,8 @@ the_liberation_act = {
 		full_idea_group = offensive_ideas
 	}	
 	
-	global_unrest = -1
-	years_of_nationalism = -5
+	leader_land_fire = 1
+	fire_damage = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -887,7 +884,8 @@ visionary_thinkers = {
 	}	
 	
 	prestige = 0.5
-	army_tradition_decay = -0.005
+	army_tradition_decay = -0.01
+	yearly_army_professionalism = 0.005
 
 	ai_will_do = {
 		factor = 0.6
@@ -936,7 +934,7 @@ the_transportation_act = {
 }
 
 harbour_administration = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = naval_ideas
@@ -948,8 +946,7 @@ harbour_administration = {
 		full_idea_group = administrative_ideas
 	}
 
-	embracement_cost = -0.2
-	global_ship_recruit_speed = -0.05
+	land_forcelimit_modifier = 0.2
 	
 	ai_will_do = {
 		factor = 1
@@ -1018,7 +1015,7 @@ supply_convoys = {
 }
 
 cultural_recognition_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = humanist_ideas
@@ -1030,8 +1027,7 @@ cultural_recognition_act = {
 		full_idea_group = plutocracy_ideas
 	}	
 	
-	num_accepted_cultures = 1
-	global_institution_spread = 0.1
+	land_morale = 0.1
 	
 	ai_will_do = {
 		factor = 1
@@ -1039,7 +1035,7 @@ cultural_recognition_act = {
 }
 
 the_licensing_of_the_press_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 
 	potential = {
 		has_idea_group = administrative_ideas
@@ -1056,6 +1052,7 @@ the_licensing_of_the_press_act = {
 	devotion = 1
 	horde_unity = 1
 	meritocracy = 0.5
+	army_tradition = 1
 	
 	ai_will_do = {
 		factor = 0.8
@@ -1128,7 +1125,7 @@ the_statute_of_monopolies = {
 }
 
 taxation_with_representation = {
-	monarch_power = ADM
+	monarch_power = MIL
 	potential = {
 		has_idea_group = expansion_ideas
 		has_idea_group = plutocracy_ideas
@@ -1140,7 +1137,8 @@ taxation_with_representation = {
 	}
 	
 	production_efficiency = 0.1
-	global_manpower_modifier = 0.1
+	global_manpower_modifier = 0.3
+	land_morale = 0.05
 
 	ai_will_do = {
 		factor = 1
@@ -1314,7 +1312,7 @@ church_sponsored_guilds = {
 }
 
 anti_heresy_act = {
-	monarch_power = ADM
+	monarch_power = MIL
 	
 	potential = {
 		has_idea_group = religious_ideas
@@ -1326,8 +1324,8 @@ anti_heresy_act = {
 		full_idea_group = offensive_ideas
 	}
 	
-	religious_unity = 0.2
-	global_heretic_missionary_strength = 0.03
+	land_forcelimit_modifier = 0.15
+	land_morale = 0.05
 
 	ai_will_do = {
 		factor = 1
