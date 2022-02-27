@@ -894,7 +894,7 @@ military_allotment_act = {
 	}
 
 	mercenary_manpower = 0.25
-	mercenary_maintenance = -0.15
+	merc_maintenance_modifier = -0.15
 
 	ai_will_do = {
 		factor = 0.8

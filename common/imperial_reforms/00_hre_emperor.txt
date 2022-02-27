@@ -208,7 +208,7 @@ emperor_rechenschaft = {
 	}
 	elector = {
 		infantry_power = 0.05
-		governing_capactity = 200
+		governing_capacity = 200
 	}
 }
 
@@ -293,7 +293,7 @@ emperor_erbkaisertum = {
 	}
 	emperor = {
 		imperial_authority = 0.25
-		manpower = 40
+		global_manpower = 40
 		prestige = 0.5
 	}
 	on_effect = {
@@ -326,7 +326,7 @@ emperor_privilegia_de_non_appelando = {
 	
 	emperor = {
 		imperial_authority = 0.25
-		governing_capactity = 400
+		governing_capacity = 400
 		legitimacy = 0.5
 	}
 	

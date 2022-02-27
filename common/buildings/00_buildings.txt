@@ -141,12 +141,7 @@ temple = {
 		}
 	}
 	on_destroyed = {
-		limit = {
-			has_province_modifier = religious_tradition_province_modifier
-		}
-		hidden_effect = {
-			remove_province_modifier = religious_tradition_province_modifier
-		}
+		remove_province_modifier = religious_tradition_province_modifier
 		if = {
 			limit = {
 				FROM = {
@@ -589,8 +584,6 @@ dock = {
 				}
 			}
 		}
-	}
-
 
 		add_development_from_building = {
 			building = dock
@@ -600,7 +593,8 @@ dock = {
 	}
 	
 	on_destroyed = {			
-		limit = {
+		if = {
+			limit = {
 				has_province_modifier = maritime_free_building_slot_province_modifier
 				OR = {
 					NOT = { has_building = shipyard }
@@ -611,8 +605,6 @@ dock = {
 				remove_province_modifier = maritime_free_building_slot_province_modifier
 			}
 		}
-
-
 		if = {
 			limit = {
 				FROM = {
