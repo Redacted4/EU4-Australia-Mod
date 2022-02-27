@@ -30,8 +30,8 @@ infra_defensive_policy = {
 		full_idea_group = infrastructure_ideas
 	}
 	
-	shock_damage_received = -0.05
-	fire_damage_received = -0.05
+	shock_damage_received = -0.075
+	fire_damage_received = -0.075
 	
 	ai_will_do = {
 		factor = 0.5
