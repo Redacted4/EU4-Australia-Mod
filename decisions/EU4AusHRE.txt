@@ -5,7 +5,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			tag = DAN
-			NOT = { has_country_flag = joined_hre_decision_flag }
+			NOT = { has_country_flag = denmark_joined_hre_decision_flag }
 			ai = no
 			NOT = { is_year = 1445 }
 			NOT = {	is_month = 11 }
@@ -16,7 +16,7 @@ country_decisions = {
 			NOT = {	is_month = 11 }
 		}
 		effect = {
-			set_country_flag = joined_hre_decision_flag
+			set_country_flag = denmark_joined_hre_decision_flag
 			inherit = SHL
 			break_union = NOR
 			break_union = SWE
