@@ -349,7 +349,6 @@ spy_ideas = {
 		advisor_cost = -0.10
 	}
 
-
 	guerrilla_warfare_idea = {
 		movement_speed = 0.1
 	}
