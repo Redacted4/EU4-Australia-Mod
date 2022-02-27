@@ -83,6 +83,9 @@ protectorate_parliament_reform = {
 	potential = {
 		has_reform = protectorate_parliament_reform
 	}
+	trigger = {		
+		has_estate_privilege = estate_nobles_bill_of_rights
+	}
 	lock_level_when_selected = yes
 	valid_for_new_country = no
 	valid_for_nation_designer = no
@@ -933,6 +936,9 @@ american_republic = {
 			}
 		}
 	}
+	trigger = {		
+		has_estate_privilege = estate_nobles_bill_of_rights
+	}
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
 	nation_designer_trigger = {
@@ -976,6 +982,9 @@ federal_republic = {
 				have_had_reform = federal_republic
 			}
 		}
+	}
+	trigger = {		
+		has_estate_privilege = estate_nobles_bill_of_rights
 	}
 	legacy_equivalent = federal_republic_legacy
 	valid_for_nation_designer = yes

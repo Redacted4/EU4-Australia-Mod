@@ -1,5 +1,5 @@
 ﻿l_english:
- estate_nobles_magna_carta:0 "The Magna Carta"
+ magna_carta_desc:0 "The Magna Carta"
  estate_nobles_magna_carta_desc:0 "The Magna Carta (“Great Charter”) is a document guaranteeing English political liberties that was drafted at Runnymede, a meadow by the River Thames, and signed by King John on June 15, 1215, under pressure from his rebellious barons. By declaring the sovereign to be subject to the rule of law and documenting the liberties held by “free men,” it provided the foundation for individual rights in Anglo jurisprudence. "
  estate_state:0 "Bureaucracy"
  estate_state_desc:0 "This estate isn't really an estate at all, but a method for you to implement special policies unlocked via certain national idea sets"
@@ -16,3 +16,8 @@
  estate_kulaks:0 "Landholders"
  estate_church_mysticism_privilege:0 "Encourage the Sufi Scholars"
  estate_church_mysticism_privilege_desc:0 "The increased influence of Sufi scholars has increased our national pride and encouraged much interest in the nobility in escoteric things and the arts."
+ estate_nobles_bill_of_rights:0 "Charter of Rights"
+ estate_nobles_bill_of_rights_desc:0 "By declaring the sovereign to be subject to the rule of law and documenting the liberties held by “free men,” we can provide the foundation for modern jurisprudence."
+ estate_bedouin:0 "Bedouin"
+ estate_berbers:0 "Berbers"
+ estate_tuareg:0 "Tuareg"

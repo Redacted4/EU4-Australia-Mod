@@ -40,15 +40,10 @@ parliamentary_reform = {
 		global_unrest = -1
 	}
 	
+	lock_level_when_selected = yes
+
 	trigger = {		
-		if = {
-			limit = { has_dlc = "Common Sense" }
-			OR = {
-				NOT = { has_estate = estate_nobles }
-				crown_stronger_than_estate = { estate = estate_nobles }
-				has_reform = parliamentary_reform
-			}
-		}	
+		has_estate_privilege = estate_nobles_bill_of_rights
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }
@@ -90,9 +85,6 @@ parliamentary_reform = {
 				religion = confucianism
 			}
 		}
-	}
-	post_removed_effect = {
-		give_estate_land_share_init = { estate = estate_nobles }
 	}
 }
 

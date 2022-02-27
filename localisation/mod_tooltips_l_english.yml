@@ -26,6 +26,8 @@
  secure_the_imperial_crown_new.tooltip:0 " are voting for us as the next Emperor"
  AE_BELOW_25:0 "You cannot guarantee an AI nation that has more than 25 Agressive Expansion opinion towards you."
  RELATIONS_BELOW_100:0 "Opinion must be at least 100 to guarantee players."
+ estate_nobles_bill_of_rights_granted_tooltip:0 "§GUnlocks§! §YParliament Government Reform§!"
+ estate_nobles_bill_of_rights_revoked_tooltip:0 "Our §YParliament§! Will Be §RDissolved§!"
  
  
  
