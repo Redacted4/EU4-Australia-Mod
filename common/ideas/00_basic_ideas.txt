@@ -345,11 +345,6 @@ spy_ideas = {
 		advisor_cost = -0.10
 	}
 
-	agent_training_new = {
-		diplomats = 1
-
-	}
-
 	guerrilla_warfare_idea = {
 		movement_speed = 0.1
 	}
