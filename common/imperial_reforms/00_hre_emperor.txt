@@ -10,7 +10,7 @@ emperor_reichsreform = {
 	}
 	elector = {
 		ae_impact = -0.2
-		global_tax = -10
+		global_tax_income = 10
 	}
 	on_effect = {
 		imperial_ban_allowed = yes
@@ -57,7 +57,7 @@ emperor_gemeinerpfennig = {
 		has_dlc = "Emperor"
 	}
 	elector = {
-		global_tax = 25
+		global_tax_income = 25
 	}
 	emperor = {
 		global_tax_income = 20
@@ -225,7 +225,7 @@ emperor_geteilte_macht = {
 		custom_tooltip = GETEILTE_MACHT_EFFECT
 	}
 	emperor = {
-		global_tax = 10
+		global_tax_income = 10
 	}
 	elector = {
 		land_morale = 0.1
@@ -281,7 +281,7 @@ emperor_imperial_estates = {
 	}
 	emperor = {
 		imperial_authority = 0.25
-		global_tax = 48
+		global_tax_income = 48
 		diplomatic_reputation = 1
 	}
 }
