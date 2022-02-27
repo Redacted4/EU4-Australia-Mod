@@ -238,3 +238,31 @@ country_event = {
 		name = free_stab_event
 	}
 }
+
+country_event = {
+
+	id = new_events.5
+	title = "new_events.5.t"
+	desc = "new_events.5.d"
+	picture = TRADEGOODS_eventPicture
+
+	fire_only_once = yes
+	hidden = yes
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	trigger = {
+		AND = { 
+			has_country_flag = denmark_joined_hre_decision_flag
+			NOT = { has_country_flag = formed_kalmar_flag }
+			NOT = { tag = DAN }
+		}
+	}
+
+	option = {
+		name = new_events.5.a
+		restore_country_name = yes	
+	}
+}
