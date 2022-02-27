@@ -364,7 +364,7 @@ spy_ideas = {
 	}
 	audit_checks = {
 		yearly_corruption = -0.25
-		free_dip_policy = 1
+		possible_policy = 1
 	}
 
 	ai_will_do = {
