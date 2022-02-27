@@ -40,7 +40,10 @@ parliamentary_reform = {
 		global_unrest = -1
 	}
 	
+	lock_level_when_selected = yes
+
 	trigger = {		
+		has_estate_privilege = estate_nobles_bill_of_rights
 		if = {
 			limit = { has_dlc = "Res Publica" }
 			NOT = { has_reform = elective_monarchy }

@@ -46,7 +46,7 @@ capital = 236 # London
 }
 
 1444.10.1 = {
-	set_estate_privilege = estate_nobles_magna_carta
+	set_estate_privilege = estate_nobles_bill_of_rights
 }
 
 1450.1.1 = { leader = {	name = "John Mowbray"		type = general	fire = 2	shock = 3	manuever = 3	siege = 0	death_date = 1461.3.4 } }
