@@ -536,6 +536,9 @@ english_monarchy = {
 	potential = {
 		have_had_reform = english_monarchy
 	}
+	trigger = {		
+		has_estate_privilege = estate_nobles_bill_of_rights
+	}
 	lock_level_when_selected = yes
 	valid_for_nation_designer = yes
 	nation_designer_cost = 15
@@ -548,7 +551,7 @@ english_monarchy = {
 		governing_capacity = 50
 		legitimacy = 0.5
 		global_unrest = -1
-		max_absolutism = -30
+		#max_absolutism = -30 #Moved to Charter of Rights gov reform
 	}
 
 	conditional = {
