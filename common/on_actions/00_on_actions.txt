@@ -4807,16 +4807,16 @@ on_regiment_recruited = {
 
 # THIS = Province, FROM = Country, ROOT = Merc Unit
 on_mercenary_recruited = {
-	FROM = {
+	if = {
 		limit = {
-			OR = {
-				FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
-				ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
-			}
+			#OR = {
+			#	FROM = { NOT = { has_country_flag = oyo_cavalry_do_not_consume_ap } }
+			#	ROOT = { NOT = { mercenary_company = merc_oyo_cavalry } }
+			#}
 			AND = {
-				NOT =  { has_idea = organized_mercenary_payments_new }
-				NOT = { has_idea = recruit_locally }
-				NOT = { has_idea = bill_of_rights_new } 
+				FROM = { NOT =  { has_idea = organised_mercenary_recruitment_new } } #Admin Ideas
+				FROM = { NOT = { has_idea = divide_and_conquer } } #Imperialist/Naval Ideas
+				FROM = { NOT = { has_idea = bill_of_rights_new } } #Plutocratic Ideas
 			}
 		}
 		FROM = {
