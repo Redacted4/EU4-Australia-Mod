@@ -23,7 +23,10 @@ country_event = {
 		religion = catholic
 		is_defender_of_faith = no	
 		NOT = { has_reform = papacy_reform }
-		reform_desire = 1
+		OR = { 
+			reform_desire = 1
+			is_year = 1518
+		}
 		capital_scope = {
 			continent = europe
 		}
