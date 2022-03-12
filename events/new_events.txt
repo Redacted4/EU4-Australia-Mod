@@ -54,26 +54,7 @@ country_event = {
 		}
 }
 
-#Bankruptcy increases interest
-country_event = {
-	id = new_events.2
-	title = "new_events.2.t"
-	desc = "new_events.2.d"
-	picture = SHIP_SAILING_eventPicture
 
-	trigger = {
-		is_bankrupt = yes
-		NOT = { has_country_modifier = cautious_banking_sector }
-	}
-
-	option = {
-	name = new_events.2.a
-		add_country_modifier = {
-			name = cautious_banking_sector
-			duration = 18250
-		}
-	}
-}
 
 #Dismantle HRE for shattered
 
