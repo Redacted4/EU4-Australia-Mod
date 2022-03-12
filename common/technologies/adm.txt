@@ -255,9 +255,9 @@ technology = { #University
 	}
 	
 	university = yes	
-	governing_capacity = 250
 	
 	
+	allowed_idea_groups	= 5
 	administrative_efficiency = 0.1
 }
 
@@ -271,8 +271,8 @@ technology = { #National Sovereignty
 		printing_press = 0.5
 		global_trade = 0.3
 	}
+	governing_capacity = 250
 	
-	allowed_idea_groups	= 5
 }
 
 technology = { #Cathedral
@@ -316,7 +316,7 @@ technology = { #Land Clearance
 		global_trade = 0.5
 		manufactories = 0.15
 	}
-	
+	allowed_idea_groups = 6
 	#Land Clearance
 	production_efficiency 	=	0.02
 	furnace = yes
@@ -334,7 +334,7 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	allowed_idea_groups = 6
+	
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -371,6 +371,7 @@ technology = { #Bonds and Tontines
 	
 	counting_house = yes  
 	governing_capacity = 250
+	allowed_idea_groups 	= 	7
 }
 
 technology = { #Improved Production
@@ -403,7 +404,7 @@ technology = { #Separation of Powers
 		enlightenment = 0.5
 	}
 	
-	allowed_idea_groups 	= 	7
+	
 }
 
 technology = { #Modern Bureaucracy
@@ -421,6 +422,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	governing_capacity = 250
+	allowed_idea_groups = 8
 }
 
 technology = { #Rotherham Plough
@@ -439,6 +441,7 @@ technology = { #Rotherham Plough
 	
 	#Rotherham Plough
 	production_efficiency 	=	0.02
+	
 }
 
 technology = { #Rights of Man
@@ -456,7 +459,7 @@ technology = { #Rights of Man
 		industrialization = 0.5
 	}
 
-	allowed_idea_groups = 8
+	
 	enlightened_despotism = yes
 	bureaucratic_despotism = yes
 }
