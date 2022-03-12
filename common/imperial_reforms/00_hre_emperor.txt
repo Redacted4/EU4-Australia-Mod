@@ -5,7 +5,7 @@ emperor_reichsreform = {
 		owns = 266
 	}
 	emperor = {
-		infantry_power = 0.1
+		infantry_power = 0.05
 		development_cost = -0.05
 	}
 	elector = {
@@ -207,7 +207,6 @@ emperor_rechenschaft = {
 		global_manpower = 5
 	}
 	elector = {
-		infantry_power = 0.05
 		governing_capacity = 200
 	}
 }
@@ -228,7 +227,7 @@ emperor_geteilte_macht = {
 		global_tax_income = 10
 	}
 	elector = {
-		land_morale = 0.1
+		land_morale = 0.05
 	}
 }
 
@@ -244,7 +243,7 @@ emperor_reichskrieg = {
 		max_electors = 1
 	}
 	elector = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 	}
 	on_effect = {
 		emperor = {
