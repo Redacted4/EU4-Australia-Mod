@@ -156,8 +156,8 @@ prussian_republic_reform = {
 		monthly_militarized_society = 0.05
 		global_autonomy = -0.075
 		republican_tradition = -0.5
-		max_absolutism = 30
-		governing_capacity_modifier = -0.5
+		max_absolutism = -30
+		governing_capacity_modifier = -0.33
 	}
 	
 	conditional = {
