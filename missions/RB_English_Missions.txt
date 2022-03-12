@@ -1554,7 +1554,7 @@ eng_rb_trade_in_home_cot_group = {
 			if = {
 				limit = { is_random_new_world = no }
 				OR = {
-					province_id = 1500
+					province_id = 1499
 					province_id = 236
 				}
 				has_discovered = ROOT
@@ -1567,7 +1567,7 @@ eng_rb_trade_in_home_cot_group = {
 		trigger = {
 			if = {
 				limit = { is_random_new_world = no }
-				1500 = {
+				1499 = { #Massachusets Node
 					trade_share = {
 						country = ROOT
 						share = 25
