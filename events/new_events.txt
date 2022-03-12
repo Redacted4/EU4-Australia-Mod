@@ -160,14 +160,12 @@ country_event = {
 			elector = yes
 		}
 		###Independence for Holland if player
-		###And Elector if slot available
 		HOL = {
 			if = {
 				limit = {
 					ai = no
 				}
 				grant_independence = yes
-				elector = yes
 			}
 
 		}
