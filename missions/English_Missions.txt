@@ -595,7 +595,7 @@ eng_chesapeake_dominance = {
 		}
 		
 		trigger = { 
-			1500 = {	# Chesapeake Bay
+			1499 = {	# Massachusets Bay
 				is_strongest_trade_power = ROOT
 			}
 		}
