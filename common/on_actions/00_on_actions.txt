@@ -2545,37 +2545,37 @@ on_bi_yearly_pulse_5 = {
 
 		#Russian Principalities
 
-		100 = russian_principality_events.1
-		125 = russian_principality_events.2
-		125 = russian_principality_events.3
-		125 = russian_principality_events.4
-		125 = russian_principality_events.6
-		125 = russian_principality_events.5
-		125 = russian_principality_events.7
-		100 = russian_principality_events.8
-		75 = russian_principality_events.9
-		125 = russian_principality_events.10
+		#100 = russian_principality_events.1
+		#125 = russian_principality_events.2
+		#125 = russian_principality_events.3
+		#125 = russian_principality_events.4
+		#125 = russian_principality_events.6
+		#125 = russian_principality_events.5
+		#125 = russian_principality_events.7
+		#100 = russian_principality_events.8
+		#75 = russian_principality_events.9
+		#125 = russian_principality_events.10
 
 		#Tsardoms
 
-		125 = russian_tsardom_events.1
-		125 = russian_tsardom_events.2
-		125 = russian_tsardom_events.3
-		100 = russian_tsardom_events.4
-		125 = russian_tsardom_events.5
-		100 = russian_tsardom_events.6
-		100 = russian_tsardom_events.7
-		100 = russian_tsardom_events.8
-		125 = russian_tsardom_events.9
-		125 = russian_tsardom_events.10
-		100 = russian_tsardom_events.11
+		#125 = russian_tsardom_events.1
+		#125 = russian_tsardom_events.2
+		#125 = russian_tsardom_events.3
+		#100 = russian_tsardom_events.4
+		#125 = russian_tsardom_events.5
+		#100 = russian_tsardom_events.6
+		#100 = russian_tsardom_events.7
+		#100 = russian_tsardom_events.8
+		#125 = russian_tsardom_events.9
+		#125 = russian_tsardom_events.10
+		#100 = russian_tsardom_events.11
 
 		#Streltsy Events
-		125 = streltsy_events.1
-		125 = streltsy_events.3
-		125 = streltsy_events.4
-		125 = streltsy_events.5
-		100 = streltsy_events.6
+		#125 = streltsy_events.1
+		#125 = streltsy_events.3
+		#125 = streltsy_events.4
+		#125 = streltsy_events.5
+		#100 = streltsy_events.6
 
 		#Orthodox Metropolitans
 		125 = patriarch_events.1
