@@ -205,6 +205,55 @@ country_decisions = {
 
 	}
 
+	manual_estate_statutory_rights =  {
+
+		potential = {
+			NOT = { crown_land_share = 11 }
+			ai = no
+		}
+
+		allow = {
+			NOT = { crown_land_share = 6 }
+			OR = {
+				AND = {
+					government = monarchy
+					has_estate = estate_nobles
+					NOT = {	num_of_estate_privileges = { estate = estate_nobles	value = 4 } }
+				}
+				AND = {
+					government = republic
+					has_estate = estate_burghers
+					NOT = {	num_of_estate_privileges = { estate = estate_burghers value = 4 } }
+				}
+				AND = {
+					government = theocracy
+					has_estate = estate_church
+					NOT = {	num_of_estate_privileges = { estate = estate_church value = 4 } }
+				}
+				AND = {
+					religion = hinduism
+					has_estate = estate_brahmins
+					NOT = {	num_of_estate_privileges = { estate = estate_brahmins	value = 4 } }
+				}
+			}
+			NOT = {
+				has_estate_privilege = estate_brahmins_statutory_rights
+				has_estate_privilege = estate_nobles_statutory_rights
+				has_estate_privilege = estate_burghers_statutory_rights
+				has_estate_privilege = estate_church_statutory_rights
+			}
+		}
+
+		effect = {
+			country_event = { id = estate_privileges_and_agendas_events.2 }
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+
 
 
 
