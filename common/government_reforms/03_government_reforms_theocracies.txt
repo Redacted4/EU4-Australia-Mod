@@ -60,6 +60,9 @@ papacy_reform = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
 		church_influence_modifier = 0.2
+		monarch_admin_power = 1
+		monarch_military_power = 1
+		monarch_diplomatic_power = 1
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"
@@ -483,6 +486,8 @@ theocratic_democracy_reform = {
 		global_unrest = -1
 	}
 	
+	lock_level_when_selected = yes
+
 	potential = {
 		NOT = { 
 			OR = {
@@ -494,13 +499,7 @@ theocratic_democracy_reform = {
 	
 	trigger = {
 		NOT = { has_reform = monastic_order_reform }
-		if = {
-			limit = { has_dlc = "Common Sense" }
-			OR = {
-				NOT = { has_estate = estate_nobles }
-				crown_stronger_than_estate = { estate = estate_nobles }
-			}
-		}
+		has_estate_privilege = estate_nobles_bill_of_rights
 	}
 
 	conditional = {
