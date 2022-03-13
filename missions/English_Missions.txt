@@ -590,7 +590,7 @@ eng_chesapeake_dominance = {
 		completed_by = 1618.5.1
 		
 		provinces_to_highlight = {
-			province_id = 1500
+			province_id = 1499
 			has_discovered = ROOT
 		}
 		
