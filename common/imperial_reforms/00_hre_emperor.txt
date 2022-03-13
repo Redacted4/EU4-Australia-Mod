@@ -2,7 +2,6 @@ emperor_reichsreform = {
 	empire = hre
 	potential = {
 		has_dlc = "Emperor"
-		owns = 266
 	}
 	emperor = {
 		infantry_power = 0.05
