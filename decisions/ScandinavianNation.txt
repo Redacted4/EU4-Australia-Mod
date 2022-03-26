@@ -32,7 +32,6 @@ country_decisions = {
 		}
 		allow = {
 			adm_tech = 10
-			has_country_modifier = kalmar_constitution
 			AND {
 				SWE = { is_subject_of = DAN }
 				NOT = {SWE {liberty_desire = 50} }
