@@ -196,10 +196,7 @@ merchants_reform = {
 		NOT = { has_reform = self_governing_colony_government }
 	}
 	trigger = {
-		OR = {
-			has_reform = merchants_reform
-			#crown_stronger_than_estate = { estate = all }
-		}
+		
 	}
 	boost_income = yes
 	duration = 4
