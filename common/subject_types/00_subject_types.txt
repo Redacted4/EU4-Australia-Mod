@@ -527,19 +527,6 @@ colony = {
 	relative_power_class = 0
 	should_quit_wars_on_activation = yes
 
-	can_fight = {
-		other_overlord = colony
-		neighboring_primitives = yes
-		colonial_region_nations = yes
-	}
-	can_rival = {
-		other_overlord = colony
-		neighboring_primitives = yes
-		colonial_region_nations = yes
-	}
-	can_ally = {
-		neighboring_primitives = yes
-	}
 
 	# Subject Interactions:
 	customize_subject = yes
