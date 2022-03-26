@@ -590,7 +590,7 @@ autonomous_estates = {
 	}
 
 	global_unrest = -1
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.5
 
 	ai_will_do = {
 		factor = 1
@@ -915,7 +915,7 @@ unified_army_command = {
 		full_idea_group = influence_ideas
 	}
 
-	vassal_forcelimit_bonus = 1
+	vassal_forcelimit_bonus = 0.5
 	reduced_liberty_desire = 10
 
 	ai_will_do = {
@@ -1270,7 +1270,7 @@ kharash_policy = {
 	}
 
 	land_morale = 0.05
-	vassal_forcelimit_bonus = 1.0
+	vassal_forcelimit_bonus = 0.5
 
 	ai_will_do = {
 		factor = 1.0
