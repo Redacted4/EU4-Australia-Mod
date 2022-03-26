@@ -1223,8 +1223,6 @@ self_governing_colony_overlord = {
 crown_colony_subject = {
 	core_creation = -0.2
 	global_colonial_growth = 10
-	global_manpower_modifier = -0.5
-	land_forcelimit_modifier = -0.5
 }
 
 private_enterprise_subject = {
@@ -1232,8 +1230,6 @@ private_enterprise_subject = {
 	global_trade_goods_size_modifier = 0.2
 	naval_tradition_from_trade = 0.1
 	ship_power_propagation = 0.1
-	global_sailors_modifier = -0.5
-	naval_forcelimit_modifier = -0.5
 }
 
 self_governing_colony_subject = {

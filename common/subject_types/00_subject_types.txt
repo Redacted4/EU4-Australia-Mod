@@ -581,9 +581,9 @@ crown_colony = {
 	count = colony
 
 	forcelimit_bonus = 1.0
-	forcelimit_to_overlord = 0.5
+	forcelimit_to_overlord = 0.25
 	manpower_bonus = 1.0
-	manpower_to_overlord = 0.5
+	manpower_to_overlord = 0.25
 	naval_forcelimit_bonus = 0.5
 	naval_forcelimit_to_overlord = 0.05
 	sailors_bonus = 0.5
@@ -622,9 +622,9 @@ private_enterprise = {
 	manpower_bonus = 0.0
 	manpower_to_overlord = 0.0
 	naval_forcelimit_bonus = 1.0
-	naval_forcelimit_to_overlord = 0.5
+	naval_forcelimit_to_overlord = 0.25
 	sailors_bonus = 1.0
-	sailors_to_overlord = 0.5
+	sailors_to_overlord = 0.25
 
 	# Subject Interactions:
 	replace_governor = no
