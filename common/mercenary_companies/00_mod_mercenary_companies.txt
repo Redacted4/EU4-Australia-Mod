@@ -149,7 +149,7 @@ merc_second_sons = {
     cost_modifier = 0.75
     trigger = {
         ROOT = {
-			has_idea = noble_knights_new
+			has_idea = noble_resilience_new
 		}
     }
 	modifier = {
