@@ -285,7 +285,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_mil = 2 #+2 mil for Noble Candidates
 				culture = event_target:noble_province
 			}
 		}
@@ -299,7 +300,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_mil = 2 #+2 mil for Noble Candidates
 				female = yes
 				culture = event_target:noble_province
 			}
@@ -314,16 +316,19 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_mil = 2 #+2 mil for Noble Candidates
 				female = yes
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_mil = 2 #+2 mil for Noble Candidates
 			}
 		}
+		custom_tooltip = "theocracy.mil_tt"
 		add_devotion = -5
 		add_prestige = 10
 		clr_country_flag = in_theocracy_heir_selection
@@ -409,7 +414,8 @@ country_event = {
 						dynasty = PREV 
 						age = 35
 						culture = PREV
-						#hidden = yes
+						hidden = yes
+						change_mil = 2 #+2 mil for Noble Candidates
 					} 
 				}
 				else = {
@@ -418,12 +424,14 @@ country_event = {
 						age = 35
 						culture = PREV
 						female = yes
-						#hidden = yes
+						hidden = yes
+						change_mil = 2 #+2 mil for Noble Candidates
 					} 
 				}
 			}
 			add_opinion = { who = ROOT modifier = opinion_theocracy_noble }
 		}
+		custom_tooltip = "theocracy.mil_tt"
 		clr_country_flag = in_theocracy_heir_selection
 		custom_tooltip = theocracy.1.tt
 	}
@@ -483,7 +491,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_dip = 2 #+2 dip for Merchant Candidate
 				culture = event_target:burgher_province
 			}
 		}
@@ -497,7 +506,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_dip = 2 #+2 dip for Merchant Candidate
 				female = yes
 				culture = event_target:burgher_province
 			}
@@ -512,15 +522,18 @@ country_event = {
 			define_heir = {
 				age = 35
 				female = yes
-				#hidden = yes
+				hidden = yes
+				change_dip = 2 #+2 dip for Merchant Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_dip = 2 #+2 dip for Merchant Candidate
 			}
 		}
+		custom_tooltip = "theocracy.dip_tt"
 		add_years_of_income = 0.35
 		add_devotion = -5
 		clr_country_flag = in_theocracy_heir_selection
@@ -581,7 +594,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 				culture = event_target:church_province
 			}
 		}
@@ -595,7 +609,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 				female = yes
 				culture = event_target:church_province
 			}
@@ -610,15 +625,18 @@ country_event = {
 			define_heir = {
 				age = 35
 				female = yes
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 			}
 		}
+		custom_tooltip = "theocracy.adm_tt"
 		add_devotion = 5
 		clr_country_flag = in_theocracy_heir_selection
 		custom_tooltip = theocracy.1.tt
