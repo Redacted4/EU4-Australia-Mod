@@ -28,6 +28,9 @@
  RELATIONS_BELOW_100:0 "Opinion must be at least 100 to guarantee players."
  estate_nobles_bill_of_rights_granted_tooltip:0 "§GUnlocks§! §YParliament Government Reform§!"
  estate_nobles_bill_of_rights_revoked_tooltip:0 "Our §YParliament§! Will Be §RDissolved§!"
+ theocracy.adm_tt:0 "This §YHeir§! will receive +2 £adm£ to their §YAdministrative Skill§!"
+ theocracy.dip_tt:0 "This §YHeir§! will receive +2 £dip£ to their §YDiplomatic Skill Skill§!"
+ theocracy.mil_tt:0 "This §YHeir§! will receive +2 £mil£ to their §YMilitary Skill§!"
  
  
  
