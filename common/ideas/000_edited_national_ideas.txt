@@ -1177,7 +1177,7 @@ BRA_ideas = {
 PAP_ideas = {
 	start = {
 		diplomatic_reputation = 1
-		religious_unity = 0.25
+		ae_impact = -0.1
 	}
 
 	bonus = {
@@ -1199,13 +1199,13 @@ PAP_ideas = {
 		prestige_decay = -0.01
 	}
 	donation_of_constantine = {
-		fabricate_claims_cost = -0.25
+		spy_offence = 0.25
 	}
 	centralize_the_states = {
 		production_efficiency = 0.1
 	}
 	the_vatican_museums = {
-		free_dip_policy = 1
+		free_policy = 1
 	}
 	holy_father = {
 		manpower_in_true_faith_provinces= 0.33
