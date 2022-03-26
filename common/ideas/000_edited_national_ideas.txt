@@ -90,7 +90,7 @@ ENG_ideas = {
 		global_ship_trade_power = 0.15
 	}
 	francis_drake = {
-		privateer_efficiency = 0.3
+		global_ship_trade_power  = 0.3
 		leader_naval_manuever = 1
 	}
 	city_upon_a_hill = {
@@ -610,7 +610,7 @@ MOR_ideas = {
 		cavalry_power = 0.15
 	}
 	mor_pirate_republics = {
-		privateer_efficiency = 0.25
+		global_ship_trade_power  = 0.25
 	}
 }
 POL_ideas = {
@@ -1273,7 +1273,7 @@ TUN_ideas = {
 	}
 	corsairs = {
 		navy_tradition = 1
-		privateer_efficiency = 0.10
+		global_ship_trade_power  = 0.10
 	}
 	tun_attract_foreign_pirates = {
 		global_sailors_modifier = 0.25
