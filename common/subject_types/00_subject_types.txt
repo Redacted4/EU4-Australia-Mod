@@ -588,10 +588,14 @@ crown_colony = {
 	can_send_missionary_to_subject = yes	
 	count = colony
 
-	forcelimit_to_overlord = 0.3
-	manpower_to_overlord = 0.3
-	naval_forcelimit_to_overlord = 0.01
-	sailors_to_overlord = 0.01
+	forcelimit_bonus = 1.0
+	forcelimit_to_overlord = 0.25
+	manpower_bonus = 1.0
+	manpower_to_overlord = 0.25
+	naval_forcelimit_bonus = 0.5
+	naval_forcelimit_to_overlord = 0.05
+	sailors_bonus = 0.5
+	sailors_to_overlord = 0.05
 
 	# Subject Interactions:
 	embargo_rivals = yes
@@ -624,8 +628,10 @@ private_enterprise = {
 
 	forcelimit_to_overlord = 0.0
 	manpower_to_overlord = 0.0
-	naval_forcelimit_to_overlord = 0.3
-	sailors_to_overlord = 0.3
+	naval_forcelimit_bonus = 1.0
+	naval_forcelimit_to_overlord = 0.25
+	sailors_bonus = 1.0
+	sailors_to_overlord = 0.25
 
 	# Subject Interactions:
 	replace_governor = no
