@@ -784,7 +784,7 @@ maritime_ideas = {
 
 	merchant_traditions = {
 		naval_tradition_from_trade = 1.0
-		global_ship_trade_power = 0.1
+		global_ship_trade_power = 0.25
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
@@ -807,7 +807,6 @@ maritime_ideas = {
 	}
 	naval_fighting_instruction = {
 		light_ship_power = 0.25
-		privateer_efficiency = 0.25
 	}
 
 	ai_will_do = {

@@ -81,7 +81,7 @@ colonial_ideas = {
 barbary_pirate_ideas = {
 	start = {
 		galley_power = 0.2
-		privateer_efficiency = 0.2
+		global_ship_trade_power  = 0.2
 	}
 	bonus = {
 		republican_tradition = 0.5
@@ -233,7 +233,7 @@ berber_ideas = {
 	}
 	corsairs = {
 		navy_tradition = 1
-		privateer_efficiency = 0.10
+		global_ship_trade_power  = 0.10
 	}
 	tuareg_cavalry = {
 		cavalry_power = 0.10
@@ -541,7 +541,7 @@ mindanao_ideas = {
 	}
 	mindanao_pirates_of_mindanao = {
 		embargo_efficiency = 0.1	
-		privateer_efficiency = 0.25
+		global_ship_trade_power  = 0.25
 	}
 }
 
@@ -1146,7 +1146,7 @@ sumatran_ideas = {
 	}
 	spice_pirates = {
 		light_ship_power = 0.10
-		privateer_efficiency = 0.15
+		global_ship_trade_power  = 0.15
 	}
 	center_of_scholarship = {
 		advisor_cost = -0.15
@@ -2281,7 +2281,7 @@ malagasy_ideas = {
 	malagasy_pirate_ports = {
 		#Effects from BTS Ideas
 		#embargo_efficiency = 0.1
-		#privateer_efficiency = 0.15
+		#global_ship_trade_power  = 0.15
 	}
 	malagasy_raid_warfare = {
 		global_manpower_modifier = 0.1
