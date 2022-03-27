@@ -1862,6 +1862,7 @@ textile = {
 		cloth
 		silk
 		dyes
+		wool
 	}
 	onmap = yes
 	on_built = {
@@ -1955,7 +1956,6 @@ farm_estate = {
 		grain
 		livestock
 		wine
-		wool
 	}
 	onmap = yes
 	on_built = {
