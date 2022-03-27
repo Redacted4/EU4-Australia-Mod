@@ -193,9 +193,9 @@ country_decisions = {
 			every_province = {
 				limit = {
 					region = italy_region
-					NOT = { owned_by = ROOT }
+					NOT = { owned_by = PAP }
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = PAP
 			}
 			override_country_name = KINGDOM_OF_GOD
 			set_country_flag = is_kingdom_of_god_flag

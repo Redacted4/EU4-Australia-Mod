@@ -51,6 +51,13 @@ on_startup = {
 	
 	}
 	
+	#For Papal Self-Blessings
+	PAP = {
+		set_variable = {
+			which = PapalInfluencePAP
+			value = 0
+		}
+	}
 	# Added by MRM
 	if = {
 		limit = {
@@ -1031,6 +1038,18 @@ on_new_consort = {
 
 # country
 on_monarch_death = {
+	#Resets Spent Papal Influence counter upon election of new Pope
+	if = {
+		limit = {
+			tag = PAP
+		}
+		PAP = {
+			set_variable = {
+				which = PapalInfluencePAP
+				value = 0
+			}
+		}
+	}
 	if = {
 		limit = {
 			tag = ANS

@@ -254,6 +254,110 @@ country_decisions = {
 
 	}
 
+	#For fast Ambrosian Republic
+	milan_tank_legitimacy =  {
+
+		potential = {
+			tag = MLO
+			has_ruler = "Filippo Maria I"
+			NOT = { has_country_flag = milan_tank_legitimacy_flag }
+		}
+
+		allow = {
+			ai = no
+		}
+
+		effect = {
+			add_legitimacy = -100
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+
+	#Blessings for the Pope
+	pope_self_blessing_decision =  {
+
+		potential = {
+			tag = PAP
+		}
+
+		allow = {
+			custom_trigger_tooltip = {
+			tooltip = spent_papal_influence_is_lower_than_total_tt
+				OR = {
+					AND = {
+						check_variable = {
+							which = PapalInfluencePAP
+							value = 0
+						}
+						NOT = {
+							check_variable = {
+								which = PapalInfluencePAP
+								value = 1
+							}
+						}
+						invested_papal_influence = 50
+					}
+					AND = {
+						check_variable = {
+							which = PapalInfluencePAP
+							value = 50
+						}
+						NOT = {
+							check_variable = {
+								which = PapalInfluencePAP
+								value = 51
+							}
+						}
+						invested_papal_influence = 100
+					}
+					AND = {
+						check_variable = {
+							which = PapalInfluencePAP
+							value = 100
+						}
+						NOT = {
+							check_variable = {
+								which = PapalInfluencePAP
+								value = 101
+							}
+						}
+						invested_papal_influence = 150
+					}
+					AND = {
+						check_variable = {
+							which = PapalInfluencePAP
+							value = 150
+						}
+						NOT = {
+							check_variable = {
+								which = PapalInfluencePAP
+								value = 151
+							}
+						}
+						invested_papal_influence = 200
+					}
+					
+				}
+			}
+		}
+
+		effect = {
+			country_event = {
+				id = new_events.6
+			}
+			
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+
 
 
 
