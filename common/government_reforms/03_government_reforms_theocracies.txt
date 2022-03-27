@@ -168,6 +168,8 @@ kingdom_of_god_reform = {
 		}
 	}
 	modifiers = {
+		land_morale = 0.15
+		development_cost = -0.05
 		global_manpower_modifier = 0.1
 		prestige = 1
 		devotion = 1
