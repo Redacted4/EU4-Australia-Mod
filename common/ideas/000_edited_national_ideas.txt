@@ -1195,11 +1195,12 @@ PAP_ideas = {
 	papal_investiture_and_tithes = {
 		global_tax_modifier = 0.2
 	}
+	pap_swiss_guard_idea = {
+		mercenary_discipline = 0.05
+		mercenary_manpower = 0.25
+	}
 	glory_of_rome = {
 		prestige_decay = -0.01
-	}
-	donation_of_constantine = {
-		spy_offence = 0.25
 	}
 	centralize_the_states = {
 		production_efficiency = 0.1
