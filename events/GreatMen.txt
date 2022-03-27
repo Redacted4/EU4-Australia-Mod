@@ -1045,6 +1045,13 @@ country_event = {
 		}
 		set_country_flag = grand_captain
 	}
+
+	option = {
+		name = "EVTOPTC4114"	# Maybe later
+		ai_chance = {
+			factor = 0
+		}
+	}
 }
 
 
@@ -1189,6 +1196,13 @@ country_event = {
 			duration = 2190
 		}
 		set_country_flag = commandant
+	}
+
+	option = {
+		name = "EVTOPTC4116"	# Maybe later
+		ai_chance = {
+			factor = 0
+		}
 	}
 }
 
