@@ -991,7 +991,6 @@ on_new_monarch = {
 		remove_heir_cult = yes
 	}
 	events = {
-		tribal_succession.1		# Harsh anti-tribals.
 		9492 					# Remove some event modifiers
 		flavor_boh.8			# Winter King in Prague
 		flavor_kol.1			# Bavarian Archbishop
@@ -1157,7 +1156,6 @@ on_regent = {
 		set_global_flag = death_of_haji_giray
 	}
 	events = {
-		tribal_succession.1	# harsh anti-tribals.
 		flavor_tim.1			#Death of Shah Rukh
 		flavor_daimyo.4			#Shiba Yoshikado
 	}
