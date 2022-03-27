@@ -31,6 +31,10 @@
  theocracy.adm_tt:0 "This §YHeir§! will receive +2 £adm£ to their §YAdministrative Skill§!"
  theocracy.dip_tt:0 "This §YHeir§! will receive +2 £dip£ to their §YDiplomatic Skill Skill§!"
  theocracy.mil_tt:0 "This §YHeir§! will receive +2 £mil£ to their §YMilitary Skill§!"
+ PapalInfluencePAP:0 "Spent Papal Influence"
+ invested_papal_influence_var:0 "Papal Influence"
+ spent_papal_influence_is_lower_than_total_tt:0 "We have at least §Y50§! more §YInvested Papal Influence§! than the amount we have already spent on Papal Blessings. Our §YPapal Influence Spent on Blessings§! is currently: §Y[Root.PapalInfluencePAP.GetValue]§! \nYou can view your current §YInvested Papal Influence§! in the Papacy Tab."
+
  
  
  

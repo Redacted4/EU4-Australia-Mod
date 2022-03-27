@@ -218,6 +218,7 @@ country_event = {
 	}
 }
 
+#Clears country name when tag switching from Denmark-Holstein
 country_event = {
 
 	id = new_events.5
@@ -245,3 +246,117 @@ country_event = {
 		restore_country_name = yes	
 	}
 }
+
+country_event = {
+
+	id = new_events.6
+	title = "new_events.6.t"
+	desc = "new_events.6.desc"
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	#Levy Church Tax
+	option = {
+		name = new_events.6.a
+		trigger = {
+			NOT = { has_country_modifier = papal_sanction_for_church_taxes }
+		}
+		add_country_modifier = {
+			name = "papal_sanction_for_church_taxes"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+		hidden_effect = {
+			country_event = {
+				id = new_events.7
+				days = 7300
+			}
+		}
+	}
+	#Forgive Ursury
+	option = {
+		name = new_events.6.b
+		trigger = {
+			NOT = { has_country_modifier = usury_forgiven }
+		}
+		add_country_modifier = {
+			name = "usury_forgiven"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+	}
+	#Bless Ruler
+	option = {
+		name = new_events.6.c
+		trigger = {
+			NOT = { has_country_modifier = papal_blessing }
+		}
+		add_country_modifier = {
+			name = "papal_blessing"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+	}
+	#Proclaim Holy War
+	option = {
+		name = new_events.6.d
+		trigger = {
+			NOT = { has_country_modifier = papal_sanction_for_holy_war }
+		}
+		add_country_modifier = {
+			name = "papal_sanction_for_holy_war"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+	}
+	#Sanction Dynasty
+	option = {
+		name = new_events.6.e
+		trigger = {
+			NOT = { has_country_modifier = papal_indulgence }
+		}
+		add_country_modifier = {
+			name = "papal_indulgence"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+	}
+	#Papal Legate
+	option = {
+		name = new_events.6.f
+		trigger = {
+			NOT = { has_country_modifier = papal_legate }
+		}
+		add_country_modifier = {
+			name = "papal_legate"
+			duration = 7300
+		}
+		change_variable = {
+			which = PapalInfluencePAP
+			value = 50
+		}
+	}
+	#No Blessing
+	option = {
+		name = new_events.6.i
+	}
+	
+}
+
+

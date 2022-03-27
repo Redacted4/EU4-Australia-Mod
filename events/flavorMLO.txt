@@ -32,7 +32,7 @@ country_event = {
 			change_government = republic
 			add_government_reform = ambrosian_republic
 		}
-		add_republican_tradition = 5
+		add_republican_tradition = 50
 		add_stability = -2
 		every_neighbor_country  = {
 			limit = {
@@ -293,7 +293,7 @@ country_event = {
 		define_advisor = {
 			type = philosopher
 			culture = tuscan
-			name = "Niccolò Machiavelli"
+			name = "Niccolï¿½ Machiavelli"
 			discount = yes
 			location = 116
 			skill = 2
@@ -310,7 +310,7 @@ country_event = {
 		}
 		define_advisor = {
 			type = statesman
-			name = "Niccolò Machiavelli"
+			name = "Niccolï¿½ Machiavelli"
 			culture = tuscan
 			discount = yes
 			location = 116

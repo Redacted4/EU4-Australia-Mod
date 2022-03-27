@@ -52,6 +52,17 @@
  province_idea_event.1.a:0 "Test Option"
  EVTOPTC4116:0 "Maybe later."
  EVTOPTC4114:0 "Maybe later."
+ new_events.6.t:0 "The Pope Blesses Himself?"
+ new_events.6.desc:0 "After much discussion with the College of Cardinals, the Pope has seen fit to impart a Holy Blessing upon himself. How this is supposed to make sense is anyone's guess."
+ new_events.6.a:0 "Levy Church Tax"
+ new_events.6.b:0 "Forgive Ursury"
+ new_events.6.c:0 "Bless Ruler"
+ new_events.6.d:0 "Proclaim Holy War"
+ new_events.6.e:0 "Sanction Ruler"
+ new_events.6.f:0 "Recall Papal Legate"
+ new_events.6.g:0 "Beatify Local Saint"
+ new_events.6.h:0 "Sanction Commercial Monopoly"
+ new_events.6.i:0 "Perhaps Later"
 
 
  
