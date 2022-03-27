@@ -58,6 +58,7 @@
  mrm_nationStats.1.desc:0 "You have developed provinces a total of §Y[Root.totalTimesDeveloped.GetValue]§! times.\nYou have increased the £adm£ development of provinces a total of §Y[Root.timesDevelopedAdmin.GetValue]§! times.\nYou have increased the £dip£ development of provinces a total of §Y[Root.timesDevelopedDiplo.GetValue]§! times.\nYou have increased the £mil£ development of provinces a total of §Y[Root.timesDevelopedMil.GetValue]§! times.\n\nYou have hired §Y[Root.numGenerals.GetValue]§! generals and §Y[Root.numAdmirals.GetValue]§! admirals, for a total of §Y[Root.numLeaders.GetValue]§! leaders."
  showNationStats_title:0 "Show My National Statistics"
  showNationStats_desc:0 "Show my national Statistics."
+ #End MRM Decisions
  join_hre_denmark_title:0 "The Schleswig-Holstein Question"
  join_hre_denmark_desc:0 "Click this button if you want to join the HRE"
  join_hre_italian_minor_title:0 "Join the Holy Roman Empire"
@@ -82,3 +83,5 @@
  manual_estate_statutory_rights_desc:0 "Take this event at your own peril!"
  pope_self_blessing_decision_title:0 "Select a Papal Blessing"
  pope_self_blessing_decision_desc:0 "Bless you!"
+ milan_tank_legitimacy_title:0 "Give me Ambrosian Republic Faster!"
+ milan_tank_legitimacy_desc:0 "yes"
