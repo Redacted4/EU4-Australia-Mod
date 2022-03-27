@@ -710,7 +710,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 				culture = event_target:church_province
 			}
 		}
@@ -724,7 +725,8 @@ country_event = {
 			}
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 				female = yes
 				culture = event_target:church_province
 			}
@@ -739,15 +741,18 @@ country_event = {
 			define_heir = {
 				age = 35
 				female = yes
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
-				#hidden = yes
+				hidden = yes
+				change_adm = 2 #+2 dip for Clergy Candidate
 			}
 		}
+		custom_tooltip = "theocracy.adm_tt"
 		add_devotion = 10
 		add_prestige = -5
 		clr_country_flag = in_theocracy_heir_selection
