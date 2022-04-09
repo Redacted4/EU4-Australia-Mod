@@ -10,7 +10,7 @@
 on_startup = {
 	#Refreshes cores every 49 years for country exile system
 	country_event = { 
-		id = shatter_ming.2 #East Asia
+		id = setup_east_asia.2 #East Asia
 		days = 17885 #49 years
 		#days = 10 #For Testing
 	}

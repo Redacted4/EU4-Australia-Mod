@@ -1,28 +1,30 @@
-namespace = shatter_ming
+namespace = setup_east_asia
 
 # Choose
 country_event = {
-	id = shatter_ming.1
+	id = setup_east_asia.1
 	picture = ANGRY_MOB_eventPicture
 	
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
 
-	title = "shatter_ming_events.1.t"
-	desc = "shatter_ming_events.1.d"	
+	title = "setup_east_asia_events.1.t"
+	desc = "setup_east_asia_events.1.d"	
 
 	immediate = {
 		hidden_effect = {
 			country_event = { id = mch_missions.5 days = 1}
 			add_mandate = 20
 		}
+		set_global_flag = released_east_asia_flag
 	}
 		
 	
 
 	# Colonize China
 	option = {
+		name = "setup_east_asia.1.f"
 		hidden_effect = {
 			every_province = {
 				limit = {
@@ -280,7 +282,6 @@ country_event = {
 				cede_province = AIN
 			}
 			
-			}
 			#Tibet
 			every_province = {
 				limit = {
@@ -324,34 +325,34 @@ country_event = {
 				}
 				cede_province = LDK
 			}
-
-
-			
 		}
-		name = "shatter_ming.1.f"
 	}
+}
 
 
 #Event to refresh East Asian cores
 
 country_event = {
-	id = shatter_ming.2
+	id = setup_east_asia.2
 	picture = ANGRY_MOB_eventPicture
 	
-	title = "shatter_ming_events.2.t"
-	desc = "shatter_ming_events.2.d"	
+	title = "setup_east_asia_events.2.t"
+	desc = "setup_east_asia_events.2.d"	
 	
 	is_triggered_only = yes
 	major = yes
 	trigger = {
 		owns = 685 #Yangzhou (Ming)
+		NOT = {
+			has_global_flag = released_east_asia_flag
+		}
 	}
-	hidden = yes
+	#hidden = yes
 
 	option = {
-		name = "shatter_ming.2.a"
+		name = "setup_east_asia.2.a"
 		country_event = { 
-    		id = shatter_ming.2
+    		id = setup_east_asia.2
 			days = 17885 #49 years
 		}
 		add_prestige = 1
@@ -360,120 +361,140 @@ country_event = {
 				limit = {
 					is_core = CSH
 				}
+				remove_core = 
 				add_core = CSH
 			}
 			every_province = {
 				limit = {
 					is_core = CYI
 				}
+				remove_core = CYI
 				add_core = CYI
 			}
 			every_province = {
 				limit = {
 					is_core = WUU
 				}
+				remove_core = WUU 
 				add_core = WUU
 			}
 			every_province = {
 				limit = {
 					is_core = CXI
 				}
+				remove_core = CXI
 				add_core = CXI
 			}
 			every_province = {
 				limit = {
 					is_core = CMI
 				}
+				remove_core = CMI
 				add_core = CMI
 			}
 			every_province = {
 				limit = {
 					is_core = MIN
 				}
+				remove_core = MIN
 				add_core = MIN
 			}
 			every_province = {
 				limit = {
 					is_core = YUE
 				}
+				remove_core = YUE
 				add_core = YUE
 			}
 			every_province = {
 				limit = {
 					is_core = SHU
 				}
+				remove_core = SHU
 				add_core = SHU
 			}
 			every_province = {
 				limit = {
 					is_core = NNG
 				}
+				remove_core = NNG
 				add_core = NNG
 			}
 			every_province = {
 				limit = {
 					is_core = CHC
 				}
+				remove_core = CHC
 				add_core = CHC
 			}
 			every_province = {
 				limit = {
 					is_core = TNG
 				}
+				remove_core = TNG
 				add_core = TNG
 			}
 			every_province = {
 				limit = {
 					is_core = QIC
 				}
+				remove_core = QIC
 				add_core = QIC
 			}
 			every_province = {
 				limit = {
 					is_core = YAN
 				}
+				remove_core = YAN
 				add_core = YAN
 			}
 			every_province = {
 				limit = {
 					is_core = JIN
 				}
+				remove_core = JIN
 				add_core = JIN
 			}
 			every_province = {
 				limit = {
 					is_core = LNG
 				}
+				remove_core = LNG
 				add_core = LNG
 			}
 			every_province = {
 				limit = {
 					is_core = QIN
 				}
+				remove_core = QIN
 				add_core = QIN
 			}
 			every_province = {
 				limit = {
 					is_core = HUA
 				}
+				remove_core = HUA
 				add_core = HUA
 			}
 			every_province = {
 				limit = {
 					is_core = LIO
 				}
+				remove_core = LIO
 				add_core = LIO
 			}
 			every_province = {
 				limit = {
 					is_core = CGS
 				}
+				remove_core = CGS
 				add_core = CGS
 			}
 			every_province = {
 				limit = {
 					is_core = CDL
 				}
+				remove_core = CDL
 				add_core = CDL
 			}
 			
@@ -482,78 +503,91 @@ country_event = {
 				limit = {
 					is_core = CHG
 				}
+				remove_core = CHG
 				add_core = CHG
 			}
 			every_province = {
 				limit = {
 					is_core = OIR
 				}
+				remove_core = OIR
 				add_core = OIR
 			}
 			every_province = {
 				limit = {
 					is_core = KHA
 				}
+				remove_core = KHA
 				add_core = KHA
 			}
 			every_province = {
 				limit = {
 					is_core = MJZ
 				}
+				remove_core = MJZ
 				add_core = MJZ
 			}
 			every_province = {
 				limit = {
 					is_core = MHX
 				}
+				remove_core = MHX
 				add_core = MHX
 			}
 			every_province = {
 				limit = {
 					is_core = KAS
 				}
+				remove_core = KAS
 				add_core = KAS
 			}
 			every_province = {
 				limit = {
 					is_core = KRC
 				}
+				remove_core = KRC
 				add_core = KRC
 			}
 			every_province = {
 				limit = {
 					is_core = MYR
 				}
+				remove_core = MYR
 				add_core = MYR
 			}
 			every_province = {
 				limit = {
 					is_core = EJZ
 				}
+				remove_core = EJZ
 				add_core = EJZ
 			}
 			every_province = {
 				limit = {
 					is_core = NVK
 				}
+				remove_core = NVK
 				add_core = NVK
 			}
 			every_province = {
 				limit = {
 					is_core = SOL
 				}
+				remove_core = SOL
 				add_core = SOL
 			}
 			every_province = {
 				limit = {
 					is_core = NHX
 				}
+				remove_core = NHX
 				add_core = NHX
 			}
 			every_province = {
 				limit = {
 					is_core = HMI
 				}
+				remove_core = HMI
 				add_core = HMI
 			}
 			#China and Korea
@@ -561,54 +595,63 @@ country_event = {
 				limit = {
 					is_core = KOR
 				}
+				remove_core = KOR
 				add_core = KOR
 			}
 			every_province = {
 				limit = {
 					is_core = ASK
 				}
+				remove_core = ASK
 				add_core = ASK
 			}
 			every_province = {
 				limit = {
 					is_core = DTE
 				}
+				remove_core = DTE
 				add_core = DTE
 			}
 			every_province = {
 				limit = {
 					is_core = UES
 				}
+				remove_core = UES
 				add_core = UES
 			}
 			every_province = {
 				limit = {
 					is_core = SMZ
 				}
+				remove_core = SMZ
 				add_core = SMZ
 			}
 			every_province = {
 				limit = {
 					is_core = HSK
 				}
+				remove_core = HSK
 				add_core = HSK
 			}
 			every_province = {
 				limit = {
 					is_core = ODA
 				}
+				remove_core = ODA
 				add_core = ODA
 			}
 			every_province = {
 				limit = {
 					is_core = OUC
 				}
+				remove_core = OUC
 				add_core = OUC
 			}
 			every_province = {
 				limit = {
 					is_core = AIN
 				}
+				remove_core = AIN
 				add_core = AIN
 			}
 			
@@ -617,47 +660,53 @@ country_event = {
 				limit = {
 					is_core = SYG
 				}
+				remove_core = SYG
 				add_core = SYG
 			}
 			every_province = {
 				limit = {
 					is_core = LWA
 				}
+				remove_core = LWA
 				add_core = LWA
 			}
 			every_province = {
 				limit = {
 					is_core = UTS
 				}
+				remove_core = UTS
 				add_core = UTS
 			}
 			every_province = {
 				limit = {
 					is_core = KAM
 				}
+				remove_core = KAM
 				add_core = KAM
 			}
 			every_province = {
 				limit = {
 					is_core = GUG
 				}
+				remove_core = GUG
 				add_core = GUG
 			}
 			every_province = {
 				limit = {
 					is_core = PHA
 				}
+				remove_core = PHA
 				add_core = PHA
 			}
 			every_province = {
 				limit = {
 					is_core = LDK
 				}
+				remove_core = LDK
 				add_core = LDK
 			}
 		}
 	}
-
 }
 
 
