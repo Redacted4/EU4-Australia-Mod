@@ -330,8 +330,10 @@ country_event = {
 		}
 		name = "shatter_ming.1.f"
 	}
-}
-	
+
+
+#Event to refresh East Asian cores
+
 country_event = {
 	id = shatter_ming.2
 	picture = ANGRY_MOB_eventPicture
@@ -340,370 +342,322 @@ country_event = {
 	desc = "shatter_ming_events.2.d"	
 	
 	is_triggered_only = yes
-	fire_only_once = yes
 	major = yes
+	trigger = {
+		owns = 685 #Yangzhou (Ming)
+	}
 	hidden = yes
-	immediate = {
+
+	option = {
+		name = "shatter_ming.2.a"
+		country_event = { 
+    		id = shatter_ming.2
+			days = 17885 #49 years
+		}
+		add_prestige = 1
 		hidden_effect = {
-			# Shun
 			every_province = {
 				limit = {
-					OR = {
-						area = gansu_area
-						area = west_gansu_area
-						area = shaanxi_area
-						area = shanxi_area
-						area = north_henan_area
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-						is_empty = yes
-					}
+					is_core = CSH
 				}
 				add_core = CSH
-				cede_province = CSH
 			}
-			every_province = { #get rid of bordergore from random Mongolian provinces
-				limit = {
-					region = mongolia_region
-					any_neighbor_province = {
-						is_core = CSH
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-						is_empty = yes
-					}
-				}
-				add_core = CSH
-				clear_rebels = yes
-				cede_province = CSH
-			}
-
-			release = CSH
-			CSH = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				define_ruler = {
-					name = "Mao"
-					dynasty = "Zedong"
-				}
-				set_capital = 700
-				change_government = monarchy
-				add_government_reform = autocracy
-				adopt_reform_progress = ROOT
-				add_yearly_manpower = 10
-				add_treasury = 100
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-				add_stability = 1
-				add_harmonized_religion = vajrayana
-			}
-
-			# Yi
 			every_province = {
 				limit = {
-					OR = {
-						area = chuannan_area
-						area = sichuan_area
-						area = chuanbei_area
-						area = yun_gui_area
-						area = yun_gui_borderland_area
-
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-						is_empty = yes
-					}
+					is_core = CYI
 				}
 				add_core = CYI
-
 			}
-			release = CYI
-			CYI = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-
-				define_ruler = {
-					name = "Kanyi"
-					dynasty = "West"
-				}
-				
-				change_government = monarchy
-				add_government_reform = autocracy_reform
-				adopt_reform_progress = ROOT
-				add_yearly_manpower = 10
-				add_treasury = 100
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-				add_stability = 1
-				change_religion = confucianism
-				add_harmonized_religion = animism 
-			}
-
-
-
-			# Yue
 			every_province = {
 				limit = {
-					OR = {
-						area = guangdong_area
-						area = west_guangdong_area
-						area = guangxi_area
-
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-						is_empty = yes
-					}
+					is_core = WUU
+				}
+				add_core = WUU
+			}
+			every_province = {
+				limit = {
+					is_core = CXI
+				}
+				add_core = CXI
+			}
+			every_province = {
+				limit = {
+					is_core = CMI
+				}
+				add_core = CMI
+			}
+			every_province = {
+				limit = {
+					is_core = MIN
+				}
+				add_core = MIN
+			}
+			every_province = {
+				limit = {
+					is_core = YUE
 				}
 				add_core = YUE
-
 			}
-			release = YUE
-			YUE = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				define_ruler = {
-					name = "Fuk"
-					dynasty = "Yue"
-				}
-
-				change_government = republic
-				add_government_reform = merchants_reform
-				adopt_reform_progress = ROOT
-				add_yearly_manpower = 10
-				add_treasury = 100
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-				add_stability = 1
-			}
-
-			# Yan
 			every_province = {
 				limit = {
-					OR = {
-						area = south_hebei_area
-						area = hebei_area
-						area = liaoning_area
-						area = shandong_area
-						area = jiangsu_area
-
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-						is_empty = yes
-					}
+					is_core = SHU
 				}
-				add_core = YAN
-
+				add_core = SHU
 			}
-			release = YAN
-			YAN = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				change_government = monarchy
-				add_government_reform = autocracy_reform
-				adopt_reform_progress = ROOT
-				add_yearly_manpower = 10
-				add_treasury = 100
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-				add_stability = 1
-
-			}
-
-			# Chu
 			every_province = {
 				limit = {
-					OR = {
-						area = henan_area
-						area = huguang_area
-						area = jiangxi_area
-						area = hunan_area
-						area = south_anhui_area
-						area = anhui_area
-
-
-					}
-					OR = {
-						controlled_by = REB
-						controlled_by = ROOT
-					}
+					is_core = NNG
+				}
+				add_core = NNG
+			}
+			every_province = {
+				limit = {
+					is_core = CHC
 				}
 				add_core = CHC
-
 			}
-			release = CHC
-			CHC = {
-				capital_scope = {
-					build_to_forcelimit = {
-						infantry = 0.7
-						cavalry = 0.3
-					}
-				}
-				change_government = theocracy
-				adopt_reform_progress = ROOT
-				add_yearly_manpower = 10
-				add_treasury = 100
-				add_adm_power = 100
-				add_dip_power = 100
-				add_mil_power = 100
-				add_stability = 1
-				define_ruler = {
-					name = "Pika"
-					dynasty = "Chu"
-				}
-
-			}
-
-		}
-	}
-
-}
-
-# Decore Ming
-
-country_event = {
-	id = shatter_ming.3
-	picture = ANGRY_MOB_eventPicture
-	
-	is_triggered_only = yes
-	fire_only_once = yes
-	major = yes
-	hidden = yes
-	
-	immediate = {
-		hidden_effect = {
-			# Remove cores
-			every_core_province = {
+			every_province = {
 				limit = {
-					NOT = { owned_by = ROOT }
+					is_core = TNG
 				}
-				remove_core = ROOT
+				add_core = TNG
 			}
-			#Remove Tribs
-			MNG = {
-				every_subject_country = {
-					grant_independence = yes
-				}
-			}
-			china_superregion = {
+			every_province = {
 				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
+					is_core = QIC
 				}
-				add_permanent_claim = ROOT
+				add_core = QIC
+			}
+			every_province = {
+				limit = {
+					is_core = YAN
+				}
+				add_core = YAN
+			}
+			every_province = {
+				limit = {
+					is_core = JIN
+				}
+				add_core = JIN
+			}
+			every_province = {
+				limit = {
+					is_core = LNG
+				}
+				add_core = LNG
+			}
+			every_province = {
+				limit = {
+					is_core = QIN
+				}
+				add_core = QIN
+			}
+			every_province = {
+				limit = {
+					is_core = HUA
+				}
+				add_core = HUA
+			}
+			every_province = {
+				limit = {
+					is_core = LIO
+				}
+				add_core = LIO
+			}
+			every_province = {
+				limit = {
+					is_core = CGS
+				}
+				add_core = CGS
+			}
+			every_province = {
+				limit = {
+					is_core = CDL
+				}
+				add_core = CDL
+			}
+			
+			#Steppes
+			every_province = {
+				limit = {
+					is_core = CHG
+				}
+				add_core = CHG
+			}
+			every_province = {
+				limit = {
+					is_core = OIR
+				}
+				add_core = OIR
+			}
+			every_province = {
+				limit = {
+					is_core = KHA
+				}
+				add_core = KHA
+			}
+			every_province = {
+				limit = {
+					is_core = MJZ
+				}
+				add_core = MJZ
+			}
+			every_province = {
+				limit = {
+					is_core = MHX
+				}
+				add_core = MHX
+			}
+			every_province = {
+				limit = {
+					is_core = KAS
+				}
+				add_core = KAS
+			}
+			every_province = {
+				limit = {
+					is_core = KRC
+				}
+				add_core = KRC
+			}
+			every_province = {
+				limit = {
+					is_core = MYR
+				}
+				add_core = MYR
+			}
+			every_province = {
+				limit = {
+					is_core = EJZ
+				}
+				add_core = EJZ
+			}
+			every_province = {
+				limit = {
+					is_core = NVK
+				}
+				add_core = NVK
+			}
+			every_province = {
+				limit = {
+					is_core = SOL
+				}
+				add_core = SOL
+			}
+			every_province = {
+				limit = {
+					is_core = NHX
+				}
+				add_core = NHX
+			}
+			every_province = {
+				limit = {
+					is_core = HMI
+				}
+				add_core = HMI
+			}
+			#China and Korea
+			every_province = {
+				limit = {
+					is_core = KOR
+				}
+				add_core = KOR
+			}
+			every_province = {
+				limit = {
+					is_core = ASK
+				}
+				add_core = ASK
+			}
+			every_province = {
+				limit = {
+					is_core = DTE
+				}
+				add_core = DTE
+			}
+			every_province = {
+				limit = {
+					is_core = UES
+				}
+				add_core = UES
+			}
+			every_province = {
+				limit = {
+					is_core = SMZ
+				}
+				add_core = SMZ
+			}
+			every_province = {
+				limit = {
+					is_core = HSK
+				}
+				add_core = HSK
+			}
+			every_province = {
+				limit = {
+					is_core = ODA
+				}
+				add_core = ODA
+			}
+			every_province = {
+				limit = {
+					is_core = OUC
+				}
+				add_core = OUC
+			}
+			every_province = {
+				limit = {
+					is_core = AIN
+				}
+				add_core = AIN
+			}
+			
+			#Tibet
+			every_province = {
+				limit = {
+					is_core = SYG
+				}
+				add_core = SYG
+			}
+			every_province = {
+				limit = {
+					is_core = LWA
+				}
+				add_core = LWA
+			}
+			every_province = {
+				limit = {
+					is_core = UTS
+				}
+				add_core = UTS
+			}
+			every_province = {
+				limit = {
+					is_core = KAM
+				}
+				add_core = KAM
+			}
+			every_province = {
+				limit = {
+					is_core = GUG
+				}
+				add_core = GUG
+			}
+			every_province = {
+				limit = {
+					is_core = PHA
+				}
+				add_core = PHA
+			}
+			every_province = {
+				limit = {
+					is_core = LDK
+				}
+				add_core = LDK
 			}
 		}
 	}
-	
-	option = {
-		
-	}
+
 }
 
-
-# 3/3/3 Ruler event for China
-
-country_event = {
-
-	id = shatter_ming.4
-	title = "shattered_ruler.t"
-	desc = "shattered_ruler.d"
-	picture = DIPLOMACY_eventPicture
-	
-	is_triggered_only = yes
-	#Male Random Dynasty
-	option = {
-		name = shattered_ruler.a
-		define_ruler = {
-			 
-			adm = 3
-			dip = 3
-			mil = 3
-			age = 30
-			claim = 100
-			female = no
-		}
-		
-	}
-	
-	#Female Random Dynasty
-	option = {
-		name = shattered_ruler.f
-		define_ruler = {
-			 
-			adm = 3
-			dip = 3
-			mil = 3
-			age = 30
-			claim = 100
-			female = yes
-		}
-		
-	}
-	
-	#Male Current Dynasty
-	option = {
-		name = shattered_ruler.c
-		define_ruler = {
-			 
-			adm = 3
-			dip = 3
-			mil = 3
-			age = 30
-			claim = 100
-			dynasty = ROOT
-			female = no
-		}
-		
-	}
-	
-	#Female Current Dynasty
-	option = {
-		name = shattered_ruler.e
-		define_ruler = {
-			 
-			adm = 3
-			dip = 3
-			mil = 3
-			age = 30
-			claim = 100
-			dynasty = ROOT
-			female = yes
-		}
-		
-	}
-	
-	option = {
-		name = shattered_ruler.b
-	}
-	
-	
-}
 
