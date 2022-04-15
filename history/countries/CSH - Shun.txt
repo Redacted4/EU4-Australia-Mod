@@ -6,6 +6,23 @@ primary_culture = xibei
 capital = 699 # Lanzhou 
 #capital = 689 # Fengyuan Old Capital
 
+#For all playable ROTW nations
+1444.11.10 = {
+	monarch = {
+		name = "Caretaker"
+		dynasty = "Government"
+		adm = 0
+		dip = 0
+		mil = 0
+	}
+	clear_scripted_personalities = yes
+	add_ruler_personality = immortal_personality
+	add_country_modifier = {
+		name = caretaker_government_modifier
+		duration = -1
+	}
+}
+
 1627.1.1 = {
 	monarch = {
 		name = "Zicheng"

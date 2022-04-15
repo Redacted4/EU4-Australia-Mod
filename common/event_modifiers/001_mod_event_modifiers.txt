@@ -74,3 +74,17 @@ ang_battlefield_rites_modifier = {
 ang_ship_chaplains_modifier = {
 	naval_morale = 0.1
 }
+
+#For Exile System
+caretaker_government_modifier = {
+	country_admin_power = -3
+	country_military_power = -3
+	country_diplomatic_power = -3
+	advisor_cost = 100
+	inflation_reduction = 100
+	yearly_corruption = -100
+	all_power_cost = 100
+	build_cost = 100
+	global_unrest = -100
+
+}
