@@ -2124,6 +2124,9 @@ estate_nobles_officer_corp = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
 	influence = 0.05
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nomadic_tribes_guaranteed_leadgership_in_host }
+	}
 	can_select = {
 		army_tradition = 30
 	}
@@ -3506,6 +3509,9 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 	icon = privilege_conscript_cossack_elite
 	max_absolutism = -5
 	influence = 0.05
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nobles_officer_corp }
+	}
 	can_select = {
 		army_tradition = 30
 	}
