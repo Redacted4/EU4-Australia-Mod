@@ -394,8 +394,8 @@
  infra_embargo_desc:0 "Through heavy patrolling of our roads we can ensure travellers are safe from bandits and other ruffians and that illicit goods do not pass through our lands."
 
  #Imperialist Ideas
- naval_ideas:0 "Imperialist Ideas"
- naval_ideas_bonus: "Full Imperialist Ideas"
+ #naval_ideas:0 "Imperialist Ideas"
+ #naval_ideas_bonus: "Full Imperialist Ideas"
  overseas_service:0 "Service Overseas"
  overseas_service_desc:0 "By giving our officers a chance to test their mettle in our far flung colonies, we can keep our forces from falling behind even in times of peace."
  recruit_locally:0 "Recruit Local Allies"
