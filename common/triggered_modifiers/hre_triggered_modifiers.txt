@@ -141,7 +141,7 @@ kingdom_of_burgundy_triggered_modifier = {
 					is_part_of_hre = yes
 				}
 			}
-			amount = 18
+			amount = 17
 		}
 	}
 
