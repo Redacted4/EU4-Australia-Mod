@@ -79,3 +79,15 @@ ang_battlefield_rites_modifier = {
 ang_ship_chaplains_modifier = {
 	naval_morale = 0.1
 }
+
+boarding_parties_modifier = {
+	is_marine_modifier = yes
+	infantry_power = 0.2
+}
+
+maritime_marines_modifier = {
+	is_marine_modifier = yes
+	fire_damage_received = -0.1
+	shock_damage_received = -0.1
+	land_attrition = -0.25
+}

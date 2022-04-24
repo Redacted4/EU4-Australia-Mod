@@ -31,7 +31,11 @@
  thirty_percent_janissaries:0 "§Y30%§! or above of the [Root.GetAdjective] Army consists of Janissary Regiments."
  religious_dev_cost:0 "Church Sponsored Development Efforts"
  phillip_the_good_modifier:0 "Phillip the Good"
- ##Idea Provincial Modifiers:
+ ang_ship_chaplains_modifier:0 "Ship Chaplains"
+ ang_battlefield_rites_modifier:0 "Battlefield Rites"
+ sponsor_ship_chaplains_aspect:0 "§YSponsor Ship Chaplains§!"
+ performing_of_battlefield_rites:0 "§YPerforming of Battlefield Rites§!"
+ ##Idea Modifiers:
  infra_dev_province_modifier:0 "Organised Land Clearing"
  religious_tradition_province_modifier:0 "Religious Tradition"
  humanist_construction_cost_province_modifier:0 "Indirect Rule"
@@ -40,10 +44,8 @@
  maritime_free_building_slot_province_modifier:0 "Grand Navy"
  venice_arsenal_triggered_modifier:0 "Venetian Arsenal"
  bankruptcy_5_desc:0 "Somebody call Joe Hockey immediately!"
- ang_ship_chaplains_modifier:0 "Ship Chaplains"
- ang_battlefield_rites_modifier:0 "Battlefield Rites"
- sponsor_ship_chaplains_aspect:0 "§YSponsor Ship Chaplains§!"
- performing_of_battlefield_rites:0 "§YPerforming of Battlefield Rites§!"
+ maritime_marines_modifier:0 "Secure Beachheads"
+ boarding_parties_modifier:0 "Boarding Parties"
  #HRE Kingdom Triggered Modifiers
  kingdom_of_germany_triggered_modifier:0 "Kingdom of Germany"
  kingdom_of_italy_triggered_modifier:0 "Kingdom of Italy"

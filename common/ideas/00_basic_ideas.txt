@@ -791,7 +791,7 @@ maritime_ideas = {
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
-		allowed_marine_fraction = 0.25
+		
 	}
 	sheltered_ports = {
 		global_ship_repair = 0.1
@@ -801,9 +801,8 @@ maritime_ideas = {
 		naval_forcelimit_modifier = 0.5
 		ship_power_propagation = 0.25
 	}
-	ships_penny = {
-		global_ship_cost = -0.1
-		merchant = 1
+	oorah_marines = {
+		allowed_marine_fraction = 0.25
 	}
 	sea_hawks = {
 		free_dip_policy = 1
@@ -911,7 +910,7 @@ quantity_ideas = {
 		global_supply_limit_modifier = 0.33
 	}
 	garrison_conscription = {
-		fort_maintenance_modifier = -0.20
+		garrison_size = 0.25
 	}
 	expanded_supply_trains = {
 		land_attrition = -0.1
@@ -1148,18 +1147,19 @@ naval_ideas = {
 		army_tradition_decay = -0.01
 		navy_tradition_decay = -0.01
 	}
-	boarding_parties = {
+	boarding_parties_new = {
 		allowed_marine_fraction = 0.25
 	}
 	gunboat_diplomacy = {
 		global_naval_barrage_cost = -0.33
 		heavy_ship_power = 0.15
+		galley_power = 0.2
 	}
 	naval_glory = {
 		naval_forcelimit_modifier = 0.25
 	}
 	divide_and_conquer = {
-		mercenary_manpower = 0.5
+		mercenary_manpower = 0.33
 	}
 	oak_forests_for_ships = {
 		ship_durability = 0.1

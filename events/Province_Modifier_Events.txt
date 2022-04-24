@@ -514,3 +514,119 @@ country_event = {
 		ai_chance = { factor = 100 }
 	}
 }
+
+#Marine ICA (Naval)
+country_event = {
+	id = province_idea_event.15
+	title = province_idea_event.15.t
+	desc = province_idea_event.15.d
+	picture = TRADEGOODS_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = boarding_parties_modifier   }
+		has_idea = boarding_parties_new
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "boarding_parties_modifier"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = naval_ica_option1
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = province_idea_event.16
+	title = province_idea_event.16.t
+	desc = province_idea_event.16.d
+	picture = TRADEGOODS_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = boarding_parties_modifier 
+		NOT = { has_idea = boarding_parties_new  }
+	}
+
+	immediate = {
+		remove_country_modifier = boarding_parties_modifier
+	}
+	
+	option = {
+		name = naval_ica_option2
+		ai_chance = { factor = 100 }
+	}
+}
+
+#Maritime Marine Buffs
+country_event = {
+	id = province_idea_event.15
+	title = province_idea_event.15.t
+	desc = province_idea_event.15.d
+	picture = TRADEGOODS_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		NOT = { has_country_modifier = maritime_marines_modifier   }
+		has_idea = oorah_marines
+	}
+
+	immediate = {
+		add_country_modifier = {
+			name = "maritime_marines_modifier"
+			duration = -1
+		}
+	}
+	
+	option = {
+		name = naval_ica_option1
+		ai_chance = { factor = 100 }
+	}
+}
+
+country_event = {
+	id = province_idea_event.16
+	title = province_idea_event.16.t
+	desc = province_idea_event.16.d
+	picture = TRADEGOODS_eventPicture
+	
+	mean_time_to_happen = {
+		days = 1
+	}
+	
+	hidden = yes
+	
+	trigger = {
+		has_country_modifier = maritime_marines_modifier 
+		NOT = { has_idea = oorah_marines  }
+	}
+
+	immediate = {
+		remove_country_modifier = maritime_marines_modifier
+	}
+	
+	option = {
+		name = naval_ica_option2
+		ai_chance = { factor = 100 }
+	}
+}
