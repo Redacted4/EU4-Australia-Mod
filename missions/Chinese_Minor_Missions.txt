@@ -4,12 +4,14 @@ chinese_minor_conquest_missions = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CSH
-			tag = CYI
-			tag = YAN
-			tag = YUE
-			tag = CHC
+			has_idea_group = chinese_ideas
+			tag = CSH #Shun
+			tag = CDL #Dali
+			tag = CYI #Yi
+			tag = CMI #Miao 
 		}
+		
+
 		NOT = { map_setup = map_setup_random }
 	}
 	
@@ -299,11 +301,11 @@ chinese_minor_conquest_missions_2 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CSH
-			tag = CYI
-			tag = YAN
-			tag = YUE
-			tag = CHC
+			has_idea_group = chinese_ideas
+			tag = CSH #Shun
+			tag = CDL #Dali
+			tag = CYI #Yi
+			tag = CMI #Miao 
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -383,11 +385,11 @@ chinese_minor_conquest_missions_3 = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CSH
-			tag = CYI
-			tag = YAN
-			tag = YUE
-			tag = CHC
+			has_idea_group = chinese_ideas
+			tag = CSH #Shun
+			tag = CDL #Dali
+			tag = CYI #Yi
+			tag = CMI #Miao 
 		}
 		NOT = { map_setup = map_setup_random }
 	}
@@ -484,11 +486,11 @@ chinese_minor_misc_missions = {
 	ai = yes
 	potential = {
 		OR = {
-			tag = CSH
-			tag = CYI
-			tag = YAN
-			tag = YUE
-			tag = CHC
+			has_idea_group = chinese_ideas
+			tag = CSH #Shun
+			tag = CDL #Dali
+			tag = CYI #Yi
+			tag = CMI #Miao 
 		}
 		NOT = { map_setup = map_setup_random }
 	}
