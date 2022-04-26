@@ -791,7 +791,7 @@ maritime_ideas = {
 	}
 	merchant_marine = {
 		global_sailors_modifier = 0.5
-		
+		merchants = 1
 	}
 	sheltered_ports = {
 		global_ship_repair = 0.1
@@ -1022,7 +1022,7 @@ administrative_ideas = {
 		interest = -0.5
 	}
 	organised_mercenary_recruitment_new = {
-		mercenary_manpower = 0.25
+		mercenary_manpower = 0.33
 	}
 	administrative_efficiency_idea = {
 		administrative_efficiency = 0.05
