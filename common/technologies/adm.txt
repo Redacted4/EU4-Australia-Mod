@@ -243,9 +243,10 @@ technology = { #Metallurgy
 
 }
 
-technology = { #University
-	# Tech 17
+technology = { #National Sovereignty
+	# Tech 17 (Swapped from tech 18)
 	year = 1622
+	
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
@@ -254,15 +255,11 @@ technology = { #University
 		global_trade = 0.15
 	}
 	
-	university = yes	
-	governing_capacity = 250
-	
-	
-	administrative_efficiency = 0.1
+	allowed_idea_groups	= 5
 }
 
-technology = { #National Sovereignty
-	# Tech 18
+technology = { #University
+	# Tech 18 (Swapped with tech 17)
 	year = 1635
 	expects_institution = {
 		feudalism = 0.5
@@ -272,8 +269,14 @@ technology = { #National Sovereignty
 		global_trade = 0.3
 	}
 	
-	allowed_idea_groups	= 5
+	university = yes	
+	governing_capacity = 250
+	
+	
+	administrative_efficiency = 0.1
 }
+
+
 
 technology = { #Cathedral
 	# Tech 19
@@ -290,7 +293,7 @@ technology = { #Cathedral
 	cathedral = yes
 }
 
-technology = { #Absolute Rulership
+technology = { #The Constitution
 	# Tech 20
 	year = 1661
 	expects_institution = {
@@ -300,12 +303,14 @@ technology = { #Absolute Rulership
 		printing_press = 0.5
 		global_trade = 0.5
 	}
+	allowed_idea_groups = 6
+	constitutional_monarchy = yes
+	constitutional_republic = yes  
+
 	
-	republican_dictatorship = yes
-	governing_capacity = 250
 }
 
-technology = { #Land Clearance
+technology = { #Absolute Rulership
 	# Tech 21
 	year = 1674
 	expects_institution = {
@@ -316,13 +321,13 @@ technology = { #Land Clearance
 		global_trade = 0.5
 		manufactories = 0.15
 	}
-	allowed_idea_groups = 6
-	#Land Clearance
-	production_efficiency 	=	0.02
-	furnace = yes
+	town_hall = yes
+	republican_dictatorship = yes
+	governing_capacity = 250
+	
 }
 
-technology = { #The Constitution
+technology = {  #Land Clearance
 	# Tech 22
 	year = 1687
 	expects_institution = {
@@ -334,11 +339,9 @@ technology = { #The Constitution
 		manufactories = 0.3
 	}
 	
-	
-	constitutional_monarchy = yes
-	constitutional_republic = yes  
-
-	town_hall = yes
+	#Land Clearance
+	production_efficiency 	=	0.02
+	furnace = yes
 }
 
 technology = { #Measuring the World
@@ -352,7 +355,7 @@ technology = { #Measuring the World
 		global_trade = 0.5
 		manufactories = 0.5
 	}
-	
+	allowed_idea_groups 	= 	7
 	administrative_efficiency = 0.1
 }
 
@@ -371,7 +374,7 @@ technology = { #Bonds and Tontines
 	
 	counting_house = yes  
 	governing_capacity = 250
-	allowed_idea_groups 	= 	7
+	
 }
 
 technology = { #Improved Production
@@ -403,7 +406,7 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	
+	allowed_idea_groups = 8
 	
 }
 
@@ -422,7 +425,7 @@ technology = { #Modern Bureaucracy
 	}
 
 	governing_capacity = 250
-	allowed_idea_groups = 8
+	
 }
 
 technology = { #Rotherham Plough
