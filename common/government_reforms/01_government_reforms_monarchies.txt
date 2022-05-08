@@ -713,13 +713,12 @@ principality = {
 		global_unrest = -1
 		global_tax_modifier = 0.05
 		governing_capacity = 100
-		autonomy_change_time = -0.33	
 	}
 
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
 		government_abilities = {
-			#russian_mechanic
+			russian_mechanic
 		}
 	}
 }
@@ -760,13 +759,12 @@ tsardom = {
 		yearly_absolutism = 0.5
 		global_autonomy = -0.05
 		governing_capacity = 250
-		autonomy_change_time = -0.33	
 	}
 
 	conditional = {
 		allow = { has_dlc = "Third Rome" }
 		government_abilities = {
-			#russian_mechanic
+			russian_mechanic
 		}
 		claim_states = yes
 	}
