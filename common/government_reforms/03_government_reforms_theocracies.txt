@@ -19,6 +19,9 @@ theocracy_mechanic = {
 		brahmins_hindu_influence_modifier = 0.1
 		church_loyalty_modifier = 0.1
 		church_influence_modifier = 0.05
+		monarch_admin_power = 1
+		monarch_military_power = 1
+		monarch_diplomatic_power = 1
 	}
 }
 
@@ -64,9 +67,6 @@ papacy_reform = {
 		prestige_per_development_from_conversion = 0.33
 		tolerance_own = 1
 		church_influence_modifier = 0.2
-		monarch_admin_power = 1
-		monarch_military_power = 1
-		monarch_diplomatic_power = 1
 	}
 	valid_for_nation_designer = no
 	icon = "papacy"

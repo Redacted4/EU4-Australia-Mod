@@ -359,4 +359,49 @@ country_event = {
 	
 }
 
+#+1 to stat of choice for newly elected Popes
+country_event = {
+
+	id = new_events.7
+	title = "new_events.7.t"
+	desc = "new_events.7.desc"
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	#+1 Admin Skill
+	option = {
+		name = new_events.7.a
+		trigger = {
+			NOT = { adm = 6 } #Won't fire if you have 6 admin
+		}
+		change_adm = 1
+	}
+	#+1 Dip Skill
+	option = {
+		name = new_events.7.b
+		trigger = {
+			NOT = { dip = 6 } #Won't fire if you have 6 dip
+		}
+		change_dip = 1
+	}
+	#+1 Mil Skill
+	option = {
+		name = new_events.7.c
+		trigger = {
+			NOT = { has_country_modifier = papal_blessing }
+		}
+		trigger = {
+			NOT = { mil = 6 } #Won't fire if you have 6 mil
+		}
+		change_mil = 1
+	}
+	#Backup Option in case you get a 6/6/6 or want to have a worse ruler?
+	option = {
+		name = new_events.7.d
+		add_prestige = 10
+		add_devotion = 10
+	}
+	
+}
 

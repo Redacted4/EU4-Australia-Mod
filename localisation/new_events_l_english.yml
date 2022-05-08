@@ -63,6 +63,12 @@
  new_events.6.g:0 "Beatify Local Saint"
  new_events.6.h:0 "Sanction Commercial Monopoly"
  new_events.6.i:0 "Perhaps Later"
+ new_events.7.t:0 "New Pope Elected!"
+ new_events.7.desc:0 "As the smoke rises from the roof of the College of Cardinals, the Christian faithful are introduced to the newly appointed Pope. But just what kind of man is this servant of God?"
+ new_events.7.a: "A Diligent Administrator"
+ new_events.7.b: "An Ambassador of God"
+ new_events.7.c: "A Bastion of Faith"
+ new_events.7.d: "God's Servant on Earth"
 
 
  

@@ -1068,6 +1068,13 @@ on_monarch_death = {
 			}
 		}
 	}
+	#Fires Papal Skill Points event
+	if = {
+		limit = {
+			tag = PAP
+		}
+		country_event = { id = new_events.7}
+	}
 	if = {
 		limit = {
 			tag = ANS

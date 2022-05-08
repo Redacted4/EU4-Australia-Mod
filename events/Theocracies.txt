@@ -286,7 +286,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_mil = 2 #+2 mil for Noble Candidates
+				change_mil = 1 #+1 mil for Noble Candidates
 				culture = event_target:noble_province
 			}
 		}
@@ -301,7 +301,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_mil = 2 #+2 mil for Noble Candidates
+				change_mil = 1 #+1 mil for Noble Candidates
 				female = yes
 				culture = event_target:noble_province
 			}
@@ -317,7 +317,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_mil = 2 #+2 mil for Noble Candidates
+				change_mil = 1 #+1 mil for Noble Candidates
 				female = yes
 			}
 		}
@@ -325,7 +325,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_mil = 2 #+2 mil for Noble Candidates
+				change_mil = 1 #+1 mil for Noble Candidates
 			}
 		}
 		custom_tooltip = "theocracy.mil_tt"
@@ -415,7 +415,7 @@ country_event = {
 						age = 35
 						culture = PREV
 						hidden = yes
-						change_mil = 2 #+2 mil for Noble Candidates
+						change_mil = 1 #+1 mil for Noble Candidates
 					} 
 				}
 				else = {
@@ -425,7 +425,7 @@ country_event = {
 						culture = PREV
 						female = yes
 						hidden = yes
-						change_mil = 2 #+2 mil for Noble Candidates
+						change_mil = 1 #+1 mil for Noble Candidates
 					} 
 				}
 			}
@@ -492,7 +492,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_dip = 2 #+2 dip for Merchant Candidate
+				change_dip = 1 #+1 dip for Merchant Candidate
 				culture = event_target:burgher_province
 			}
 		}
@@ -507,7 +507,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_dip = 2 #+2 dip for Merchant Candidate
+				change_dip = 1 #+1 dip for Merchant Candidate
 				female = yes
 				culture = event_target:burgher_province
 			}
@@ -523,14 +523,14 @@ country_event = {
 				age = 35
 				female = yes
 				hidden = yes
-				change_dip = 2 #+2 dip for Merchant Candidate
+				change_dip = 1 #+1 dip for Merchant Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_dip = 2 #+2 dip for Merchant Candidate
+				change_dip = 1 #+1 dip for Merchant Candidate
 			}
 		}
 		custom_tooltip = "theocracy.dip_tt"
@@ -595,7 +595,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 				culture = event_target:church_province
 			}
 		}
@@ -610,7 +610,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 				female = yes
 				culture = event_target:church_province
 			}
@@ -626,14 +626,14 @@ country_event = {
 				age = 35
 				female = yes
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 			}
 		}
 		custom_tooltip = "theocracy.adm_tt"
@@ -711,7 +711,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 				culture = event_target:church_province
 			}
 		}
@@ -726,7 +726,7 @@ country_event = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 				female = yes
 				culture = event_target:church_province
 			}
@@ -742,14 +742,14 @@ country_event = {
 				age = 35
 				female = yes
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 			}
 		}
 		else = {
 			define_heir = {
 				age = 35
 				hidden = yes
-				change_adm = 2 #+2 dip for Clergy Candidate
+				change_adm = 1 #+1 dip for Clergy Candidate
 			}
 		}
 		custom_tooltip = "theocracy.adm_tt"
