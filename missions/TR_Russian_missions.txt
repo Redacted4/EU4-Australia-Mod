@@ -696,7 +696,7 @@ tr_russia_exclusive_1 = {
 		required_missions = { time_of_troubles_mission }
 		position = 9
 		trigger = {
-			#num_of_streltsy = 30
+			num_of_streltsy = 30
 			army_size_percentage = 1
 		}
 		effect = {
