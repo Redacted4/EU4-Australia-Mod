@@ -685,15 +685,15 @@ RUS_ideas = {
 		auto_explore_adjacent_to_colony = yes
 	}
 	russian_artillery_yard = {
-		artillery_cost = -0.15
-		artillery_power = 0.05
+		artillery_cost = -0.1
+		artillery_power = 0.1
 	}
 	life_long_conscription  = {
 		land_forcelimit_modifier = 0.33
 	}
 
-	streltsy_idea = {
-		fire_damage = 0.1
+	abolish_the_mestnichestvo = {
+		yearly_corruption = -0.1
 	}
 	table_of_ranks = {
 		advisor_cost = -0.10
