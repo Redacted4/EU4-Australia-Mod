@@ -577,7 +577,7 @@ zealous_captains = {
 }
 
 autonomous_estates = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = influence_ideas
@@ -631,6 +631,7 @@ inspirational_leaders = {
 	}
 
 	shock_damage = 0.1
+	leader_land_shock = 1
 
 	ai_will_do = {
 		factor = 1.2
@@ -769,7 +770,7 @@ guerilla_warfare = {
 	}
 
 	hostile_attrition = 1
-	global_garrison_growth = 0.1
+	defensiveness = 0.1
 
 	ai_will_do = {
 		factor = 0.8
@@ -903,7 +904,7 @@ military_allotment_act = {
 }
 
 unified_army_command = {
-	monarch_power = MIL
+	monarch_power = DIP
 
 	potential = {
 		has_idea_group = plutocracy_ideas
@@ -984,7 +985,7 @@ trade_kontor_network = {
 }
 
 deserteur_act = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = spy_ideas
@@ -997,6 +998,7 @@ deserteur_act = {
 	}
 
 	army_tradition_decay = -0.01
+	yearly_army_professionalism = 0.005
 
 	ai_will_do = {
 		factor = 0.75

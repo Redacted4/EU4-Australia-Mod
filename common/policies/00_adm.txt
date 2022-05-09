@@ -884,7 +884,7 @@ visionary_thinkers = {
 	}	
 	
 	prestige = 0.5
-	army_tradition_decay = -0.01
+	army_tradition_decay = -0.005
 	yearly_army_professionalism = 0.005
 
 	ai_will_do = {
