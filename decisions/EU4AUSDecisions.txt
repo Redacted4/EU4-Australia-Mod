@@ -269,6 +269,7 @@ country_decisions = {
 
 		effect = {
 			add_legitimacy = -100
+			set_country_flag = milan_tank_legitimacy_flag
 		}
 
 		ai_will_do = {
