@@ -69,6 +69,11 @@
  new_events.7.b: "An Ambassador of God"
  new_events.7.c: "A Bastion of Faith"
  new_events.7.d: "God's Servant on Earth"
-
+ new_events.8.t:0 "Creditors accept bankruptcy"
+ new_events.8.desc:0 "Our creditors have been forced to grant us relief from our debts. This is unlikely to be the last we've seen of them, however..."
+ new_events.8.a: "Pshaw, we're bankrupt. Paying off debt is for those solvent suckers"
+ new_events.9.t:0 "Creditors demand reparations!"
+ new_events.9.desc:0 "As we leave bankruptcy, our creditors have unified in their demands that we recompense them for their "generosity". We have no choice but to accept."
+ new_events.9.a: "I thought we'd gotten rid of you lot five years ago :("
 
  

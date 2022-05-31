@@ -2,6 +2,7 @@
 # Brand new Events for EU4 AUS MOD
 
 # Written by Ezio
+# Contributions by Panzer
 ########################################
 
 namespace = new_events
@@ -405,3 +406,37 @@ country_event = {
 	
 }
 
+# Fuck Bankruptcy abuse
+country_event = {
+	id = new_events.8
+	title = "new_events.8.t"
+	desc = "new_events.8.desc"
+	picture = POPE_PREACHING_eventPicture
+
+	days = 1825 
+	is_triggered_only = yes
+
+	option = {
+		name = new_events.8.a
+		# No running away from your obligations >:(
+		country_event = {
+			id = new_events.9
+			days = 1825
+		}
+	}
+}
+
+# Fuck Bankruptcy abuse
+country_event = {
+	id = new_events.9
+	title = "new_events.9.t"
+	desc = "new_events.9.desc"
+	picture = POPE_PREACHING_eventPicture
+	is_triggered_only = yes
+
+	option = {
+		name = new_events.9.a
+		# No running away from your obligations >:(
+		add_years_of_income = -5 
+	}
+}
