@@ -376,7 +376,7 @@ spy_ideas = {
 
 
 infrastructure_ideas = {
-	category = DIP
+	category = ADM
 	bonus = {
 		global_trade_goods_size_modifier = 0.1
 	}
@@ -1041,7 +1041,7 @@ administrative_ideas = {
 }
 
 humanist_ideas = {
-	category = ADM
+	category = DIP
 
 	bonus = {
 		fire_damage_received = -0.1
