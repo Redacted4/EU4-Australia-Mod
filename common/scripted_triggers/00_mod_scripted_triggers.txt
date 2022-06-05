@@ -176,6 +176,10 @@ has_strait_scripted_trigger = {
 			province_id = 87	#Calais
 			province_id = 341 	#Tunis
 			province_id = 4736	#Trapani
+			province_id = 122 #Salento
+			#Corfu already has strait
+			province_id = 28 #Nyland
+			province_id = 36 #Reval
 		}
 }
 
