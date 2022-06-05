@@ -709,7 +709,7 @@ daimyo_ideas = {
 	}
 }
 
-BAV_ideas = {
+#BAV_ideas = {
 	start = {
 		cavalry_power = 0.1
 		heir_chance = 0.5
