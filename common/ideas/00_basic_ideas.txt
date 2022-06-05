@@ -1155,8 +1155,8 @@ naval_ideas = {
 		heavy_ship_power = 0.15
 		galley_power = 0.2
 	}
-	naval_glory = {
-		naval_forcelimit_modifier = 0.25
+	press_gangs = {
+		sailors_recovery_speed = 0.25
 	}
 	divide_and_conquer = {
 		mercenary_manpower = 0.33
