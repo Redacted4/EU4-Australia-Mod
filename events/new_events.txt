@@ -86,6 +86,7 @@ country_event = {
 #Transports for England
 #Redistributes Electorships to players
 #Stop Prussia Cheesing
+#Independent Holland and Sweden
 
 country_event = {
 
@@ -146,6 +147,25 @@ country_event = {
 				limit = {
 					ai = no
 				}
+				grant_independence = yes
+			}
+
+		}
+		###Independence for Sweden if player
+		SWE = {
+			if = {
+				limit = {
+					ai = no
+				}
+				define_ruler = {
+					name = "Gustav"
+					dynasty = "Vasa"
+					adm = 5
+					dip = 4
+					mil = 4
+					age = 20
+					claim = 95
+				}		
 				grant_independence = yes
 			}
 
