@@ -359,6 +359,64 @@ country_decisions = {
 
 	}
 
+	#Westernisation Decisions
+	westernisation_mediterranean =  {
+
+		potential = {
+			OR = {
+				technology_group = ottoman
+				AND = {
+					primary_culture = egyptian
+					technology_group = muslim
+				}
+				AND = {
+					technology_group = muslim
+					culture_group = maghrebi
+				}
+			}
+			always = no #Won't show up until this is removed
+		}
+
+		allow = {
+			adm_tech = 10
+			is_at_war = no
+			OR = {
+				#Vienna
+				AND = {
+					owns_core_province = 134
+					134 = {
+						NOT = { nationalism = 1 }
+					}
+				}
+				#Rome
+				AND = {
+					owns_core_province = 118
+					118 = {
+						NOT = { nationalism = 1 }
+					}
+				}
+				#Madrid
+				AND = {
+					owns_core_province = 217
+					217 = {
+						NOT = { nationalism = 1 }
+					}
+				}
+			}
+		}
+
+		effect = {
+			change_unit_type = western	
+			#add global notification event here
+		}
+
+		ai_will_do = {
+			factor = 0
+		}
+
+	}
+
+
 
 
 
