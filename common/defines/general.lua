@@ -16,7 +16,6 @@ NDefines.NMilitary.TRANSPORT_COST = 5							-- from 12
 NDefines.NMilitary.TRANSPORT_MAINT_FACTOR = 0.02				-- from 0.04
 NDefines.NEconomy.CARAVAN_FACTOR = 9.0							-- from 3.0
 NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 1					-- from 10
-NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40			-- from 60 
 NDefines.NCountry.MAX_TOLERANCE_HERETIC = 5						-- from 3
 NDefines.NCountry.MAX_TOLERANCE_HEATHEN = 5						-- from 3
 NDefines.NMilitary.DAYS_PER_PHASE = 1						-- from 3
@@ -25,6 +24,10 @@ NDefines.NMilitary.MARINE_SHOCK_DAMAGE_TAKEN = 0	-- from +0.10
 NDefines.NEconomy.TRADE_NON_CAPITAL_OFFICE = -0.25							-- from 0.5
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
 NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
+
+-- Mercenary Rebalance
+NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40			-- from 60 
+NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
 
 -- Turns off tributaries providing monarch points
 NDefines.NDiplomacy.TRIBUTE_BASE_ADM = 0						-- Tributary State: Part Adm tribute, mulitplied by total development
