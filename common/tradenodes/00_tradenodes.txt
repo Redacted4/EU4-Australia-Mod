@@ -1,3 +1,5 @@
+#Insert J's brilliant trade rework here
+
 hudson_bay_node={
 	location=1003
 	outgoing={
