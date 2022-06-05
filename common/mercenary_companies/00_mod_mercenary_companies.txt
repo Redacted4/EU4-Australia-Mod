@@ -80,7 +80,7 @@ merc_volga_cossack_host = {
 #Admin Ideas Company
 
 merc_the_fortunate_few = {
-    regiments_per_development = 0.05
+    regiments_per_development = 1
     cavalry_weight = 0.1
     #artillery_weight = 0.1
     cavalry_cap = 2
@@ -101,7 +101,7 @@ merc_the_fortunate_few = {
 #Imperialist Ideas Company
 
 merc_viceroyal_army = {
-    regiments_per_development = 0.05
+    regiments_per_development = 1
     cavalry_weight = 0.1
     #artillery_weight = 0.1
     cavalry_cap = 2
@@ -122,7 +122,7 @@ merc_viceroyal_army = {
 #Plutocratic Ideas Company
 
 merc_republican_guard = {
-    regiments_per_development = 0.05
+    regiments_per_development = 1
     cavalry_weight = 0.1
     #artillery_weight = 0.1
     cavalry_cap = 2
@@ -142,7 +142,7 @@ merc_republican_guard = {
 #Aristocratic Ideas Company
 
 merc_second_sons = {
-    regiments_per_development = 0.05
+    regiments_per_development = 1
     cavalry_weight = 1
     #artillery_weight = 0.1
     cavalry_cap = 40
