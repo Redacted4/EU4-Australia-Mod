@@ -21,7 +21,7 @@ categories =  {
 		movement_cost = 1.25
 		supply_limit = 10	
 		allowed_num_of_buildings = 1
-		defensiveness = 0.1	
+		local_defensiveness = 0.1	
 		
 			
 		
