@@ -1,10 +1,5 @@
 ﻿l_english:
- fixed_estate_cossacks_exploration_expedition_effect_tooltip:0 "§G-15%§! Core Creation Cost in all Steppe Provinces"
- estate_bureaucracy_forest_marsh_dev_cost_tooltip:0 "§G-10%§! Development Cost in all Woods and Marsh Provinces"
- estate_privilege_religious_state_maintenance_tooltip:0 "§G-50%§! State Maintenance in all Provinces Following the State Religion"
- estate_privilege_humanist_building_cost_tooltip:0 "§G-20%§! Construction Cost in all Heretic and Heathen Provinces"
- estate_privilege_infra_movement_speed_tooltip:0 "§G+10%§! Friendly Movement Speed in all Owned Provinces"
- estate_privilege_plutocratic_goods_produced_tooltip:0 "Adds §G+25%§! Goods Produced to Centers of Trade in our home trade node." 
+ fixed_estate_cossacks_exploration_expedition_effect_tooltip:0 "§G15%§! Friendly Movement Speed in all Steppe Provinces"
  STOP_EXPLOITING:0 "Sorry, but money laundering is banned. Try paying off your own debt first you filthy exploiter." 
  DIP_TECH_NOT_30:0 "Requires Diplomatic Technology 30 or Espionage Ideas."
  DIP_TECH_NOT_6:0 "Requires Diplomatic Technology 6 or Espionage Ideas."
