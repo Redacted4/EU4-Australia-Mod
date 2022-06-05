@@ -17,7 +17,6 @@ NDefines.NMilitary.TRANSPORT_MAINT_FACTOR = 0.02				-- from 0.04
 NDefines.NEconomy.CARAVAN_FACTOR = 9.0							-- from 3.0
 NDefines.NMilitary.ARMY_ATTRITION_AT_SEA = 1					-- from 10
 NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40			-- from 60 
-NDefines.NMilitary.MERCENARY_COMPANY_MANPOWER_PER_REGIMENT = 2.5	-- from 2.0
 NDefines.NCountry.MAX_TOLERANCE_HERETIC = 5						-- from 3
 NDefines.NCountry.MAX_TOLERANCE_HEATHEN = 5						-- from 3
 NDefines.NMilitary.DAYS_PER_PHASE = 1						-- from 3
