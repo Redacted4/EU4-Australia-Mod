@@ -249,7 +249,7 @@ public_welfare_act = {
 		full_idea_group = economic_ideas
 	}
 
-	shock_damage_received = -0.15
+	shock_damage_received = -0.10
 
 	ai_will_do = {
 		factor = 1
