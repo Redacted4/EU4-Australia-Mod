@@ -40,32 +40,34 @@ cb_restore_personal_union = {
 	war_goal = take_capital_personal_union
 }
 
+#Replaced by mod CB
+
 #Hundred Years War
-cb_hundred_years_war = {
-	valid_for_subject = no
-
-	is_triggered_only = yes
-	months = 240
-
-	prerequisites = {
-		OR = {
-			government = monarchy
-			has_reform = dutch_republic
-		}
-		is_revolutionary = no
-		FROM = {
-			OR = {
-				government = monarchy
-				has_reform = ambrosian_republic
-				# has_reform = military_dictatorship_reform
-				has_country_flag = neapolitan_republic
-			}
-			is_subject = no
-		}
-	}
-
-	war_goal = take_capital_hundred_years_war
-}
+#cb_hundred_years_war = {
+#	valid_for_subject = no
+#
+#	is_triggered_only = yes
+#	months = 240
+#
+#	prerequisites = {
+#		OR = {
+#			government = monarchy
+#			has_reform = dutch_republic
+#		}
+#		is_revolutionary = no
+#		FROM = {
+#			OR = {
+#				government = monarchy
+#				has_reform = ambrosian_republic
+#				# has_reform = military_dictatorship_reform
+#				has_country_flag = neapolitan_republic
+#			}
+#			is_subject = no
+#		}
+#	}
+#
+#	war_goal = take_capital_hundred_years_war
+#}
 
 # Defected province
 cb_defection = {
@@ -1356,22 +1358,22 @@ cb_force_tributary_mission = {
 	
 	war_goal = take_capital_force_tributary
 }
-
-cb_hundred_years_union = {
-	valid_for_subject = no
-
-	is_triggered_only = yes
-	months = 360
-	
-	prerequisites = {
-		OR = {
-			tag = ENG
-			tag = GBR
-		}
-	}
-
-	war_goal = take_capital_personal_union
-}
+#Replaced with mod cb
+#cb_hundred_years_union = {
+#	valid_for_subject = no
+#
+#	is_triggered_only = yes
+#	months = 360
+#	
+#	prerequisites = {
+#		OR = {
+#			tag = ENG
+##			tag = GBR
+#		}
+#	}
+#
+#	war_goal = take_capital_personal_union
+}#
 
 cb_force_join_hre = {
 	valid_for_subject = no
