@@ -139,12 +139,12 @@ infra_economic_policy = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = economic_ideas
-		has_idea_group = infrastructure_ideas
+		has_idea_group = humanist_ideas
 	}
 	
 	allow = {
 		full_idea_group = economic_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = humanist_ideas
 	}
 	
 	global_autonomy = -0.05
@@ -159,12 +159,12 @@ infra_expansion_policy = {
 	monarch_power = DIP
 	potential = {
 		has_idea_group = expansion_ideas
-		has_idea_group = infrastructure_ideas
+		has_idea_group = humanist_ideas
 	}
 	
 	allow = {
 		full_idea_group = expansion_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = humanist_ideas
 	}
 	
 	global_trade_power = 0.1
@@ -198,12 +198,12 @@ infra_religious_policy = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = religious_ideas
-		has_idea_group = infrastructure_ideas
+		has_idea_group = humanist_ideas
 	}
 	
 	allow = {
 		full_idea_group = religious_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = humanist_ideas
 	}
 	
 	global_tax_modifier = 0.2
@@ -217,12 +217,12 @@ infra_innovative_policy = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = innovativeness_ideas
-		has_idea_group = infrastructure_ideas
+		has_idea_group = humanist_ideas
 	}
 	
 	allow = {
 		full_idea_group = innovativeness_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = humanist_ideas
 	}
 	
 	advisor_cost = -0.1
@@ -237,12 +237,12 @@ infra_admin_policy = {
 	monarch_power = ADM
 	potential = {
 		has_idea_group = administrative_ideas
-		has_idea_group = infrastructure_ideas
+		has_idea_group = humanist_ideas
 	}
 	
 	allow = {
 		full_idea_group = administrative_ideas
-		full_idea_group = infrastructure_ideas
+		full_idea_group = humanist_ideas
 	}
 	
 	mercenary_cost = -0.10
@@ -252,3 +252,4 @@ infra_admin_policy = {
 		factor = 0.5
 	}	
 }
+

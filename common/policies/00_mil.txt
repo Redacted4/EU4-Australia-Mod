@@ -1207,30 +1207,7 @@ war_on_our_terms_policy = {
 	}
 }
 
-fear_tactics_policy = {
-	monarch_power = MIL
 
-	potential = {
-		has_idea_group = horde_gov_ideas
-		has_idea_group = infrastructure_ideas
-	}
-
-	allow = {
-		full_idea_group = horde_gov_ideas
-		full_idea_group = infrastructure_ideas
-	}
-
-	shock_damage = 0.1
-	siege_ability = 0.1
-
-	ai_will_do = {
-		factor = 1.0
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
 
 psychological_warfare_policy = {
 	monarch_power = MIL
@@ -1321,6 +1298,31 @@ render_unto_caesar_policy = {
 
 	global_manpower_modifier = 0.15
 	land_forcelimit_modifier = 0.05
+
+	ai_will_do = {
+		factor = 1.0
+		modifier = {
+			factor = 1.5
+			is_at_war = yes
+		}
+	}
+}
+
+fear_tactics_policy = {
+	monarch_power = MIL
+
+	potential = {
+		has_idea_group = horde_gov_ideas
+		has_idea_group = infrastructure_ideas
+	}
+
+	allow = {
+		full_idea_group = horde_gov_ideas
+		full_idea_group = infrastructure_ideas
+	}
+
+	shock_damage = 0.1
+	siege_ability = 0.1
 
 	ai_will_do = {
 		factor = 1.0
