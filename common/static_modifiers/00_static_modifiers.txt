@@ -1179,7 +1179,6 @@ high_army_professionalism = {
 
 streltsy_modifier = {
 	stability_cost_modifier = 1.0
-	infantry_power = -1
 }
 
 power_projection = {
