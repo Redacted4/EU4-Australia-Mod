@@ -76,5 +76,5 @@ NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0 -- from 0.33
 NDefines.NCountry.RAZE_PROVINCE_POWER_PER_DEVELOPMENT = 0 -- from 25
 
 --Idea total rework
-NDefines.NCountry.PS_BUY_IDEA = 200
+NDefines.NCountry.PS_BUY_IDEA = 300
 
