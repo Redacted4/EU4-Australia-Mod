@@ -77,4 +77,7 @@ NDefines.NCountry.RAZE_PROVINCE_POWER_PER_DEVELOPMENT = 0 -- from 25
 
 --Idea total rework
 NDefines.NCountry.PS_BUY_IDEA = 300
+NDefines.NMilitary.LEADER_MAX_PIPS = 10
+NDefines.NMilitary.REGULAR_LEADER_POWER = 0.55						-- Used for generals & admirals (affects total pips)
+NDefines.NMilitary.EXPLORER_LEADER_POWER = 0.4
 
