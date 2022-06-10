@@ -84,7 +84,7 @@ technology = { #National Ideas
 	}
 
 
-	allowed_idea_groups = 1
+	allowed_idea_groups = 2
 	production_efficiency	 =	0.02
 }
 
@@ -111,7 +111,7 @@ technology = { #Renaissance Thought
 	}
 	
 	#Noble Republic
-	allowed_idea_groups = 2	
+	allowed_idea_groups = 4	
 }
 
 technology = { #Courthouse
@@ -151,7 +151,7 @@ technology = { #Modern Theocracy
 		new_world_i = 0.3
 	}
 	
-	allowed_idea_groups = 3
+	allowed_idea_groups = 6
 	theocratic_government = yes
 }
 
@@ -210,7 +210,7 @@ technology = { #Scientific Experimentation
 	}
 	
 	plantations = yes
-	allowed_idea_groups	= 4
+	allowed_idea_groups	= 8
 }
 
 technology = { #Military Administration
@@ -255,7 +255,7 @@ technology = { #National Sovereignty
 		global_trade = 0.15
 	}
 	
-	allowed_idea_groups	= 5
+	allowed_idea_groups	= 9
 }
 
 technology = { #University
@@ -303,7 +303,7 @@ technology = { #The Constitution
 		printing_press = 0.5
 		global_trade = 0.5
 	}
-	allowed_idea_groups = 6
+	allowed_idea_groups = 10
 	constitutional_monarchy = yes
 	constitutional_republic = yes  
 
@@ -355,7 +355,7 @@ technology = { #Measuring the World
 		global_trade = 0.5
 		manufactories = 0.5
 	}
-	allowed_idea_groups 	= 	7
+	allowed_idea_groups 	= 	11
 	administrative_efficiency = 0.1
 }
 
@@ -406,7 +406,7 @@ technology = { #Separation of Powers
 		manufactories = 0.5
 		enlightenment = 0.5
 	}
-	allowed_idea_groups = 8
+	allowed_idea_groups = 12
 	
 }
 

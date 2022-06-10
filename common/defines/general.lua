@@ -74,3 +74,7 @@ NDefines.NMilitary.FORTRESS_COST = 0.25
 --Razing Changes
 NDefines.NCountry.RAZE_PROVINCE_DEVELOPMENT_DECREASE = 0 -- from 0.33
 NDefines.NCountry.RAZE_PROVINCE_POWER_PER_DEVELOPMENT = 0 -- from 25
+
+--Idea total rework
+NDefines.NCountry.PS_BUY_IDEA = 200
+
