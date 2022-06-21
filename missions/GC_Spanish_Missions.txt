@@ -1354,7 +1354,14 @@ gc_spain_4 = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
-			ARA = { has_opinion = { who = ROOT value = 100 } }
+			if = {
+				limit = {
+					ARA = {
+						is_subject_of = ROOT
+					}
+				}
+				ARA = { has_opinion = { who = ROOT value = 100 } }
+			}
 		}
 
 		effect = {
