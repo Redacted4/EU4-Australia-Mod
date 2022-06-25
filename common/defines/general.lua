@@ -63,8 +63,9 @@ NDefines.NMilitary.DEFAULT_WARGOAL_TICKINGWARSCORE_BONUS = 0.8	--from 0.4
 NDefines.NMilitary.WARGOAL_MAX_BONUS = 40						--from 25
 NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12			--from 60
 
---Non-painful national focus
+--Removal of cooldown for changing national focus/policies
 NDefines.NCountry.NAT_FOCUS_YEARS = 0
+NDefines.NCountry.MINIMUM_POLICY_TIME = 0
 
 --Garrison Changes
 NDefines.NMilitary.GARRISON_SIZE = 2000 -- from 1000
