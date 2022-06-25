@@ -27,7 +27,7 @@ discovered_by = nomad_group
 	remove_core = TIM
 } 
 
-1444.11.11 = {
+1444.11.12 = {
 	remove_core = QAR
 	owner = ARM		
 	controller = ARM
