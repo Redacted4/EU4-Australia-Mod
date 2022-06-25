@@ -540,6 +540,15 @@ on_war_won = {
 		}
 		add_church_power = 10
 	}
+	if = {
+		limit = {
+			any_known_country = {
+				humiliated_by = ROOT
+			}
+			NOT = { has_country_flag = humiliated_rival }
+		}
+		set_country_flag = humiliated_rival
+	}
 }
 
 # country
