@@ -112,5 +112,6 @@ From;To;Type;Through;start_x;start_y;stop_x;stop_y;Comment
 235;87;sea;1271;-1;-1;-1;-1;Kent-Calais				
 341;4736;sea;1302;-1;-1;-1;-1;Tunis-Trapani		
 122;142;sea;1311;-1;-1;-1;-1;Salento-Corfu
-28;36;sea;1254;-1;-1;-1;-1;Nyland-Rewal				
+28;36;sea;1254;-1;-1;-1;-1;Nyland-Rewal
+623;624;sea;1352;-1;-1;-1;-1;Tulangbewang-Banten		
 -1;-1;;-1;-1;-1;-1;-1;-1;

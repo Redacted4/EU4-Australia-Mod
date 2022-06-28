@@ -180,6 +180,8 @@ has_strait_scripted_trigger = {
 			#Corfu already has strait
 			province_id = 28 #Nyland
 			province_id = 36 #Reval
+			province_id = 623 #Tulangbewang
+			province_id = 624 #Banten
 		}
 }
 
