@@ -1373,7 +1373,7 @@ cb_force_tributary_mission = {
 #	}
 #
 #	war_goal = take_capital_personal_union
-}#
+#}
 
 cb_force_join_hre = {
 	valid_for_subject = no
