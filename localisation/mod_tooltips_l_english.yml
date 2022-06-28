@@ -24,12 +24,15 @@
  estate_nobles_bill_of_rights_granted_tooltip:0 "§GUnlocks§! §YParliament Government Reform§!"
  estate_nobles_bill_of_rights_revoked_tooltip:0 "Our §YParliament§! Will Be §RDissolved§!"
  theocracy.adm_tt:0 "This §YHeir§! will receive +1 £adm£ to their §YAdministrative Skill§!"
- theocracy.dip_tt:0 "This §YHeir§! will receive +1 £dip£ to their §YDiplomatic Skill Skill§!"
+ theocracy.dip_tt:0 "This §YHeir§! will receive +1 £dip£ to their §YDiplomatic Skill§!"
  theocracy.mil_tt:0 "This §YHeir§! will receive +1 £mil£ to their §YMilitary Skill§!"
+ republic_election_mil.tt:0 "This §YRuler§! will receive +1 £mil£ to their §YMilitary Skill§!"
+ republic_election_dip.tt:0 "This §YRuler§! will receive +1 £dip£ to their §YDiplomatic Skill§!"
+ republic_election_adm.tt:0 "This §YRuler§! will receive +1 £adm£ to their §YAdministrative Skill§!"
  PapalInfluencePAP:0 "Spent Papal Influence"
  invested_papal_influence_var:0 "Papal Influence"
  spent_papal_influence_is_lower_than_total_tt:0 "We have at least §Y50§! more §YInvested Papal Influence§! than the amount we have already spent on Papal Blessings. Our §YPapal Influence Spent on Blessings§! is currently: §Y[Root.PapalInfluencePAP.GetValue]§! \nYou can view your current §YInvested Papal Influence§! in the Papacy Tab."
-
+ rulerStatsTracker:0 "Combined Ruler Stats"
  
  
  

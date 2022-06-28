@@ -44,7 +44,46 @@ on_startup = {
 	### End Mod Events ###	
 	
 	}
-	
+	#For Educate Ruler decision
+	if = {
+		limit = {
+			NOT = {
+				has_country_flag = rulerStatsTrackerFlag
+			}
+		}
+		set_country_flag = rulerStatsTrackerFlag
+		set_variable = {
+			which = rulerStatsTracker
+			value = 0
+		}
+		export_to_variable = {
+			which = rulerStatsTrackerADM
+			value = ADM
+		}
+		change_variable = {
+			which = rulerStatsTracker
+			which = rulerStatsTrackerADM
+		}
+		export_to_variable = {
+			which = rulerStatsTrackerDIP
+			value = DIP
+		}
+		change_variable = {
+			which = rulerStatsTracker
+			which = rulerStatsTrackerDIP
+		}
+		export_to_variable = {
+			which = rulerStatsTrackerMIL
+			value = MIL
+		}
+		change_variable = {
+			which = rulerStatsTracker
+			which = rulerStatsTrackerMIL
+		}
+		
+		
+		
+	}
 	#For Papal Self-Blessings
 	PAP = {
 		set_variable = {
@@ -1065,6 +1104,35 @@ on_new_consort = {
 
 # country
 on_monarch_death = {
+	#Resets Monarch Skill Tracker for Educate Ruler Decision
+	set_variable = {
+		which = rulerStatsTracker
+		value = 0
+	}
+	export_to_variable = {
+		which = rulerStatsTrackerADM
+		value = ADM
+	}
+	change_variable = {
+		which = rulerStatsTracker
+		which = rulerStatsTrackerADM
+	}
+	export_to_variable = {
+		which = rulerStatsTrackerDIP
+		value = DIP
+	}
+	change_variable = {
+		which = rulerStatsTracker
+		which = rulerStatsTrackerDIP
+	}
+	export_to_variable = {
+		which = rulerStatsTrackerMIL
+		value = MIL
+	}
+	change_variable = {
+		which = rulerStatsTracker
+		which = rulerStatsTrackerMIL
+	}
 	#Resets Spent Papal Influence counter upon election of new Pope
 	if = {
 		limit = {

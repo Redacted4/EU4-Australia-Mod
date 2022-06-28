@@ -416,6 +416,33 @@ country_decisions = {
 
 	}
 
+	#Functional version of MRM Educate Ruler Decision
+	educate_ruler = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = {
+				government = republic
+			}
+		}
+		allow = {
+			NOT = {
+				check_variable = {
+					which = rulerStatsTracker
+					value = 7
+				}
+			}
+		}
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_years_of_income = -0.5
+			set_country_flag = educate_ruler_flag
+		}
+	}
+
 
 
 
