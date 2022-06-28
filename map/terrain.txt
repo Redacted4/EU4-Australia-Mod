@@ -194,6 +194,7 @@ categories =  {
 		supply_limit = 5
 		
 		terrain_override = {
+			144 #Yanya
 			508 509 511 515 525 527 530 545 550 554 557 1947 2036 
 			2037 2040 2043 2056 2058 2069 2070 2071 2080 2090 2092 2097
 			
@@ -214,7 +215,10 @@ categories =  {
 			193 201 102 198 176 196 203 325
 			101
 			140 1828
-			123 1934 116 119 1848
+			#Made Lucania Grasslands 1934
+			123  116 119 1848
+			#Salento now hills
+			122
 			
 			669 670 681 686 1824 1829 1833 1840
 			2146 2147 2152 2153 2158 2171 2173 2174 
@@ -334,6 +338,7 @@ categories =  {
 		supply_limit = 4
 		
 		terrain_override = {
+			142 #Corfu
 			210	226 # Spain
 			139 1831 143 138 4175  #Balkans
 			158 1952 #Hungary
@@ -356,7 +361,7 @@ categories =  {
 			785 
 			2564
 			204 199 
-			1853 144
+			1853 #144 moved tr hills
 			124
 			2305 331 2306 
 			
@@ -411,6 +416,7 @@ categories =  {
 		nation_designer_cost_multiplier = 1
 		
 		terrain_override = {
+			1934 #Lucania
 			2666 # North America
 			213 218 219 #Spain
 			526 #India
