@@ -575,9 +575,9 @@ country_event = {
 
 #Maritime Marine Buffs
 country_event = {
-	id = province_idea_event.15
-	title = province_idea_event.15.t
-	desc = province_idea_event.15.d
+	id = province_idea_event.17
+	title = province_idea_event.17.t
+	desc = province_idea_event.17.d
 	picture = TRADEGOODS_eventPicture
 	
 	mean_time_to_happen = {
@@ -605,9 +605,9 @@ country_event = {
 }
 
 country_event = {
-	id = province_idea_event.16
-	title = province_idea_event.16.t
-	desc = province_idea_event.16.d
+	id = province_idea_event.18
+	title = province_idea_event.18.t
+	desc = province_idea_event.18.d
 	picture = TRADEGOODS_eventPicture
 	
 	mean_time_to_happen = {
