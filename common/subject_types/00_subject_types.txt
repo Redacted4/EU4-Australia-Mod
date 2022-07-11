@@ -594,6 +594,19 @@ crown_colony = {
 	modifier_subject = {
 		modifier = crown_colony_subject
 	}
+
+	modifier_overlord = {
+		modifier = explo_trade_modifier
+		trigger = {
+			num_of_cities = 10
+			any_known_country = {
+				overlord_of = ROOT 
+				has_idea = viceroys_new
+			}
+		}
+	}
+
+	
 }
 
 private_enterprise = {
@@ -622,6 +635,17 @@ private_enterprise = {
 	
 	modifier_subject = {
 		modifier = private_enterprise_subject
+	}
+
+	modifier_overlord = {
+		modifier = explo_trade_modifier
+		trigger = {
+			num_of_cities = 10
+			any_known_country = {
+				overlord_of = ROOT 
+				has_idea = viceroys_new
+			}
+		}
 	}
 }
 
@@ -652,6 +676,17 @@ self_governing_colony = {
 	
 	modifier_subject = {
 		modifier = self_governing_colony_subject
+	}
+
+	modifier_overlord = {
+		modifier = explo_trade_modifier
+		trigger = {
+			num_of_cities = 10
+			any_known_country = {
+				overlord_of = ROOT 
+				has_idea = viceroys_new
+			}
+		}
 	}
 }
 
