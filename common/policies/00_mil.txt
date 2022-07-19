@@ -274,7 +274,7 @@ modern_siege_weapons = {
 		full_idea_group = offensive_ideas
 	}
 
-	siege_ability = 0.15
+	siege_ability = 0.1
 	leader_siege = 1
 
 	ai_will_do = {
@@ -777,7 +777,7 @@ guerilla_warfare = {
 }
 
 weapon_quality_standards = {
-	monarch_power = MIL
+	monarch_power = ADM
 
 	potential = {
 		has_idea_group = economic_ideas
@@ -792,7 +792,7 @@ weapon_quality_standards = {
 		full_idea_group = quality_ideas
 	}
 
-	discipline = 0.05
+	build_cost = -0.15
 
 	ai_will_do = {
 		factor = 2
