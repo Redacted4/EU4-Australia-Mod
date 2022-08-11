@@ -33,6 +33,20 @@
  invested_papal_influence_var:0 "Papal Influence"
  spent_papal_influence_is_lower_than_total_tt:0 "We have at least §Y50§! more §YInvested Papal Influence§! than the amount we have already spent on Papal Blessings. Our §YPapal Influence Spent on Blessings§! is currently: §Y[Root.PapalInfluencePAP.GetValue]§! \nYou can view your current §YInvested Papal Influence§! in the Papacy Tab."
  rulerStatsTracker:0 "Combined Ruler Stats"
+ bt_total_manufactories_tt:0 " Manufactories £icon_production_in_text££icon_production_in_text££icon_production_in_text£"
+ bt_total_soldiershouseholds_tt:0 " Soldier's Households £icon_manpower_in_text££icon_manpower_in_text££icon_manpower_in_text£"
+ bt_total_temples_tt:0 " Temples ¤"
+ bt_total_cathedral_tt:0 " Cathedrals ¤¤"
+ bt_total_barracks_tt:0 " Barracks £icon_manpower_in_text£"
+ bt_total_training_fields_tt:0 " Training Fields £icon_manpower_in_text££icon_manpower_in_text£"
+ bt_total_workshops_tt:0 " Workshops £icon_production_in_text£"
+ bt_total_counting_house_tt:0 " Counting Houses £icon_production_in_text££icon_production_in_text£"
+ bt_total_regimentalcamps_tt:0 " Regimental Camps £infantry_icon_small£"
+ bt_total_conscription_center_tt:0 " Conscription Centres £infantry_icon_small££infantry_icon_small£"
+ tunis_subjects.tt:0 "All Subjects have less than 0% Liberty Desire"
+ mamluks_early_canal.tt:0 "Removes Tech Requirement for Suez Canal"
+ mam_stop_piracy.tt:0 "Every §YOwned Province§! gains §G25% Prosperity§!"
+
  
  
  

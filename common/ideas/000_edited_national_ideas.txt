@@ -1270,7 +1270,7 @@ TUN_ideas = {
 		infantry_power = 0.1
 	}
 	dual_diplomacy = {
-		diplomatic_upkeep = 1
+		tolerance_heretic = 3
 	}
 	corsairs = {
 		navy_tradition = 1
