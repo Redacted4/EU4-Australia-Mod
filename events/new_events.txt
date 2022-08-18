@@ -131,6 +131,23 @@ country_event = {
 				transport = PREV
 			}
 		}
+		####Makes Every Italian Player Join the HRE
+		every_country = {
+			limit = {
+				NOT = {is_part_of_hre = yes}
+				capital_scope = {
+					region = italy_region
+				}
+				NOT = { has_country_flag = joined_hre_decision_flag }
+				ai = no
+			}
+			every_owned_province = {
+				limit = {
+					region = italy_region
+				}
+				set_in_empire = yes
+			}
+		}
 		####Makes Every player in the HRE an elector
 		every_country = {
 			limit = {
@@ -424,4 +441,57 @@ country_event = {
 	}
 	
 }
+#WIP :)
+#Discovering the Source of the Nile
+country_event = {
 
+	id = new_events.8
+	title = "new_events.8.t"
+	desc = "new_events.8.desc"
+	picture = POPE_PREACHING_eventPicture
+
+	is_triggered_only = yes
+
+	#Ruler Name
+	option = {
+		name = new_events.8.a
+		trigger = {
+			NOT = { adm = 6 } #Won't fire if you have 6 admin
+		}
+		#Lake Victoria (test)
+			1649 = {
+				change_province_name = "Lake Ezio"
+			}
+	}
+	#Heir Name
+	option = {
+		name = new_events.8.b
+		trigger = {
+			NOT = { dip = 6 } #Won't fire if you have 6 dip
+		}#Lake Victoria (test)
+			1649 = {
+				change_province_name = "Lake Ezio"
+			}
+	}
+	#Consort Name
+	option = {
+		name = new_events.8.c
+		trigger = {
+			NOT = { has_country_modifier = papal_blessing }
+		}
+		trigger = {
+			NOT = { mil = 6 } #Won't fire if you have 6 mil
+		}
+		#Lake Victoria (test)
+			1649 = {
+				change_province_name = "Lake $MONARCH$"
+			}
+	}
+	#Backup Option 
+	option = {
+		name = new_events.8.d
+		add_prestige = 10
+		add_devotion = 10
+	}
+	
+}
