@@ -383,7 +383,7 @@ statehood_defensive_policy = {
 		full_idea_group = statehood_ideas
 	}
 	
-	defensiveness = 0.2
+	#defensiveness = 0.2
 	fort_maintenance_modifier = -0.2
 	
 	ai_will_do = {
