@@ -4381,6 +4381,10 @@ on_province_owner_change = {
 				has_terrain = jungle
 				has_terrain = marsh
 				has_terrain = forest
+				has_terrain = hills 
+				has_terrain = mountains
+				has_terrain = highlands 
+				has_terrain = steppes 
 			}
 		}
 		hidden_effect = {
