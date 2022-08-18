@@ -27,6 +27,10 @@ country_event = {
 					has_terrain = jungle
 					has_terrain = marsh
 					has_terrain = forest
+					has_terrain = hills 
+					has_terrain = mountains
+					has_terrain = highlands 
+					has_terrain = steppes 
 				}
 				NOT = { has_province_modifier = infra_dev_province_modifier }
 			}
