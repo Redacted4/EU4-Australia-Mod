@@ -148,6 +148,8 @@ country_decisions = {
 
 	adopt_imperial_chinese_ideas =  {
 
+		major = yes
+
 		potential = {
 			NOT = { tag = MNG } #Ming
 			NOT = { tag = QNG }	#Qing
@@ -159,14 +161,25 @@ country_decisions = {
 			NOT = { tag = ROM }
 			has_idea_group = chinese_ideas #Generic Chinese Ideas
 			has_custom_ideas = no
+			NOT = { has_country_flag = chinese_imperial_ideas_flag }
 		}
 
 		allow = {
-			is_emperor_of_china = yes
+			OR = {
+				is_emperor_of_china = yes
+				total_development = 1000
+			}
 		}
 
 		effect = {
 			country_event = { id = ideagroups.1 } #Swap Ideas
+			if = {
+				limit = {
+					has_reform = chinese_warlord
+				}
+				remove_government_reform = chinese_warlord
+			}
+			set_country_flag = chinese_imperial_ideas_flag
 		}
 
 		ai_will_do = {
@@ -596,6 +609,7 @@ country_decisions = {
 		}
 	}
 
+	
 
 
 

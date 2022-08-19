@@ -94,16 +94,16 @@ VOL_ideas = {
 	
 }	
 
-#Egyptian Ideas, written by Arkhan
+#Egyptian Ideas, written by Ezio
 
 EGY_ideas = {
 	start = {
 		galley_power = 0.15
-		land_morale = 0.1
+		production_efficiency = 0.1
 	}
 	
 	bonus = {
-		leader_land_shock = 1
+		discipline = 0.05
 	}
 	
 	trigger = {
@@ -114,35 +114,35 @@ EGY_ideas = {
 	}
 	free = yes		#will be added at load.
 	
-	egy_caravans = {
-		caravan_power = 0.25
+	egy_camelry = {
+		land_attrition = -0.25
+		shock_damage_received = -0.1
 	}
 	
-	egy_monuments = {
-		prestige = 0.5
-		build_cost = -0.10
+	egy_reforms_idea = {
+		yearly_absolutism = 1
+		global_autonomy = -0.05
 	}
 	
-	egy_red_sea = {
-		embargo_efficiency = 0.3
+	egy_nizam = {
+		infantry_power = 0.15
 	}
 
-	egy_disc = {
-		discipline = 0.05
+	egy_independence = {
+		prestige = 1
+		land_morale = 0.05
 	}
 	
 	egy_granary = {
-		global_trade_goods_size_modifier = 0.1
-		production_efficiency = 0.05
+		global_trade_goods_size_modifier = 0.15
 	}
 	
-	egy_mamluks_legacy = {
-		mercenary_manpower = 0.25
+	egy_conscription = {
+		global_manpower_modifier = 0.25
 	}
 	
-	egy_centre_of_learning = {
-		technology_cost = -0.05
-		idea_cost = -0.05
+	egy_state_monopolies = {
+		global_own_trade_power = 0.25
 	}
 	
 }	
@@ -447,7 +447,7 @@ chinese_emperor_ideas = {
 	free = yes
 	
 	trigger = {
-		is_emperor_of_china = yes
+		has_country_flag = chinese_imperial_ideas_flag
 		NOT = { tag = MNG } #Ming
 		NOT = { tag = QNG }	#Qing
 		NOT = { tag = MCH }	#Manchu
