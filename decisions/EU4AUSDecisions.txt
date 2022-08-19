@@ -490,6 +490,7 @@ country_decisions = {
 				}
 				set_country_flag = educate_ruler_flag_age4
 			}
+		}
 	}
 
 	#Building Tracker
