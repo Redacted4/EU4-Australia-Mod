@@ -910,6 +910,12 @@ country_decisions = {
 				}
 				add_permanent_claim = HAN
 			}
+			if = {
+				limit = {
+					NOT = { primary_culture = lower_saxon } 
+				}
+				change_primary_culture = lower_saxon
+			}
 			set_country_flag = formed_hannover_flag
 			add_prestige = 25
 			if = {
