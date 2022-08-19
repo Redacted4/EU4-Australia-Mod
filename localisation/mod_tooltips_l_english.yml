@@ -46,6 +46,7 @@
  tunis_subjects.tt:0 "All Subjects have less than 0% Liberty Desire"
  mamluks_early_canal.tt:0 "Removes Tech Requirement for Suez Canal"
  mam_stop_piracy.tt:0 "Every §YOwned Province§! gains §G25% Prosperity§!"
+ hasnt_educated_ruler.tt:0 "Haven't enacted this decision during the current Age"
 
  
  

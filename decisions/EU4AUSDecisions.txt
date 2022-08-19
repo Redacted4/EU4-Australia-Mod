@@ -434,30 +434,7 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			NOT = { 
-				AND = {
-					has_country_flag = educate_ruler_flag_age1 
-					current_age = age_of_discovery
-				}
-			}
-			NOT = { 
-				AND = {
-					has_country_flag = educate_ruler_flag_age2 
-					current_age = age_of_reformation
-				}
-			}
-			NOT = { 
-				AND = {
-					has_country_flag = educate_ruler_flag_age3
-					current_age = age_of_absolutism
-				}
-			}
-			NOT = { 
-				AND = {
-					has_country_flag = educate_ruler_flag_age4
-					current_age = age_of_revolutions
-				}
-			}
+			
 			NOT = {
 				government = republic
 			}
@@ -467,6 +444,33 @@ country_decisions = {
 				check_variable = {
 					which = rulerStatsTracker
 					value = 9
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = hasnt_educated_ruler.tt
+				NOT = { 
+				AND = {
+						has_country_flag = educate_ruler_flag_age1 
+						current_age = age_of_discovery
+					}
+				}
+				NOT = { 
+					AND = {
+						has_country_flag = educate_ruler_flag_age2 
+						current_age = age_of_reformation
+					}
+				}
+				NOT = { 
+					AND = {
+						has_country_flag = educate_ruler_flag_age3
+						current_age = age_of_absolutism
+					}
+				}
+				NOT = { 
+					AND = {
+						has_country_flag = educate_ruler_flag_age4
+						current_age = age_of_revolutions
+					}
 				}
 			}
 		}
