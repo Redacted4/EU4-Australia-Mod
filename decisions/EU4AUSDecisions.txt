@@ -421,7 +421,30 @@ country_decisions = {
 		major = yes
 		potential = {
 			ai = no
-			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = { 
+				AND = {
+					has_country_flag = educate_ruler_flag_age1 
+					current_age = age_of_discovery
+				}
+			}
+			NOT = { 
+				AND = {
+					has_country_flag = educate_ruler_flag_age2 
+					current_age = age_of_reformation
+				}
+			}
+			NOT = { 
+				AND = {
+					has_country_flag = educate_ruler_flag_age3
+					current_age = age_of_absolutism
+				}
+			}
+			NOT = { 
+				AND = {
+					has_country_flag = educate_ruler_flag_age4
+					current_age = age_of_revolutions
+				}
+			}
 			NOT = {
 				government = republic
 			}
@@ -430,7 +453,7 @@ country_decisions = {
 			NOT = {
 				check_variable = {
 					which = rulerStatsTracker
-					value = 7
+					value = 9
 				}
 			}
 		}
@@ -438,9 +461,35 @@ country_decisions = {
 			change_adm = 1
 			change_dip = 1
 			change_mil = 1
+			change_variable = {
+				which = rulerStatsTracker
+				value = 3
+			}
 			add_years_of_income = -0.5
-			set_country_flag = educate_ruler_flag
-		}
+			if = {
+				limit = {
+					current_age = age_of_discovery
+				}
+				set_country_flag = educate_ruler_flag_age1
+			}
+			if = {
+				limit = {
+					current_age = age_of_reformation
+				}
+				set_country_flag = educate_ruler_flag_age2
+			}
+			if = {
+				limit = {
+					current_age = age_of_absolutism
+				}
+				set_country_flag = educate_ruler_flag_age3
+			}
+			else = {
+				limit = {
+					current_age = age_of_revolutions
+				}
+				set_country_flag = educate_ruler_flag_age4
+			}
 	}
 
 	#Building Tracker
