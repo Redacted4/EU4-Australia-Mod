@@ -840,7 +840,7 @@ expansion_ideas = {
 		years_of_nationalism = -5
 		global_unrest = -1
  	}
-	additional_diplomats = {
+	two_faced_diplomacy_idea = {
 		unjustified_demands = -0.5
 	}
 	general_colonization_law  = {

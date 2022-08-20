@@ -23,3 +23,35 @@ cb_hundred_years_war = {
 
 	war_goal = HYW_wargoal #Control Core
 }
+
+cb_expansion_ideas = {
+	valid_for_subject = no
+	
+	prerequisites = {
+		ROOT = {
+			has_idea = overseas_exploration
+		}
+		OR = {
+			FROM = {
+				any_owned_province = { range = ROOT }
+			}
+			ROOT = {
+				any_subject_country = {
+					is_neighbor_of = FROM
+				}
+			}
+		}
+		FROM = {
+			OR = {
+				technology_group = north_american
+				technology_group = mesoamerican
+				technology_group = south_american
+				technology_group = andean
+				technology_group = aboriginal_tech
+				technology_group = polynesian_tech
+			}
+		}
+	}
+
+	war_goal = expansion_ideas_wargoal #Control Capital
+}

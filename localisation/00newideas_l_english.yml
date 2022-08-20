@@ -37,6 +37,9 @@
  stand_firm_idea_desc:0 "Our well drilled soldiers stand firm in the face of even the most fearsome of cavalry charges."
  defend_from_fire:0 "Field Fortifications"
  defend_from_fire_desc:0 "Through the construction of trenches and other makeshift fortifications, we can better protect our soldiers from the many dangers of the modern battlefield."
+ two_faced_diplomacy_idea:0 "Two Faced Diplomacy"
+ two_faced_diplomacy_idea_desc:0 "Much like God, we like to give with one hand, and take away with the other. Well, mostly the latter.\n\nUnlocks §YColonial Expansion§! Casus Belli against primitives within colonial range\n"
+
  ## New Idea Sets
 
  #Kalmar Ideas
