@@ -478,7 +478,7 @@ defensive_ideas = {
 		army_tradition = 0.5
 		navy_tradition = 0.5
 	}
-	wagon_forts = {
+	stand_firm_idea = {
 		shock_damage_received = -0.1
 	}
 	military_drill = {

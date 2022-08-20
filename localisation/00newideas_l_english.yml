@@ -33,6 +33,10 @@
  french_corvee_idea_desc:0 "The peasants of the realm have nothing worth taxing but their labour. If we put them to work maintaining roads we could vastly reduce our administrative expenditure."
  french_cuirassiers_idea:0 "French Cuirassiers"
  french_cuirassiers_idea_desc:0 "Definitely not as overpowered as in Age of Empires III."
+ stand_firm_idea:0 "Stand Firm"
+ stand_firm_idea_desc:0 "Our well drilled soldiers stand firm in the face of even the most fearsome of cavalry charges."
+ defend_from_fire:0 "Field Fortifications"
+ defend_from_fire_desc:0 "Through the construction of trenches and other makeshift fortifications, we can better protect our soldiers from the many dangers of the modern battlefield."
  ## New Idea Sets
 
  #Kalmar Ideas
@@ -396,25 +400,35 @@
  infra_trade_power_desc:0 "Our superior infrastructure attracts many foreign merchants who are keen to take advantage of the increased capacity of our roads."
  infra_embargo:0 "Highway Patrols"
  infra_embargo_desc:0 "Through heavy patrolling of our roads we can ensure travellers are safe from bandits and other ruffians and that illicit goods do not pass through our lands."
-
+ #Part of Infra rework
+ infra_construction_cost:0 "Organised Construction"
+ infra_construction_cost_desc:0 "The need to upgrade the infrastructure of our government is a costly business, if we structure the process correctly we can do this cheaper."
+ infra_construction_speed:0 "Sponsor Guilds"
+ infra_construction_speed_desc:0 "Through close partnership with the trade guilds, particularly the masons and carpenters, we can ensure our construction projects will always be able to meet their deadline."
+ infra_monuments:0 "Open Quarries"
+ infra_monuments_desc:0 "Build extravagant monuments to our greatness sure can get expensive... Fortunately if we have a ready source of materials we can reduce that cost significantly."
+ infra_splendor:0 "Monumental Splendor"
+ infra_splendor_desc:0 "Our impressive monuments cement our place in history as one of history's great civilisations. Glory to us!"
+ infra_roads_new:0 "Mass Mobilisation"
+ infra_roads_new_desc:0 "By strategically placing messenger posts and keeping our using our soldiers to maintain the roads in peacetime, we can ensure a steady stream of troops and materiel is able to reach the frontlines in times of war."
 #Statehood Ideas
 
 statehood_ideas:0 "Statehood Ideas"
 statehood_ideas_bonus:0 "Full Statehood Ideas"
 estates_general_statehood:0 "Estates General"
-estates_general_statehood_desc:0 ""
+estates_general_statehood_desc:0 "We should summon a council of all the estates of realm to ensure greater cooperation with the crown."
 defend_sovereignty:0 "Defend Sovereignty"
-defend_sovereignty_desc:0 ""
-statehood_insults:0 ""
-statehood_insults_desc:0 ""
-efficient_administration:0 ""
-efficient_administration_desc:0 ""
+defend_sovereignty_desc:0 "A state that is unable to defend its borders is no state at all."
+statehood_insults:0 "Wolf Warrior Diplomacy"
+statehood_insults_desc:0 "By adopting a more aggressive tone in our diplomacy we can make our mark on the world stage."
+efficient_administration:0 "Efficient Bureaucracy"
+efficient_administration_desc:0 "Without a modern bureaucracy to manage our realm we would be little more than a tribal chiefdom."
 lingua_franca_idea:0 "Enforce National Identity"
-lingua_franca_idea_desc:0 ""
+lingua_franca_idea_desc:0 "By promoting our own mother tongue over minority languages, we can promote national unity and prevent our enemies from turning our minorities against us."
 national_pride:0 "National Pride"
-national_pride_desc:0 ""
+national_pride_desc:0 "Our men fight for more than God or a King, they fight for their country."
 westphalian_sovereigty:0 "Westphalian Sovereignty"
-westphalian_sovereigty_desc:0 ""
+westphalian_sovereigty_desc:0 "We have successfully bested the odds and cemented our place in history as a modern nation state. May our future be ever brighter..."
 
  #Naval Ideas
  #naval_ideas:0 "Imperialist Ideas"
