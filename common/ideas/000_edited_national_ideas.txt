@@ -308,8 +308,8 @@ HAB_ideas = {
 		fort_maintenance_modifier = -0.10
 	}
 	fugger_banks = {
-		inflation_reduction = 0.05
-		interest = -1
+		inflation_reduction = 0.15
+		#interest = -1
 	}
 	habsburg_dominance = {
 		diplomatic_reputation = 2
@@ -318,7 +318,7 @@ HAB_ideas = {
 		global_missionary_strength = 0.02
 	}
 	austrian_court = {
-		advisor_cost = -0.2
+		advisor_cost = -0.1
 	}
 	hofkriegsrat = {
 		reinforce_speed = 0.33
