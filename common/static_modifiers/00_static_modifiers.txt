@@ -746,7 +746,7 @@ authority = {
 }
 
 regency_council = {
-	stability_cost_modifier = 0.25
+	#stability_cost_modifier = 0.25
 }
 
 trade_efficiency = {
