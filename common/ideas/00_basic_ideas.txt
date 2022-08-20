@@ -18,6 +18,13 @@ naval_ideas = {
 		has_idea_group = naval_ideas #Should be impossible to see/get in game
 	}
 }
+
+exploration_ideas = {
+	trigger = {
+		has_idea_group = exploration_ideas
+	}
+}
+
 aristocracy_ideas = {
 	category = MIL
 
