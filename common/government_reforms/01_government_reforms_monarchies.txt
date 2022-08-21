@@ -782,6 +782,9 @@ mamluk_government = {
 			}
 			have_had_reform = mamluk_government
 		}
+		NOT = {
+			tag = EGY
+		}
 	}
 	legacy_equivalent = mamluk_government_legacy
 	queen = no
