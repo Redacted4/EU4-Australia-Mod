@@ -19,20 +19,16 @@ country_decisions = {
 				south_america = { has_discovered = PREV }
 				new_world = { has_discovered = PREV }
 			}
-			NOT = {
-				has_idea_group = expansion_ideas
-				has_idea_group = exploration_ideas
-			}
-			num_of_ports = 8
-			treasury = 500
+			ai = no
+			treasury = 200
 
 		}
 
 		effect = {
-			add_treasury = -500
+			add_treasury = -200
 			add_country_modifier = {
 				name = "colonial_charter"
-				duration = 9125
+				duration = -1
 			}
 		}
 
