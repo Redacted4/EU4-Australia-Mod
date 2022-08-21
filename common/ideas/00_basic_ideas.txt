@@ -261,7 +261,7 @@ innovativeness_ideas = {
 		innovativeness_gain = 1
 	}
 	scientific_revolution = {
-		advisor_cost = -0.25
+		advisor_cost = -0.15
 		idea_cost = -0.1
 	}
 	optimism = {
