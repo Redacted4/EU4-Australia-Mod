@@ -5,3 +5,31 @@ rock_of_gibraltar = {
 venetian_fortifications = {
 	local_defensiveness = 0.5
 }
+
+mam_nile_development_modifier = {
+	local_development_cost = -0.5
+}
+
+mam_rebuild_cities_modifier = {
+	local_development_cost = -0.5
+}
+
+mam_trained_mamluks = {
+	drill_decay_modifier = -0.5
+}
+
+mam_circassian_mamluks = {
+	army_tradition_decay = -0.01
+}
+
+mam_master_of_arabia_modifier = {
+	trade_steering = 0.15	
+}
+mam_house_of_wisdom_modifier = {
+	technology_cost = -0.05
+	idea_cost = -0.05
+}
+
+bountiful_nile = {
+	trade_goods_size_modifier = 0.25
+}

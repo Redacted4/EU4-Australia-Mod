@@ -448,50 +448,123 @@ country_event = {
 	id = new_events.8
 	title = "new_events.8.t"
 	desc = "new_events.8.desc"
-	picture = POPE_PREACHING_eventPicture
+	picture = COLONIZATION_eventPicture
+	major = yes
 
 	is_triggered_only = yes
 
-	#Ruler Name
+	#Lake Victoria
 	option = {
 		name = new_events.8.a
-		trigger = {
-			NOT = { adm = 6 } #Won't fire if you have 6 admin
+		1649 = {
+			change_province_name = "Lake Victoria"
 		}
-		#Lake Victoria (test)
-			1649 = {
-				change_province_name = "Lake Ezio"
-			}
 	}
-	#Heir Name
+	#Random Australian State
 	option = {
 		name = new_events.8.b
-		trigger = {
-			NOT = { dip = 6 } #Won't fire if you have 6 dip
-		}#Lake Victoria (test)
-			1649 = {
-				change_province_name = "Lake Ezio"
+		random_list = {
+			20 = {
+				1649 = {
+					change_province_name = "Lake Queensland"
+				}
 			}
+			20 = {
+				1649 = {
+					change_province_name = "Lake New South Wales"
+				}
+			}
+			20 = {
+				1649 = {
+					change_province_name = "Lake South Australia"
+				}
+			}
+			20 = {
+				1649 = {
+					change_province_name = "Lake Western Australia"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Northern Territory"
+				}
+			}
+			5 = {
+				1649 = {
+					change_province_name = "Lake Australian Capital Territory"
+				}
+			}
+		}
+		
 	}
-	#Consort Name
+	#Allah's Oasis
 	option = {
 		name = new_events.8.c
-		trigger = {
-			NOT = { has_country_modifier = papal_blessing }
+		1649 = {
+			change_province_name = "Wahat Allah"
 		}
-		trigger = {
-			NOT = { mil = 6 } #Won't fire if you have 6 mil
-		}
-		#Lake Victoria (test)
-			1649 = {
-				change_province_name = "Lake $MONARCH$"
-			}
 	}
-	#Backup Option 
+	#Institutionalised Corruption
 	option = {
 		name = new_events.8.d
-		add_prestige = 10
-		add_devotion = 10
+		random_list = {
+			15 = {
+				1649 = {
+					change_province_name = "Lake Taric"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Fidget"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Whisper"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Natalie"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Hara"
+				}
+			}
+			15 = {
+				1649 = {
+					change_province_name = "Lake Panzer"
+				}
+			}
+			9 = {
+				1649 = {
+					change_province_name = "Lake UltimateAlloy"
+				}
+			}
+			1 = {
+				1649 = {
+					change_province_name = "Lake IGNOBLE"
+				}
+			}
+		}
 	}
+	#Lake Ezio
+	option = {
+		name = new_events.8.e
+		1649 = {
+			change_province_name = "Lake Ezio"
+		}
+	}
+	#Lake Deathsspear
+	option = {
+		name = new_events.8.f
+		1649 = {
+			change_province_name = "Lake Deathsspear"
+		}
+	}
+	
+	
 	
 }

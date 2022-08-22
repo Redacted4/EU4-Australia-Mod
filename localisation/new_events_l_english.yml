@@ -69,6 +69,15 @@
  new_events.7.b: "An Ambassador of God"
  new_events.7.c: "A Bastion of Faith"
  new_events.7.d: "God's Servant on Earth"
+ new_events.8.t:0 "Discovery of the Source of the Nile!"
+ new_events.8.desc:0 "After much trial and tribulation, we have found the source of the mighty Nile River. All that remains is to find a fitting name for such a momentuous discovery..."
+ new_events.8.a:0 "Victoria, home of Sheikh Dan Andrews"
+ new_events.8.b:0 "Some place of lesser significance"
+ new_events.8.c:0 "What if we ripped something straight out of Google Translate?"
+ new_events.8.d:0 "One of the great prophets"
+ new_events.8.e:0 "The Final Messenger"
+ new_events.8.f:0 "God Himself."
+ 
 
 
  
