@@ -111,25 +111,7 @@ country_event = {
 
 	is_triggered_only = yes
 
-	mean_time_to_happen = {
-		months = 128
-		modifier = {
-			factor = 0.5
-			NOT = { crown_land_share = 6 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { crown_land_share = 4 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { crown_land_share = 2 }
-		}
-		modifier = {
-			factor = 0.5
-			NOT = { crown_land_share = 1 }
-		}
-	}
+	
 
 	option = { # Accept the Bail Out
 		name = estate_privileges_and_agendas_events.2.a

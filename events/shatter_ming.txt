@@ -348,6 +348,9 @@ country_event = {
 
 		}
 	}
+	option = {
+		
+	}
 
 }
 
@@ -356,7 +359,8 @@ country_event = {
 country_event = {
 	id = shatter_ming.3
 	picture = ANGRY_MOB_eventPicture
-	
+	title = "shatter_ming_events.3.t"
+	desc = "shatter_ming_events.3.d"	
 	is_triggered_only = yes
 	fire_only_once = yes
 	major = yes
