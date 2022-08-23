@@ -1,8 +1,8 @@
 #72 - Breisgau
 
-owner = HAB
-controller = HAB
-add_core = HAB
+owner = TIR
+controller = TIR
+#add_core = HAB
 add_core = TIR
 culture = swabian
 religion = catholic
