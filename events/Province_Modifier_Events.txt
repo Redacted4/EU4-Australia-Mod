@@ -28,9 +28,9 @@ country_event = {
 					has_terrain = marsh
 					has_terrain = forest
 					has_terrain = hills 
-					has_terrain = mountains
+					has_terrain = mountain
 					has_terrain = highlands 
-					has_terrain = steppes 
+					has_terrain = steppe 
 				}
 				NOT = { has_province_modifier = infra_dev_province_modifier }
 			}
@@ -80,76 +80,9 @@ country_event = {
 	}
 }
 
-#Infra Movement Speed
 
-country_event = {
-	id = province_idea_event.3
-	title = province_idea_event.3.t
-	desc = province_idea_event.3.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		NOT = { has_country_flag = infra_speed_event_flag }
-		has_idea = infra_roads
-	}
 
-	immediate = {
-		set_country_flag = infra_speed_event_flag
-		every_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = infra_movement_speed_province_modifier }
-			}
-			add_province_modifier = {
-				name = "infra_movement_speed_province_modifier"
-				duration = -1
-			}
-		}
-	}
-	
-	option = {
-		name = infa_movement_speed_event_option
-		ai_chance = { factor = 100 }
-	}
-}
 
-country_event = {
-	id = province_idea_event.4
-	title = province_idea_event.4.t
-	desc = province_idea_event.4.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		has_country_flag = infra_speed_event_flag
-		NOT = { has_idea = infra_roads }
-	}
-
-	immediate = {
-		clr_country_flag = infra_speed_event_flag
-		every_owned_province = {
-			limit = {
-				has_province_modifier = infra_movement_speed_province_modifier
-			}
-			remove_province_modifier = infra_movement_speed_province_modifier
-		}
-	}
-	
-	option = {
-		name = infa_movement_speed_event_option_2
-		ai_chance = { factor = 100 }
-	}
-}
 
 #Religious Church Building Slot
 #On actions for on_convert
@@ -376,77 +309,8 @@ country_event = {
 	}
 }
 
-#Humanist Construction Cost
 
-country_event = {
-	id = province_idea_event.11
-	title = province_idea_event.11.t
-	desc = province_idea_event.11.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		NOT = { has_country_flag = humanist_construction_cost_event_flag }
-		has_idea = indirect_rule_new
-	}
 
-	immediate = {
-		set_country_flag = humanist_construction_cost_event_flag
-		every_owned_province = {
-			limit = {
-				NOT = { has_province_modifier = humanist_construction_cost_province_modifier }
-				has_owner_religion = no
-			}
-			add_province_modifier = {
-				name = "humanist_construction_cost_province_modifier"
-				duration = -1
-			}
-		}
-	}
-	
-	option = {
-		name = humanist_construction_cost_option
-		ai_chance = { factor = 100 }
-	}
-}
-
-country_event = {
-	id = province_idea_event.12
-	title = province_idea_event.12.t
-	desc = province_idea_event.12.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		has_country_flag = humanist_construction_cost_event_flag
-		NOT = { has_idea = indirect_rule_new }
-	}
-
-	immediate = {
-		clr_country_flag = humanist_construction_cost_event_flag
-		every_owned_province = {
-			limit = {
-				has_province_modifier = humanist_construction_cost_province_modifier
-			}
-			remove_province_modifier = humanist_construction_cost_province_modifier
-		}
-	}
-	
-	option = {
-		name = humanist_construction_cost_option.2
-		ai_chance = { factor = 100 }
-	}
-}
 
 #Espionage Perma Scorched Earth
 country_event = {
@@ -519,63 +383,8 @@ country_event = {
 	}
 }
 
-#Marine ICA (Naval)
-country_event = {
-	id = province_idea_event.15
-	title = province_idea_event.15.t
-	desc = province_idea_event.15.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		NOT = { has_country_modifier = boarding_parties_modifier   }
-		has_idea = boarding_parties_new
-	}
 
-	immediate = {
-		add_country_modifier = {
-			name = "boarding_parties_modifier"
-			duration = -1
-		}
-	}
-	
-	option = {
-		name = naval_ica_option1
-		ai_chance = { factor = 100 }
-	}
-}
 
-country_event = {
-	id = province_idea_event.16
-	title = province_idea_event.16.t
-	desc = province_idea_event.16.d
-	picture = TRADEGOODS_eventPicture
-	
-	mean_time_to_happen = {
-		days = 1
-	}
-	
-	hidden = yes
-	
-	trigger = {
-		has_country_modifier = boarding_parties_modifier 
-		NOT = { has_idea = boarding_parties_new  }
-	}
-
-	immediate = {
-		remove_country_modifier = boarding_parties_modifier
-	}
-	
-	option = {
-		name = naval_ica_option2
-		ai_chance = { factor = 100 }
-	}
-}
 
 #Maritime Marine Buffs
 country_event = {

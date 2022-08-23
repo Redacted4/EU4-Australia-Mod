@@ -98,26 +98,6 @@ merc_the_fortunate_few = {
     # No home province means local mercenary company
 }
 
-#Imperialist Ideas Company
-
-merc_viceroyal_army = {
-    regiments_per_development = 0.075
-    cavalry_weight = 0.1
-    #artillery_weight = 0.1
-    cavalry_cap = 2
-    cost_modifier = 0.75
-    trigger = {
-        ROOT = {
-			has_idea = divide_and_conquer
-		}
-    }
-	modifier = {
-       infantry_power = 0.1
-
-		
-	}
-    # No home province means local mercenary company
-}
 
 #Plutocratic Ideas Company
 

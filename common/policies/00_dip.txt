@@ -1366,3 +1366,26 @@ canoe_expertise_policy = {
 		factor = 1
 	}
 }
+
+mandatory_service = {
+	monarch_power = DIP
+	potential = {
+		always = no
+	}
+	
+	allow = {
+		always = no
+	}
+	
+	reelection_cost = -0.10
+	legitimacy = 1.0
+	devotion = 1.0
+	horde_unity = 1.0
+	meritocracy = 0.5
+	may_recruit_female_generals = yes
+	female_advisor_chance = 0.25
+
+	ai_will_do = {
+		factor = 0
+	}
+}

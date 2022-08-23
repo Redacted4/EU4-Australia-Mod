@@ -910,7 +910,7 @@ mam_slot_3_missions = {
 			}
 		}
 		effect = {
-			hidden = {
+			hidden_effect = {
 				every_owned_province = { add_prosperity = 25 }
 			}
 			custom_tooltip = mam_stop_piracy.tt
@@ -1027,52 +1027,24 @@ mam_slot_4_missions = {
 				duration = 7300
 			}
 			407 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			4292 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			2308 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			418 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			2306 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			2305 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			331 = {
-				limit = {
-					NOT = { is_permanent_claim = ROOT	}
-					NOT = { is_core = ROOT	}
-				}
 				add_permanent_claim = ROOT
 			}
 			yamamah_area = {

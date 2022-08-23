@@ -47,7 +47,7 @@ christian = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
+			
 
 		}
 		
@@ -332,9 +332,7 @@ christian = {
 		}
 		
 		uses_anglican_power = yes				# Uses church power/aspect mechanics
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+		
 		aspects = {
 			sponsor_ship_chaplains_aspect
 			performing_of_battlefield_rites
@@ -366,9 +364,7 @@ christian = {
 		}
 		
 		uses_hussite_power = yes				# Uses church power/aspect mechanics
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+		
 		aspects = {
 			clerical_poverty_aspect
 			bread_and_wine_aspect
@@ -435,7 +431,6 @@ christian = {
 		}
 
 		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
 			change_religion = protestant
 			add_prestige = -100
 			remove_country_modifier = counter_reformation
@@ -554,7 +549,6 @@ christian = {
 		}
 		
 		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
 			change_religion = reformed
 			add_prestige = -100
 			remove_country_modifier = counter_reformation
@@ -803,9 +797,6 @@ christian = {
 		misguided_heretic = yes
 		
 		holy_sites = { 358 1227 2313 1234 419 }
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
 		blessings = {
 			legitimize_government
 			encourage_warriors_of_the_faith
@@ -1359,9 +1350,6 @@ muslim = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
 		heretic = { BEKTASHI AHMADI ZIKRI YAZIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
@@ -1382,9 +1370,6 @@ muslim = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
 		heretic = { DRUZE HURUFI ZAIDI }
 		
 		uses_piety = yes				# Uses piety mechanics
@@ -1404,9 +1389,6 @@ muslim = {
 		declare_war_in_regency = yes
 		province = {
 			local_missionary_strength = -0.02
-		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
 		}
 		heretic = { HARURI SUFRI NAJADAT AZRAQI }
 		
@@ -1446,7 +1428,6 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		heretic = { ZEN }
@@ -1479,7 +1460,6 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		heretic = { ZEN }
@@ -1512,7 +1492,6 @@ eastern = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
 		}
 		
 		harmonized_modifier = harmonized_mahayana
@@ -1534,9 +1513,6 @@ eastern = {
 			adm_tech_cost_modifier = -0.1
 			stability_cost_modifier = -0.1
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
 
 		heretic = { TAOIST }
 		uses_harmony = yes
@@ -1557,9 +1533,7 @@ eastern = {
 			discipline = 0.05
 			global_unrest = -1
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		heretic = { SHUGENDO }
 		uses_isolationism = yes
 		
@@ -1592,9 +1566,7 @@ dharmic = {
 			tolerance_heretic = 1
 			tolerance_heathen = 2
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 
 		personal_deity = yes
 		
@@ -1606,7 +1578,7 @@ dharmic = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
+		
 		}
 		
 		heretic = { BHAKTI }
@@ -1641,7 +1613,7 @@ dharmic = {
 				name = "conversion_zeal"
 				duration = 3650
 			}
-			humanist_dev_cost_state_conversion_effect = yes
+		
 		}
 
 		heretic = { MASANDIS }
@@ -2251,9 +2223,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		heretic = { SNAKE_CLAN }
 	}
 	shamanism = { #Fetishism, tag kept to avoid breaking saves.
@@ -2268,9 +2238,7 @@ pagan = {
 			tolerance_own = 2
 			loot_amount = 0.25
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		fetishist_cult = yes
 		heretic = { GOAT_SKULL }
 	}
@@ -2289,9 +2257,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 
 
 		ancestors = yes
@@ -2315,9 +2281,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		authority = yes
 		religious_reforms = yes
 		reform_tooltip = INTI_REFORM_TOOLTIP
@@ -2341,9 +2305,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		doom = yes
 		declare_war_in_regency = yes
 		religious_reforms = yes
@@ -2368,9 +2330,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		religious_reforms = yes
 		reform_tooltip = MESOAMERICAN_REFORM_TOOLTIP
 		
@@ -2393,9 +2353,7 @@ pagan = {
 		province = {
 			local_missionary_strength = 0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		personal_deity = yes
 		
 		heretic = { OLD_NORSE }	
@@ -2409,9 +2367,7 @@ pagan = {
 			cavalry_flanking = 0.5
 			global_regiment_cost = -0.2
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		can_have_secondary_religion = yes
 		heretic = { OLD_TENGRI }
 	}
@@ -2424,9 +2380,7 @@ pagan = {
 			diplomatic_reputation = 1
 		}
 		declare_war_in_regency = yes
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		country_as_secondary = {
 			shock_damage = 0.1
 			hostile_attrition = 2
@@ -2461,9 +2415,7 @@ jewish_group = {
 		province = {
 			local_missionary_strength = -0.02
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		uses_judaism_power = yes
 		aspects_name = JEWISH_ASPECTS
 			
@@ -2588,9 +2540,7 @@ zoroastrian_group = {
 			blessing_manthras
 			blessing_dakhma
 		}
-		on_convert = {
-			humanist_dev_cost_state_conversion_effect = yes
-		}
+
 		heretic = { MAZDAKI MANICHEAN }	
 	}
 	

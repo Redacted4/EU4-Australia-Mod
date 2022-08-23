@@ -552,7 +552,7 @@ country_decisions = {
 			calc_true_if = {
 				desc = bt_total_soldiershouseholds_tt
 				all_owned_province = {
-					has_building = soldiers_households
+					has_building = soldier_households
 				}
 				amount = 0
 			}
