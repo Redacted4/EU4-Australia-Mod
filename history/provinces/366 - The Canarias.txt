@@ -27,8 +27,3 @@ native_hostileness = 0
 	culture = castillian	
 	trade_goods = sugar
 } # Castilian control
-1444.11.12 = {
-	owner = 
-	controller = 
-	remove_core = CAS
-}
