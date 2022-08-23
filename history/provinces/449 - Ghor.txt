@@ -21,8 +21,6 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = TIM
-	remove_core = SIS
-	remove_core = KHO
 	owner = AFG
 	controller = AFG
 }

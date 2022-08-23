@@ -21,7 +21,6 @@ discovered_by = indian
 
 1444.11.11 = {
 	remove_core = MNG
-	remove_core = YUE
 	owner = CGS
 	controller = CGS
 	add_core = CGS

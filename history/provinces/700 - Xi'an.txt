@@ -22,7 +22,6 @@ center_of_trade = 2
 
 1444.11.11 = {
 	remove_core = MNG
-	remove_core = TNG
 	remove_core = CSH
 	owner = QIN
 	controller = QIN

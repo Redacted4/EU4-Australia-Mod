@@ -23,7 +23,6 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = MNG
-	remove_core = CDL
 	remove_core = CXI
 	owner = CYI
 	controller = CYI

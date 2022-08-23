@@ -22,7 +22,6 @@ discovered_by = nomad_group
 
 1444.11.11 = {
 	remove_core = MNG
-	remove_core = NNG
 	remove_core = CHC
 	remove_core = CMI
 	owner = HUA

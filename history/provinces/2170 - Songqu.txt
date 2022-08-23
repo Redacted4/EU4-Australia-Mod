@@ -17,7 +17,6 @@ discovered_by = chinese
 discovered_by = nomad_group
 
 1444.11.11 = {
-	remove_core = SHU
 	remove_core = MNG
 	owner = CXI
 	controller = CXI

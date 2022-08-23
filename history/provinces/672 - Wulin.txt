@@ -20,7 +20,6 @@ extra_cost = 8
 center_of_trade = 1
 
 1444.11.11 = {
-	remove_core = SHU
 	remove_core = MNG
 	remove_core = CXI
 	owner = CHC
