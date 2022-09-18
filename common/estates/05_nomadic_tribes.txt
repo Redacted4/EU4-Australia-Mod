@@ -4,36 +4,45 @@ estate_nomadic_tribes = {
 	# If true, country will get estate
 	trigger = {
 		has_dlc = "The Cossacks"
-		NOT = { has_government_attribute = is_merchant_republic }
-		NOT = { government = native }
-		NOT = { has_reform = siberian_tribe }
-		NOT = { has_reform = veche_republic }
-		NOT = { has_reform = pirate_republic_reform }
-		NOT = { has_reform = cossacks_reform }
-		is_colonial_nation = no
-		NOT = { has_reform = celestial_empire }
-		NOT = { has_reform = revolutionary_empire_reform }
-		OR = {
-			is_nomad = yes
-			any_owned_province = {
-				has_terrain = steppe
+		NOT = { has_government_attribute = disables_nomadic_tribes }
+		NOT = { has_country_flag = disables_nomadic_tribes_flag }
+		OR = { 
+			has_country_modifier = enable_estate_nomadic_tribes_modifier 
+			has_government_attribute = enables_nomadic_tribes
+			has_country_flag = enables_nomadic_tribes_flag
+			AND = {
+				NOT = { has_government_attribute = is_merchant_republic }
+				NOT = { government = native }
+				NOT = { has_reform = siberian_tribe }
+				NOT = { has_reform = veche_republic }
+				NOT = { has_reform = pirate_republic_reform }
+				NOT = { has_reform = cossacks_reform }
+				is_colonial_nation = no
+				NOT = { has_reform = celestial_empire }
+				NOT = { has_reform = revolutionary_empire_reform }
+				OR = {
+					is_nomad = yes
+					any_owned_province = {
+						has_terrain = steppe
+					}
+					any_owned_province = {
+						culture = bedouin_arabic
+					}
+					any_owned_province = {
+						culture = berber
+					}
+					any_owned_province = {
+						culture = tuareg
+					}
+				}
+				OR = {
+					technology_group = muslim
+					technology_group = ottoman
+					technology_group = chinese
+					technology_group = nomad_group
+					technology_group = sub_saharan 
+				}
 			}
-			any_owned_province = {
-				culture = bedouin_arabic
-			}
-			any_owned_province = {
-				culture = berber
-			}
-			any_owned_province = {
-				culture = tuareg
-			}
-		}
-		OR = {
-			technology_group = muslim
-			technology_group = ottoman
-			technology_group = chinese
-			technology_group = nomad_group
-			technology_group = sub_saharan 
 		}
 	}
 

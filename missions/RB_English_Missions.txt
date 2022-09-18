@@ -31,9 +31,6 @@ eng_british_naval_conq = {
 				NOT = { is_year = 1680 }
 			}
 		}
-		ai_priority = {
-			factor = 1
-		}
 
 		trigger = {
 			num_of_total_ports = 40
@@ -90,9 +87,6 @@ eng_rb_gibraltar = {
 					is_year = 1700
 				}
 			}
-		}
-		ai_priority = {
-			factor = 1
 		}
 
 		trigger = {
@@ -490,10 +484,7 @@ gbr_rb_canada_group = {
 		has_dlc = "Rule Britannia"
 	}
 	potential = {
-		OR = {
-			tag = ENG
 			tag = GBR
-		}
 		has_dlc = "Rule Britannia"
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -510,10 +501,6 @@ gbr_rb_canada_group = {
 			colonial_region = colonial_canada
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
-		}
-
-		ai_priority = {
-			factor = 2
 		}
 
 		trigger = {
@@ -563,12 +550,12 @@ eng_rb_trade_value_group = {
 		position = 9
 
 		provinces_to_highlight = {
-			province_id = 236
+			province_id = 236 #Changed to London Node
 			has_discovered = ROOT
 		}
 
 		trigger = {
-			236 = {
+			236 = { #London node
 				highest_value_trade_node = yes
 			}
 		}
@@ -819,9 +806,6 @@ eng_rb_conquest_europe = {
 				}
 			}
 		}
-		ai_priority = {
-			factor = 3
-		}
 
 		trigger = {
 			brittany_area = {
@@ -1024,7 +1008,15 @@ gbr_rb_empire_group = {
 			OR = {
 				ROOT = {
 					is_emperor = yes
+					if = {
+						limit = {
+							has_dlc = "Emperor"
+						}
+						hre_reform_passed = emperor_erbkaisertum
+					}
+					else = {
 					hre_reform_passed = erbkaisertum
+				}
 				}
 				AND = {
 					NOT = { hre_size = 1 }
@@ -1036,7 +1028,7 @@ gbr_rb_empire_group = {
 		effect = {
 			add_country_modifier = {
 				name = "eng_rb_imperial_ban_mod"
-				duration = 7300
+				duration = -1
 			}
 		}
 
@@ -1131,10 +1123,7 @@ gbr_rb_indian_group = {
 		has_dlc = "Rule Britannia"
 	}
 	potential = {
-		OR = {
-			tag = ENG
 			tag = GBR
-		}
 		has_dlc = "Rule Britannia"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1150,10 +1139,6 @@ gbr_rb_indian_group = {
 			area = west_bengal_area
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
-		}
-
-		ai_priority = {
-			factor = 3
 		}
 
 		trigger = {
@@ -1310,7 +1295,14 @@ gbr_rb_indian_group = {
 		effect = {
 			add_country_modifier = {
 				name = "gbr_rb_indian_integration"
-				duration = 7300
+				duration = -1
+			}
+			india_superregion = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 
@@ -1325,10 +1317,7 @@ gbr_rb_india_princes = {
 		has_dlc = "Rule Britannia"
 	}
 	potential = {
-		OR = {
-			tag = ENG
 			tag = GBR
-		}
 		has_dlc = "Rule Britannia"
 		NOT = { map_setup = map_setup_random }
 	}
@@ -1424,10 +1413,7 @@ gbr_rb_northern_colonial = {
 		has_dlc = "Rule Britannia"
 	}
 	potential = {
-		OR = {
-			tag = ENG
 			tag = GBR
-		}
 		has_dlc = "Rule Britannia"
 		is_random_new_world = no
 		NOT = { map_setup = map_setup_random }
@@ -1446,10 +1432,6 @@ gbr_rb_northern_colonial = {
 				province_id = 1979
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
-		}
-
-		ai_priority = {
-			factor = 2
 		}
 
 		trigger = {
@@ -1479,7 +1461,106 @@ gbr_rb_northern_colonial = {
 		}
 	}
 
+	eng_rb_greenland = {
+		icon = mission_rb_settle_the_north
+		required_missions = { eng_rb_take_shetland_and_faro_isles }
 
+		provinces_to_highlight = {
+			area = greenland_area
+			NOT = { owned_by = ROOT }
+			has_discovered = ROOT
+		}
+
+		trigger = {
+			custom_trigger_tooltip = {
+				tooltip = miss_discover_greenland
+				greenland_area = {
+					has_discovered = ROOT
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = miss_colonize_greenland
+				greenland_area = { 
+					type = all
+					owned_by = ROOT
+					is_city = yes
+				}
+			}
+		}
+		
+		effect = {
+			add_country_modifier = {
+				name = "eng_rb_colony_chance"
+				duration = 5475
+			}
+			1104 = {
+				add_base_production = 3
+				add_base_manpower = 3
+				change_religion = ROOT
+				change_culture = ROOT
+				custom_tooltip = eng_rb_greenland.tooltip
+				hidden_effect = {
+					random_list = {
+						10 = {
+							change_province_name = "Novum Novum Eboracum"
+							rename_capital = "Novum Novum Eboracum"
+						}
+						10 = {
+							change_province_name = "Little London"
+							rename_capital = "Little London"
+						}
+						10 = {
+							change_province_name = "New Omagh"
+							rename_capital = "New Omagh"
+						}
+						10 = {
+							change_province_name = "New Burnley"
+							rename_capital = "New Burnley"
+						}
+						10 = {
+							change_province_name = "New Durham"
+							rename_capital = "New Durham"
+						}
+						10 = {
+							change_province_name = "New Harrogate"
+							rename_capital = "New Harrogate"
+						}
+						10 = {
+							change_province_name = "New Cornwall"
+							rename_capital = "New Cornwall"
+						}
+						10 = {
+							change_province_name = "Liverpool Secundum"
+							rename_capital = "Liverpool Secundum"
+						}
+						10 = {
+							change_province_name = "Pieter's Haven"
+							rename_capital = "Pieter's Haven"
+						}
+						8 = {
+							change_province_name = "New Dublin"
+							rename_capital = "New Dublin"
+						}
+						1 = {
+							change_province_name = "Winterfell"
+							rename_capital = "Winterfell"
+						}
+						1 = {
+							change_province_name = "Jersey Ultima"
+							rename_capital = "Jersey Ultima"
+						}
+					}
+				}
+			}
+			1105 = {
+				add_base_production = 2
+				add_base_manpower = 2
+				change_religion = ROOT
+				change_culture = ROOT
+			}
+		}
+	
+	}
 
 }
 
@@ -1545,6 +1626,7 @@ eng_rb_trade_in_home_cot_group = {
 		has_dlc = "Rule Britannia"
 		NOT = { map_setup = map_setup_random }
 	}
+	has_country_shield = yes
 	eng_establish_trade_in_home_cot_gb = {
 		icon = mission_rb_monopolize_the_channel
 		required_missions = { }

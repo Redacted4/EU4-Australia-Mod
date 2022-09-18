@@ -78,6 +78,20 @@ germanic = {
 			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas
 		}
 	}
+	baltic_german = {
+		primary = RIG
+		male_names = {
+			Albrecht Friedrich August Emil Ferdinand Karl Ludwig Karl Wilhelm Adolf Alfred Anton Benedikt 
+			Benjamin Denis Diederick Eckbert Erwin Florian Franz Gebhard Gottfried Hartmann Heinrich Helmut 
+			Horst Joachim Kaspar Kurt Leo Ludwig Lukas Manfred Michael Nikolaus Oskar Otto Philipp Reiner Rudolf 
+			Rupprecht Siegfried Siegmund Thomas Urs Viktor Werner Alvydas Arelis Auctune Bajoras Beidras Budo Dagonis 
+			Ekkelis Galindas Galindo Gauronas Gerdautas Glande Golding Jauguttis Karatas Klukis Kugis Milzas Nomedas 
+			Prusas Sergonis Ulinniks Ulitis Jens Johann Engelbert Fromhold Johannes Henning Silvester Dietrich
+		}
+		female_names = {
+			Raphaela Sabine Vera Betten Dagas Gelennis Gerkus Grasus Gulbis Mila Milyuns Weslikan Ziedas Gertrud Ida
+		}
+	}
 	lower_saxon = {
 		primary = HAN
 		male_names = {
@@ -341,8 +355,8 @@ scandinavian = { #Nordic
 	swedish = {
 		primary = SWE
 		
-		#country = { state_maintenance_modifier = -0.25	}
-		#province = {local_production_efficiency = 0.50	}
+		country = {  }
+		province = { local_has_carolean = yes }
 		
 		
 		male_names = {
@@ -465,6 +479,8 @@ scandinavian = { #Nordic
 	}
 	finnish = {
 		primary = FIN
+		country = {  }
+		province = { local_has_carolean = yes }
 		dynasty_names = {
 			Bielke Horn Tott Fleming Paijkull Bonde Wrede Soop
 			Mannerheim Furuhjelm Aminoff Armfelt Carpelan Rehbinder Schulman
@@ -517,6 +533,24 @@ scandinavian = { #Nordic
 			Ubmeje Nuor�ne G�jka
 			Magga Guol�dat Yugra
 			Kaise Saiva
+		}
+	}
+	karelian = {
+		primary = KRL
+		male_names = {
+			Mohkku Mokci N�hkol N�innas Njulgu Oav�n Orddot R�stos Riibma Ruigi S�rra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
+			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne P�evalemb P�rt Raak Raho Rahuleid Sulev 
+			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
+			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
+			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
+			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
+			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
+		}
+		female_names = {
+			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
+			Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka 
+			Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava 
+			Virtyava Yalgava Litova Mastorava Noroava
 		}
 	}
 	icelandic = {
@@ -2225,24 +2259,6 @@ east_slavic = {
 			Gavriila Larisa Aleksandra Alla Bronislava Svetlana Yuliya Yaroslava Vladislava Lyudmila Nadejda Rostislava
 		}
 	}
-	karelian = {
-		primary = KRL
-		male_names = {
-			Mohkku Mokci N�hkol N�innas Njulgu Oav�n Orddot R�stos Riibma Ruigi S�rra Speaidna Viggu Kaarel Kaaren Kahus Kaido 
-			Kalev Kalju Kaljuvald Kalle Kaomeel Karuvald Kaugemeel Kaupo Pihl Piho Pikne P�evalemb P�rt Raak Raho Rahuleid Sulev 
-			Sutepelg Tambet Tarva Tarvet Dobrinya Dokya Dondy Gazheg Hulyen Inzhay Irter Lyneg Lysko Kezhapa Kezhay Kezhedey 
-			Setyamka Shindyay Shypicha Shyrpuzh Spira Syrka Tikshayka Tuhan Tyueykezhut Tyutyuk Tugan Kezhevat Kichay Koksha 
-			Kuaz Kudym-Osh Kya Kyldysin Malyaka Malyy Meltsayka Mosheg Nalka Turush Uchva Varaka Vechkas Velmayka Virdyan Viryas 
-			Viryay Vokan Yirkap Ylvan Zarny Tugan Parush Pivtsay Pokshayka Putyayka Setyamka Shindyay Shoksha Syrka Tikshayka 
-			Tyueykezhut Tylmache Tylze Tyushten Tyushtya Uzhara Varmanpaz
-		}
-		female_names = {
-			Nyayka Olota Ordava Oshama Parava Pekshayka Pemka Pokshava Poshayka Potekay Potyava Putyayka Ravzhava Ruzava 
-			Sanal'ka Sangasa Sernyava Serzhay Setyamka Seyamka Shonzhava Shukshtoroyka Sinyava Siyamka Slyugan'ka Sochava Styaka 
-			Syryava Tatka Tekay Tetyava Tikshayka Toyaksha Tundava Tundya Unzhutka Upurga Utyayka Valdava Vergava Vezhav Vidyava 
-			Virtyava Yalgava Litova Mastorava Noroava
-		}
-	}
 	
 	dynasty_names = {
 		Rurikovich Godunov Shuisky Romanov Sheremetev Golitsyn Naryshkin Khilkov Gorchakov
@@ -2344,7 +2360,7 @@ baltic	= {
 		}
 	}
 	latvian = {
-		primary = LVA
+		primary = LTG
 		male_names = {
 			Aishno Ako Ankad Baise Balodis Bikshe Borut Bulei Butovit Cirulis Dangeruthe Darbeslave 
 			Davins Demas Dobre Dovyat Dzintis Dausprungas Imanta
@@ -5565,8 +5581,8 @@ east_asian = {	# Chinese Group
 		}
 	}
 	altaic_new	= {
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes}
+		province = { local_has_banners = yes}
 		primary = YUA
 		male_names = {
 			Agbarjin Adai Altan Arigaba Arugtai Ayurparibhadra Bodi Bek Bahamu Bars Buyan Biligt� Dayan 
@@ -5589,8 +5605,8 @@ east_asian = {	# Chinese Group
 	}
 
 	manchu_new = {
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes}
+		province = { local_has_banners = yes}
 		primary = MCH
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
@@ -5974,7 +5990,6 @@ east_asian = {	# Chinese Group
 			Xiao'e Xiaoying Xiaoyuan Xiaoji Xiaolou
 		}
 	}
-	
 	dynasty_names = {
 		Zhu Wu Geng Shang Zheng Zhao Li Shi Liu Guo Yang Wang Qian Ma Meng Gao 
 		Chen Sun Sima Cao Xiao Qi Zu Zhou Huang Bai Qiu Tang Lu	Xu Chang 
@@ -6380,6 +6395,7 @@ malay = {
 thai_group = {
 	graphical_culture = southeastasiangfx
 	second_graphical_culture = asiangfx				
+
 	central_thai = {
 		primary = AYU
 		dynasty_names = { 
@@ -8868,8 +8884,8 @@ evenks = {
 	}
 	manchu = {
 		graphical_culture = asiangfx
-		country = { has_banners = 1}
-		province = { local_has_banners = 1}
+		country = { has_banners = yes}
+		province = { local_has_banners = yes}
 		primary = MJZ
 		dynasty_names = {
 			"Aisin Gioro" Wanyan "Yehe Nara" "Ula Nara" "Magiya Hala" Niohuru
@@ -9394,6 +9410,38 @@ lost_cultures_group = {
 		}
 		female_names = {
 			Amage Ghadani Opoin Polemakratia
+		}
+	}
+	norse = {
+		male_names = {
+			Adhalsteinn Aghi Agmundr Agnarr �ki �leifr Alfarr Alfvin Algautr Ari Arnfinnr �rni Arn�rr Arnth�rr Arnvidhr �sbjorn �sgeirr �sketill �smundr �svaldr Audhr Baggi B�rdhr Birgir Bjarni Bjartr Bjorn Brandr Br�dhir 
+			Brynjarr B�i Dagfinnr Dagr Danr Egill Eileifr Einarr Eindridhi Eir�kr Erlendr Erlingr Eysteinn Eyvindr F�lagi Finnr Fl�mingr F�lki Fridhthj�fr Fr�dhi Gauti Gautstafr Geirr Gormr Gudhbrandr Gudhfridhr Gudhini 
+			Gudhleifr Gudhmundr Gulbrandr Gunnarr Gunni Gunnvaldr H�kon H�lfdan Hallbjorn Halli Hallr Hallsteinn Hallth�rr Hallvardhr Haraldr H�vardhr Helgi Hemingr Herleifr Hildingr Hj�lmarr H�lmgeirr Hrafn Hreidharr Hr�aldr 
+			Hr�arr Hr�dhgeirr Hr�dh�lfr Hr�dhvaldr Hr�lfr Hr�rekr Hugleikr Ingi Ingim�rr Ing�lfr �varr Jarl J�steinn K�lfr K�ri Ketill Kn�tr K�ri Leifr Magni Mundi Nj�ll Oddbjorn Oddr Oddvarr Olvir R�dh�lfr Ragnarr Ragnvaldr 
+			Rand�lfr R�ni Sigfr�dhr Sigmundr Sigsteinn Sigurdhr Sindri Snorri St�li Steinarr Steingr�mr Steinn St�gandr Stigr Sumarlidhi Sundri Suni Svantepolk Sveinn Sverrir Th�rarinn Th�rbjorn Th�rfastr Th�rfredhr Th�rgeirr 
+			Th�rg�sl Th�rgn�r Th�rir Th�rketill Th�rleifr Th�rleikr Th�rm�dhr Th�rsteinn Th�rvaldr Thr�ndr T�fi T�ki Tryggvi �lfr Uni Valdim�rr V�gardhr Vetrlidhi V�gi V�kingr Vragi Yngvarr
+		}
+		female_names = {
+			Alfhildr �lof Arnbjorg �sa �sd�s �shildr �slaug �sta �str�dhr Audhr Audhrhildr Berglj�t Bjorg Borghildr B�thildr Brynhildr Brynja Dagm�r Dagn� Dagr�n Edda Eyd�s Fr�dha Gr�mhildr Gudhlaug Gudhleif Gudhr�dhr Gudhr�n Gulla 
+			Gunna Gunnbjorg Gunnhildr Gunnvor Gydha Hallth�ra Helga Hildr Hjord�s Hl�f Hrafnhildr Hreidhunn Idhunn Inga Ingibjorg Ingigerdhr Ingr�dhr Ingunn Ingvildr J�runnr Katla Ketilridhr Magnhildr Myrgjol �laug Ragna Ragnbjorg 
+			Ragnfr�dhr Ragnheidhr Ragnhildr R�na Sald�s Sign� Sigr�dhr Sigr�n S�lveig Steinunn Svanhildr Thone Th�ra Th�rbjorg Th�rd�s Th�rfr�dhr Th�rhildr Th�rn� Th�runn Th�rveig Th�rv� Thrud Thr�dhr Th�ri T�fa Unnr Vald�s V�gd�s 
+			Yngvildr
+		}
+		dynasty_names = {
+			�slaugsson �stridharson �svaldsson Eindridhesson Eir�ksson Gormsson H�konarson Haraldsson Lothbrok Muns� Ragnarsson Sigurdharson Skj�ldung Snorrason Th�rgilsson Th�rsteinsson Th�rvaldsson Tryggvason V�lsung 
+			Waegmunding Ylfing Yngling
+		}
+	}
+	livonian = {
+		male_names = {
+			Alo Asso Caupo Dabrel Gerweder Ilmedous Ilo Imme Kike Kovals Layanus Lembewalde Musts Paimis Peite Pi�ke Sula Uldenago Usis Valke Vesiki Vietso Waldeko Ylo Ymaut
+		}
+		female_names = {
+			Elmede Use Valata Vasara
+		}
+		dynasty_names = {
+			"Karasi" "Ingrija" "Saaremaa" "Revala" "Virumaa" "L��nemaa" "Vaiga" "Ingeri" "Ingeri" "Livo" "Harjumaa" "Virumaa" 
+			"Ridala" "Saaremaa" "Vaiga" "Turaida"
 		}
 	}
 }

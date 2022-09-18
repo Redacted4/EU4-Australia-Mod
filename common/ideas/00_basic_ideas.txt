@@ -23,6 +23,14 @@ exploration_ideas = {
 	trigger = {
 		has_idea_group = exploration_ideas
 	}
+
+	colonial_ventures = {
+		
+	}
+
+	land_of_opportunity = {
+		
+	}
 }
 
 aristocracy_ideas = {
