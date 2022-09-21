@@ -401,6 +401,7 @@ submission_to_emperor = {
 
 	trigger = {
 		is_emperor = no
+		is_elector = no
 		NOT = { tag = ITA }
 		capital_scope = {
 			is_part_of_hre = yes
