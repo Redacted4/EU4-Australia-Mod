@@ -2,7 +2,7 @@
 
 graphical_culture = muslimgfx
 
-color = { 149 45 102 }
+color = { 130  0  0 }
 
 revolutionary_colors = { 5  9  5 } #Ottoman Civil Ensign
 
