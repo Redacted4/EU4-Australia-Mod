@@ -1427,8 +1427,8 @@ drilling_armies = { # Multiplied by percentage of forcelimit currently drilling
 # Scripted and used from Diplomatic System
 ##################################################################################################
 recruitment_sabotaged = {
-	manpower_recovery_speed = -0.2
-	sailors_recovery_speed = -0.2
+	manpower_recovery_speed = -0.1
+	sailors_recovery_speed = -0.1
 }
 
 merchants_slandered = {
@@ -1445,7 +1445,7 @@ discontent_sowed = {
 }
 
 reputation_sabotaged = {
-	diplomatic_reputation = -3
+	diplomatic_reputation = -1
 }
 
 corrupt_officials = {

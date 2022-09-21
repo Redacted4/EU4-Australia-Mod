@@ -26,6 +26,10 @@ NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
 NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
 NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 20          -- from 5   --Reduces downstream power to 5% instead of 20%
 
+-- Espionage Changes
+NDefines.NDiplomacy.INFILTRATE_ADMINISTRATION_COST = 80 -- from 40
+
+
 -- Mercenary Rebalance
 NDefines.NMilitary.MERCENARY_COMPANY_MAX_REGIMENTS = 40			-- from 60 
 NDefines.NEconomy.LAND_TECH_MERC_MAINTENANCE_IMPACT = 0
