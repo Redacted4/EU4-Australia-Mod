@@ -1897,6 +1897,7 @@ frequent_elections_reform = {
 	}
 	modifiers = {
 		max_absolutism = -10
+		election_cycle = -1
 		monarch_lifespan = -0.25
 	}
 	ai = {
