@@ -639,7 +639,7 @@ vassal_obligations_act = {
 	}	
 	
 	vassal_income = 0.25
-	vassal_forcelimit_bonus = 0.5
+	vassal_forcelimit_bonus = 1
 
 	ai_will_do = {
 		factor = 1
@@ -741,7 +741,7 @@ overseas_dominions = {
 		full_idea_group = expansion_ideas
 	}
 
-	vassal_forcelimit_bonus = 0.5
+	vassal_forcelimit_bonus = 1
 	trade_efficiency = 0.1
 
 	ai_will_do = {

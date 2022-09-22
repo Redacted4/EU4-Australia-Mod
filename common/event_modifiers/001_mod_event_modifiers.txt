@@ -29,7 +29,7 @@ holy_orders_allowed_pap = {
 }
 
 influence_subject_modfier_1 = {
-	land_forcelimit = 5
+	#land_forcelimit = 5
 }
 
 influence_subject_modfier_2 = {
