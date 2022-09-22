@@ -44,11 +44,12 @@ aristocracy_ideas = {
 	}
 
 	trigger = {
-		has_government_attribute = enables_aristocratic_idea_group
+		#has_government_attribute = enables_aristocratic_idea_group
+		always = yes
 	}
 	
 	noble_knights_new = {
-		cavalry_power = 0.15
+		cavalry_power = 0.10
 		cavalry_cost = -0.15
 	}
 	military_traditions = {
@@ -94,12 +95,7 @@ plutocracy_ideas = {
 	}
 
 	trigger = {
-		OR = {	
-			has_government_attribute = enables_plutocratic_idea_group
-			has_government_attribute = enables_divine_idea_group
-			has_government_attribute = enables_aristocratic_idea_group
-			has_government_attribute = enables_horde_idea_group
-		}
+		always = yes
 	}
 	bill_of_rights_new = {
 		mercenary_manpower = 0.20
@@ -143,7 +139,8 @@ horde_gov_ideas = {
 	}
 	
 	trigger = {
-		has_government_attribute = enables_horde_idea_group
+		#has_government_attribute = enables_horde_idea_group
+		always = no
 	}
 	
 	horse_lords_new = {
@@ -184,7 +181,8 @@ theocracy_gov_ideas = {
 	}
 	
 	trigger = {
-		has_government_attribute = enables_divine_idea_group
+		#has_government_attribute = enables_divine_idea_group
+		always = no
 	}
 	servants_of_god = {
 		devotion = 1
@@ -226,7 +224,8 @@ indigenous_ideas = {
 	}
 
 	trigger = {
-		has_government_attribute = enables_natives_idea_group
+		#has_government_attribute = enables_natives_idea_group
+		always = no
 	}
 
 	indigenous_bountiful_land = {
@@ -450,12 +449,13 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.05
+		reinforce_speed = 0.25
 	}
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.25
 	}
 	bayonet_leaders = {
-		shock_damage = 0.15
+		shock_damage = 0.10
 	}
 	engineer_corps = {
 		siege_ability = 0.20
@@ -472,7 +472,7 @@ offensive_ideas = {
 		land_forcelimit_modifier = 0.15
 	}
 	napoleonic_warfare = {
-		reinforce_speed = 0.25
+		morale_damage = 0.1
 	}
 
 	ai_will_do = {
@@ -494,18 +494,17 @@ defensive_ideas = {
 		navy_tradition = 0.5
 	}
 	stand_firm_idea = {
-		shock_damage_received = -0.1
+		military_tactics = 0.1
 	}
 	military_drill = {
 		drill_gain_modifier = 0.5
-		land_attrition = -0.25
 	}
 	improved_manuever = {
 		leader_land_manuever = 1
 		#perma scorched forts?
 	}
-	defend_from_fire = {
-		fire_damage_received = -0.075
+	improved_foraging = {
+		land_attrition = -0.25
 	}
 	regimental_system = {
 		land_maintenance_modifier = -0.05
