@@ -3,6 +3,7 @@ country_decisions = {
 	lombard_nation = {
 		major = yes
 		potential = {
+			always = no
 			normal_or_historical_nations = yes
 			NOT = { has_country_flag = formed_lombard_flag }
 			OR = {
