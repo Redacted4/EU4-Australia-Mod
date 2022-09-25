@@ -634,7 +634,7 @@ statehood_ideas = {
 	important = yes
 
 	bonus = {
-		same_culture_advisor_cost = -0.25
+		same_culture_advisor_cost = -0.2
 		stability_cost_modifier = -0.1
 	}
 
