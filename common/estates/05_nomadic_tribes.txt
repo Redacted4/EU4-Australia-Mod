@@ -22,9 +22,8 @@ estate_nomadic_tribes = {
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
 				NOT = { has_reform = veche_republic }
-				NOT = { has_reform = pirate_republic_reform }
+				NOT = { has_government_attribute = is_pirate_republic_reform }
 				NOT = { has_reform = cossacks_reform }
-				is_colonial_nation = no
 				NOT = { has_reform = celestial_empire }
 				NOT = { has_reform = revolutionary_empire_reform }
 				OR = {
