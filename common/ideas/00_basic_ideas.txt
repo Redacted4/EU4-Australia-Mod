@@ -270,7 +270,6 @@ innovativeness_ideas = {
 	}
 	scientific_revolution = {
 		advisor_cost = -0.15
-		idea_cost = -0.1
 	}
 	optimism = {
 		reform_progress_growth = 0.25
@@ -280,7 +279,7 @@ innovativeness_ideas = {
 		prestige_decay = -0.01
 	}
 	print_culture = {
-		technology_cost = -0.1
+		technology_cost = -0.05
 		embracement_cost = -0.1
 	}
 	dynamic_court = {
