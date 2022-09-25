@@ -149,9 +149,8 @@ merc__local_free_company_cav_version = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		OR = {
-			has_idea = noble_knights_new
-			has_idea = horse_lords_new
+		ROOT = {
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company
@@ -164,9 +163,8 @@ merc__local_small_company_cav_version = {
     cavalry_cap = 40
     trigger = {
         NOT = { total_development = 150 }
-		OR = {
-			has_idea = noble_knights_new
-			has_idea = horse_lords_new
+		ROOT = {
+			has_idea = noble_resilience_new
 		}
     }
     cost_modifier = 0.3
@@ -184,9 +182,8 @@ merc__local_free_city_company_cav_version = {
     cavalry_cap = 40
     trigger = {
         has_reform = free_city
-		OR = {
-			has_idea = noble_knights_new
-			has_idea = horse_lords_new
+		ROOT = {
+			has_idea = noble_resilience_new
 		}
     }
     cost_modifier = 0.3
@@ -205,9 +202,8 @@ merc__local_grand_company_cav_version = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		OR = {
-			has_idea = noble_knights_new
-			has_idea = horse_lords_new
+		ROOT = {
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company
@@ -221,9 +217,8 @@ merc__local_independent_army_cav_version = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		OR = {
-			has_idea = noble_knights_new
-			has_idea = horse_lords_new
+		ROOT = {
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company

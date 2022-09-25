@@ -58,6 +58,9 @@ aristocracy_ideas = {
 	local_nobility = {
 		leader_cost = -0.1
 	}
+	noble_resilience_new = {
+		mercenary_manpower = 0.20
+	}
 	serfdom = {
 		global_autonomy = -0.05
 	}
@@ -68,9 +71,7 @@ aristocracy_ideas = {
 	international_nobility = {
 		movement_speed = 0.1
 	}
-	noble_resilience_new = {
-		mercenary_manpower = 0.20
-	}
+	
 	
 
 	ai_will_do = {
