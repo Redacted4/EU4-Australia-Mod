@@ -574,45 +574,7 @@ TUR_ideas = {
 
 
 
-MOR_ideas = {
-	start = {
-		may_perform_slave_raid = yes
-		naval_forcelimit_modifier = 0.25
-	}
-	bonus = {
-		fire_damage = 0.10
-	}
-	trigger = {
-		tag = MOR
-	}
-	free = yes
-	mor_marabouts = {
-		idea_cost = -0.1
-		monthly_piety = -0.001
-	}
-	trans_saharan_trade = {
-		trade_efficiency = 0.1
-		caravan_power = 0.2
-	}
-	saharan_migration_mor = {
-		num_accepted_cultures = 2
-	}
-	mor_fleet = {
-		heavy_ship_power = 0.1
-	}
-	
-	mor_in_the_shadow_of_atlas = {
-		hostile_attrition = 1
-		defensiveness = 0.15
-	}
-	mor_slave_soldiers = {
-		land_maintenance_modifier = -0.05
-		cavalry_power = 0.15
-	}
-	mor_pirate_republics = {
-		global_ship_trade_power  = 0.25
-	}
-}
+
 POL_ideas = {
 	start = {
 		cavalry_cost = -0.1
