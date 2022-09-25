@@ -80,7 +80,7 @@ technology = { #National Ideas
 	year = 1466
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.15
+		#renaissance = 0.15
 	}
 
 
@@ -93,7 +93,7 @@ technology = { #Workshop
 	year = 1479
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.3
+		#renaissance = 0.3
 	}
 
 	#Workshop
@@ -133,7 +133,7 @@ technology = { #The Scythe
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.15
+		#new_world_i = 0.15
 	}
 	
 	#The Scythe
@@ -148,7 +148,7 @@ technology = { #Modern Theocracy
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.3
+		#new_world_i = 0.3
 	}
 	
 	allowed_idea_groups = 3
@@ -192,7 +192,7 @@ technology = { #Improved Drainage
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.15
+		#printing_press = 0.15
 	}
 	
 	#Improved Drainage
@@ -206,7 +206,7 @@ technology = { #Scientific Experimentation
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.3
+		#printing_press = 0.3
 	}
 	
 	plantations = yes
@@ -252,7 +252,7 @@ technology = { #National Sovereignty
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.15
+		#global_trade = 0.15
 	}
 	
 	allowed_idea_groups	= 5
@@ -266,7 +266,7 @@ technology = { #University
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.3
+		#global_trade = 0.3
 	}
 	
 	university = yes	
@@ -319,7 +319,7 @@ technology = { #Absolute Rulership
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.15
+		#manufactories = 0.15
 	}
 	town_hall = yes
 	republican_dictatorship = yes
@@ -336,7 +336,7 @@ technology = {  #Land Clearance
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.3
+		#manufactories = 0.3
 	}
 	
 	#Land Clearance
@@ -369,7 +369,7 @@ technology = { #Bonds and Tontines
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.15
+		#enlightenment = 0.15
 	}
 	
 	counting_house = yes  
@@ -387,7 +387,7 @@ technology = { #Improved Production
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.3
+		#enlightenment = 0.3
 	}
 	
 	#Improved Farm Animals
@@ -439,7 +439,7 @@ technology = { #Rotherham Plough
 		global_trade = 0.5
 		manufactories = 0.5
 		enlightenment = 0.5
-		industrialization = 0.25
+		#industrialization = 0.25
 	}
 	
 	#Rotherham Plough

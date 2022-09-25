@@ -117,7 +117,7 @@ technology = {
 	year = 1466
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.15
+		#renaissance = 0.15
 	}
 	
 	#Standardised Pikes
@@ -162,7 +162,7 @@ technology = {
 	year = 1479
 	expects_institution = {
 		feudalism = 0.5
-		renaissance = 0.3
+		#renaissance = 0.3
 	}
 	
 	#Arquebus
@@ -231,7 +231,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.15
+		#new_world_i = 0.15
 	}
 	
 	#Ditch
@@ -257,7 +257,7 @@ technology = {
 	expects_institution = {
 		feudalism = 0.5
 		renaissance = 0.5
-		new_world_i = 0.3
+		#new_world_i = 0.3
 	}
 	
 	#Reiter
@@ -348,7 +348,7 @@ technology = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.15
+		#printing_press = 0.15
 	}
 	
 	#Trunnions
@@ -366,7 +366,7 @@ technology = {
 		feudalism = 0.5
 		renaissance = 0.5
 		new_world_i = 0.5
-		printing_press = 0.3
+		#printing_press = 0.3
 	}
 	
 	#Star Bastions
@@ -460,7 +460,7 @@ technology = {
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.15
+		#global_trade = 0.15
 	}
 	
 	cavalry_shock		=	1.0
@@ -479,7 +479,7 @@ technology = {
 		renaissance = 0.5
 		new_world_i = 0.5
 		printing_press = 0.5
-		global_trade = 0.3
+		#global_trade = 0.3
 	}
 	
 	#Carbine
@@ -568,7 +568,7 @@ technology = {
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.15
+		#manufactories = 0.15
 	}
 	
 	#Line Infantry
@@ -587,7 +587,7 @@ technology = {
 		new_world_i = 0.5
 		printing_press = 0.5
 		global_trade = 0.5
-		manufactories = 0.3
+		#manufactories = 0.3
 	}
 	
 	#Cartridge	(1620)?)
@@ -663,7 +663,7 @@ technology = {
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.15
+		#enlightenment = 0.15
 	}
 	
 	#Covered Way
@@ -683,7 +683,7 @@ technology = {
 		printing_press = 0.5
 		global_trade = 0.5
 		manufactories = 0.5
-		enlightenment = 0.3
+		#enlightenment = 0.3
 	}
 	
 	#Metallurgy
@@ -773,7 +773,7 @@ technology = {
 		global_trade = 0.5
 		manufactories = 0.5
 		enlightenment = 0.5
-		industrialization = 0.25
+		#industrialization = 0.25
 	}
 	
 	#Cuirassier
