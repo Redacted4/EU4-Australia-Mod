@@ -14,10 +14,7 @@ merc__local_free_company = {
     trigger = {
         total_development = 150
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company
@@ -31,10 +28,7 @@ merc__local_small_company = {
     trigger = {
         NOT = { total_development = 150 }
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
     }
     cost_modifier = 0.3
@@ -53,10 +47,7 @@ merc__local_free_city_company = {
     trigger = {
         has_reform = free_city
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
     }
     cost_modifier = 0.3
@@ -76,10 +67,7 @@ merc__local_grand_company = {
     trigger = {
         total_development = 150
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company
@@ -94,10 +82,7 @@ merc__local_independent_army = {
     trigger = {
         total_development = 150
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
     }
     # No home province means local mercenary company
@@ -111,10 +96,7 @@ merc_local_all_female_company = {
 	trigger = {
 		has_country_flag = female_mercs
 		NOT = { 
-			OR = {
-				has_idea = noble_knights_new
-				has_idea = horse_lords_new
-			} 
+			has_idea = noble_resilience_new
 		}
 	}
 	modifier = {
