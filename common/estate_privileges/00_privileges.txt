@@ -2124,16 +2124,20 @@ estate_nobles_officer_corp = {
 	icon = privilege_promote_purbias
 	max_absolutism = -5
 	influence = 0.05
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nomadic_tribes_guaranteed_leadgership_in_host }
+	}
+
 	can_select = {
 		army_tradition = 30
 	}
 	on_granted = {
-		add_army_tradition = -15
+		add_army_tradition = -5
 	}
 	penalties = {
 	}
 	benefits = {
-		general_cost = -0.25
+		general_cost = -0.1
 		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
@@ -2155,6 +2159,18 @@ estate_nobles_levies = {
 				has_estate = estate_maratha
 			}
 			NOT = { has_estate_privilege = estate_maratha_levies }
+		}
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
+		}
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+			}
+			NOT = { has_estate_privilege =  estate_nomadic_tribes_tribal_host }
 		}
 	}
 	modifier_by_land_ownership = {
@@ -3552,12 +3568,12 @@ estate_nomadic_tribes_guaranteed_leadgership_in_host = {
 		army_tradition = 30
 	}
 	on_granted = {
-		add_army_tradition = -15
+		add_army_tradition = -5
 	}
 	penalties = {
 	}
 	benefits = {
-		general_cost = -0.25
+		general_cost = -0.1
 		army_tradition_decay = -0.005
 	}
 	ai_will_do = {
@@ -3569,9 +3585,33 @@ estate_nomadic_tribes_tribal_host = {
 	icon = privilege_raise_host
 	max_absolutism = -5
 	influence = 0.1
+	can_select = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			NOT = { has_estate_privilege = estate_maratha_levies }
+		}
+		if = {
+			limit = {
+				has_estate = estate_maratha
+			}
+			NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
+		}
+		if = {
+			limit = {
+				has_estate = estate_nomadic_tribes
+			}
+			NOT = { has_estate_privilege =  estate_nobles_levies }
+		}
+	}
 	modifier_by_land_ownership = {
 		global_trade_goods_size_modifier = -0.1
 		global_manpower_modifier = 0.50
+	}
+	mechanics = {
+		exempt_from_seize_land
 	}
 	ai_will_do = {
 		factor = 10
@@ -4117,6 +4157,7 @@ estate_maratha_levies = {
 			}
 			NOT = { has_estate_privilege = estate_nobles_levies }
 		}
+		NOT = { has_estate_privilege = estate_maratha_levies_for_muslims }
 	}
 	modifier_by_land_ownership = {
 		global_trade_goods_size_modifier = -0.10
@@ -8832,7 +8873,7 @@ estate_church_brahmins_at_court = {
 	on_granted_province = {
 		if = {
 			limit = {
-				religion = hinduism
+				religion_group = dharmic
 			}
 			add_province_modifier = {
 				name = estate_brahmins_guaranteed_autonomy_mod
