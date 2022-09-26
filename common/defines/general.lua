@@ -25,6 +25,7 @@ NDefines.NEconomy.TRADE_NON_CAPITAL_OFFICE = -0.25							-- from 0.5
 NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
 NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
 NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 20          -- from 5   --Reduces downstream power to 5% instead of 20%
+NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 20            -- from 90
 
 -- Espionage Changes
 NDefines.NDiplomacy.INFILTRATE_ADMINISTRATION_COST = 80 -- from 40
