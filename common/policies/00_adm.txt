@@ -136,7 +136,7 @@ agricultural_cultivations = {
 		full_idea_group = quantity_ideas
 	}
 
-	land_maintenance_modifier = -0.1
+	global_tax_modifier = 0.1
 	land_forcelimit_modifier = 0.1
 
 	ai_will_do = {
