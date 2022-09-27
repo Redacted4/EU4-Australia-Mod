@@ -631,7 +631,7 @@ RUS_ideas = {
 	}
 
 	bonus = {
-		discipline = 0.05
+		legitimacy = 1
 	}
 
 	trigger = {
