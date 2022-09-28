@@ -740,7 +740,7 @@ MOS_ideas = {
 	}
 }
 
-FRA_ideas = {
+#FRA_ideas = {
 	start = {
 		diplomatic_reputation = 1
 		global_manpower_modifier = 0.20
