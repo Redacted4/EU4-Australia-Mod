@@ -1419,7 +1419,7 @@ mam_slot_5_missions = {
 			add_prestige = 25
 			add_country_modifier = {
 				name = mam_master_of_arabia_modifier
-				duration = 1
+				duration = -1
 			}
 		}
 	}
