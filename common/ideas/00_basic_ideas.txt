@@ -789,14 +789,14 @@ quantity_ideas = {
 
 	bonus = {
 		land_forcelimit_modifier  = 0.2
-		land_forcelimit = 20
+		land_forcelimit = 15
 	}
 	mass_army = {
-		global_manpower_modifier = 0.33
-		global_manpower = 25
+		global_manpower_modifier = 0.25
+		global_manpower = 10
 	}
 	the_young_can_serve = {
-		manpower_recovery_speed = 0.20
+		manpower_recovery_speed = 0.15
 		sailors_recovery_speed = 0.2
 	}
 	enforced_service = {
