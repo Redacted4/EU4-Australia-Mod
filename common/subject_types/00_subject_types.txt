@@ -545,7 +545,7 @@ colony = {
 	can_release_and_play = yes
 	uses_tariffs = yes
 	eats_overlords_colonies = yes
-	has_colonial_parent = yes
+	has_colonial_parent = yes #Determines WS cost
 	overlord_can_attack = no
 	overlord_can_be_subject = yes
 	takes_diplo_slot = no
@@ -570,10 +570,9 @@ colony = {
 	# Subject Interactions:
 	customize_subject = yes
 	replace_governor = yes
-	start_colonial_war = yes
+	#start_colonial_war = yes
 	increase_tariffs = yes
 	decrease_tariffs = yes
-	divert_trade = yes
 	enforce_culture = yes
 
 	# Modifiers:
@@ -594,11 +593,14 @@ colony = {
 	subject_opinion_modifier = colonial_relation
 }
 
+#Colony Type used when colonial nation first spawns in
+#Needed for the CN's flag to work
+
 crown_colony = {
 	copy_from = colony
 
-	change_colonial_type = yes
-	upgrade_subject_type = yes
+	#change_colonial_type = yes
+	#upgrade_subject_type = yes
 	is_colony_subtype = yes
 	can_send_missionary_to_subject = yes	
 	count = colony
@@ -607,6 +609,7 @@ crown_colony = {
 	manpower_to_overlord = 0.3
 	naval_forcelimit_to_overlord = 0.01
 	sailors_to_overlord = 0.01
+	has_colonial_parent = yes
 
 	# Subject Interactions:
 	embargo_rivals = yes
@@ -630,11 +633,45 @@ crown_colony = {
 	}
 }
 
+
+#Actual Crown Colony used in game, applied via event
+crown_colony_2 = {
+	copy_from = colony
+
+	is_colony_subtype = no
+	can_send_missionary_to_subject = yes	
+	count = colony
+
+	forcelimit_to_overlord = 0.3
+	manpower_to_overlord = 0.3
+	naval_forcelimit_to_overlord = 0.01
+	sailors_to_overlord = 0.01
+	has_colonial_parent = no
+
+	# Subject Interactions:
+	embargo_rivals = yes
+	support_loyalists = yes
+	subsidize_armies = yes
+	enforce_religion = yes
+	takeondebt = yes
+	block_settlement_growth = yes
+	allow_settlement_growth = yes
+	enforce_culture = yes
+	
+	# Modifiers:
+	modifier_overlord = clear
+	modifier_overlord = {
+		modifier = crown_colony_overlord
+	}
+
+	modifier_subject = {
+		modifier = crown_colony_subject
+	}
+}
+
 private_enterprise = {
 	copy_from = colony
 
-	change_colonial_type = yes
-	upgrade_subject_type = yes
 	is_colony_subtype = yes
 	count = colony
 
@@ -642,12 +679,16 @@ private_enterprise = {
 	manpower_to_overlord = 0.0
 	naval_forcelimit_to_overlord = 0.3
 	sailors_to_overlord = 0.3
-
+	pays_overlord = 1.0 #Pays Vassal Taxes
+	has_colonial_parent = no
 	# Subject Interactions:
 	replace_governor = no
 	block_settlement_growth = no
 	allow_settlement_growth = no
 	enforce_culture = yes
+	divert_trade = yes
+	embargo_rivals = yes
+	takeondebt = yes
 	
 	# Modifiers:	
 	modifier_overlord = clear
@@ -663,15 +704,14 @@ private_enterprise = {
 self_governing_colony = {
 	copy_from = colony
 
-	change_colonial_type = yes
-	upgrade_subject_type = yes
 	is_colony_subtype = yes
 	count = colony
-
-	forcelimit_to_overlord = 0.002
-	manpower_to_overlord = 0.002
-	naval_forcelimit_to_overlord = 0.002
-	sailors_to_overlord = 0.002
+	forcelimit_to_overlord = 0.1
+	manpower_to_overlord = 0.1
+	naval_forcelimit_to_overlord = 0.1
+	sailors_to_overlord = 0.1
+	has_colonial_parent = no
+	uses_tariffs = no #Doesn't pay tariffs or send treasure fleets
 
 	# Subject Interactions:
 	replace_governor = no
@@ -679,6 +719,9 @@ self_governing_colony = {
 	allow_settlement_growth = no
 	press_sailors = no
 	enforce_culture = yes
+	send_officers = yes
+	embargo_rivals = yes
+	takeondebt = yes
 	
 	# Modifiers:	
 	modifier_overlord = clear
