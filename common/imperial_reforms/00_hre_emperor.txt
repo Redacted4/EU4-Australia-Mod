@@ -324,8 +324,13 @@ emperor_privilegia_de_non_appelando = {
 	
 	emperor = {
 		imperial_authority = 0.25
-		governing_capacity = 400
 		legitimacy = 0.5
+	}
+
+	on_effect = {
+		emperor = {
+			country_event = { id = 9073 tooltip = vassalize_empire_mod }
+		}
 	}
 	
 	required_reform = emperor_erbkaisertum
@@ -337,11 +342,10 @@ emperor_renovatio = {
 	potential = {
 		has_dlc = "Emperor"
 	}
-	emperor = {
-		land_morale = 0.1
-		discipline = 0.05
-		infantry_power = 0.1
-		global_manpower = 40
+	on_effect = {
+		emperor = {
+			country_event = { id = 9075 tooltip = renovatio_effect }
+		}
 	}
 	required_reform = emperor_privilegia_de_non_appelando
 	gui_container = right_branch

@@ -48,7 +48,7 @@ norse_ideas = {
 
 ### Nation specific idea groups
 
-HLR_ideas = {
+#HLR_ideas = {
 	start = {
 		possible_policy = 1
 		diplomatic_reputation = 2
