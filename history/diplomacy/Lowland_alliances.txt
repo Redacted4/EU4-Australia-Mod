@@ -1,10 +1,10 @@
 #Dutch states
-vassal = {
-	first = BUR
-	second = FLA
-	start_date = 1444.1.1
-	end_date = 1444.11.12
-}
+#vassal = {
+#	first = BUR
+#	second = FLA
+#	start_date = 1444.1.1
+#	end_date = 1444.11.12
+#}
 vassal = {
 	first = BUR
 	second = BRB
