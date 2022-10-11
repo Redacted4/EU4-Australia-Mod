@@ -570,7 +570,7 @@ colony = {
 	# Subject Interactions:
 	customize_subject = yes
 	replace_governor = yes
-	start_colonial_war = yes
+	#start_colonial_war = yes
 	increase_tariffs = yes
 	decrease_tariffs = yes
 	enforce_culture = yes
@@ -680,6 +680,7 @@ private_enterprise = {
 	naval_forcelimit_to_overlord = 0.3
 	sailors_to_overlord = 0.3
 	pays_overlord = 1.0 #Pays Vassal Taxes
+	has_colonial_parent = no
 	# Subject Interactions:
 	replace_governor = no
 	block_settlement_growth = no
