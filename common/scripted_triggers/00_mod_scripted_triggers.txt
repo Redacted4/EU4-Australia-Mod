@@ -250,3 +250,13 @@ kingdom_of_france_scripted_trigger = {
 		area = wallonia_area
 	}
 }
+
+#Is a colony
+is_colony_trigger = {
+	OR = {
+		#is_subject_of_type = crown_colony 
+		is_subject_of_type = crown_colony_2
+		is_subject_of_type = private_enterprise
+		is_subject_of_type = self_governing_colony
+	}
+}
