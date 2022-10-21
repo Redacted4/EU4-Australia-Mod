@@ -1,51 +1,5 @@
 ######Mod Ideas######
 
-#Scandinavian Ideas, written by our beloved Arkhan
-
-SCA_ideas = {
-	start = {
-		ship_durability = 0.05
-		infantry_power = 0.15
-	}
-
-	bonus = {
-		global_colonial_growth = 20
-	}
-	
-	trigger = {
-		tag = SCA
-	}
-	free = yes		#will be added at load.
-	
-	finnish_tactics = {
-		hostile_attrition = 1.0
-		defensiveness = 0.1
-	}
-	swe_mil_reforms = {
-		discipline = 0.05
-	}
-	sca_regimental_system = {
-		manpower_recovery_speed = 0.2
-	}
-	sca_unification = {
-		yearly_absolutism = 0.2
-		legitimacy = 0.5
-	}
-	sca_goods = {
-		production_efficiency = 0.1
-	}
-	sca_seamen = {
-		naval_morale = 0.2
-	}
-	sca_two_seas = {
-		global_ship_trade_power = 0.2
-	}
-	
-}
-
-
-
-	
 
 #Halych Volynian ideas, Written by Johanis
 
