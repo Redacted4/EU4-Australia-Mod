@@ -62,6 +62,8 @@ NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_2 = 25			--from 50
 NDefines.NCountry.MIN_PRESTIGE_FOR_GOV_RANK_3 = 50			--from 75
 NDefines.NCountry.ABDICATE_PRESTIGE_HIT	= -25				--from 50
 NDefines.NCountry.DISINHERIT_PRESTIGE_HIT = -25				--from 50
+NDefines.NCountry.BREAK_VASSAL_PRESTIGE_PENALTY	= 0         --from -25
+NDefines.NDiplomacy.ABANDON_UNION_PRESTIGE = 0                -- from -25
 
 -- Warscore Changes
 NDefines.NMilitary.WARSCORE_MAX_FROM_BATTLES = 60				--from 40
