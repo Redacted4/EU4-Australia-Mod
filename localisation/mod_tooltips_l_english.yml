@@ -50,7 +50,8 @@
  no_bedouin_unrest.tt:0 "No owned Bedouin provinces have any unrest."
  loyal_bedouin_vassals.tt:0 "No Bedouin vassal has more than 0% Liberty Desire."
  find_lake_victoria_tt:0 "Owns any province bordering Lake Victoria"
- vassalize_empire_mod:0 "§YThe Emperor will gain a core on every province that is a member of the HRE."
+ colonial_expansion_limit_tooltip:0 "Colonial Nations may only settle the frontier in their own colonial region."
+ NO_CAPITAL_MOVE_COLONY:0 "Colonial Nations may only move their capitals within the same Colonial Region"
 
  
  

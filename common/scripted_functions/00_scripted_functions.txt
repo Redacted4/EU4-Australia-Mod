@@ -134,6 +134,24 @@ can_move_capital = {
 			always = no
 		}
 	}
+	condition = {
+		tooltip = "NO_CAPITAL_MOVE_COLONY"
+		potential = {
+			FROM = {
+				is_colony_trigger = yes
+			}
+			NOT = { 
+				FROM = { 
+					capital_scope = { 
+						colonial_region = ROOT 
+					} 
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_move_trade_port = {
@@ -158,9 +176,19 @@ can_burn_colony = {
 }
 
 can_colonize_province = {
+	
 }
 
 can_colonize_province_siberian_frontier = {
+	condition = {
+           tooltip = "colonial_expansion_limit_tooltip"
+           potential = {
+               FROM = { is_colony_trigger = yes }
+           }
+           allow = {
+               FROM = { capital_scope = { colonial_region = ROOT } }
+           }
+       }
 }
 
 can_add_seat_in_parliament = {
