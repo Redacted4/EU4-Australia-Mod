@@ -11,7 +11,6 @@ NDefines.NDiplomacy.ANNUL_TREATIES_YEARS = 15				-- from 10
 NDefines.NDiplomacy.INTEGRATE_UNION_MIN_YEARS = 25  		-- from 50
 NDefines.NDiplomacy.MIN_RELATIONS_TO_ALLY = -200			-- from minus 25
 NDefines.NGovernment.RUSSIAN_ABILITY_STRELTSY_SPAWN_SIZE = 0.1 -- from 0.2
-NDefines.NCountry.BASE_TARIFF = 0.1								-- from 0.1
 NDefines.NMilitary.TRANSPORT_COST = 5							-- from 12
 NDefines.NMilitary.TRANSPORT_MAINT_FACTOR = 0.02				-- from 0.04
 NDefines.NEconomy.CARAVAN_FACTOR = 9.0							-- from 3.0
@@ -26,6 +25,12 @@ NDefines.NMilitary.ARMY_DRILL_YEARLY_GAIN = 20			-- from 10
 NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
 NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 20          -- from 5   --Reduces downstream power to 5% instead of 20%
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 20            -- from 90
+
+-- Tariff Changes
+NDefines.NCountry.PS_RAISE_TARIFFS = 10             -- from 50
+NDefines.NCountry.PS_LOWER_TARIFFS = 10             -- from 25
+NDefines.NCountry.BASE_TARIFF = 0.5                 -- from 0.1
+NDefines.NCountry.TARIFF_LIBERTY_INCREASE = 0.2     -- from 1.0
 
 -- Espionage Changes
 NDefines.NDiplomacy.INFILTRATE_ADMINISTRATION_COST = 80 -- from 40
