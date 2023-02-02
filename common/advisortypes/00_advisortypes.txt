@@ -680,6 +680,7 @@ colonial_governor = {
 	
 	# Bonus
 	global_colonial_growth = 20
+	global_tariffs = 0.1
 	
 	skill_scaled_modifier = {
 		trigger = {
