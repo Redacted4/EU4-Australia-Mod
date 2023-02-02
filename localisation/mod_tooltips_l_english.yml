@@ -52,6 +52,8 @@
  find_lake_victoria_tt:0 "Owns any province bordering Lake Victoria"
  colonial_expansion_limit_tooltip:0 "Colonial Nations may only settle the frontier in their own colonial region."
  NO_CAPITAL_MOVE_COLONY:0 "Colonial Nations may only move their capitals within the same Colonial Region"
+ obj_disc_army_new:0 "High Discipline"
+ obj_disc_army_new_desc:0 "Have at least 120% Discipline in your armies"
 
  
  

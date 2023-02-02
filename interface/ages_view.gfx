@@ -317,7 +317,7 @@ spriteTypes = {
 	}
 	
 	spriteType = {
-		name = "GFX_obj_disc_army"
+		name = "GFX_obj_disc_army_new"
 		texturefile = "gfx/interface/ages/obj_disc_army.dds"
 	}
 	
