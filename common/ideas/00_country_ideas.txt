@@ -455,7 +455,7 @@ ICE_ideas = {
 
 GOT_ideas = {
 	start = {
-		privateer_efficiency = 0.15
+		global_ship_trade_power = 0.15
 		core_creation = -0.15
 	}
 	

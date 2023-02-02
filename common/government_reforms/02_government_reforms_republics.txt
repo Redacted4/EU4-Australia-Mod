@@ -1802,7 +1802,7 @@ the_pirate_ways_reform = {
 		has_government_attribute = is_pirate_republic_reform
 	}
 	modifiers = {
-		privateer_efficiency = 0.25
+		global_ship_trade_power = 0.25
 		land_morale = 0.1
 		naval_morale = 0.1
 		naval_maintenance_modifier = -0.10
