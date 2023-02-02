@@ -235,7 +235,7 @@ emp_bra_pru_1_b = {
 		trigger = {
 			has_global_modifier_value = {
 				which = discipline
-				value = 0.2
+				value = 0.15
 			}
 		}
 		effect = {
