@@ -12,6 +12,13 @@ estate_nomadic_tribes = {
 			has_country_flag = enables_estate_nomadic_tribes_flag
 			
 			AND = {
+				OR = {
+					AND = {
+						is_nomad = yes
+						is_colonial_nation = no
+					}
+					has_unlocked_estate = { estate = estate_nomadic_tribes }
+				}
 				NOT = { has_government_attribute = is_merchant_republic }
 				NOT = { government = native }
 				NOT = { has_reform = siberian_tribe }
@@ -20,33 +27,6 @@ estate_nomadic_tribes = {
 				NOT = { has_reform = cossacks_reform }
 				NOT = { has_reform = celestial_empire }
 				NOT = { has_reform = revolutionary_empire_reform }
-				AND = {
-					OR = {
-						is_nomad = yes
-						any_owned_province = {
-							has_terrain = steppe
-						}
-						any_owned_province = {
-							culture = bedouin_arabic
-						}
-						any_owned_province = {
-							culture = berber
-						}
-						any_owned_province = {
-							culture = tuareg
-						}
-						has_unlocked_estate = { estate = estate_nomadic_tribes }
-						
-					}
-					OR = {
-						technology_group = muslim
-						technology_group = ottoman
-						technology_group = chinese
-						technology_group = nomad_group
-						technology_group = sub_saharan 
-						has_unlocked_estate = { estate = estate_nomadic_tribes }
-					}
-				}
 				
 			}
 		}
