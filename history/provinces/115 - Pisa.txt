@@ -1,7 +1,7 @@
 #115 - Pisa
 
-owner = LAN
-controller = LAN
+owner = PIS
+controller = PIS
 culture = tuscan
 religion = catholic
 hre = yes
@@ -12,7 +12,7 @@ base_manpower = 3
 capital = "Pisa"
 is_city = yes	# Estimated
 add_core = PIS
-add_core = LAN
+#add_core = LAN
 discovered_by = western
 discovered_by = eastern
 discovered_by = muslim

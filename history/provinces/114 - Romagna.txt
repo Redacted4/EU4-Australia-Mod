@@ -1,7 +1,7 @@
 #114 - Romagna
 
-owner = VEN			# Ravenna was seized by Venice in 1441
-controller = VEN
+owner = PAP			# Ravenna was seized by Venice in 1441
+controller = PAP
 culture = romagnan 
 religion = catholic 
 hre = no 
@@ -11,7 +11,7 @@ trade_goods = salt
 base_manpower = 2
 capital = "Ravenna"
 is_city = yes
-add_core = VEN
+#add_core = VEN
 add_core = PAP
 
 
