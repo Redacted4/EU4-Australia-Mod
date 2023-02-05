@@ -844,7 +844,7 @@ age_of_revolutions = {
 				}
 			}
 			modifier = {
-				diplomatic_reputation = 5
+				province_warscore_cost = -0.2
 			}
 			ai_will_do = {
 				factor = 100
