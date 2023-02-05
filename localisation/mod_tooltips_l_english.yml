@@ -58,6 +58,7 @@
  release_colonial_subject_title:0 "Grant Independence"
  release_colonial_subject_tooltip:0 "Grant our colonial subject independence."
  release_colonial_subject_desc:0 "Do you wish to grant independence to §Y[From.GetName]§!? \nBecause they are loyal, their opinion of us will decrease by §R200§!."
+ ALL_COLONIAL_NATIONS:0 "All adjacent colonies. \n- All provinces owned by a Colonial Nation."
 
  
  
