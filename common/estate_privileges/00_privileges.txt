@@ -7563,7 +7563,17 @@ estate_cossacks_recruit_cossack_generals = {
 	}
 	benefits = {
 		army_tradition = 0.5
-		leader_land_shock = 1
+		#leader_land_shock = 1
+
+	}
+	on_granted = {
+		add_country_modifier = {
+			name = recruit_cossack_generals_modifier #20% CCA for Cossacks
+			days = -1
+		}
+	}
+	on_revoked = {
+		remove_country_modifier = recruit_cossack_generals_modifier
 	}
 	ai_will_do = {
 		factor = 10

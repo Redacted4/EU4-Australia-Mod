@@ -91,3 +91,8 @@ maritime_marines_modifier = {
 	shock_damage_received = -0.1
 	land_attrition = -0.25
 }
+
+recruit_cossack_generals_modifier = {
+	is_cossack_modifier = yes
+	cavalry_power = 0.2
+}
