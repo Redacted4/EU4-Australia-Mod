@@ -358,7 +358,7 @@ emp_france_missions_1_b = {
 					}
 				}
 				AND = {
-					province_id = 1507
+					province_id = 2516
 					NOT = { is_strongest_trade_power = ROOT }
 				}
 			}
@@ -371,7 +371,7 @@ emp_france_missions_1_b = {
 					colonial_region = colonial_louisiana
 				}
 			}
-			1507 = {
+			2516 = {
 				is_strongest_trade_power = ROOT
 			}
 		}
