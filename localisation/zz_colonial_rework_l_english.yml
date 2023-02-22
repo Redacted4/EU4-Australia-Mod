@@ -2,7 +2,8 @@
  ##For Colony Rework
 
  crown_colony_2_title:0 "Crown Colony." #Extra . is so I can identify if it's working in game
- crown_colony_2_desc: "A Crown Colony has a high amount of direct control from their overlord. They contribute a good amount of money and manpower."
+ crown_colony_2_desc:0 "A Crown Colony has a high amount of direct control from their overlord. They contribute a good amount of money and manpower."
+ crown_colony_2_title_plural:0 "Crown Colonies"
  show_colonial_nation_decisions_title:0 "Show Colonial Government Decisions:"
  show_colonial_nation_decisions_desc:0 ""
  hide_colonial_nation_decisions_title:0 "Hide Colonial Government Decisions:"
