@@ -60,6 +60,8 @@
  release_colonial_subject_desc:0 "Do you wish to grant independence to §Y[From.GetName]§!? \nBecause they are loyal, their opinion of us will decrease by §R200§!."
  ALL_COLONIAL_NATIONS:0 "All adjacent colonies. \n- All provinces owned by a Colonial Nation."
  FORCE_MARCH_REQUIREMENTS:0 "\n§R- Requires §YAdmin Tech 15§! or §YEspirit de Corps§! from§! §YOffensive Ideas.§!"
+ mams_cant_dec_ethiopia:0 "We cannot declare war on §YEthiopia§! until we have completed the §YFate of the Copts§! mission."
+ can_dec_ethiopia_tt:0 "Allows us to §RDeclare War§! on §YEthiopia!§!"
 
  
  

@@ -431,3 +431,26 @@ guaranteeaction = {
 		}
 	}
 }
+
+declarewar = {
+	condition = {
+		tooltip = mams_cant_dec_ethiopia
+		potential = {
+
+		}
+		allow = {
+			if = {
+				limit = {
+					tag = MAM
+				}
+				has_country_flag = fate_of_the_copts_flag
+				FROM = {
+					tag = ETH
+				} 
+			}
+			else = {
+				always = yes
+			}
+		}
+	}
+}

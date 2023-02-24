@@ -24,7 +24,7 @@ mam_slot_1_missions = {
 				area = vostani_area
 			}
 			development_in_provinces = {
-				value = 50
+				value = 45
 				area = said_area
 			}
 		}
@@ -107,6 +107,8 @@ mam_slot_1_missions = {
 				}
 				add_permanent_claim = ROOT
 			}
+			set_country_flag = fate_of_the_copts_flag
+			custom_tooltip = can_dec_ethiopia_tt
 		}
 	}
 
@@ -782,7 +784,7 @@ mam_slot_3_missions = {
 		required_missions = { mam_egyptian_caliphate mam_subjugate_beyliks }
 		position = 4
 		trigger = {
-			mil_tech = 6
+			mil_tech = 5
 			army_strength = {
 				who = TUR
 				value = 1.2
@@ -790,7 +792,7 @@ mam_slot_3_missions = {
 		}
 		effect = {
 			define_general = {
-				fire = 3
+				fire = 4
 				shock = 4
 				manuever = 3
 				siege = 2
@@ -864,14 +866,14 @@ mam_slot_3_missions = {
 					NOT = { is_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 			thrace_area = {
 				limit = {
 					NOT = { is_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_claim = ROOT
+				add_permanent_claim = ROOT
 			}
 		}
 	}

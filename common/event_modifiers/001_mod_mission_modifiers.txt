@@ -19,9 +19,9 @@ mam_trained_mamluks = {
 }
 
 mam_circassian_mamluks = {
-	army_tradition_decay = -0.01
+	cavalry_power = 0.1
+	cav_to_inf_ratio = 0.1
 }
-
 mam_master_of_arabia_modifier = {
 	trade_steering = 0.15	
 }
