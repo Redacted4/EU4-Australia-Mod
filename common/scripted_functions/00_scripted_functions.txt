@@ -161,6 +161,22 @@ can_order_assault = {
 }
 
 can_order_force_march = {
+	condition = {
+		tooltip = "FORCE_MARCH_REQUIREMENTS"
+		potential = {
+			OR = {
+				NOT = {
+					has_idea = napoleonic_warfare_new
+				}
+				NOT = {
+					adm_tech = 15
+				}
+			}
+		}
+		allow = {
+			always = no
+		}
+	}
 }
 
 can_scorch_earth = {

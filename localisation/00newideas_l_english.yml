@@ -483,3 +483,6 @@ westphalian_sovereigty_desc:0 "We have successfully bested the odds and cemented
  viceroys_new_desc:0 "Makes it possible to establish for us to establish Viceroys and thereby improve the administration of our Colonies and increase the amount of money they generate. \n§YEach large colonial nation gives:§!\n Trade Efficiency: §G5%§! \nWe also gain:"
  horse_lords_new:0 "Horse-lords of the Steppes"
  horse_lords_new_desc:0 "The only true beast is of human nature. Horses have been born and raised among our children, and they have learned to be noble and ferocious as our own own people. We recognise their harsh taming as our greatest pride, and they recognize us as their greatest lords.\n§YAll Generic Mercenary Companies Now Use 100% Cavalry!§!"
+ napoleonic_warfare_new_desc:0 "Traditional armies relied on furious discipline to maintain order in their ranks, however, by appealing to unit pride we can reach even higher levels of discipline.\nUnlocks §YForced March§! early"
+ napoleonic_warfare_new:0 "Espirit de Corps"
+ 

@@ -115,8 +115,8 @@ plutocracy_ideas = {
 	}
 	
 	free_cities_new = {
-		land_forcelimit = 10
-		land_forcelimit_modifier = 0.1
+		inflation_reduction = 0.1
+		inflation_action_cost = -0.25
 	}
 
 	free_subjects = {
@@ -377,13 +377,15 @@ spy_ideas = {
 		advisor_cost = -0.10
 	}
 
-	guerrilla_warfare_idea = {
-		movement_speed = 0.1
+	vetting = {
+		global_spy_defence = 0.3
+		monarch_lifespan = 0.25
 	}
 
 	claim_fabrication = {
 		fabricate_claims_cost = -0.25
 		can_fabricate_for_vassals = yes
+		can_chain_claim = yes
 	}
 
 	flexible_negotiation = {
@@ -452,7 +454,6 @@ offensive_ideas = {
 
 	bonus = {
 		recover_army_morale_speed = 0.05
-		reinforce_speed = 0.25
 	}
 	national_conscripts = {
 		global_regiment_recruit_speed = -0.25
@@ -464,19 +465,19 @@ offensive_ideas = {
 		siege_ability = 0.20
 		leader_land_shock = 1
 	}
-	glorious_arms = {
-		manpower_recovery_speed = 0.2
+	napoleonic_warfare_new = {
+		force_march_free = yes
 	}
 	superior_firepower = {
 		fire_damage = 0.1
 	}
-
 	grand_army = {
-		land_forcelimit_modifier = 0.15
+		reinforce_speed = 0.25
 	}
-	napoleonic_warfare = {
+	glorious_arms = {
 		morale_damage = 0.1
 	}
+	
 
 	ai_will_do = {
 		factor = 0.9
@@ -506,8 +507,8 @@ defensive_ideas = {
 		leader_land_manuever = 1
 		#perma scorched forts?
 	}
-	improved_foraging = {
-		land_attrition = -0.25
+	guerrilla_warfare_idea = {
+		movement_speed = 0.05
 	}
 	regimental_system = {
 		#land_maintenance_modifier = -0.05
@@ -793,15 +794,12 @@ quantity_ideas = {
 	bonus = {
 		land_forcelimit_modifier  = 0.25
 		land_forcelimit = 10
-		#land_forcelimit_modifier  = 0.2
-		#land_forcelimit = 15
 	}
 	mass_army = {
 		global_manpower_modifier = 0.25
 		global_manpower = 10
 	}
 	the_young_can_serve = {
-		#manpower_recovery_speed = 0.15
 		manpower_recovery_speed = 0.2
 		sailors_recovery_speed = 0.2
 	}
@@ -810,19 +808,18 @@ quantity_ideas = {
 		global_ship_cost = -0.1
 	}
 	the_old_and_infirm = {
-		#land_maintenance_modifier = -0.05
-		#naval_maintenance_modifier = -0.05
-		morale_damage_received = -0.1 #New
+		morale_damage_received = -0.1
 	}
 	camp_followers = {
 		global_supply_limit_modifier = 0.33
-		leader_land_manuever = 2 #New, means units will reinforce in battles faster
+		leader_land_manuever = 2 
 	}
 	garrison_conscription = {
-		fort_maintenance_modifier = -0.2
+		may_refill_garrison = yes	
+		garrison_size = 0.25
 	}
 	expanded_supply_trains = {
-		#land_attrition = -0.1
+		land_attrition = -0.25
 		reserves_organisation = 0.25 #New
 	}
 

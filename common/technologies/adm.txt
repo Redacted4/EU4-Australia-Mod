@@ -24,6 +24,7 @@ technology = { #Tribal Government
 	native_sweat_lodge = yes
 	native_great_trail = yes
 	native_ceremonial_fire_pit = yes
+	may_force_march = yes
 }
 
 technology = { #Advanced Tribes
@@ -223,7 +224,6 @@ technology = { #Military Administration
 		printing_press = 0.5
 	}
 	
-	may_force_march = yes
 	soldier_households = yes
 }
 
