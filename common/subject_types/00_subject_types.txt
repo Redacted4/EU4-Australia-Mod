@@ -503,6 +503,8 @@ client_vassal = {
 	diplomacy_subject_sprite = GFX_diplomacy_areclients
 
 	# Properties:
+	forcelimit_to_overlord = 0.15
+	manpower_to_overlord = 0.15
 	created_by_overlord = yes
 	extend_trading_range = yes
 
@@ -522,9 +524,11 @@ client_march = {
 	diplomacy_subject_sprite = GFX_diplomacy_areclients
 
 	# Properties:
+	forcelimit_to_overlord = 0.3
+	manpower_to_overlord = 0.3
 	created_by_overlord = yes
 	extend_trading_range = yes
-
+	
 	base_liberty_desire = -40.0
 	liberty_desire_revolution = 0
 
