@@ -225,7 +225,7 @@ square_formations2  = { #-20% Shock Damage Received
 	}
 }
 
-mercenary_policy = { #+200% mercenary manpower and -33% mercenary cost
+mercenary_policy = { 
 	monarch_power = MIL
 
 	potential = {
@@ -238,8 +238,8 @@ mercenary_policy = { #+200% mercenary manpower and -33% mercenary cost
 		}
 	}
 
-		mercenary_manpower = 2.0
-		mercenary_cost = -0.33
+		mercenary_manpower = 0.5
+		mercenary_cost = -0.25
 	
 
 	ai_will_do = {
