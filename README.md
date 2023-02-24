@@ -8,6 +8,12 @@ Our Discord:
 To begin using the git repo, a good starting point are the github instructions here:
 https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository
 
+In lieu of the above, try the following:
+Download git bash (a commandline client) from https://gitforwindows.org/
+
+Open git bash after downloading, change directory to your desired download directory (where you'll keep the mod files), and type:
+	git clone https://github.com/Ezio85/EU4-Australia-Mod.git 
+
 To get started using the git command line (eg. Git Bash), the following commands are your friends, in rough order of intended usage:  
 
 Create a branch, which you can add your changes to, and set it to track the GitHub repo
