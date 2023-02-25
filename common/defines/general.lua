@@ -26,7 +26,7 @@ NDefines.NCountry.NUM_PARLIAMENT_ISSUES = 10             -- from 5
 NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 20          -- from 5   --Reduces downstream power to 5% instead of 20%
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 20            -- from 90
 NDefines.NDiplomacy.NUM_OF_GREAT_POWERS	= 12            -- from 8
-
+NDefines.NEconomy.CARAVAN_POWER_MIN = 0
 -- Tariff Changes
 NDefines.NCountry.PS_RAISE_TARIFFS = 10             -- from 50
 NDefines.NCountry.PS_LOWER_TARIFFS = 10             -- from 25
