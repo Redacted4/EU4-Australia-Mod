@@ -10016,7 +10016,19 @@ estate_burghers_hydraulic_rights = {
 	influence = 0.15
 	loyalty = 0.1
 	is_valid = {
-		has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+		OR = {
+			has_unlocked_estate_privilege = { estate_privilege = estate_burghers_hydraulic_rights }
+			AND = {
+				culture_group = turko_semitic
+				NOT = {
+					OR = {
+						primary_culture = al_misr_arabic
+						primary_culture = al_suryah_arabic
+						primary_culture = al_iraqiya_arabic
+					}
+				}
+			}
+		}
 	}
 	can_select = {
 		any_owned_province = {
