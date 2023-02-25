@@ -4697,7 +4697,7 @@ ven_mercenaries_paid_with_land = {
 }
 
 ned_security_on_and_from_the_sea = {
-	ship_durability = 0.1
+	#ship_durability = 0.1
 	naval_morale = 0.1
 }
 
