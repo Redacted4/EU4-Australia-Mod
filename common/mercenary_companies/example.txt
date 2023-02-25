@@ -13,9 +13,6 @@ merc__local_free_company = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
     }
     # No home province means local mercenary company
 }
@@ -27,9 +24,6 @@ merc__local_small_company = {
     cavalry_cap = 2
     trigger = {
         NOT = { total_development = 150 }
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
     }
     cost_modifier = 0.3
     modifier = {
@@ -46,9 +40,6 @@ merc__local_free_city_company = {
     cavalry_cap = 2
     trigger = {
         has_reform = free_city
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
     }
     cost_modifier = 0.3
     modifier = {
@@ -66,9 +57,6 @@ merc__local_grand_company = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
     }
     # No home province means local mercenary company
 }
@@ -81,9 +69,6 @@ merc__local_independent_army = {
     cost_modifier = 0.75
     trigger = {
         total_development = 150
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
     }
     # No home province means local mercenary company
 }
@@ -95,9 +80,6 @@ merc_local_all_female_company = {
     cavalry_cap = 2
 	trigger = {
 		has_country_flag = female_mercs
-		NOT = { 
-			has_idea = noble_resilience_new
-		}
 	}
 	modifier = {
 		shock_damage_received = 0.05

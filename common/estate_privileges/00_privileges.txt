@@ -7569,7 +7569,7 @@ estate_cossacks_recruit_cossack_generals = {
 	on_granted = {
 		add_country_modifier = {
 			name = recruit_cossack_generals_modifier #20% CCA for Cossacks
-			days = -1
+			duration = -1
 		}
 	}
 	on_revoked = {
