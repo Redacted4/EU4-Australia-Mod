@@ -1521,3 +1521,78 @@ SWA_ideas = {
 		ae_impact = -0.15
 	}
 }
+
+ORM_ideas = {
+	start = {
+		merchants = 1
+		global_autonomy = -0.05
+	}
+
+	bonus = {
+		ship_durability = 0.1
+	}
+	
+	trigger = {
+		tag = ORM
+	}
+	free = yes
+	
+	orm_a_vast_emporium = {
+		trade_efficiency = 0.15
+	}
+	orm_protecting_the_islands = {
+		infantry_power = 0.1
+		artillery_fire = 0.5
+	}
+	orm_moqarrariya = {
+		global_manpower_modifier = 0.2
+	}
+	orm_far_reaching_diplomacy = {
+		trade_company_investment_cost = -0.2
+	}
+	orm_secure_trading_monopoly = {
+		global_trade_power = 0.15
+	}
+	orm_develop_qeshm_and_ormuz = {
+		development_cost = -0.1
+	}
+	orm_ormuzi_navy = {
+		naval_forcelimit_modifier = 0.25
+	}
+}
+
+RAS_ideas = {
+	start = {
+		infantry_power = 0.1
+		global_manpower_modifier = 0.2
+	}
+	bonus = {
+		defensiveness = 0.2
+	}
+	trigger = {
+		tag = RAS
+	}
+	free = yes
+	
+	ras_living_imam = {
+		land_morale = 0.1
+	}
+	ras_yemeni_highlands = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	coffea_arabica = {
+		#See Yemeni Ideas
+	}
+	ras_unite_rassid_state = {
+		all_estate_loyalty_equilibrium = 0.1
+	}
+	ras_mountain_strongholds = {
+		shock_damage_received = -0.15
+	}
+	ras_salt_in_water = {
+		leader_land_shock = 1
+	}
+	ras_secure_trade_monopolies = {
+		trade_efficiency = 0.1
+	}
+}

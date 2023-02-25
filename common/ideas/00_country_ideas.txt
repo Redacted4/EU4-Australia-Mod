@@ -8085,7 +8085,7 @@ ORL_ideas = {
 	}
 }
 
-ORM_ideas = {
+#ORM_ideas = {
 	start = {
 		merchants = 1
 		global_foreign_trade_power = 0.1
@@ -12030,7 +12030,7 @@ YEM_ideas = {
 	}
 }
 
-RAS_ideas = {
+#RAS_ideas = {
 	start = {
 		infantry_power = 0.1
 		global_manpower_modifier = 0.2
