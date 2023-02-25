@@ -79,7 +79,7 @@ NDefines.NDiplomacy.MONTHS_BEFORE_TOTAL_OCCUPATION = 12			--from 60
 
 --Removal of cooldown for changing national focus/policies
 NDefines.NCountry.NAT_FOCUS_YEARS = 0
-NDefines.NCountry.MINIMUM_POLICY_TIME = 0
+--NDefines.NCountry.MINIMUM_POLICY_TIME = 0
 
 --Garrison Changes
 NDefines.NMilitary.GARRISON_SIZE = 2000 -- from 1000
