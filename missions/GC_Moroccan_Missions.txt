@@ -690,7 +690,7 @@ gc_morocco_3 = {
 				any_subject_country = {
 					has_reform = pirate_republic_reform
 				}
-				1298 = {
+				116 = {
 					privateer_power = {
 						country = ROOT
 						share = 25
@@ -816,7 +816,7 @@ gc_morocco_3 = {
 		}
 
 		trigger = {
-			1975 = {
+			4163 = {
 				privateer_power = {
 					country = ROOT
 					share = 33
