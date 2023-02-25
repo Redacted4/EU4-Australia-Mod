@@ -180,25 +180,7 @@ the_licensing_of_the_press_act = { #+1legitimacy and other gov numbers
 #########################
 #Tier 2 Admin Policies  #
 #########################
-agricultural_cultivations = { #-10% Dev Cost
-	monarch_power = ADM
 
-	potential = {
-		adm_tech = 7
-	}
-	allow = {
-		calc_true_if = {
-			has_filled_ideas_trigger = yes
-			amount = 2
-		}
-	}
-	
-	development_cost = -0.1
-
-	ai_will_do = {
-		factor = 1000
-	}
-}
 
 anti_heresy_act = { #+1Missionary and +2Missionary strenght
 	monarch_power = ADM
