@@ -857,7 +857,7 @@ artillery_bonus_forts_policy = { #+1 Artillerty bonus vs forts
 		}
 	}
 
-	artillery_bonus_vs_fort = 1
+	artillery_levels_available_vs_fort = 1	
 
 	ai_will_do = {
 		factor = 1
