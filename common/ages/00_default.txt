@@ -731,7 +731,7 @@ age_of_revolutions = {
 
 		ab_napoleonic_warfare = {
 			modifier = {
-				artillery_levels_available_vs_fort = 3
+				can_bypass_forts = yes	
 			}
 			ai_will_do = {
 				factor = 15
