@@ -1581,7 +1581,7 @@ RAS_ideas = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	coffea_arabica = {
-		#See Yemeni Ideas
+		global_trade_goods_size_modifier = 0.1
 	}
 	ras_unite_rassid_state = {
 		all_estate_loyalty_equilibrium = 0.1
