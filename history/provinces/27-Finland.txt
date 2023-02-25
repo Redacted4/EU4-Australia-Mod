@@ -1,4 +1,4 @@
-#Finland, incl. Åbo.
+#Finland, incl. ï¿½bo.
 
 owner = SWE
 controller = SWE
@@ -11,13 +11,13 @@ base_tax = 3
 base_production = 3
 trade_goods = grain
 base_manpower = 2
-capital = "Åbo"
+capital = "ï¿½bo"
 estate = estate_church
 is_city = yes
 fort_15th = yes
 discovered_by = western
 discovered_by = eastern
-
+center_of_trade = 1
 
 1444.11.12 = {
 	remove_core = SWE
