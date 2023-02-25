@@ -743,7 +743,7 @@ new_world_i = {
 				owner = {
 					colony = 1
 					any_subject_country = {
-						is_colonial_nation = yes
+						is_colony_trigger = yes
 						OR = {
 							capital_scope = { continent = north_america }
 							capital_scope = { continent = south_america }
