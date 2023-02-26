@@ -191,6 +191,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
+				NOT = { SAX = { is_elector = yes} }
 			}
 			SAX = {
 				elector = yes
@@ -199,6 +200,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
+				NOT = { TRI = { is_elector = yes} }
 			}
 			TRI = {
 				elector = yes
@@ -207,6 +209,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
+				NOT = { PAL = { is_elector = yes} }
 			}
 			PAL = {
 				elector = yes
@@ -215,6 +218,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
+				NOT = { KOL = { is_elector = yes} }
 			}
 			KOL = {
 				elector = yes
@@ -223,6 +227,7 @@ country_event = {
 		if = {
 			limit = {
 				NOT = { num_of_electors = 7 }
+				NOT = { MAI = { is_elector = yes} }
 			}
 			MAI = {
 				elector = yes
