@@ -83,3 +83,8 @@
  mam_house_of_wisdom_modifier:0 "House of Wisdom"
  bountiful_nile:0 "Bountiful Nile"  
  recruit_cossack_generals_modifier:0 "Recruited Cossack Leaders"
+ #Pluto Condot Triggered Modiifers
+ pluto_condot_discovery:0 "Soldiers of Fortune: Discovery"
+ pluto_condot_reformation:0 "Soldiers of Fortune: Reformation"
+ pluto_condot_absolutism:0 "Soldiers of Fortune: Absolutism"
+ pluto_condot_revolutions:0 "Soldiers of Fortune: Revolutions"

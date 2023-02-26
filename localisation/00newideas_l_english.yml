@@ -485,4 +485,7 @@ westphalian_sovereigty_desc:0 "We have successfully bested the odds and cemented
  horse_lords_new_desc:0 "The only true beast is of human nature. Horses have been born and raised among our children, and they have learned to be noble and ferocious as our own own people. We recognise their harsh taming as our greatest pride, and they recognize us as their greatest lords.\n§YAll Generic Mercenary Companies Now Use 100% Cavalry!§!"
  napoleonic_warfare_new_desc:0 "Traditional armies relied on furious discipline to maintain order in their ranks, however, by appealing to unit pride we can reach even higher levels of discipline.\nUnlocks §YForced March§! early"
  napoleonic_warfare_new:0 "Espirit de Corps"
+ emancipation_new:0 "Soldiers of Fortune" 
+ emancipation_new_desc:0 "Allows us to hire out §YCondottieri!§!\n§YAge of Discovery:§! 15 Units\n§YAge of Reformation:§! 30 Units\n§YAge of Absolutism:§! 45 Units\n§YAge of Revolutions:§! 60 Units"
+ 
  

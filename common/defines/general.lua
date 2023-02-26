@@ -27,6 +27,7 @@ NDefines.NEconomy.TRADE_PROPAGATE_DIVIDER = 20          -- from 5   --Reduces do
 NDefines.NEconomy.DEBASE_MAX_CORRUPTION = 20            -- from 90
 NDefines.NDiplomacy.NUM_OF_GREAT_POWERS	= 12            -- from 8
 NDefines.NEconomy.CARAVAN_POWER_MIN = 0
+NDefines.NCountry.MAXIMUM_CONDOTTIERI = 1               -- from 20 
 -- Tariff Changes
 NDefines.NCountry.PS_RAISE_TARIFFS = 10             -- from 50
 NDefines.NCountry.PS_LOWER_TARIFFS = 10             -- from 25

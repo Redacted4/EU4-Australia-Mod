@@ -125,7 +125,7 @@ plutocracy_ideas = {
 	abolished_serfdom = {
 		land_morale = 0.10
 	}
-	emancipation = {
+	emancipation_new = {
 		mercenary_discipline = 0.05
 	}
 
