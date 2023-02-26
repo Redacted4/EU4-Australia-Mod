@@ -384,6 +384,24 @@
  chi_hongyipao:0 "Hongyipao"
  chi_hongyipao_desc:0 "Originally sourced from the Red Barbarians, these new cannons have been reverse engineered and improved upon immensely. Their new allow construction makes them both lightweight and durable and gives our artillery an edge over any potential adverseries."
 
+ #Ifriqiya Ideas
+ IFR_ideas:0 "Ifriqiya Ideas"
+ IFR_ideas_start:0 "Ifriqiya Traditions"
+ IFR_ideas_bonus:0 "Ifriqiya Ambition"
+ ifr_lessons_of_normans:0 "Lessons of the Norman Conquest"
+ ifr_lessons_of_normans_desc:0 "Never again shall we let our lands fall at the hands of the dreaded Frank."
+ ifr_sicily:0 "Emirate of Sicily"
+ ifr_sicily_desc:0 "Often called the breadbasket of the Mediterranean, Sicily produces a significant surplus of grain. This should prove a valuable commodity."
+ ifr_caliphate:0 "The Prophecy of Tunis II"
+ ifr_caliphate_desc:0 "A self-proclaimed prophet by the name of Alqumama has been spreading strange ideas, claiming the our sultanate is destined to embark on a war of purification against our mortal enemies, which seems to include anyone even slightly different to us. Though he has already been dealt with by authorities, his ideals still hold some sway among the devout, who are clamouring to join our armies ranks to join this imaginary crusade."
+ ifr_crossroads_of_med:0 "Crossroads of the Mediterranean"
+ ifr_crossroads_of_med_desc:0 "Our lands stand at the crossroads of the mediterranean sea, meaning anyone who wishes to trade has to pass through our ports first."
+ ifr_catalan_guard:0 "Reformed Catalan Guard"
+ ifr_catalan_guard_desc:0 "We should integrate the Catalan Guard more directly into our command structure."
+ ifr_board_of_captains:0 "Secure Our Position"
+ ifr_board_of_captains_desc:0 "Our strategic position at the center of the mediterranean is only useful as long as we can defend it."
+ ifr_heirs_to_carthage:0 "Heirs to Carthage"
+ ifr_heirs_to_carthage_desc:0 "Our capital was once home to a great maritime empire. We should strive to uphold this legacy to secure our own place in history."
 
  #Idea Groups
 

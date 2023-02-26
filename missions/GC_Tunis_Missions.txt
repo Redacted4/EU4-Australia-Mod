@@ -301,7 +301,6 @@ gc_tunis_3 = {
 		required_missions = { }
 		
 		trigger = {
-			naval_forcelimit = 20
 			advisor = naval_reformer
 			owns = 341
 		}

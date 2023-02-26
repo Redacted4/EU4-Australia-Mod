@@ -492,3 +492,48 @@ ARB_ideas = {
 	
 }
 
+#Ifriqiya Ideas
+IFR_ideas = {
+
+	start = {
+		may_perform_slave_raid = yes
+		naval_morale = 0.15
+	}
+	
+	bonus = {
+		discipline = 0.05
+	}
+	
+	free = yes
+	
+	trigger = {
+		tag = IFR
+	}
+	ifr_lessons_of_normans = {
+		shock_damage_received = -0.15
+	}
+	
+	ifr_sicily = {
+		global_trade_goods_size_modifier = 0.1
+	}
+	ifr_catalan_guard = {
+		infantry_power = 0.15
+	}
+	ifr_caliphate = {
+		manpower_in_true_faith_provinces = 0.25
+	}
+	
+	ifr_crossroads_of_med = {
+		trade_efficiency = 0.15
+	}
+	ifr_board_of_captains = {
+		own_coast_naval_combat_bonus = 1
+	}
+	
+	ifr_heirs_to_carthage = {
+		naval_forcelimit_modifier = 0.33
+	}
+	
+	
+}
+
