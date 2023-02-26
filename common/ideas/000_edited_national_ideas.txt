@@ -846,49 +846,6 @@ KHA_ideas = {
 	}
 }
 
-KOR_ideas = {
-	start = {
-		global_own_trade_power = 0.25
-		build_cost = -0.1
-	}
-	
-	bonus = {
-		infantry_power = 0.1
-	}
-	
-	trigger = {
-		OR = {
-			tag = KOR
-			tag = GOG
-			tag = SLL
-			tag = BJK
-		}
-	}
-	free = yes
-	
-	hanguel_alphabet = {
-		technology_cost = -0.05
-	}
-	grand_code = {
-		stability_cost_modifier = -0.10
-	}
-	hyanyak_system = {
-		production_efficiency = 0.10
-	}
-	geobukseon = {
-		ship_durability = 0.05
-	}
-	hopae_system = {
-		global_manpower_modifier = 0.10
-	}
-	kyujanggak = {
-		idea_cost = -0.1
-	}
-	kor_economy_reform = {
-		global_tax_modifier = 0.10
-	}
-	
-}
 
 BRZ_ideas = {
 	start = {
@@ -1594,5 +1551,42 @@ RAS_ideas = {
 	}
 	ras_secure_trade_monopolies = {
 		trade_efficiency = 0.1
+	}
+}
+
+MOR_ideas = {
+	start = {
+		may_perform_slave_raid = yes
+		cavalry_power = 0.15
+	}
+	bonus = {
+		movement_speed = 0.1
+	}
+	trigger = {
+		tag = MOR
+	}
+	free = yes
+	mor_marabouts = {
+		idea_cost = -0.1
+		monthly_piety = -0.001
+	}
+	mor_slave_soldiers = {
+		land_morale = 0.15
+	}
+	mor_powerful_viziers = {
+		same_culture_advisor_cost = -0.2
+	}
+	mor_fleet = {
+		own_coast_naval_combat_bonus = 1
+	}
+	trans_saharan_trade = {
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	mor_pirate_republics = {
+		naval_forcelimit_modifier = 0.25
+	}
+	mor_curb_power_of_the_tribes = {
+		global_autonomy = -0.05
 	}
 }
