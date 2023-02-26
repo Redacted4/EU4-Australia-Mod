@@ -3,7 +3,7 @@
 owner = RAS #Tahirids
 controller = RAS #Tahirids
 culture = yemeni_culture
-religion = sunni
+religion = shiite
 capital = "Aden"
 trade_goods = incense
 hre = no
