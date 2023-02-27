@@ -560,7 +560,7 @@ kingdom_of_god_reform = {
 		}
 	}
 	modifiers = {
-		monarch_admin_power = 2
+		#monarch_admin_power = 2
 		manpower_in_true_faith_provinces = 0.15
 		land_morale = 0.1
 		prestige = 1
@@ -570,9 +570,9 @@ kingdom_of_god_reform = {
 	allow_normal_conversion = yes
 	lock_level_when_selected = yes
 	fixed_rank = 3
-	custom_attributes = {
-		education_focus_enabled = yes
-	}
+	#custom_attributes = {
+	#	education_focus_enabled = yes
+	#}
 }
 
 education_of_the_bishop_reform = {
