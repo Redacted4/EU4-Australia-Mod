@@ -412,3 +412,99 @@ release_colonial_subject =  {
 		always = no
 	}
 }
+
+convert_to_crown_colony =  {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			AND = {
+				is_colony_trigger = yes
+				NOT = { is_subject_of_type = crown_colony_2 }
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		treasury = 1000
+		FROM = {
+			NOT = { is_subject_of_type = crown_colony_2 }
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = {
+				id = colonial_rework.1
+			}
+		}
+		add_treasury = -1000
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+convert_to_private_enterprise =  {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			AND = {
+				is_colony_trigger = yes
+				NOT = { is_subject_of_type = private_enterprise }
+			}
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		treasury = 1000
+		FROM = {
+			NOT = { is_subject_of_type = private_enterprise }
+		}
+	}
+	on_accept = {
+		FROM = {
+			country_event = {
+				id = colonial_rework.2
+			}
+		}
+		add_treasury = -1000
+	}
+	ai_will_do = {
+		always = no
+	}
+}
+
+convert_to_self_governing_colony =  {
+	category = influence
+	require_acceptance = no
+	is_visible = {
+		overlord_of = FROM
+		FROM = {
+			AND = {
+				is_colony_trigger = yes
+				NOT = { is_subject_of_type = self_governing_colony }
+			}
+		}
+		FROM = {
+			NOT = { is_subject_of_type = self_governing_colony }
+		}
+	}
+	is_allowed = {
+		is_at_war = no
+		treasury = 1000
+	}
+	on_accept = {
+		FROM = {
+			country_event = {
+				id = colonial_rework.3
+			}
+		}
+		add_treasury = -1000
+	}
+	ai_will_do = {
+		always = no
+	}
+}
