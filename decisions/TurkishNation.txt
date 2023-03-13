@@ -34,7 +34,7 @@ country_decisions = {
 		}
 		provinces_to_highlight = {
 			OR = {
-				province_id = 151		# Constantinople
+				#province_id = 151		# Constantinople
 				province_id = 316		# Iznik
 				province_id = 323		# Konya
 				province_id = 326		# Ankara
@@ -54,9 +54,15 @@ country_decisions = {
 			is_nomad = no
 			religion_group = muslim
 			NOT = { exists = RUM }
-			NOT = { exists = TUR }
-			NOT = { exists = BYZ }
-			owns_core_province = 151		# Constantinople
+			#NOT = { exists = TUR }
+			#NOT = { exists = BYZ }
+			if = {
+				limit = {
+					tag = MAM
+				}
+				ruler_culture = turkish
+			}
+			#owns_core_province = 151		# Constantinople
 			owns_core_province = 316		# Iznik
 			owns_core_province = 323		# Konya
 			owns_core_province = 326		# Ankara
@@ -64,6 +70,10 @@ country_decisions = {
 			owns_core_province = 331		# Erzurum
 			owns_core_province = 2301		# Kayseri
 			owns_core_province = 4312		# Eskeshehir
+			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
+				value = 25
+				culture = turkish
+			}
 		}
 		effect = {
 			change_tag = RUM
