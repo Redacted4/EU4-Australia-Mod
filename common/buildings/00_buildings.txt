@@ -90,7 +90,7 @@ temple = {
 	cost = 100
 	time = 12
 	modifier = {
-		local_tax_modifier = 0.5
+		local_tax_modifier = 0.4
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
@@ -949,7 +949,7 @@ cathedral = {
 	time = 12
 	modifier = {
 		local_missionary_strength = 0.03
-		local_tax_modifier = 1
+		local_tax_modifier = 0.8
 	}
 	on_built = {
 		on_province_tax_building_built_estate_privileges_effect = yes
