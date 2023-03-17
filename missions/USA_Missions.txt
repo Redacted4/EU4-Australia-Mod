@@ -1,0 +1,122 @@
+usa_missions_main = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+	}
+	has_country_shield = yes
+	
+	usa_independence = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+			num_of_generals = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = us_militia
+				duration = -1
+			}
+		}
+	}
+	usa_coastal_defence = {
+		icon = mission_settlers_north_america
+		required_missions = {}
+		provinces_to_highlight = {
+			province_id = 965
+			NOT = { 965 = { 
+				owned_by = ROOT
+				is_core = ROOT
+				can_build = coastal_defence } }
+		}
+		trigger = {
+			965 = {
+				AND = { owned_by = ROOT
+						is_core = ROOT
+						has_building = coastal_defence
+				}
+		}
+		effect = {
+			965 = {
+				add_base_production = 2
+				center_of_trade = 1
+			}
+			956 = {
+				add_base_production = 2
+				center_of_trade = 1
+			}
+			950 = {
+				add_base_production = 2
+				center_of_trade = 1
+			}
+			932 = {
+				add_base_production = 2
+				center_of_trade = 1
+			}
+		}
+	}
+}
+	usa_plantation = {
+		icon = mission_settlers_north_america
+		required_missions = {}
+		trigger = {
+			all_owned_province = {
+				limit = {
+					has_terrain = farmlands
+					has_manufactory_trigger = yes
+					development = 20
+				}
+			}
+		}
+		effect = {
+			all_owned_province = {
+				limit = {
+					has_terrain = farmlands
+					has_manufactory_trigger = yes
+					development = 20
+				}
+				change_trade_goods = cotton
+				add_base_production = 2
+				add_province_modifier = {
+					name = us_cotton
+					duration = -1
+				}
+			}
+usa_missions_main5 = {
+	slot = 5
+	generic = no
+	ai = yes
+	potential = {
+		tag = USA
+	}
+	usa_merchant_marine = {
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			naval_size_percentage = 1
+		}
+		effect = {
+			add_country_modifier = {
+				name = us_mm
+				duration = 9125
+			}
+		}
+	}
+	usa_marines = {
+		icon = mission_settlers_north_america
+		required_missions = {usa_merchant_marine}
+		trigger = {
+			mission_completed = usa_coastal_defence
+			naval_forcelimit = 80
+			navy_tradition = 80
+		}
+		effect = {
+			add_country_modifier = {
+				name = us_marines
+				duration = -1
+			}
+		}
+	}
+}

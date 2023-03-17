@@ -1,0 +1,56 @@
+us_militia = {
+    may_return_manpower_on_disband = yes
+	manpower_in_own_culture_provinces = 0.10
+}
+
+us_marines = {
+    is_marine_modifier = {
+        discipline = 0.5
+        regiment_disembark_speed = 0.2
+    }
+    sailors = .15
+    allowed_marine_fraction = .2
+}
+us_mm = {
+    global_ship_trade_power = .33
+    global_prov_trade_power_modifier = .1
+}
+
+us_cotton = {
+    trade_goods_size = 1
+    allowed_num_of_manufactories = 1
+}
+
+us_shipyard = {
+    naval_forcelimit = 5
+    naval_forcelimit_modifier = 0.1
+    naval_maintenance_modifier = -0.1
+}
+
+us_sawmill = {
+    naval_maintenance_modifier = -0.05
+    construction_cost = -0.05
+    ship_durability = 0.05
+}
+
+col_coal = {
+    trade_goods_size = 1
+    #change to coal
+}
+
+col_steelworks = {
+    trade_goods_size = 2
+    #change to iron
+}
+col_belt_prov = {
+    trade_goods_size_modifier = 0.1
+}
+col_belt_bonus = {
+    construction_cost = -1
+    land_maintenace_cost = -0.1
+}
+
+faith_spread = {
+    missionaries = 2
+    global_missionary_strength = 0.03
+}
