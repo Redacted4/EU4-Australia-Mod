@@ -9,16 +9,16 @@ us_marines = {
         regiment_disembark_speed = 0.2
     }
     sailors = .15
-    allowed_marine_fraction = .2
+    allowed_marine_fraction = 0.2
 }
 us_mm = {
-    global_ship_trade_power = .33
-    global_prov_trade_power_modifier = .1
+    global_ship_trade_power = 0.33
+    global_prov_trade_power_modifier = 0.1
 }
 
 us_cotton = {
-    trade_goods_size = 1
-    allowed_num_of_manufactories = 1
+    trade_goods_size = 0.5
+    trade_goods_size_modifier = 0.10
 }
 
 us_shipyard = {
@@ -29,7 +29,7 @@ us_shipyard = {
 
 us_sawmill = {
     naval_maintenance_modifier = -0.05
-    construction_cost = -0.05
+    build_cost = -0.05
     ship_durability = 0.05
 }
 
@@ -44,10 +44,11 @@ col_steelworks = {
 }
 col_belt_prov = {
     trade_goods_size_modifier = 0.1
+    trade_goods_size = 0.5
 }
 col_belt_bonus = {
-    construction_cost = -1
-    land_maintenace_cost = -0.1
+    build_cost = -0.1
+    land_maintenance_modifier = -0.1
 }
 
 faith_spread = {
