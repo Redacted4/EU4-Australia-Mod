@@ -62,6 +62,9 @@
  FORCE_MARCH_REQUIREMENTS:0 "\n§R- Requires §YAdmin Tech 15§! or §YEspirit de Corps§! from§! §YOffensive Ideas.§!"
  mams_cant_dec_ethiopia:0 "We cannot declare war on §YEthiopia§! until we have completed the §YFate of the Copts§! mission."
  can_dec_ethiopia_tt:0 "Allows us to §RDeclare War§! on §YEthiopia!§!"
+ no_wars_of_the_roses.tt:0 "Prevents the §YWar of the Roses§! §Rdisaster§! from firing!"
+ no_wars_of_the_roses_flag:0 "No War of the Roses"
+ eng_had_end_of_hundred_years_war:0 "Lost Hundred Years War"
 
  
  

@@ -1961,27 +1961,6 @@ country_event = {
 		}
 		
 	}
-	option = { #Give up everything
-		name = "flavor_fra.6.c"
-		ai_chance = {
-			factor = 0
-		}
-		add_stability = -2
-		add_prestige = -50
-		FRA = { country_event = {id = flavor_fra.1300655506 } }
-		random_owned_province = {
-			spawn_rebels = {
-				type = noble_rebels
-				size = 3
-			}
-		}
-		random_owned_province = {
-			spawn_rebels = {
-				type = noble_rebels
-				size = 1
-			}
-		}
-	}
 }
 
 # The Surrender of Maine
@@ -2049,7 +2028,7 @@ country_event = {
 		
 	}
 }
-# François Villon
+# Franï¿½ois Villon
 country_event = {
 	id = flavor_fra.9000
 	title = "flavor_fra.EVTNAME9000"
@@ -2082,7 +2061,7 @@ country_event = {
 		name = "flavor_fra.EVTOPTB9000"
 		define_advisor = {
 			type = artist
-			name = "François Villon"
+			name = "Franï¿½ois Villon"
 			culture = cosmopolitan_french
 			discount = yes
 			skill = 3
@@ -2105,7 +2084,7 @@ country_event = {
 }
 
 #New event by Pierre du Plessis
-#Reference is to Louise Marie Thérèse, The Black Nun of Moret
+#Reference is to Louise Marie Thï¿½rï¿½se, The Black Nun of Moret
 country_event = {
 	id = flavor_fra.9500
 	title = flavor_fra.9500.name

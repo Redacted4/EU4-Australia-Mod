@@ -341,65 +341,18 @@ eng_french_conquest = {
 		position = 3
 		
 		provinces_to_highlight = {
-			OR = {
-				AND = {
-					owned_by = FRA
-					is_capital = yes
-				}
-				AND = {
-					province_id = 183
-					NOT = { owned_by = FRA }
-					owner = {
-						NOT = { exists = FRA }
-					}
-				}
-			}
-			NOT = { controlled_by = ROOT }
+			area = ile_de_france_area
 		}
 		
 		trigger = {
-			if = {
-				limit = {
-					exists = FRA
+			AND = {
+				ile_de_france_area = {
+					type = all
+					country_or_non_sovereign_subject_holds = ROOT
 				}
-				FRA = {
-					capital_scope = {
-						OR = {
-							controlled_by = ROOT
-							AND = {
-								controller = {
-									OR = {
-										is_subject_of = ROOT
-										alliance_with = ROOT
-										overlord = {
-											alliance_with = ROOT
-										}
-									}
-									custom_trigger_tooltip = {
-										tooltip = joint_war_with_root_vs_france
-										OR = {
-											is_in_war = {
-												attackers = root
-												attackers = this
-												defenders = FRA
-											}
-											is_in_war = {
-												defenders = root
-												defenders = this
-												attackers = FRA
-											}
-										}
-									}
-								}
-							}
-						}
-					}
-				}
-				else = {
-					183 = {
-						owned_by = ROOT
-					}
-				}
+			}
+			NOT = {
+				has_country_flag = eng_had_end_of_hundred_years_war
 			}
 		}
 		
@@ -417,6 +370,19 @@ eng_french_conquest = {
 					add_permanent_claim = ROOT
 				}
 			}
+			if = {
+				limit = {
+					ROOT = { has_ruler = "Henry VI" }
+				}
+				change_adm = 2
+				change_dip = 2
+				change_mil = 2
+			}
+			hidden_effect = {
+				set_country_flag = no_wars_of_the_roses_flag
+			}
+			custom_tooltip = no_wars_of_the_roses.tt
+			
 		}
 	}
 	
@@ -426,29 +392,16 @@ eng_french_conquest = {
 		position = 5
 		
 		provinces_to_highlight = {
-			OR = {
-				area = ile_de_france_area
-				province_id = 186
-				province_id = 4390
+			region = france_region
+			NOT = {
+				owned_by = ROOT
 			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 		
 		trigger = {
-			OR = {
-				FRA = { is_subject_of = ROOT }
-				AND = {
-					ile_de_france_area = {
-						type = all
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					186 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-					4390 = {
-						country_or_non_sovereign_subject_holds = ROOT
-					}
-				}
+			num_of_owned_provinces_with  = {
+				value = 25
+				region = france_region
 			}
 		}
 		
