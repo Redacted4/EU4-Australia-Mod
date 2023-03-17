@@ -3,6 +3,7 @@ usa_missions_main = {
 	generic = no
 	ai = yes
 	potential = {
+		#capital_scope = { colonial_region = colonial_eastern_america }
 		tag = USA
 	}
 	has_country_shield = yes
@@ -36,7 +37,7 @@ usa_missions_main = {
 			NOT = {
 				owned_by = ROOT
 				is_core = ROOT
-				has_build = coastal_defence
+				has_building = coastal_defence
 				}
 		}
 		trigger = {
@@ -85,25 +86,114 @@ usa_missions_main = {
 		required_missions = {}
 		position = 3
 		provinces_to_highlight = {
+			OR = {
+				province_id = 920
+				province_id = 2532
+				province_id = 925
+				province_id = 930
+			}
+			NOT = {
+				owned_by = ROOT
+				is_core = ROOT
+				development = 20
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+					}
+				}
 		}
 		trigger = {
-			all_owned_province = {
-				limit = {
-					has_terrain = farmlands
-					has_manufactory_trigger = yes
-					development = 20
-				}
+			920 = {
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+					}
+				development = 20
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			925 = {
+				owned_by = ROOT
+				is_core = ROOT
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+					}
+				development = 20
+			}
+			930 = {
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+					}
+				development = 20
+				owned_by = ROOT
+				is_core = ROOT
+			}
+			2532 = {
+				OR = {
+					has_building = mills
+					has_building = farm_estate
+					has_building = tradecompany
+					has_building = plantations
+					has_building = textile
+					has_building = weapons
+					has_building = wharf
+					has_building = furnace
+					}
+				development = 20
+				owned_by = ROOT
+				is_core = ROOT
 			}
 		}
 		effect = {
-			all_owned_province = {
-				limit = {
-					has_terrain = farmlands
-					has_manufactory_trigger = yes
-					development = 20
-				}
+			920 = {
 				change_trade_goods = cotton
-				add_base_production = 2
+				add_province_modifier = {
+					name = us_cotton
+					duration = -1
+				}
+			}
+			2532 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+					name = us_cotton
+					duration = -1
+				}
+			}
+			925 = {
+				change_trade_goods = cotton
+				add_province_modifier = {
+					name = us_cotton
+					duration = -1
+				}
+			}
+			930 = {
+				change_trade_goods = cotton
 				add_province_modifier = {
 					name = us_cotton
 					duration = -1
@@ -112,19 +202,23 @@ usa_missions_main = {
 		}
 	}
 }
+
 usa_missions_main5 = {
 	slot = 5
 	generic = no
 	ai = yes
 	potential = {
+		#capital_scope = { colonial_region = colonial_eastern_america }
 		tag = USA
 	}
+	has_country_shield = yes
+
 	usa_merchant_marine = {
 		icon = mission_assemble_an_army
 		required_missions = {}
 		position = 1
 		trigger = {
-			naval_size_percentage = 1
+			navy_size_percentage = 1
 		}
 		effect = {
 			add_country_modifier = {
