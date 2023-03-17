@@ -10,6 +10,7 @@ usa_missions_main = {
 	usa_independence = {
 		icon = mission_assemble_an_army
 		required_missions = { }
+		position = 1
 		trigger = {
 			army_size_percentage = 1
 			num_of_generals = 1
@@ -24,18 +25,40 @@ usa_missions_main = {
 	usa_coastal_defence = {
 		icon = mission_settlers_north_america
 		required_missions = {}
+		position = 2
 		provinces_to_highlight = {
-			province_id = 965
-			NOT = { 965 = { 
+			OR = {
+				province_id = 965
+				province_id = 956
+				province_id = 950
+				province_id = 932
+			}
+			NOT = {
 				owned_by = ROOT
 				is_core = ROOT
-				can_build = coastal_defence } }
+				has_build = coastal_defence
+				}
 		}
 		trigger = {
 			965 = {
-				AND = { owned_by = ROOT
-						is_core = ROOT
-						has_building = coastal_defence
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = coastal_defence
+				}
+			956 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = coastal_defence
+				}
+			950 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = coastal_defence
+				}
+			932 = {
+				owned_by = ROOT
+				is_core = ROOT
+				has_building = coastal_defence
 				}
 		}
 		effect = {
@@ -57,10 +80,12 @@ usa_missions_main = {
 			}
 		}
 	}
-}
 	usa_plantation = {
 		icon = mission_settlers_north_america
 		required_missions = {}
+		position = 3
+		provinces_to_highlight = {
+		}
 		trigger = {
 			all_owned_province = {
 				limit = {
@@ -84,6 +109,9 @@ usa_missions_main = {
 					duration = -1
 				}
 			}
+		}
+	}
+}
 usa_missions_main5 = {
 	slot = 5
 	generic = no
@@ -93,7 +121,8 @@ usa_missions_main5 = {
 	}
 	usa_merchant_marine = {
 		icon = mission_assemble_an_army
-		required_missions = { }
+		required_missions = {}
+		position = 1
 		trigger = {
 			naval_size_percentage = 1
 		}
@@ -107,6 +136,7 @@ usa_missions_main5 = {
 	usa_marines = {
 		icon = mission_settlers_north_america
 		required_missions = {usa_merchant_marine}
+		position = 2
 		trigger = {
 			mission_completed = usa_coastal_defence
 			naval_forcelimit = 80
